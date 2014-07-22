@@ -1,0 +1,544 @@
+#HELP
+Name IMC2
+Perm Mort
+Text See these general commands: IMCBEEP, IMCCHANLIST, IMCLIST, IMCINVIS
+IMCLISTEN, IMCREPLY, IMCTELL, IMCLOCATE, IMCFINGER, IMCINFO, IMCWHO,
+IMCIGNORE, IMCCOLOR, and IMCCHANWHO
+
+See these administrative commands: IMCCOMMAND, IMCDENY, IMCUCACHE
+IMCBAN, IMCPING, IMCSETUP, IMCSTATS, IMCCONFIG, IMCPERMS, and IMCPERMSET
+¢
+End
+
+#HELP
+Name imcucache
+Perm Admin
+Text Syntax: imcucache
+
+Displays the contents of the ucache tables which are used for proper targetting of
+genders in socials. This output can be very spammy depending on the number of
+supporting clients.
+¢
+End
+
+#HELP
+Name imcadmin
+Perm Imp
+Text Syntax: imcadmin <server> <password> <command> [data]
+
+This is the remote administration handler. Since server administrators are the only ones who
+should have any business using this, details are available in the RemoteAdmin.txt file
+which accompanied the source code for IMC2. Besides, the list is a bit large to put here.
+
+A password provided by the owner of the server is required to use these commands. If your mud
+uses MD5 authentication, that password will be encrypted. If not, it isn't wise to use
+these functions as anyone sniffing could potentially do damage in the right conditions.
+¢
+End
+
+#HELP
+Name imcdebug
+Perm Imp
+Text Syntax: imcdebug
+
+This toggles the mud's packet debugging. Your logs will begin displaying incoming and outgoing
+packets. For this reason, it is not recommended to be used unless absolutely necessary since
+using it could create potential privacy issues. It's called debug for a reason, use it responsibly.
+¢
+End
+
+#HELP
+Name imchedit
+Perm Admin
+Text Syntax: imchedit <topic> <option> <field>
+
+Allows minor editing of helps.
+Option can be either "name" or "perm".
+
+Editing the text of the topic itself is not possible - yet.
+¢
+End
+
+#HELP
+Name imccedit
+Perm Imp
+Text Syntax: imccedit <command> <create|delete|rename|code|permission|connected> [field]
+
+This command allows you to edit the data contained in other commands, create new commands,
+and delete commands.
+
+When creating, you can optionally specify the name of the function the command will use.
+If the function named does not exist, the command will not work.
+¢
+End
+
+#HELP
+Name imchelp
+Perm Mort
+Text Syntax: imchelp <topic>
+
+The command used to get help about other commands. Assuming the command has help information.
+¢
+End
+
+#HELP
+Name imcchanwho
+Perm Mort
+Text Syntax: imcchanwho <channel> <mud>
+
+This command will show you a listing of people who are listening to the specified channel
+on the specified mud. You can also ask for a listing from multiple muds by putting all
+of their names in the command. Or, you can also specify "all" and the command will query
+all muds on the network for who is listening. Be advised this command can generate alot
+of output.
+¢
+End
+
+#HELP
+Name imcperms
+Perm Imm
+Text Syntax: imcperms <user>
+
+This command will display the permission level of the target player, and will tell you how
+that permission value was given.
+
+If a permission was set with imcpermset, this permission will not update itself at user login.
+¢
+End
+
+#HELP
+Name imcpermset
+Perm Admin
+Text Syntax: imcpermset <user> <permission>
+
+This command will set the specified permission level on the target user.
+Valid permissions are: None, Mort, Imm, Admin, and Imp.
+You will only be able to alter permissions on users who are below your current permission level.
+
+When a permission is manually set, the user will no longer have it adjusted at login time.
+This action sets the override flag for that user.
+
+You can also specify 'override' to remove the override flag and allow the code to reset their
+permission level at next login.
+¢
+End
+
+#HELP
+Name imccolor
+Perm Mort
+Text Syntax: imccolor
+
+This command simply toggles receiving of imc color codes. If on, you will see everything
+in as much color as your mud is capable of displaying. If off, all IMC2 traffic will be
+in whatever your terminal default color is.
+¢
+End
+
+#HELP
+Name imcinfo
+Perm Mort
+Text Syntax: imcinfo <mud>
+
+This command will display information about one mud on the network. The information
+presented by the command is chosen by the mud's administrators.
+¢
+End
+
+
+#HELP
+Name imcbeep
+Perm Mort
+Text Syntax: imcbeep person@mud     - "beep" a player over IMC
+
+Sends a short sound tone to the person on the target mud. If their terminal 
+program supports it, it will make an audible beep to get their 
+attention. If you don't get a response, don't keep beeping. The person may 
+be busy or away and spamming them will only tick them off as well as 
+possibly leading to your IMC priviliges being revoked.
+¢
+End
+
+#HELP
+Name imcchanlist
+Perm Mort
+Text Syntax: imcchanlist               - list all known IMC channels
+        imcchanlist (channel)     - list details on one IMC channel
+
+IMCCHANLIST displays information on channels active on IMC.
+Without arguments, it will produce a display similar to:
+
+Name            Local name      Owner           Perm    Policy
+Server02:test   test            Samson@Alsherok Admin   Private
+Server02:icode  icode           Samson@Alsherok Imm     Open
+Server02:i2chat i2              Samson@Alsherok Imm     Open
+Server01:ichat  ichat           Paradigm@Pabulu Imm     Open
+Server01:pchat  pchat           Paradigm@Pabulu Mort    Open
+Server02:irc    irc             Samson@Alsherok Imm     Open
+Server02:i3chat i3b             Samson@Alsherok Imm     Open
+Server10:UCMMCh UCMMChat        Ntanel@RM       Imm     Private
+Server02:igame  game            Samson@Alsherok Mort    Open
+
+This shows the channel's network name (eg. Server01:ichat), the local name
+ eg ichat - which can be used as an abbreviation in IMCSETUP, and which is also
+the command to speak on that channel), the owner of the channel
+(eg. Paradigm@Pabulum), and the channel's policy.
+
+Channel policies available are: open, and private.
+
+Open channels can be seen and used by anyone meeting the mud's minimum level for IMC2.
+Private channels can only be seen and used by the list of invited users.
+
+If a channel is not configured locally, it will have (not local) for its local name.
+
+If a channel is configured locally, but is not actually active on IMC2, it
+will have an Unknown flag on it.
+
+IMCCHANLIST with a channel name will provide detailed information on that
+channel. For example:
+
+Channel Server01:ichat:
+  Local name: ichat
+  Regformat : [ichat] %s: %s
+  Emformat  : [ichat] %s %s
+  Socformat : [ichat] %s
+  Perms     : Imm
+
+  Policy    : Open -- Open to all muds
+  Owner     : Paradigm@Pabulum
+  Operators : remcon@pabulum paradigm@pabulum
+  Invited   : 
+  Excluded  : 
+
+This displays the channel name, local name, policy and owner, as above. It
+also displays:
+
+- The minimum permissions needed on your mud to see the channel.
+
+- The format for displaying messages from the channel. These can contain
+  any color codes etc that your mud uses.
+
+  Regformat is the string displayed when someone speaks normally on the
+  channel - the first %s is replaced by their name, the second %s by what
+  they say.
+
+  Emformat is a similar string for emotes. Again the first %s is their 
+  name, the second %s the text of their emote.
+
+  Socformat is a similar string for emotes. Except there is only one %s and
+  is the format used to send socials to the network.
+
+- Any operators for the channel. This can only be changed by the owner of
+  the channel. Operators can modify the 'invited' and 'excluded' fields
+  via the IMCSETUP command.
+
+- The invited and excluded people on the channel.
+¢
+End
+
+#HELP
+Name imccommand
+Perm Admin
+Text Syntax: imccommand (command) (channel) [(data..)]
+Common commands: list [(channel)]           - list available commands
+                 create (channel)           - create a channel
+                 destroy (channel)          - destroy a channel
+                 invite (channel) (name)    - add an invited name
+                 uninvite (channel) (name)  - remove an invited name
+                 exclude (channel) (name)   - exclude a name
+                 unexclude (channel) (name) - remove an exclusion
+                 policy (channel) (policy)  - change channel policy
+                 addop (channel) (name)     - add a channel operator
+                 removeop (channel) (name)  - remove an operator
+
+IMCCOMMAND is used to send commands to a channel daemon elsewhere on IMC.
+It directly affects the channel itself - any changes made here will
+affect all muds using the channel.
+
+Since the actual commands are interpreted by the channel daemon, not your
+mud, what is available may vary. To get a list of available commands, use
+IMCCOMMAND list (nodename) for public commands, or IMCCOMMAND list
+(node:channel) to see what commands you have for that channel.
+
+IMCCOMMAND create creates a new channel, with you as the owner.
+
+IMCCOMMAND destroy destroys a channel. You must own the channel.
+
+IMCCOMMAND policy changes the basic policy of the channel. You must be the owner.
+
+IMCCOMMAND addop/removeop add and remove operators from a channel. You must
+be the owner, and specify the operator's full user@mud name.
+
+IMCCOMMAND invite/uninvite/exclude/unexcluded modify the invite and exclude
+lists for a channel. You must be the owner or an operator on the 
+channel. Either a full user@mud or a simple 'mud' name (no @) can be 
+specified.
+¢
+End
+
+#HELP
+Name imcconfig
+Perm Admin
+Text Syntax: imc <field> [value]
+
+Configuration info for your mud. Changes save when edited.
+You may set the following:
+
+Show          : Displays your current configuration.
+Localname     : The name IMC2 knows your mud by.
+Autoconnect   : Toggles automatic connection on reboots.
+MinPlayerLevel: Sets the minimum level IMC2 can see your players at.
+MinImmLevel   : Sets the level at which immortal commands become available.
+Adminlevel    : Sets the level at which administrative commands become available.
+Implevel      : Sets the level at which immplementor commands become available.
+Infoname      : Name of your mud, as seen from the imcquery info sheet.
+Infohost      : Telnet address of your mud.
+Infoport      : Telnet port of your mud.
+Infoemail     : Email address of the mud's IMC2 administrator.
+InfoWWW       : The Web address of your mud, cannot contain tildes.
+InfoDetails   : SHORT Description of your mud.
+ServerName    : Name of the server your mud connets to IMC2 on.
+ServerAddr    : DNS or IP address of the server you mud connects to.
+ServerPort    : Port of the server your mud connects to.
+ClientPwd     : Client password for your mud.
+ServerPwd     : Server password for your mud.
+
+This display will also indicate whether your mud is using MD5 or plain text to authenticate.
+¢
+End
+
+#HELP
+Name imcdeny
+Perm Imm
+Text Syntax: imcdeny <person> <local channel name>
+Syntax: imcdeny <person> [tell/beep/finger]
+
+This command allows you to deny players the use of a local channel, the tell
+functions, beep functions, and finger functions. It is a simple toggle that
+can be changed as needed.
+¢
+End
+
+#HELP
+Name imcfinger
+Perm Mort
+Text Syntax: imcfinger (person@mud)     - get information about a player
+
+Requests information about a specific person on the target mud. The mud 
+will either respond with information they feel is appropriate, or with 
+a message saying finger is not supported.
+
+When used with the bridge, typing imcfinger (mud@i3) will produce a who
+listing of the target mud.
+¢
+End
+
+#HELP
+Name imcignore
+Perm Mort
+Text Syntax: imcignore                  - list current ignores
+             imcignore add <target>     - add entry to ignore list
+	     imcignore delete <target>  - remove entry from ignore list
+
+The IMCIGNORE command blocks all messages specifically directed toward an
+individual user and is your first line of defense against an annoying pest.
+You can specify individual users, or an entire mud using wildcards like so:
+
+imcignore pest@mud
+imcignore *@mud
+imcignore pest@*
+
+Before going to the mud's administration with a complaint, try this first.
+If the particular person you are attempting to ignore continues to cause
+problems or is becoming a nuisance to the mud in general, advise your mud
+administration to seek the use of an IMCBAN command against them.
+Be prepared to justify this with a good reason and provide any documentation
+of any incidents your administrators ask for.
+¢
+End
+
+#HELP
+Name imcban
+Perm Admin
+Text Syntax: imcban                   - list current bans
+        imcban add <mudname>     - add mud to ban list
+	imcban delete <mudname>  - remove mud from ban list
+
+The IMCBAN command is used to stop an individual user, or an entire
+mud from sending any traffic to your mud at all. This is your second line
+of defense in the event individual user-level ignores fail to do the job
+adequately for you. This is a somewhat drastic measure and should only be
+used in elevated cases. In general it is best to have documented cases of
+problems with individual users on your mud before resorting to this. All
+incoming traffic from the offending mud is simply dropped and no further
+action taken on the packets. If this level of action fails to stop the
+problems you are having, document the incidents and proceed to the next
+level and seek assistance from the server administrator of the server you
+are connected to. They will be able to direct you further, and can issue
+bans at the server or network level if need be.
+¢
+End
+
+#HELP
+Name imclist
+Perm Mort
+Text Syntax: imclist                  - get a list of active muds on IMC2
+
+'IMCLIST' lists active muds on IMC2. It lists all the muds which this mud 
+knows about on the IMC2 network, what client version they run ( or server version
+in the case of servers ), what network they claim to be registered with, and what
+server they are routed from.
+¢
+End
+
+#HELP
+Name imclisten
+Perm Mort
+Text Syntax: imclisten               - display current channel status
+        imclisten (localname)   - toggle a channel
+
+IMCLISTEN lets you show and toggle which channels you are listening
+to. Without arguments, it will show you the channels you belong to; with
+an argument, it will turn that channel on or off.
+
+Any channels you listen to must be locally configured first - see
+IMCSETUP. IMCCHANLIST can be used to see available channels.
+¢
+End
+
+#HELP
+Name imclocate
+Perm Mort
+Text Syntax: imclocate (person)          - find a player on IMC
+
+Sends a request out to all muds on the IMC network looking for the
+specified player. If they are online and visible, a response will
+be sent back indicating this.
+¢
+End
+
+#HELP
+Name imcping
+Perm Admin
+Text Syntax: imcping (mud)
+
+IMCPING allows you to trace connectivity of another connection from your
+own. You will be given a path to and from the target mud. This command is
+basically just for simple diagnostics and should not be considered a reliable
+network tool.
+¢
+End
+
+#HELP
+Name imcsetup
+Perm Admin
+Text Syntax:
+imcsetup setlocal (channel) (localname)   - locally configure a channel
+IMCSETUP delete (localname)               - delete a channel
+IMCSETUP rename (oldname) (newname)       - rename a channel
+IMCSETUP regformat (localname) (format)   - change channel talk format
+IMCSETUP emoteformat (localname) (format) - change channel emote format
+IMCSETUP socformat (localname) (format)   - change channel social format
+IMCSETUP level (localname) (level)        - set channel level
+
+IMCSETUP allows you to change the local configuration of an ICE
+channel. None of these commands have a lasting effect on the channel's
+configuration on other muds.
+
+IMCSETUP setlocal configures a channel. It connects the specified channel
+(of the form nodename:channelname) to a local name.
+
+For example: IMCSETUP setlocal Server01:IMCChat imcchat. The local name is also the
+command used to speak on the channel.
+
+When the channel is configured, default values are filled in for
+regformat, emoteformat, socformat and level.
+
+IMCSETUP delete removes this link. It does not affect the channel itself;
+it just deletes the local configuration link for the channel.
+
+IMCSETUP rename changes the local name of a channel. It does not affect the
+channel name itself for other muds - just the command used locally to
+access it.
+
+IMCSETUP regformat, emoteformat and socformat change how a channel is 
+displayed locally. Each format string must have exactly two %s's within it,
+except socformat, (this is checked for) - the first will be replaced by the 
+speaker's name, the second by whatever they say or do. Regformat is used for 
+normal speech, emoteformat is for emotes and socformat is for socials.
+
+IMCSETUP level sets the minimum level necessary on your mud to hear or use
+the channel.
+¢
+End
+
+#HELP
+Name imcstats
+Perm Admin
+Text Syntax: imcstats                     - displays useful statistics
+
+IMCSTATS shows some useful statistics about how much traffic your mud is 
+generating due to IMC. It will also report which descriptor number your mud
+is using to connect to the network.
+¢
+End
+
+#HELP
+Name imctell
+Perm Mort
+Text Syntax: imctell (person@mud) (message) - send a 'tell' to another player
+Syntax: imcreply (message)             - send a 'tell' to the last player
+                                         to send you a IMCTELL
+
+imctell Name:MUD@I3 (message)          - Sends a tell to a person on the I3 network.
+
+IMCREPLY will work on either a normal IMCTELL or one forwarded by the bridge.
+
+A private message can be sent from you to a person on another mud.
+
+To send a reply to someone who sent you a tell, simply use the
+IMCREPLY command with your message.
+
+Due to certain conditions within the network, your conversations COULD be
+monitored, so don't send anything critical, like passwords or credit card
+numbers ( or anything else you don't want to risk being snooped ), over an IMCTELL.
+¢
+End
+
+#HELP
+Name imcwho
+Perm Mort
+Text Syntax: imcwho (mudname)        - ask for a who listing from another mud
+
+imcwho i3       - Shows I3 network mudlist.
+
+Requests a list of the current players on the target mud. Invisble players 
+will not be displayed. You should use the mud abbreviation listed in 
+'IMCLIST' when issuing a IMCWHO.
+¢
+End
+
+#HELP
+Name imcinvis
+Perm Mort
+Text Syntax: imcinvis               - makes you invisible to the network.
+
+When you toggle the imcinvis setting, other users will no longer be able to see
+you on the network in who listing, nor will they be able to send you tells.
+You will also be unable to send your own tells.
+
+The only thing invisibility does not stop is your ability to use network channels.
+¢
+End
+
+#HELP
+Name imctemplates
+Perm Admin
+Text Syntax: imctemplates           - reloads the template file set from disk.
+
+Issuing this command will refresh any editing you've done to your template files.
+This saves you from needing to disconnect from the network and reconnect just to
+test changes.
+¢
+End
+
+#END

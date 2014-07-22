@@ -1,0 +1,23 @@
+We would like to thank the following people for their inspiration in
+writing this code, their contributions to the community in which we
+all play are not forgotten:
+
+Scion Altera, Shogar, Kratas, Tagith, Noplex,
+Senir, Trax and Ntanel StormBlade.
+
+This code is released as a Diku snippet and is bound by such terms
+as are found in the Diku license. Since your mud is likely already
+bound by the same terms, you should not have any issues with installing
+this code.
+
+In addition, you must comply with the following conditions:
+
+1. You are granted the right to install this code into any license compliant
+Diku derived mud. If your mud is in any way in violation of the terms of the
+Diku license, you may not use this code.
+
+2. You are granted the right to distribute this code in any license compliant
+Diku derived codebase. If the codebase you are distributing in any way violates
+the license, or the licenses of any works it may be derived from, you may not
+distribute this code along with it.
+

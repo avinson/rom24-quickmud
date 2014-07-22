@@ -1,0 +1,358 @@
+Merc Release 2.1
+Sunday 01 August 1993
+
+Furey	mec@shell.portal.com
+Hatchet	hatchet@uclink.berkeley.edu
+Kahn	michael@uclink.berkeley.edu
+
+
+
+=== 'I'm running a Mud so I can learn C programming!'
+
+Yeah, right.
+
+The purpose of this document is to record some of our knowledge, experience and
+philosophy.  No matter what your level, we hope that this document will help
+you become a better software engineer.
+
+Remember that engineering is work, and NO document will substitute for your
+own thinking, learning and experimentation.
+
+
+
+=== How to Learn in the First Place
+
+(1) Play with something.
+(2) Read the documentation on it.
+(3) Play with it some more.
+(4) Read documentation again.
+(5) Play with it some more.
+(6) Read documentation again.
+(7) Play with it some more.
+(8) Read documentation again.
+(9) Get the idea?
+
+The idea is that your mind can accept only so much 'new data' in a single
+session.  Playing with something doesn't introduce very much new data, but it
+does transform data in your head from the 'new' category to the 'familiar'
+category.  Reading documentation doesn't make anything 'familiar', but it
+refills your 'new' hopper.
+
+Most people, if they even read documentation in the first place, never return
+to it.  They come to a certain minimum level of proficiency and then never
+learn any more.  But modern operating systems, languages, networks, and even
+applications simply cannot be learned in a single session.  You have to work
+through the two-step learning cycle MANY times to master it.
+
+
+
+=== The Environment
+
+Computer: the big or little box that you're using to run Merc.  Computers come
+    from a _manufacturer_ and have a _model_ name.  Here is a list of common
+    manufacturers and models that you're likely to encounter:
+
+	Manufacturer	Model
+	------------	-----
+
+	Sun		Sun-2
+	Sun		Sun-3
+	Sun		Sun-4
+	DEC		Vax 5000
+	DEC		Vax 5900
+	IBM		RS/6000
+	NeXT		NextCube
+	Sequent		Symmetry
+	Sequent		Balance
+
+    As far as hardware goes, Merc will run on any 32-bit hardware.
+
+Operating system: the lowest level program running on your computer.  Most
+    common computers run Unix or some variant of it, such as SunOS, Ultrix,
+    AIX, Mach, or Dynix.  Notice that many of these variants end in 'IX'.
+
+    The two major 'families' of Unix are Berkeley Unix (developed at the
+    illustrious University of California, Berkeley) and System 5 Unix
+    (developed by Bell Laboratories, the progenitors of Unix).
+
+    The most common non-Unix operating system is VMS (a proprietary operating
+    system from DEC for their VAX computers).  In the personal computer world,
+    you'll find MS-DOS, OS/2 for IBM PC's and compatibles, and MacOS for Apple
+    Macintosh'es.
+
+    GET THIS STRAIGHT: 'VAX' IS NOT AN OPERATING SYSTEM.  It's the name of a
+    family of computers from DEC.  There are plenty of Vax'es running VMS, and
+    there are even more Vax'es running Berkeley Unix or Ultrix.  The Vax'es
+    running Unix have a lot more in common with other machines running
+    Unix than they have with Vax'es running VMS.
+
+    As far as operating systems go, Merc will run on Unix or Unix variants with
+    TCP/IP networking compatible with Berkeley Unix.  It will also run, in
+    single-user mode only, on MS-DOS.  With a reasonable amount of work, Merc
+    can be ported to any operating system that provides TCP service for telnet
+    connections.
+
+Languages: Merc is written in C.  ANSI (the American National Standards
+    Institute) has a specification for the C language, and Merc is written in
+    Ansi Standard C.
+
+    The most popular compiler for Ansi Standard C is the Gnu 'gcc' compiler
+    produced by the Free Software Foundation.  It's available by anonymous
+    ftp from prep.ai.mit.edu.  Merc compiles just fine with Gcc 1.38, so
+    you can probably use 1.42 and skip the much larger 2.X versions.
+
+    You don't have to use gcc.  IBM RS/6000's running the AIX operating system
+    come with an Ansi C compiler already.  So do NeXT machines (the standard
+    'cc' on NeXT happens to be the Gnu C compiler).  Any Ansi compiler will
+    work.
+
+    Unfortunately, there are still many machines out there without an Ansi
+    standard C compiler.  (Sun is the worst offender in this regard).  You
+    can attempt to compile Merc with a non-Ansi (traditional) C compiler by
+    using the 'mktrad' script.  See trad.txt for details.
+
+If you don't know what the manufacturer and model of your computer is, as well
+as its operating system, and whether the C compiler is Ansi or non-Ansi, then
+you need to find out.
+
+
+
+=== Basic Unix Tools
+
+'man'	-- gives you online manual pages
+
+'grep'	-- stands for 'global regular expression print'
+
+'vi'
+'emacs'
+'jove'	-- use whatever editor floats your boat
+	   but learn the hell out of it
+	   you should know EVERY command in your editor
+
+'ctags'	-- makes 'tags' for your editor
+	   allows you to goto functions by name in any source file
+
+'>'
+'>>'
+'<'
+'|'	-- input and output redirection
+	   get someone to show you, or dig it out of 'man csh'
+
+These are the basic day-in day-out development tools.  Developing without
+knowing how to use ALL of these well is like driving a car without knowing how
+to change gears.
+
+
+
+=== Debugging: Theory
+
+Debugging is a science.  You formulate a hypothesis, make predictions based on
+the hypothesis, run the program and provide it experimental input, observe its
+behavior, and confirm or refute the hypothesis.
+
+A good hypothesis is one which makes surprising predictions which then come
+true; predictions that other hypotheses don't make.
+
+The first step in debugging is not to write bugs in the first place.  This
+sounds obvious, but sadly, is all too often ignored.
+
+If you build a program, and you get ANY errors or ANY warnings, you should fix
+them before continuing.  C was designed so that many buggy ways of writing code
+are legal, but will draw warnings from a suitably smart compiler (such as 'gcc'
+with the '-Wall' flag enabled).  It takes only minutes to check your warnings
+and to fix the code that generates them, but it takes hours to find bugs
+otherwise.
+
+'Desk checking' (proof reading) is almost a lost art in 1993.  Too bad.  You
+should desk check your code before even compiling it, and desk-check it again
+periodically to keep it fresh in mind and find new errors.  If you have someone
+in your group whose ONLY job it is to desk-check other people's code, that
+person will find and fix more bugs than everyone else combined.
+
+One can desk-check several hundred lines of code per hour.  A top-flight
+software engineer will write, roughly, 99% accurate code on the first pass,
+which still means one bug per hundred lines.  And you are not top flight.
+So ... you will find several bugs per hour by desk checking.  This is a very
+rapid bug fixing technique.  Compare that to all the hours you spend screwing
+around with broken programs trying to find ONE bug at a time.
+
+The next technique beyond desk-checking is the time-honored technique of
+inserting 'print' statements into the code, and then watching the logged
+values.  Within Merc code, you can call 'printf' or 'fprintf' to dump
+interesting values at interesting times.  Where and when to dump these values
+is an art, which you will learn only with practice.
+
+If you don't already know how to redirect output in your operating system, now
+is the time to learn.  On Unix, type the command 'man csh', and read the part
+about the '>' operator.  You should also learn the difference between
+'standard output' (e.g. output from 'printf') and 'error output' (e.g. output
+from 'fprintf').
+
+Ultimately, you cannot fix a program unless you understand how it's operating
+in the first place.  Powerful debugging tools will help you collect data, but
+they can't interpret it, and they can't fix the underlying problems.  Only you
+can do that.
+
+When you find a bug ... your first impulse will be to change the code, kill the
+manifestation of the bug, and declare it fixed.  Not so fast!  The bug you
+observe is often just the symptom of a deeper bug.  You should keep pursuing
+the bug, all the way down.  You should grok the bug and cherish it in fullness
+before causing its discorporation.
+
+Also, when finding a bug, ask yourself two questions: 'what design and
+programming habits led to the introduction of the bug in the first place?'
+And: 'what habits would systematically prevent the introduction of bugs like
+this?'
+
+
+
+=== Debugging: Tools
+
+When a Unix process accesses an invalid memory location, or (more rarely)
+executes an illegal instruction, or (even more rarely) something else goes
+wrong, the Unix operating system takes control.  The process is incapable of
+further execution and must be killed.  Before killing the process, however, the
+operating system does something for you: it opens a file named 'core' and
+writes the entire data space of the process into it.
+
+Thus, 'dumping core' is not a cause of problems, or even an effect of problems.
+It's something the operating system does to help you find fatal problems which
+have rendered your process unable to continue.
+
+One reads a 'core' file with a debugger.  The two most popular debuggers on
+Unix are 'adb' and 'gdb', although occasionally one finds 'dbx'.  Typically
+one starts a debugger like this: 'adb merc' or 'gdb merc core'.
+
+The first thing, and often the only thing, you need to do inside the debugger
+is take a stack trace.   In 'adb', the command for this is '$c'.  In gdb,
+the command is 'backtrace'.  The stack trace will tell you what function your
+program was in when it crashed, and what functions were calling it.  The
+debugger will also list the arguments to these functions.  Interpreting these
+arguments, and using more advanced debugger features, requires a fair amount of
+knowledge about assembly language programming.
+
+If you have access to a program named 'Purify' ... learn how to use it.
+
+
+
+=== Profiling
+
+Here is how to profile a program:
+
+(1) Remove all the .o files and the 'merc' executable:
+
+	rm *.o 'merc'
+
+(2) Edit your makefile, and change the PROF= line:
+
+	PROF    = -p
+
+(3) Remake merc:
+
+	make
+
+(4) Run merc as usual.  Shutdown the game with shutdown when you have run long
+    enough to get a good profiling base.  If you crash the game, or kill the
+    process externally, you won't get profiling information.
+
+(5) Run the 'prof' command:
+
+	prof merc > prof.out
+
+(6) Read prof.out.  Run 'man prof' to understand the format of the output.
+
+For advanced profiling, you can use 'PROF = -pg' in step (2), and use the
+'gprof' command in step 5.  The 'gprof' form of profiling gives you a report
+which lists exactly how many times any function calls any other function.  This
+information is valuable for debugging as well as performance analysis.
+
+Availability of 'prof' and 'gprof' varies from system to system.  Almost every
+Unix system has 'prof'.  Only some systems have 'gprof'.
+
+
+
+=== Schedule versus Features versus Quality
+
+Now for a few words on project management.
+
+Sooner or later, almost any project faces a trade-off between schedule,
+features, and quality.  Consider a student writing a term paper on the last
+night.  He has three unpalatable choices: he can turn it in late (miss the
+schedule).  He can turn in a shorter paper that doesn't cover everything
+(reduce the features).  Or he can churn out gibberish (lower the quality).
+
+Similarly in a software project, one often has a choice between making the
+release date, or dropping features, or shipping everything on time and
+hoping that it works (it usually doesn't).
+
+The most important thing to realize about this decision is that it IS a
+decision.  One can't get out of it by hoping that some miracle will occur.
+If you don't react consciously, then external circumstances will drive the
+decision.
+
+Ok, so suppose you are faced with the trade-off and go for a schedule slip.
+Don't take a small slip ... take a big impressive slip.  If you say
+'I'll just fix this one problem and finish ASAP', then likely you will
+wish you had taken just a little more time later.  If you say 'I think I
+need another day, so I'll slip by a week', then it's much more likely
+that what you'll have at the end of the week will do the job.  It's better
+to slip a large block of time once then to slip day-by-day or hour-by-hour
+repeatedly.
+
+If you go for dropping features, again, carve off a big hunk.  Don't be
+timid and pretend that you're going to do that work 'if you just get a
+little spare time.'  That feature of your project is GONE, exploit the
+lessened requirements for all the savings you can!
+
+I can't offer much advise on how to reduce quality, because that's always
+my last choice for what to drop on a project.
+
+
+
+=== Sleeping
+
+Simple and obvious, but true ... engineering takes an alert mind.
+
+It's very easy, very seductive, to throw a lot of consecutive hours at a
+problem.  One can get into a 'flow' state where one's mind becomes filled
+with the problem, and the work just pours out, hour after hour.  Many
+writers report that they watch a story take place, and just transcribe
+what they see, pounding out page after page of text.  Many software
+engineers have experienced a similar feeling, where the code appears
+to arise spontaneously as they watch themselves type.
+
+I believe most real work gets done in this state.
+
+My experience, however, is that the 'flow' period can end subtly and
+gradually.  Without ever noticing a change, I notice that new work isn't
+flowing out of my hands anymore, that I'm spending lots of time fixing
+up mistakes I made just a few moments ago.  Instead of ideas flashing
+confidently through my mind, doubts and questions arise.
+
+At this point there is a temptation to throw some more hours at the problem.
+'I'm here, and I was getting a lot of work done, why don't I just stay all
+night until I figure this out?'  This is a trap!  Don't do it!
+
+Instead, I suggest: go home, eat, shower, sleep, put yourself back together
+again.  Resume the next day.  While you sleep, your mind will work on the
+problem anyways, and you'll probably wake up with new ideas.  You'll get
+more done between 10:00 am and 2:00 pm the next day, then if you stayed up
+between midnight and 10:00 am.
+
+There is a problem with this strategy: remotivating yourself in the morning.
+If the project is one of your choice, that's usually not a problem.  If it's
+something you have to do but don't enjoy, you have to balance the remotivation
+problem versus the very low productivity of working without sleep.
+
+
+
+=== Books for Serious Programmers
+
+Out of all the thousands of books out there, three stand out:
+
+Kernighan and Plaugher, _The Elements of Programming Style_.
+
+Kernighan and Ritchie, _The C Programming Language_.
+
+Brooks, _The Mythical Man Month_
+

@@ -1,0 +1,293 @@
+CHANGELOG.quickmud
+=============================================================================
+2004/09/21
+
+   ** The Star Wars Trilogy DVD Set was released today, so I decided to
+      celebrate with playing with this code a bit ;-) Nothing earth
+      shaking, but the now the code does compile cleanly again on my current
+      platform (Fedora Core 2 w/ gcc 3.3.3).
+
+   ** Changed all instances of 'logf' to 'log_f' in order to squash a
+      name collision with a gnu libc math function by the same name.
+
+   ** gcc 3.3.3 complained about 'CH' being redefined in act_wiz.c, so
+      I took out the offending line.
+
+=============================================================================
+2002/02/01
+
+   ** Added executable permission on area/startup script (oops). Thanks
+      to Khakarot for pointing this out.
+
+   ** Put doc/MPDocs/* files back where they belong. How they ended up
+      not being where they belong... well, just another mystery...
+
+   ** Removed area/tarxlist and cleaned up Makefile krap.
+
+   ** Introduced QMFIXES to Makefile. Defining this will get you around
+      the random() and urandom() errors in Cygwin.
+
+   ** Added bugfix suggested by Chris Litchfield of The Mage's Lair to
+      fix duplicating of affects on pets.
+
+   ** Updated doc/QuickMUD.txt to reflect some changes. Seems nobody reads
+      it anyway, as it contains the answers to 9 out of 10 of the "bug"
+	  related emails I receive ;-)
+
+=============================================================================
+2001/09/11
+
+   ** A moment of silence for those who died today, and a salute to the
+      heroes who showed so much courage in the face of the actions of such
+	  an abominable coward.
+
+==============================================================================
+2001/05/10
+
+   ** Fixed a bug in the MS-DOS code that caused nanny() to ignore the
+      global mud_ansiprompt variable. Basically, you got asked about
+      ansi color every time you connected, regardless of what you wanted
+      to happen. Thanks to PHyhan for pointing this out to me!
+
+   ** Several Spanish phrases left in OLC were pointed out to me by
+      Mongbat. There were also a few aesthetic changes made at his
+      suggestion. All string-related items not directly affecting the
+      code itself. Funny how you can miss these things ;) Thanks
+      Mongbat!!
+
+   ** The mud_* variables are now read from ../area/qmconfig.rc. These
+      values are mud_ansiprompt, mud_ansicolor, and mud_telnetga. I
+      think they are fairly self-explanatory. Putting them in the file
+      sets the default value at bootup. However, you can set the values
+      while the mud is running via the qmconfig command (no reboot
+      required).
+
+   ** You can now set an IP address for the mud in comm.c (grep for
+      mud_ipaddress). I did this because I wanted to have QuickMUD
+      running on my Linux box, but didn't want to leave an open port
+      for the world to see. Call me paranoid. The default value is
+      "0.0.0.0", so there's no change in performance unless you
+      change the address yourself.
+
+=============================================================================
+
+2001/01/25
+
+   ** Hmm, seemed to have lost a revision somewhere, as Mongbat pointed
+      out a bug in mp_code_trigger() that crashed the MUD when someone
+      was writing a note. This was back around the 01/14/01. Thanks
+      (again) Mongbat ;)
+
+   ** Whilst testing the fix on this crash bug, I noticed that the tells
+      weren't being added to a note writer's buffer while writing their
+      note. It's fixed now, but I plan to tinker with it a bit more when
+      I get more time...
+
+   ** Fixed a bug where the greeting was being colored. Oops. This was
+      just bad code on my part (as usual). I don't know if the patch
+      works for the MS-DOS/Mac part of the code, but I did it anyway.
+      Thanks to Thermolog for pointing this out.
+
+   ** While poking at the bug Thermolog brought to light, I realized
+      that a new player's ANSI status was being set to TRUE regardless
+      of the current settings made via 'qmconfig' command. Oops again.
+
+   ** Added 'archive' to Makefile. Run 'make archive' from the src/ dir
+      and a tar.gz file will be created in ../../QuickMUD, leaving out
+      stuff like player files and such. The list of files to ignore is
+      currently kept in area/tarxfiles. It's useful for me, so I left
+      it in there for your enjoyment.
+      
+=============================================================================
+
+2001/01/01
+
+   ** Fixed an error in the note expiration function. Thanks to Mike
+      Cosby for pointing this out!
+
+   ** Finally fixed the [note|board|nanny].o issues with the Makefiles.
+      In the past, I have only modified 'QuickMUD/src/Makefile', and
+      had overlooked these problems. Thanks to Chil for the kick in the
+      pants to get it done ;-)
+
+   ** Happy New Year/Decade/Century/Millenium/etc...
+
+=============================================================================
+
+2000/12/06
+
+   ** Fine tuned some stuff, mainly little things here and there.
+      Nothing really noteworthy aside from...
+
+   ** Fixed a bug with damage messages only showing "scratched". Thanks
+      to "Rait" for pointing this out to me. Oops ;-)
+
+=============================================================================
+
+2000/11/23
+
+   ** Started using CVS. We'll see how long this lasts ;-)
+
+   ** Deleted the 'toggleansi' command and introduced the 'qmconfig'
+      command. Try 'help qmconfig' for the few details.
+
+=============================================================================
+
+2000/10/15
+
+   ** Did some prettification basically. Cleaned up the headers and did
+      some formatting of merc.h and tables in const.c.
+
+   ** Added fixes  from Edwin's page (http://fataldimensions.nl.eu.org)
+      in update_char(), save_char_obj(), do_force(), act_new(),
+
+=============================================================================
+
+2000/10/01
+
+   ** Well,  I tracked down  the hedit_new bug finally. I didn't figure
+      out exactly what was wrong, just replaced  some of the hedit code
+      with stuff straight out of Kermit's original hedit_1.tgz snippet.
+      The  problem  was  the  arguments  for  hedit weren't checked for
+      "new",  just  checked  to  see if it  contained  an existing help
+      keyword.
+
+=============================================================================
+
+2000/09/26
+
+   ** After several requests,  I have made an  attempt to  get  Erwin's
+      noteboard system installed.  It seems to work, although I am only
+      testing it by  myself. I seem  to remember a crash bug with tells
+      and AFK and multiple players. We'll see what happens.
+
+=============================================================================
+
+2000/09/23
+
+   ** Changed the ANSI prompt scheme so that now it is toggled using the
+      "toggleansi" command. This will change shortly, probably to a
+      multi-argument command like "config" or something.
+
+=============================================================================
+
+2000/09/09
+
+    ** Changed things so initial ANSI prompt can be skipped. Grep merc.h
+       for SKIP_ANSI, set it to TRUE to skip the question and go straight
+       to the greeting, or FALSE to ask if the player wants ANSI enabled.
+
+    ** Added some kludge so act_new messages are capitalized. It accounts
+       for color codes (assumes { as escape character).
+
+=============================================================================
+
+2000/08/06
+
+    ** FINALLY fixed that horrible bug with the messages during combat.
+       Ugly boo-boos on my part (I think :).
+
+=============================================================================
+
+2000/06/06
+
+    ** Added logging of do_help requests that have no help entries. The
+       requested commands are appended to area/orphaned_helps.txt.
+
+    ** Translated more of the Spanish in the OLC code. Didn't realize
+       there was so much :-)
+
+=============================================================================
+
+2000/05/12
+
+    ** Added do_telnet_ga command to toggle telnet_ga bit. This is nifty
+       stuff. Don't know why it was removed to start with. Thanks to
+       Fraktyl and Dingo in #rom for enlightening me!
+
+    ** There was a bug introduced by the color login code. Fixed it at
+       colourconv(). Should be good to go now.
+
+    ** Removed limbo.are from src dir. Forgot to do it before.
+
+    ** Added 'nodocs' to Makefile. Will use it in the future ;)
+
+    ** Added 'dist' to Makefile. To make sure all trash is deleted before
+       making a release-worthy tarball (I always forget to rm the logs,
+       pfiles, etc).
+
+=============================================================================
+
+2000/05/08
+
+    ** Rolled string.c back to original (presumably buggy) version, as
+       I seem to have borked the fix. Will look at it later, but wanted
+       to get a working version uploaded.
+
+    ** Added an "autoall" command for turning all your autos on or off.
+       Usage: autoall on|off
+
+    ** Translated most of the Spanish in the OLC code. There's a couple
+       comments left to be done in string.c.
+
+=============================================================================
+
+2000/04/30
+
+    ** Changed name from "FastROM" to "QuickMUD". This was brought on
+       after Snafu Life's post to the ROM list brought to light that
+       the name "FastROM" is a violation of Russ Taylor's license.
+       Although I'm neither the originator of this modified ROM code,
+       nor the name "FastROM", I  would like to extend my apologies to
+       Russ Taylor for the oversight (ie, didn't ever bother to even
+       read the license). Thanks to Mr. Taylor for his good-natured
+       response to the situation :) Thanks to Hades_ for helping me
+       decide on the name (hope no other previous "QuickMUD"s pop up).
+
+    ** Fixed another color problem. This time it was room_exit. Where
+       are the bug reports? I know someone has to have noticed this :)
+
+=============================================================================
+
+2000/04/24
+
+    ** Fixed my room_title "fix". Color was bleeding all over the room
+       description. Doh!
+
+    ** Realized room_description color code wasn't being used. Poked it
+       in the appropriate spot. No bleeding colors this time ;)
+
+    ** Added color login code. Used 'collogin.txt' as a guideline, which
+       was written by Jaey of Crimson Souls MUD. Not real tough code,
+       but his snippet saved me some brain cycles :) Thanks Jaey!
+
+=============================================================================
+
+2000/04/02
+    
+    ** Added in string editor fix by Calath as posted to the ROM mailing
+       list.
+       
+=============================================================================
+
+2000/03/25
+    
+    ** Fixed all compile warnings when using newer version of gcc. This
+       compiles cleanly on my Debian GNU/Linux system using gcc-2.95.2.
+
+    ** Changed the Makefile so O_FILES are read through a patsubst
+       instead of having to explicitly add anything to the Makefile when
+       adding a new source file.
+
+    ** Added 'clean' option to Makefile.
+
+    ** Put in the color code so the room_title is colored when color is
+       enabled.
+
+    ** Ran GNU indent on several source files. May do this to all source
+       files, although I hesitate at trashing the format of the tables
+       in some of them. Will think about that a bit for now...
+
+    ** Changed permissions on save.c. Dunno why it was 444 to start
+       with?
+

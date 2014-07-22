@@ -1,0 +1,2311 @@
+#AREA
+pyramid.are~
+Pyramid~
+{ 5-50} Andersen The Great Pyramid~
+8700 8799
+
+#MOBILES
+#8700
+oldstyle asp snake~
+A horrible asp~
+A small, poisonous asp slithers over your feet.
+~
+The asp is a small, smooth-scaled snake the color of worn pottery.
+The poison bite of this snake has felled many a mighty pharoah.
+~
+human~
+AFG 0 0 0
+5 0 2d6+60 2d9+100 1d6+1 none
+5 5 5 9
+EFNU 0 0 0
+stand stand none 0
+0 0 medium 0
+#8701
+oldstyle cobra snake~
+A hooded cobra snake~
+A cobra snake rears up and opens its fearsome hood.
+~
+The cobra snake waves back and forth before you, its hood displaying brilliant
+colors designed to serve notice to its prey that it is about to strike.
+~
+human~
+AFG 0 0 0
+7 0 2d6+85 3d9+100 1d8+1 none
+4 4 4 9
+EFNU 0 0 0
+stand stand none 1
+0 0 medium 0
+#8702
+oldstyle mongoose~
+A wily little mongoose~
+A small mongoose slinks along the ground, hunting snakes.
+~
+The mongoose is a wily rodent, a quick hunter of nasty poisonous snakes.
+She sniffs you and appears to be looking for food in your hand.
+~
+human~
+AG J 10 0
+11 0 2d8+134 5d9+100 1d10+2 none
+1 1 1 8
+EFNU 0 0 0
+stand stand female 5
+0 0 medium 0
+#8703
+oldstyle pyramid watcher~
+A pyramid watcher~
+The pyramid watcher protects the tombs from intruders.
+~
+The pyramid watcher has made a pledge to destroy any would-be looters of
+the tombs of the pharoahs.  He is clad from head to foot in utilitarian
+sand-colored clothing.
+~
+human~
+AB 0 250 0
+8 0 2d7+96 4d9+100 1d7+2 none
+3 3 3 9
+EFNU 0 0 0
+stand stand male 10
+0 0 medium 0
+#8704
+oldstyle thief tomb~
+A tomb thief~
+A sneaky tomb thief moves about in search of treasure.
+~
+The thief brushes against you briefly, then slinks back into the shadows.
+~
+human~
+AGHS DFP -250 0
+10 0 2d6+110 5d9+100 1d8+2 none
+2 2 2 8
+BEFJNU 0 0 0
+stand stand male 25
+0 0 medium 0
+#8705
+oldstyle ali baba thief~
+Ali Baba~
+Ali Baba is here, hunting for the pharoah's tomb.
+~
+You see a tall, full-bearded man with a mischevious glint in his eye.  Ali Baba
+has made his life from stealing things from others, including many items stolen
+recently from under the nose of the hapless guardians of this pyramid.  Someday
+he might get caught, but not today...
+~
+human~
+ACGS DFP -300 0
+18 0 3d9+258 9d9+100 3d4+4 none
+-3 -3 -3 6
+BEFJNU 0 0 0
+stand stand male 50
+0 0 medium 0
+#8706
+oldstyle magic carpet~
+The magic carpet~
+A small woven carpet lies under your feet.
+~
+The carpet is simply beautiful, made from intricately woven silken material.  
+It seems to rise up at the touch of your feet.  Wait, it is rising, a few feet
+above the ground!  In fact, it seems to be ALIVE!
+~
+human~
+AB DJ 500 0
+9 0 2d6+110 4d9+100 1d8+2 none
+2 2 2 8
+EFNU 0 0 0
+stand stand none 12
+0 0 medium 0
+#8707
+oldstyle mummy corpse~
+A mummy~
+A mummy reaches for you, disturbed by your presence.
+~
+You only see the disfigured, rotting features of decaying human flesh,
+animated by the distempered spirit of a long-deceased person.
+~
+human~
+AG J -600 0
+12 0 2d10+150 6d9+100 1d10+3 none
+0 0 0 8
+EFNU 0 0 0
+stand stand none 37
+0 0 medium 0
+#8708
+oldstyle sand man sandman~
+A sandman~
+A sandman rises up from the desert floor.
+~
+The sandman is exactly that -- some sort of strange being formed from the sands
+of the desert floor.  It seems quite large and strong and at home in the heat
+and sandy winds.
+~
+human~
+AG J 0 0
+14 0 2d10+190 7d9+100 1d12+3 none
+-1 -1 -1 8
+EFNU 0 0 0
+stand stand male 75
+0 0 medium 0
+#8709
+oldstyle efreeti efreet~
+The efreeti~
+The efreeti stands here, sheathed in a column of fire.
+~
+The efreeti is a mighty being formed from living fire.  He gazes down at you 
+with disdain and scorn, arms folded across his mighty chest.
+~
+human~
+ABF DJ -600 0
+20 0 3d9+333 10d9+100 2d8+5 none
+-4 -4 -4 7
+EFNU 0 0 0
+stand stand male 550
+0 0 medium 0
+#8710
+oldstyle caryatid column~
+A caryatid~
+A sandstone column stands here, carved into a feminine figure.
+~
+The column has been carved into a set of four shapely women, each facing
+outward into the room.  The sandstone of the caryatid is smooth with age,
+but you can still make out a deadly stone sword in the hands of each figure.
+~
+human~
+AB J 0 0
+24 0 5d10+500 12d9+100 2d10+6 none
+-6 -6 -6 6
+EFNU 0 0 0
+stand stand female 1750
+0 0 medium 0
+#8711
+oldstyle djinn genie~
+The djinn~
+The djinn issues forth from the confines of a small lamp.
+~
+The djinn is a mighty being formed from the air itself and frequently
+imprisoned in a small lamp, used to do the bidding of those who find him.
+He smiles down at you congenially, arms folded across his blue-tinged 
+skin, and strokes his goatee.
+~
+human~
+ABR J 600 0
+28 0 5d10+650 28d9+100 2d10+7 none
+-8 -8 -8 1
+FU 0 0 0
+stand stand male 3000
+0 0 medium 0
+#8712
+oldstyle hieracosphinx sphinx~
+A hieracosphinx~
+A hieracosphinx looks at you cunningly.
+~
+The hieracosphinx are cunning, small, but nasty creatures, having the heads
+of birds, mighty wingspans, and a full set of four paws to rend their victims
+to pieces.  They tend to be quite jealous of the sharper wits of their older
+cousins.
+~
+human~
+AFG J -200 0
+15 0 3d9+208 7d9+100 2d6+3 none
+-2 -2 -2 7
+EFNU 0 0 0
+stand stand none 375
+0 0 medium 0
+#8713
+oldstyle gynosphinx sphinx~
+A gynosphinx~
+A gynosphinx sits here, befuddled by a riddle.
+~
+The gynosphinx is a crafty but gentle creature, having the body of a
+beautiful dark-skinned woman from the waist up, a feathery set of wings
+and the hind legs of a mighty cat.  Right now she is confused, having 
+just heard a puzzling riddle from a cousin criosphinx.
+~
+human~
+ABQ D 100 0
+19 0 3d9+308 19d9+100 3d4+5 none
+-4 -4 -4 6
+EIKU 0 0 0
+stand stand female 500
+0 0 medium 0
+#8714
+oldstyle criosphinx sphinx~
+A criosphinx~
+A criosphinx calmly watches you.
+~
+The criosphinx is a calm and friendly creature, having the head of a ram atop
+the body of a well-furred feline with eagle-like wings.  He delights in riddles,
+and in poking occasional fun at his easily confused lesser cousins.
+~
+human~
+ABQ D 300 0
+23 0 5d10+450 23d9+100 4d4+6 none
+-6 -6 -6 5
+EIKU 0 0 0
+stand stand male 1250
+0 0 medium 0
+#8715
+oldstyle androsphinx sphinx~
+An androsphinx~
+A mighty androsphinx tosses its lion-like mane.
+~
+The mighty androsphinx is a huge creature, with the body of a lion whose
+face  is quite man-like, perhaps even handsome, and a massive pair of feathered
+wings.  Tales are told of pharoahs that were rendered permanently deaf by the 
+mighty roar of this sphinx.
+~
+human~
+ABQ D 400 0
+27 0 5d10+650 27d9+100 2d10+7 none
+-8 -8 -8 4
+EIKU 0 0 0
+stand stand none 2500
+0 0 medium 0
+#8716
+oldstyle great sphinx~
+The great sphinx~
+A mighty sphinx rests here in the sand, dormant now for centuries.
+The great sphinx appears to be indestructible!
+~
+The great sphinx towers tens of feet above you, resting here in a state of 
+dormancy.  It has become almost indistinguishable from the sand that surrounds
+it, although you can still make out the features of the handsome face that once
+advised many rulers.
+~
+human~
+AB DEHN 500 0
+41 0 25d10+2000 20d9+100 4d8+14 none
+-14 -14 -14 4
+EFNU 0 0 0
+stand stand none 6250
+0 0 medium 0
+#8717
+oldstyle ramses mummy~
+Ramses the Damned~
+You have awakened the mighty servant to the pharoahs, Ramses.
+~
+As your light spills over his face and body, you can see his features begin
+to fill out, swell, and harden, until an apparently healthy man stands before
+you, clad only in the raiments he was left in when he last slept.  His hair is
+a soft black, his skin a deep chocolate, and his tall frame is totally still, 
+his chest not even moving to breathe.
+~
+human~
+ABQ DEHJN 150 0
+38 0 10d10+1600 38d9+100 3d10+12 none
+-13 -13 -13 3
+EIKU 0 0 0
+stand stand male 4400
+0 0 medium 0
+#0
+
+#OBJECTS
+#8700
+egyptian mace~
+an egyptian mace~
+A hierogylph-engraved mace has been left here.~
+oldstyle~
+weapon 0 AN
+mace 1 10 pound 0
+6 100 370 P
+E
+egyptian mace~
+The mace is formed from solid brass, and engraved in strange hieroglyphs.
+~
+#8701
+sand robes~
+sand-colored robes~
+Sand-colored robes lie here.~
+oldstyle~
+armor 0 AK
+4 4 4 0 0
+5 50 480 P
+E
+sand robes~
+The robes are colored a sandy off-white, and are in fact caked and covered
+with sand as well.  You don't seem to be able to remove all of the sand, no
+matter how much you try.
+~
+#8702
+obsidian dirk~
+an obsidian dirk~
+A flat dirk made of chipped obsidian lies here.~
+oldstyle~
+weapon G AN
+dagger 2 8 pierce 0
+15 10 910 P
+A
+18 1
+E
+obsidian dirk~
+The blade of the dirk is black, glassy obsidian, chipped razor sharp.
+~
+#8703
+cloth turban~
+a dirty cloth turban~
+A dirty cloth turban has been forgotten here.~
+oldstyle~
+armor G AE
+5 5 5 0 0
+13 100 1470 P
+A
+13 5
+A
+2 1
+E
+cloth turban~
+The turban used to be white cloth, now it is covered with oil and dirt from
+the head and hair of its previous owner, who must not have bathed much.
+~
+#8704
+cloth wrappings~
+some cloth wrappings~
+Long cloth wrappings lie on the ground in a pile.~
+oldstyle~
+armor 0 AD
+5 5 5 0 0
+10 150 1450 P
+E
+cloth wrappings~
+The cloth wrappings are old, wrinkled, and stink of embalming fluid.
+~
+#8705
+bottle fluid~
+a bottle of embalming fluid~
+A dusty bottle lies here on the ground.~
+oldstyle~
+potion 0 A
+5 'poison' '' '' ''
+3 50 270 P
+E
+bottle fluid~
+The bottle is dusty and the fluid has a strange sickly-sweet smell to it.
+~
+#8706
+jar formaldehyde~
+a jar of formaldehyde~
+A small jar lies here on the ground.~
+oldstyle~
+potion 0 A
+10 'cure light' '' '' ''
+0 60 200 P
+E
+jar formaldehyde~
+The jar is sticky and smells really bad.
+~
+#8707
+ball fire~
+a small hot ball of fire~
+A little ball of fire hovers in the air before your eyes.~
+oldstyle~
+light AG AO
+0 0 -1 0 0
+20 100 720 P
+A
+14 20
+A
+13 10
+E
+ball fire~
+The ball of fire is hot to the touch and very very bright.
+~
+#8708
+stone scimitar~
+a stone scimitar~
+A curved scimitar made of stone rests on the ground.~
+oldstyle~
+weapon BG AN
+axe 3 6 slash 0
+20 180 1820 P
+A
+19 2
+A
+18 1
+E
+stone scimitar~
+The scimitar is formed from solid stone, chipped and carved to perfection,
+with a sharp, cold blade that is marred only by a few nicks here and there.
+~
+#8709
+stone key~
+a stone key~
+A stone key has been dropped here.~
+oldstyle~
+key 0 A
+0 0 0 0 0
+0 150 0 P
+E
+stone key~
+The key is made from stone, but is otherwise unremarkable.
+~
+#8710
+stone sarcophagus~
+a mighty stone sarcophagus~
+A mighty stone sarcophagus lies in the center of the tomb.~
+oldstyle~
+container 0 0
+500 ABCD 8709 500 100
+0 0 0 P
+E
+stone sarcophagus~
+The sarcophagus is engraved on the sides with the images of pharoahs,
+great wars fought long ago, mighty pyramids being constructed...
+
+A raised image atop the sarcophagus is formed in the visage of one of
+the mighty pharoahs, painted in gold and studded with precious gems.
+
+You see a small keyhole in the side of the sarcophagus.
+~
+#8711
+dust~
+some ancient dust~
+A small pile of dust is being scattered by the breeze.~
+oldstyle~
+trash 0 A
+0 0 0 0 0
+0 10 0 P
+E
+dust~
+The dust is old.  As you sift it through your hands you find tiny chips
+of aged bone inside -- it must be the ancient remains of something.
+~
+#8712
+scarab~
+a small emerald scarab~
+A small emerald scarab lies here on the ground.~
+oldstyle~
+jewelry 0 A
+0 0 0 0 0
+0 50 3000 P
+E
+scarab~
+The scarab is intricately detailed, down to the tiny hairs on its
+insectile legs and the faceting of the emeralds in its eyes.
+~
+#8713
+lamp~
+the lamp~
+A small, tarnished, battered lamp has been dropped here.~
+oldstyle~
+staff ABGK AO
+25 5 5 'fly' 0
+20 100 4700 P
+A
+18 1
+A
+17 -5
+E
+lamp~
+The lamp is quite old and tarnished.  You rub at it to get some of the
+grime off, but it doesn't seem like anybody is home.
+~
+#8714
+ankh~
+an ankh~
+A small brass ankh has been left here.~
+oldstyle~
+jewelry IK AO
+0 0 0 0 0
+14 90 2100 P
+A
+4 1
+A
+3 1
+A
+17 -3
+E
+ankh~
+The ankh is a small brass symbol of an ancient religion.
+It glows with a soft bright light that is soothing to you.
+~
+#8715
+book riddles~
+a book of riddles~
+A medium-sized parchment book with well-worn pages lies here.~
+oldstyle~
+scroll 0 A
+21 'identify' 'know alignment' 'faerie fog' ''
+10 150 1540 P
+E
+book riddles~
+The book has well-worn pages, containing many befuddling riddles
+to surprise, confuse, and amuse you.  You find yourself bewildered
+by its contents and put it down to sort your head out.
+~
+#8716
+lion paw~
+a lion's paw~
+The mighty paw of a lion-like creature has been dropped here.~
+oldstyle~
+weapon G AN
+exotic 5 4 claw 0
+26 200 4400 P
+A
+19 2
+A
+18 2
+A
+5 1
+E
+lion paw~
+The massive paw has straps on it formed of bronze, so that it will
+fit snugly over your hand.  As you put it on, it melds with your hand,
+becoming an extension of your arm.
+~
+#8717
+answer~
+the answer~
+A small piece of parchment covered in hieroglyphics lies here.~
+oldstyle~
+key 0 AO
+0 0 0 0 0
+0 10 0 P
+E
+answer hieroglyphics~
+You cannot decipher the strange hieroglyphics that cover the
+sheet of parchment.
+~
+#8718
+treasure~
+the treasure of the sphinx~
+The massive treasure of the sphinx lies here in a big pile.~
+oldstyle~
+money 0 A
+1850 23 0 0 0
+0 200 0 P
+E
+treasure~
+The treasure is incredibly large, filled with gold coins and valuables, more 
+wealth than you could ever possibly imagine accumulated in one place.
+~
+#8719
+pile sand~
+a pile of sand~
+You see a small pile of sand.~
+oldstyle~
+money 0 A
+129 0 0 0 0
+0 10 0 P
+E
+pile sand~
+You think you see some coins and valuables glinting amongst the grains of sand.
+~
+#8720
+curse mummy~
+the curse of the mummy~
+Some fortunate soul has escaped the mummy's curse, for now.~
+oldstyle~
+trash EGHM AO
+0 0 0 0 0
+0 10 0 P
+A
+14 -100
+A
+13 -50
+A
+5 -3
+A
+2 -3
+A
+1 -3
+E
+curse mummy~
+Rumor has it that whomever disturbs the grave of the mummy shall be 
+cursed for all eternity, and that the descendents of that person shall
+likewise be cursed for ten generations to follow.
+~
+#8721
+small elixir~
+a small elixir~
+A small glass elixir lies under your feet.~
+oldstyle~
+potion G A
+30 'giant strength' 'stone skin' 'sanctuary' ''
+16 20 1820 P
+E
+small elixir~
+The elixir is deceptively small.  Something tells you that its
+contents are truly quite potent.  Perhaps too potent for ordinary
+mortals to attempt to consume.
+~
+#8722
+golden mask~
+a golden mask~
+A beautiful, intricately detailed mask has been forgotten here.~
+oldstyle~
+armor G AE
+8 8 8 3 0
+33 100 5500 P
+A
+20 -1
+A
+14 30
+A
+13 10
+A
+12 25
+E
+golden mask~
+This beautiful mask was shaped from solid gold and magically enchanted
+to perfectly fit the face of any who choose to wear it, its golden features
+and turquoise highlights even moving to match the expressions of the face
+of the wearer.
+~
+#8723
+diamond~
+the diamond~
+~
+oldstyle~
+trash 0 A
+0 0 0 0 0
+0 50 0 P
+E
+diamond~
+Aha!
+
+You see a multifaceted gemstone, which strangely reflects no
+light, making it very hard to see when it lies on the ground.
+~
+#8724
+sun wand~
+a blazing sun wand~
+A small length of brass shines here with its own light.~
+oldstyle~
+wand AG AO
+35 25 25 'harm' 0
+24 100 29800 P
+A
+20 -2
+E
+sun wand~
+This small brass shaft is a holy weapon used by the ancient people of 
+this land to defend against the deadliest of foes.  It shines with the 
+brilliant blazing light of the sun.
+~
+#8725
+sandy ring~
+a sandy-colored ring~
+A small sandy-colored ring has been carelessly dropped here.~
+oldstyle~
+jewelry BG AB
+0 0 0 0 0
+20 50 1300 P
+A
+12 20
+A
+3 1
+E
+sandy ring~
+The ring is small, smooth, sandy-colored and unremarkable, save that
+it gives off a continuous low humming noise that tickles your fingertips.
+~
+#8726
+golden sphinx~
+a small golden sphinx~
+A small golden sphinx glints in the light.~
+oldstyle~
+treasure G AO
+0 0 0 0 0
+5 50 550 P
+A
+4 1
+E
+golden sphinx~
+The golden sphinx is incredibly detailed and very small, fitting easily
+into the palm of your hand.  You can even make out the expression
+of wisdom and peace on its face.
+~
+#8727
+spinhxian leggings~
+a pair of sphinxian leggings~
+Massive leggings formed from the body of a sphinx stand here.~
+oldstyle~
+armor GK AF
+9 9 9 2 0
+32 200 7800 P
+A
+14 30
+A
+1 2
+E
+sphinxian leggings~
+These magically fashioned leggings impart the strength and stamina
+of the mightiest of the ancient sphinxes.  You feel ancient power 
+emanating from them; they seem to be almost alive.
+~
+#0
+
+#ROOMS
+#8700
+The Great Eastern Desert~
+A vast desert stretches for miles, the sands constantly shifting around you.
+Rising out of the sand to the east you see a mighty pyramid.
+~
+0 0 10
+D0
+Nothing but sand as far as the eye can see.
+~
+~
+0 -1 8700
+D1
+The sands of the desert continue onward towards the pyramid.
+~
+~
+0 -1 8701
+D2
+Nothing but sand as far as the eye can see.
+~
+~
+0 -1 8700
+D3
+Across the hot burning sands you see a small oasis and some tents.
+~
+~
+0 -1 5057
+E
+pyramid~
+The massive pyramid rises out of the sand, a monument to long-dead pharoahs.
+~
+S
+#8701
+At the Base of the Pyramid~
+The mighty pyramid towers above you out of the hot desert sands, made from
+huge blocks of stone that have been coated over with a rough sandy plaster-like
+substance.  The face of the pyramid is steep, but you think you might be able
+to climb it.
+~
+0 0 10
+D3
+To the east you see the hot sands of the Great Eastern Desert.
+~
+~
+0 -1 8700
+D4
+The steep slope of the pyramid rises up before you.
+~
+~
+0 -1 8702
+E
+pyramid~
+You wonder how anyone could have built such a massive thing out in this heat.
+~
+S
+#8702
+Climbing the Great Pyramid~
+Hot air rises off the sides of the pyramid, and the wind chokes you with a
+flurry of sand and dust.  So far you have made it halfway up the side.  The
+walls of the pyramid are quite steep.
+~
+0 0 10
+D0
+If you are daring you could try to skirt around to the northern side.
+~
+~
+0 -1 8703
+D2
+If you are daring you could try to skirt around to the southern side.
+~
+~
+0 -1 8704
+D4
+It looks too dangerous to try to climb any higher.
+~
+~
+0 -1 8707
+D5
+Far below you are the burning sands of the desert.
+~
+~
+0 -1 8701
+E
+pyramid~
+You wonder how anyone could have built such a massive thing out in this heat.
+~
+S
+#8703
+Climbing the Great Pyramid~
+Hot air rises off the sides of the pyramid, and the wind chokes you with a
+flurry of sand and dust.  The walls of the pyramid are quite steep, and you
+are having trouble keeping from sliding down into the sands below.
+~
+0 0 10
+D1
+If you are daring you could try to skirt around to the eastern side.
+~
+~
+0 -1 8705
+D3
+If you are daring you could try to skirt around to the western side.
+~
+~
+0 -1 8702
+D4
+It looks too dangerous to try to climb any higher.
+~
+~
+0 -1 8707
+D5
+This side of the pyramid has a dangerous drop before the sandy floor.
+~
+~
+0 -1 8707
+E
+pyramid~
+You wonder how anyone could have built such a massive thing out in this heat.
+~
+S
+#8704
+Climbing the Great Pyramid~
+Hot air rises off the sides of the pyramid, and the wind chokes you with a
+flurry of sand and dust.  The walls of the pyramid are quite steep, and you
+are having trouble keeping from sliding down into the sands below.
+~
+0 0 10
+D1
+If you are daring you could try to skirt around to the eastern side.
+~
+~
+0 -1 8705
+D3
+If you are daring you could try to skirt around to the western side.
+~
+~
+0 -1 8702
+D4
+It looks too dangerous to try to climb any higher.
+~
+~
+0 -1 8707
+D5
+This side of the pyramid has a dangerous drop before the sandy floor.
+~
+~
+0 -1 8707
+E
+pyramid~
+You wonder how anyone could have built such a massive thing out in this heat.
+~
+S
+#8705
+Climbing the Great Pyramid~
+Here on the eastern side of the pyramid there is a little more shelter
+from the heat and wind.  The stone side is not nearly so slippery smooth
+from the ravages of time, and you think you may be able to even reach the
+top from here.
+~
+0 0 10
+D0
+If you are daring you could try to skirt around to the northern side.
+~
+~
+0 -1 8703
+D2
+If you are daring you could try to skirt around to the southern side.
+~
+~
+0 -1 8704
+D4
+You see the apex of the pyramid many yards above you.
+~
+~
+0 -1 8706
+D5
+This side of the pyramid has a dangerous drop before the sandy floor.
+~
+~
+0 -1 8707
+E
+pyramid~
+You wonder how anyone could have built such a massive thing out in this heat.
+~
+S
+#8706
+The Apex of the Great Pyramid~
+Bathed in sweat, you have managed to reach the summit of the great pyramid.
+The four sides of the pyramid slope sharply down into the hot sands in all four
+cardinal directions.
+   A plaque has been set into the sandy stones beneath your feet.
+~
+0 0 10
+D0
+The north side of the pyramid slopes down into the sands.
+It looks really dangerous.  I wouldn't go that way.
+~
+~
+0 -1 8707
+D1
+The east side of the pyramid slopes down into the sands.
+~
+~
+0 -1 8705
+D2
+The south side of the pyramid slopes down into the sands.
+It looks really dangerous.  I wouldn't go that way.
+~
+~
+0 -1 8707
+D3
+The west side of the pyramid slopes down into the sands.
+It looks really dangerous.  I wouldn't go that way.
+~
+~
+0 -1 8707
+D5
+You see some sandy stones pressed closely together to form a hard surface.
+~
+stones~
+1 -1 8708
+E
+plaque~
+The plaque reads:
+This area (Great Pyramid) written by Andersen.
+~
+E
+stones~
+As you look closer you can make out a crack in the center of the stones
+beneath your feet.  With some effort you might be able to lift that 
+section up and get inside!
+~
+S
+#8707
+Climbing the Great Pyramid~
+Here the elements have carved away at the sides of the pyramid quite a 
+bit.  You aren't so sure of your footing anymore...
+
+Suddenly the wind picks up, and you lose your balance!
+You tumble down the side of the pyramid, and fall to your death!
+
+SPLAT.
+~
+0 C 10
+S
+#8708
+A Ladder~
+You are climbing an ancient ladder that leads down into the depths of
+the pyramid.  The air around is thick with layers of dust and a strange
+musty smell.  Above you you see tiny beams of light coming through the
+stones of the ceiling.
+~
+0 CD 0
+D4
+You see the sandy stones of the ceiling.
+~
+stones~
+1 -1 8706
+D5
+You see a small dusty chamber.
+~
+~
+0 -1 8709
+E
+stones~
+As you look closer you can make out a crack in the center of the stones
+above your head.  With some effort you might be able to lift that 
+section up and get outside!
+~
+S
+#8709
+A Musty Chamber~
+You are standing in a dank, musty chamber just inside the pyramid. 
+Footprints and other strange marks are set into the dusty floor here.
+It would seem that some of the tenants of this monument are still alive.
+   Exits lead in all directions.   The door to the west is covered with
+inscriptions.
+~
+0 D 0
+D0
+You see a tiny crawlway raised about three feet off the ground.
+~
+~
+0 -1 8712
+D1
+A dust-covered hallway leads off to the east.
+~
+~
+0 -1 8739
+D2
+You see a small crack in the wall through which you might be able to slide.
+~
+~
+0 -1 8724
+D3
+You see a large stone door, covered in sigils and hieroglyphs.
+~
+door stone~
+1 -1 8710
+D4
+A small rickety ladder leads up.
+~
+~
+0 -1 8708
+E
+sigils hieroglyphs inscriptions writing~
+You cannot understand the strange glyphs that cover the door, but most of
+them seem to depict scenes of fire and massive creatures of apparently
+tremendous strength.  You have a feeling that the glyphs are serving as a
+warning.
+~
+E
+door stone~
+The stone door is covered in strange inscriptions and hieroglyphs that warn
+you not to proceed any further.
+~
+S
+#8710
+The Fire Pool~
+This room is dominated by a massive raised pool that is filled with
+not water but flames of intense heat.  The multicoloured flames lick out
+at you, searching for things to burn.
+   The pool proceeds to the west into a small chamber.
+~
+0 CD 0
+D1
+You see a large stone door.
+~
+door stone~
+1 -1 8709
+D3
+You see a small chamber filled with fire.
+~
+~
+0 -1 8711
+S
+#8711
+The Chamber of the Efreet~
+You make your way across the fire pool, and into a small stone chamber.
+Here the flames are nearly as high as your head, singeing your face and 
+evaporating your sweat instantaneously.
+~
+0 D 7
+D1
+The pool of fire ends to the east.
+~
+~
+0 -1 8710
+S
+#8712
+A Tiny Crawlway~
+You have to go down onto your hands and knees to fit inside this tiny
+space.  The crawlway is thick with sand and dust, and markings of the
+passage of other creatures.
+~
+0 AD 0
+D0
+The crawlway continues to the north.
+~
+~
+0 -1 8713
+D2
+The crawlway ends to the south in a musty chamber.
+~
+~
+0 -1 8709
+D4
+A small hole above your head leads into a dank chamber.
+~
+~
+0 -1 8737
+S
+#8713
+A Tiny Crawlway~
+You are on your hands and knees, inside a small crawlway that winds
+through the inside of the pyramid.  The crawlway is thick with sand, dust, 
+and markings of the passage of other creatures.
+~
+0 AD 0
+D2
+The crawlway continues to the south.
+~
+~
+0 -1 8712
+D3
+The crawlway continues to the west.
+~
+~
+0 -1 8714
+S
+#8714
+A Tiny Crawlway~
+You are on your hands and knees, inside a small crawlway that winds
+through the inside of the pyramid.  The crawlway is thick with sand, dust, 
+and markings of the passage of other creatures.
+~
+0 AD 0
+D1
+The crawlway continues to the east.
+~
+~
+0 -1 8713
+D3
+The crawlway gets a little tighter to the west.
+~
+~
+0 -1 8715
+S
+#8715
+A Tightening in the Crawlway~
+Here you are forced to slide on your belly through a particularly tight
+section of the crawlway, as the stones of the pyramid close together
+about you.  Below you is a small, slippery-looking hole that plummets into
+blackness.
+~
+0 AD 0
+D1
+The crawlway gets a little larger to the east.
+~
+~
+0 -1 8714
+D2
+The crawlway continues to diminish in size to the south.
+~
+~
+0 -1 8716
+D5
+The hole looks very slippery and very dark.
+~
+~
+0 -1 8717
+S
+#8716
+The Crawlway's End~
+The crawlway shrinks away to nothing as the sandy stones of the pyramid
+close together into a space through which only a snake could fit.   There is
+barely enough space to turn around and make your way back through the tiny
+crawlway to the north.
+~
+0 AD 0
+D0
+The crawlway gets a little larger to the north.
+~
+~
+0 -1 8715
+S
+#8717
+A Slippery Hole~
+The sides of this hole are slippery-smooth.  You lower yourself in, and 
+proceed to move downward... when suddenly you lose your purchase!
+
+You fall for what seems like an eternity, and smash into the stones below...
+
+Under the Hole
+   You are in a small chamber underneath the slippery hole, far below
+the pyramid now.   The floor is strewn with bones.  To the south is a
+small rocky crevasse.
+~
+0 ACD 0
+D2
+You see a rocky crevasse that proceeds deep under the pyramid.
+~
+~
+0 -1 8719
+E
+bones~
+The bones have whitened and cracked in the dry air, apparently the remains 
+of adventurers, thieves, and creatures that did not survive the fall.
+~
+E
+u up~
+The hole looks far too slippery to climb back up.
+~
+S
+#8718
+Under the Hole~
+You are in a small chamber underneath the slippery hole, far below
+the pyramid now.   The floor is strewn with bones.  To the south is a
+small rocky crevasse.
+~
+0 AD 0
+D2
+You see a rocky crevasse that proceeds deep under the pyramid.
+~
+~
+0 -1 8719
+E
+bones~
+The bones have whitened and cracked in the dry air, apparently the remains 
+of adventurers, thieves, and creatures that did not survive the fall.
+~
+E
+u up~
+The hole looks far too slippery to climb back up.
+~
+S
+#8719
+A Rough Crevasse~
+You are now exploring deep within a strange rocky crevasse that plunges
+down into the rock on which the pyramid was constructed.  To the south you
+see the flickering light of a fire, and the crevasse proceeds downward.
+~
+0 D 0
+D0
+You see a small stone chamber littered with bones.
+~
+~
+0 -1 8718
+D2
+You see the flickering light of a small fire.
+~
+~
+0 -1 8720
+D5
+The crevasse continues downward into total darkness.
+~
+~
+0 -1 8721
+E
+rough~
+As you look through the rough terrain, your eyes catch a small glint of light!
+~
+S
+#8720
+A Small Fire~
+Here a small fire burns in a nook in the rocks, providing some warmth and
+comforting light in the cold, dark, dry air.
+
+Standing here is a strange-looking old man, who stares at you balefully.
+~
+0 D 0
+D0
+You see a massive crevasse that plunges into darkness.
+~
+~
+0 -1 8719
+E
+man old~
+The old man looks like he has been trapped down here far too long, and
+has begun to lose his mind.  He moves about slowly, cackling to himself.
+
+He turns to you and shouts, 'nope measse!  nope measse!', then turns 
+back and stares into the fire.
+
+'What a strange person,' you think to yourself.
+~
+S
+#8721
+Down the Crevasse~
+The crevasse proceeds downward into the dark depths of the earth.
+The air about you is now cold and quite dry, and your light source
+gutters in a cool breeze that wafts up from below.
+~
+0 AD 0
+D4
+It is too dark for you to see any further along the crevasse.
+~
+~
+0 -1 8719
+D5
+It is too dark for you to see any further along the crevasse.
+~
+~
+0 -1 8722
+S
+#8722
+At the Crevasse's End~
+Here the crevasse comes to an abrupt end.  A chilling wind howls
+at your face from a black shape to the south, but the light from your
+source is too dim to see exactly what it is.
+~
+0 AD 0
+D2
+You see a strange-looking black shape.
+~
+sesame~
+2 8723 8723
+D4
+It is too dark for you to see anything along the crevasse.
+~
+~
+0 -1 8721
+E
+tiger head animal sesame~
+You are now certain that the wind is the cold breath of some unearthly
+giant animal, whose voice rumbles lowly on the breeze, and whose
+massive jaws could easily swallow you whole.
+
+You move closer for a better look, when suddenly a pair of eyes flashes.
+A cold voice echoes: 'SEEK YE THE DIAMOND... IN THE ROUGH...'
+
+... Then all is silent.
+~
+E
+black shape~
+Wind howls about your ears like the roar of a tiger.  As your eyes
+adjust to the light the shape to the south almost seems to take the
+form of a massive animal head.
+~
+S
+#8723
+The Vault of the Lamp~
+The jaws of the massive stone tiger part wide to reveal a great vault.
+An arched ceiling lies far above your head... and all about you is a low
+guttural rumbling noise and a chill wind.
+
+Giant heaps of ancient treasure, gold coins, and valuables surround you
+on all sides.
+~
+0 AD 0
+D0
+Through the jaws of the tiger you see the blackness of the crevasse.
+~
+~
+2 8723 8722
+E
+treasure gold coins valuables~
+You reach for some of the tasty goodies, when you hear a loud rumbling
+sound and see a bright flash of light...
+
+Then the words: 'TAKE ONLY THE LAMP... TOUCH NOTHING ELSE.'
+
+... All is silent once again.
+~
+S
+#8724
+A Crack in the Wall~
+You exhale, and squeeze yourself into the narrow crack in the wall.
+Dust fills your eyes as you disturb it, and chunks of mortar and stone
+mixed with a touch of sand fall on you as you scrape your way through.
+~
+0 AD 0
+D0
+You see a musty chamber.
+~
+~
+0 -1 8709
+D2
+You see a tomb.
+~
+~
+0 -1 8725
+S
+#8725
+A Looted Tomb~
+The floor of this small tomb is littered with the lids of 
+smashed sarcophagi, bits of treasure dropped by thieves and
+looters, and corpses pulled from their resting places.
+~
+0 D 0
+D0
+You see a small crack in the wall through which you might be able to slide.
+~
+~
+0 -1 8724
+D1
+To the east is another tomb.
+~
+~
+0 -1 8733
+D3
+To the west is another tomb.
+~
+~
+0 -1 8726
+S
+#8726
+A Demolished Tomb~
+This tomb has been utterly destroyed by thieves and looters in search of
+the treasures of the pharoahs.  Nothing of interest remains in this room,
+except a large stone coffin that leans against the western wall.
+~
+0 D 0
+D1
+To the east is another tomb.
+~
+~
+0 -1 8725
+D3
+You see a large stone coffin.
+~
+coffin lid~
+2 8712 8727
+E
+man garments pharoah~
+As you look closer at the figure sculpted into the stone coffin you notice a
+small marking carved into its chest.  It looks like a scarab or small beetle
+would fit into the small space, if properly sized.
+
+Hmm.
+~
+E
+coffin lid~
+The coffin is sculpted into the form of a man, standing several heads above
+you, and clad in the garments of pharoahs.  It has apparently been untouched
+by the ravages of time and the activities of looters.  Several markings on the 
+side indicate spots where unsuccessful attempts were made to open the coffin.
+
+You can't see any way to open it.
+~
+S
+#8727
+A Stairway~
+You stand now at the head of a stairway that goes down into darkness.
+The steps and walls are smooth sandy stone, covered with a thick layer
+of dust.  Some inscriptions are carved into the wall here.
+~
+0 AD 0
+D1
+You see the backside of the coffin lid, featureless stone.
+~
+coffin lid~
+2 -1 8726
+D5
+It is too dark to see down the stairway.
+~
+~
+0 -1 8728
+E
+coffin lid~
+On this side the coffin lid is smooth featureless stone.
+~
+E
+inscriptions~
+You blow dust away from the inscriptions to read:
+'Beware the curse of the mummy.'
+~
+S
+#8728
+A Stairway~
+You are on a stairway that disappears into darkness in both directions.
+The smooth, uneven steps of the stairway have not been travelled in what
+appears to be centuries.
+~
+0 AD 0
+D4
+It is too dark to see up the stairway.
+~
+~
+0 -1 8727
+D5
+It is too dark to see down the stairway.
+~
+~
+0 -1 8729
+S
+#8729
+A Stairway~
+You stand now at the base of the uneven stairway.  The walls, floor,
+and ceiling of this small landing are covered with strange hieroglyphics.
+~
+0 AD 0
+D2
+You see a seam in the stone wall.
+~
+stone~
+1 -1 8730
+D4
+It is too dark to see up the stairway.
+~
+~
+0 -1 8728
+E
+walls floor ceiling hieroglyphics~
+The hieroglyphics are covered with a thick layer of dust.  You clear the
+dust away with your hand, and find that you cannot comprehend them.
+~
+S
+#8730
+The Ancient Hall~
+Here the air is deathly still, motes of dust thickly obscuring your
+vision.  Several stone statues line the walls of the hall, depicting the 
+gods of an ancient society.  Strange glyphs and sigils cover the walls, a 
+peculiar pictorial form of written language that you don't understand.
+   Some steps lead to a raised dais to the south.
+~
+0 AD 0
+D0
+You see a seam in the stone wall.
+~
+stone~
+1 -1 8729
+D2
+You see a small raised dais.
+~
+~
+0 -1 8731
+E
+writings glyphs sigils hieroglyphics symbols~
+You don't understand the meaning of these symbols.
+~
+S
+#8731
+A Raised Dais~
+You are at the southern end of the ancient hall, the dust and darkness
+absorbing your light so that you cannot see past the steps of the dais.
+A low pedestal rests here.  You see something written into the face of it.
+~
+0 AD 0
+D0
+You cannot see past the steps of the dais.
+~
+~
+0 -1 8730
+D5
+You see a seam in the stone floor.
+~
+tomb~
+1 -1 8732
+E
+pedestal writings~
+The writings are covered in sand and worn nearly away by the passage
+of time: 'I am Ramses the Damned, once counselor and aide to the mightiest
+of pharoahs and queens of this land.  Much time has passed since I last
+walked the earth.  Disturb my rest at your peril.'
+~
+S
+#8732
+The Tomb of Ramses~
+You stand in an empty tomb, a cubicle no more then ten feet to a side.
+~
+0 AD 0
+D4
+That leads back the way you came.
+~
+tomb~
+1 -1 8731
+S
+#8733
+A Ransacked Tomb~
+This tomb has been completely ransacked and destroyed by the actions
+of pyramid thieves and looters.  The floor is littered with junk.
+~
+0 D 0
+D1
+To the east is a low-ceilinged tunnel.
+~
+~
+0 -1 8734
+D3
+To the west is another tomb.
+~
+~
+0 -1 8725
+S
+#8734
+A Tunnel~
+The low-ceilinged tunnel runs east-west.
+~
+0 AD 0
+D1
+You cannot see into the darkness of the low tunnel.
+~
+~
+0 -1 8735
+D3
+You see a tomb.
+~
+~
+0 -1 8733
+S
+#8735
+A Fork in the Tunnel~
+Here the tunnel forks off through a gaping hole down in the
+southern wall, continuing onward to the east and west as well.
+~
+0 AD 0
+D1
+You cannot see into the darkness of the low tunnel.
+~
+~
+0 -1 8736
+D3
+You cannot see into the darkness of the low tunnel.
+~
+~
+0 -1 8734
+D5
+Through the hole you see rubble and sand.
+~
+~
+0 -1 8746
+E
+s south hole~
+The hole is low, at the floor of the southern wall.
+~
+S
+#8736
+A Tunnel~
+The low-ceilinged tunnel makes a turn to the west and ends
+to the north as it spills out into a dusty hallway.
+~
+0 AD 0
+D0
+The mouth of the tunnel is stone that has been torn away by looters.
+~
+~
+0 -1 8742
+D3
+You cannot see into the darkness of the low tunnel.
+~
+~
+0 -1 8735
+S
+#8737
+A Dank Chamber~
+This chamber has a dank, dusty, musty smell to it.  Small footprints
+in the dust betray the recent passage of some sort of creatures.  A hole 
+in the floor lies to the west and a stairway is to the east.
+~
+0 D 0
+D1
+You see a spiral stone stairway.
+~
+~
+0 -1 8738
+D3
+You see only blackness through the hole in the floor.
+~
+~
+0 -1 8712
+S
+#8738
+A Spiral Stairway~
+Some dusty, broken stone stairs here spiral slowly in a constricted
+space down towards a dusty hallway.
+~
+0 D 0
+D4
+The stairs spiral up into a dank chamber.
+~
+~
+0 -1 8737
+D5
+The stairs spiral down into a dusty hallway.
+~
+~
+0 -1 8741
+S
+#8739
+A Dust-Covered Hallway~
+This hallway is covered with dust that has accumulated over the
+centuries that the pyramid has stood.  Small markings and footprints
+in the dust betray the recent passage of others -- perhaps thieves?
+~
+0 D 0
+D1
+The hallway proceeds to the east towards a strange smell.
+~
+~
+0 -1 8740
+D3
+The hallway proceeds towards the west towards a musty smell.
+~
+~
+0 -1 8709
+S
+#8740
+A Smelly Chamber~
+This small chamber has a sickly putrescent smell to it, the
+smell of formaldehyde and other ointments used to preserve the
+corpses of those who died ages ago.
+~
+0 D 0
+D1
+You see a dusty hallway.
+~
+~
+0 -1 8741
+D3
+You a dusty hallway.
+~
+~
+0 -1 8739
+S
+#8741
+A Dust-Covered Hallway~
+This hallway is covered with a thick, choking dust that rises
+up to obscure your light source and sting your eyes.  Small marks
+and footprints in the dust betray the recent passage of others.
+~
+0 D 0
+D1
+The hallway turns to the north.
+~
+~
+0 -1 8742
+D3
+You smell something peculiar over there.
+~
+~
+0 -1 8740
+D4
+A tightly spiralling stone stairway leads up.
+~
+~
+0 -1 8738
+S
+#8742
+A Turn in the Hallway~
+You are standing in an elbow turn in a dust-covered stone hallway,
+that dead ends to the north and continues on to the west.  To the south
+the stones of the pyramid have been torn asunder by thieves, making
+a low-ceilinged tunnel.
+~
+0 D 0
+D0
+The hallway ends to the north.
+~
+~
+0 -1 8743
+D2
+The tunnel is dark.
+~
+~
+0 -1 8736
+D3
+The dust-covered hallway continues to the west.
+~
+~
+0 -1 8741
+S
+#8743
+A Dead End~
+The dust-covered hallway has come to an abrupt end at a stony,
+featureless wall.  Here and there are signs of the recent passage
+of others in the dust.
+~
+0 D 0
+D2
+The dusty hall continues to the south.
+~
+~
+0 -1 8742
+D5
+The floor is quite dusty, and made of stone.  You see some cracks.
+~
+floor~
+1 -1 8744
+E
+cracks~
+The cracks look like you might be able to pull away some pieces of
+the floor, perhaps even fit your body through the space you make.
+~
+S
+#8744
+The Tomb Entrance~
+You are in a small, dark chamber that has stood undisturbed for
+many years.  To the north stands a massive stone tomb, which is
+covered in hieroglyphics and gold-lined carvings that mark it as the
+final resting place of the mighty pharoahs of this land.
+~
+0 ACD 0
+D0
+You see the tomb of the pharoahs.
+~
+tomb~
+1 -1 8745
+D4
+The stone ceiling has some cracks in it, through which a dim light streams.
+~
+ceiling~
+1 -1 8743
+E
+hieroglyphics carvings~
+The markings indicate that this tomb is indeed the tomb of the greatest
+pharoahs of the ancient civilization that built this massive pyramid.
+~
+E
+tomb~
+The tomb looks like it has stood for many years, much like the pyramid
+which encloses it.  It is covered in small hieroglyphics.
+~
+S
+#8745
+The Tomb of the Pharoahs~
+Great golden sarcophogai line the walls of this massive tomb.  It has
+withstood the passage of time intact, untouched by the hands of thieves
+and looters.  The treasures taken by the pharoahs to their graves still
+lie before your feet.
+~
+0 AD 0
+D2
+That way leads back out of the tomb.
+~
+tomb~
+1 -1 8744
+E
+treasures~
+The treasures are dusty and fragile, but still seem quite valuable.
+You decide not to take them out of respect for the ancient dead.
+~
+S
+#8746
+A Rubble-Strewn Hallway~
+This hallway formerly had a beautiful arch to the ceiling, now
+collapsed under the weight of the slowly settling stones of the
+pyramid.  Now, a massive pile of rubble leads up into a hole high 
+in the northern portion of the hallway.  To the south, through the 
+rubble and fallen stones you see a sandstone crypt.
+~
+0 ACD 0
+D2
+You see a sandstone crypt.
+~
+~
+0 -1 8747
+D4
+>From here you see only darkness.
+~
+~
+0 -1 8735
+S
+#8747
+A Sandstone Crypt~
+This small crypt is lit by a hole in the wall to the south, through
+which sand pours from the desert outside.  A hot wind blows in from the
+desert, drying your skin instantly.  To the east and north the arched
+hallway continues.
+~
+0 D 0
+D0
+The arched hallway collapses into rubble shortly to the north.
+~
+~
+0 -1 8746
+D1
+You see a beautifully arched hallway.
+~
+~
+0 -1 8748
+D2
+You see a lot of sand.
+~
+~
+0 -1 8753
+S
+#8748
+An Arched Hall~
+This hallway has a beautiful arch to it, formed painstakingly and
+exquisitely out of the sandy stones of the pyramid.  The dust that
+covers most of the rest of the pyramid interior is not present here,
+scoured away by the blowing of the desert winds that howl about
+your ears.
+~
+0 D 0
+D1
+The arched hall proceeds to the east, making a sharp southward turn.
+~
+~
+0 -1 8749
+D3
+The arched hall proceeds into a sandstone crypt.
+~
+~
+0 -1 8747
+S
+#8749
+An Arched Hall~
+This hallway has a beautiful arch to it, formed painstakingly and
+exquisitely out of the sandy stones of the pyramid.  To the east is
+a small, golden-coloured crypt, and the hall proceeds to the south
+and north.
+~
+0 D 0
+D0
+The arched hall proceeds to the north, making a sharp westward turn.
+~
+~
+0 -1 8748
+D1
+A small golden crypt lies to the east.
+~
+~
+0 -1 8750
+D2
+The arched hall proceeds to the south.
+~
+~
+0 -1 8751
+S
+#8750
+A Golden Crypt~
+You stand inside a small crypt with walls and ceiling made of
+golden bricks that obscure the large sandy stones of the pyramid.
+Small rugs and tapestries are scattered about the floor here, and
+they appear to have been used recently.
+~
+0 D 0
+D3
+You see an arched hall.
+~
+~
+0 -1 8749
+E
+bricks~
+The small golden bricks are very smooth and also quite soft.
+~
+E
+rug rugs tapestry tapestries~
+The rugs and tapestries are very fine and worn with age, their colors
+now faded.  They depict scenes of life in an ancient desert city.
+~
+S
+#8751
+An Arched Hall~
+This hallway has a beautiful arch to it, formed painstakingly and
+exquisitely out of the sandy stones of the pyramid.  The arched
+hall proceeds to the north and ends to the south in a small vault.
+~
+0 D 0
+D0
+The arched hall continues to the north.
+~
+~
+0 -1 8749
+D2
+You see a small vault from which a shining light issues.
+~
+~
+0 -1 8752
+S
+#8752
+A Shining Vault~
+The stones of the pyramid here take on a strange, twinkling quality,
+almost seeming to shine with an internal light.  As you look closer you
+see tiny glass-like glittery particles within the stones, that reflect
+the light from your light source so perfectly that they seem to shine.
+~
+0 D 0
+D0
+You see a hall with a beautifully arched ceiling.
+~
+~
+0 -1 8751
+E
+particles glass~
+The glassy particles reflect and refract your light source in a myriad
+of dazzling colours that dance across your eyes and make you giggle.
+~
+S
+#8753
+A Massive Sand Dune~
+You stand now on a massive sand dune on the southern side of
+the pyramid.  At the foot of the sand dune to the north you see a
+small hole where the stones of the pyramid have collapsed.  Not
+far to the south is a massive roiling sandstorm; the wind from the
+storm howls and bites at your face even here.
+~
+0 C 10
+D0
+You see a small hole leading back into the pyramid.
+~
+~
+0 -1 8747
+D2
+You see only a wall of whirling, blowing, dry sand.
+~
+~
+0 -1 8754
+E
+sand dune sandstorm~
+The sand is very white, and very sandy.  There sure is a lot of it.
+~
+S
+#8754
+A Swirling Sandstorm~
+You are caught in the midst of a massive sandstorm.  Howling winds
+buffet you from all sides, and the sand tears at your skin, blinding
+you and choking you.  You have lost all sense of direction.
+~
+0 0 10
+D0
+You see only a wall of whirling, blowing, dry sand.
+~
+~
+0 -1 8753
+D1
+You see only a wall of whirling, blowing, dry sand.
+~
+~
+0 -1 8754
+D2
+You see only a wall of whirling, blowing, dry sand.
+~
+~
+0 -1 8755
+D3
+You see only a wall of whirling, blowing, dry sand.
+~
+~
+0 -1 8754
+E
+sand~
+Sand is about all you CAN see right now.  Unfortunately, it isn't very
+interesting sand, only white, dry, and blowing all over the place.
+~
+S
+#8755
+A Swirling Sandstorm~
+You are caught in the midst of a massive sandstorm.  Howling winds
+buffet you from all sides, and the sand tears at your skin, blinding
+you and choking you.  You have lost all sense of direction.
+~
+0 0 10
+D0
+You see only a wall of whirling, blowing, dry sand.
+~
+~
+0 -1 8754
+D1
+You see only a wall of whirling, blowing, dry sand.
+~
+~
+0 -1 8755
+D2
+You see only a wall of whirling, blowing, dry sand.
+~
+~
+0 -1 8756
+D3
+You see only a wall of whirling, blowing, dry sand.
+~
+~
+0 -1 8755
+E
+sand~
+Sand is about all you CAN see right now.  Unfortunately, it isn't very
+interesting sand, only white, dry, and blowing all over the place.
+~
+S
+#8756
+A Swirling Sandstorm~
+You are caught in the midst of a massive sandstorm.  Howling winds
+buffet you from all sides, and the sand tears at your skin, blinding
+you and choking you.  You have lost all sense of direction.
+~
+0 0 10
+D0
+You see only a wall of whirling, blowing, dry sand.
+~
+~
+0 -1 8755
+D1
+You see only a wall of whirling, blowing, dry sand.
+~
+~
+0 -1 8756
+D2
+You see only a wall of whirling, blowing, dry sand.
+~
+~
+0 -1 8757
+D3
+You see only a wall of whirling, blowing, dry sand.
+~
+~
+0 -1 8756
+E
+sand~
+Sand is about all you CAN see right now.  Unfortunately, it isn't very
+interesting sand, only white, dry, and blowing all over the place.
+~
+S
+#8757
+A Swirling Sandstorm~
+You are caught in the midst of a massive sandstorm.  Howling winds
+buffet you from all sides, and the sand tears at your skin, blinding
+you and choking you.  You have lost all sense of direction.
+~
+0 0 10
+D0
+You see only a wall of whirling, blowing, dry sand.
+~
+~
+0 -1 8756
+D1
+You see only a wall of whirling, blowing, dry sand.
+~
+~
+0 -1 8757
+D2
+You see only a wall of whirling, blowing, dry sand.
+~
+~
+0 -1 8758
+D3
+You see only a wall of whirling, blowing, dry sand.
+~
+~
+0 -1 8757
+E
+sand~
+Sand is about all you CAN see right now.  Unfortunately, it isn't very
+interesting sand, only white, dry, and blowing all over the place.
+~
+S
+#8758
+A Massive Sand Dune~
+Somehow you managed to make your way through the howling winds
+of the sandstorm, and clamber up on this sand dune.  You can see the
+storm to the north of you, and presumably the pyramid is somewhere
+beyond it.  Nothing but flat, featureless, open dunes of sand lie in
+every other direction.
+~
+0 0 10
+D0
+You see only a wall of whirling, blowing, dry sand.
+~
+~
+0 -1 8757
+D2
+On the southern side of the sand dune is a small hole in the sand.
+For some reason you seem unable to get to it.
+~
+riddle~
+2 8717 8759
+E
+hieroglyphics symbols~
+Like most of the ancient hieroglyphics of this land, the symbols are
+totally incomprehensible to you.  Perhaps the Sphinx has the answer
+to this ancient riddle.
+~
+E
+riddle~
+A vision forms before your eyes, in glowing hieroglyphic symbols.
+~
+E
+sand dune~
+The sand is very white, and very sandy.  There sure is a lot of it.
+~
+S
+#8759
+Through the Hole in the Sand~
+You squeeze through the small hole in the sand and land in a small
+white chamber.  Above you is a small hole, reachable by climbing up
+the small sandy slope down which you slid.
+~
+0 ACD 0
+D4
+You see a sand dune.
+~
+~
+0 -1 8753
+S
+#0
+
+#RESETS
+R 0 8754   4     	* A Swirling Sandstorm
+R 0 8755   4     	* A Swirling Sandstorm
+R 0 8756   4     	* A Swirling Sandstorm
+R 0 8757   4     	* A Swirling Sandstorm
+D 0 8706   5    1	* The Apex of the Great Pyramid down
+D 0 8708   4    1	* A Ladder up
+D 0 8709   3    1	* A Musty Chamber west
+D 0 8710   1    1	* The Fire Pool east
+D 0 8722   2    2	* At the Crevasse's End south
+D 0 8723   0    2	* The Vault of the Lamp north
+D 0 8726   3    2	* A Demolished Tomb west
+D 0 8727   1    2	* A Stairway east
+D 0 8729   2    1	* A Stairway south
+D 0 8730   0    1	* The Ancient Hall north
+D 0 8731   5    1	* A Raised Dais down
+D 0 8732   4    1	* The Tomb of Ramses up
+D 0 8743   5    1	* A Dead End down
+D 0 8744   4    1	* The Tomb Entrance up
+D 0 8744   0    1	* The Tomb Entrance north
+D 0 8745   2    1	* The Tomb of the Pharoahs south
+D 0 8758   2    2	* A Massive Sand Dune south
+M 0 8700   6 8702  2	* A horrible asp
+M 0 8700   6 8705  1	* A horrible asp
+M 0 8700   6 8713  2	* A horrible asp
+M 0 8700   6 8740  1	* A horrible asp
+M 0 8701   4 8703  2	* A hooded cobra snake
+M 0 8701   4 8741  2	* A hooded cobra snake
+M 0 8702   3 8706  1	* A wily little mongoose
+M 0 8702   3 8716  1	* A wily little mongoose
+M 0 8702   3 8726  1	* A wily little mongoose
+M 0 8703   6 8709  2	* A pyramid watcher
+E 1 8700  -1   16	*   an egyptian mace
+M 0 8703   6 8709  2	* A pyramid watcher
+E 1 8701  -1   12	*   sand-colored robes
+M 0 8703   6 8737  2	* A pyramid watcher
+E 1 8700  -1   16	*   an egyptian mace
+M 0 8703   6 8737  2	* A pyramid watcher
+E 1 8701  -1   12	*   sand-colored robes
+M 0 8703   6 8740  2	* A pyramid watcher
+E 1 8700  -1   16	*   an egyptian mace
+M 0 8703   6 8740  2	* A pyramid watcher
+E 1 8701  -1   12	*   sand-colored robes
+M 0 8704   6 8725  1	* A tomb thief
+E 1 3351  -1   16	*   a standard issue dagger
+M 0 8704   6 8726  1	* A tomb thief
+E 1 3351  -1   16	*   a standard issue dagger
+M 0 8704   6 8733  1	* A tomb thief
+E 1 3351  -1   16	*   a standard issue dagger
+M 0 8704   6 8734  1	* A tomb thief
+E 1 3351  -1   16	*   a standard issue dagger
+M 0 8704   6 8735  1	* A tomb thief
+E 1 3351  -1   16	*   a standard issue dagger
+M 0 8704   6 8742  1	* A tomb thief
+E 1 3351  -1   16	*   a standard issue dagger
+M 0 8705   1 8743  1	* Ali Baba
+E 1 8703  -1    6	*   a dirty cloth turban
+E 1 8702  -1   16	*   an obsidian dirk
+M 0 8706   1 8723  1	* The magic carpet
+M 0 8707   4 8725  2	* A mummy
+E 1 8704  -1    5	*   some cloth wrappings
+G 1 8706  -1     	*   a jar of formaldehyde
+M 0 8707   4 8725  2	* A mummy
+E 1 8704  -1    5	*   some cloth wrappings
+G 1 8705  -1     	*   a bottle of embalming fluid
+M 0 8707   4 8737  1	* A mummy
+E 1 8704  -1    5	*   some cloth wrappings
+M 0 8707   4 8741  1	* A mummy
+E 1 8704  -1    5	*   some cloth wrappings
+M 0 8708   4 8754  1	* A sandman
+M 0 8708   4 8755  1	* A sandman
+M 0 8708   4 8756  1	* A sandman
+M 0 8708   4 8757  1	* A sandman
+M 0 8709   1 8711  1	* The efreeti
+E 1 8707  -1    0	*   a small hot ball of fire
+M 0 8710   2 8745  1	* A caryatid
+E 1 8708  -1   16	*   a stone scimitar
+M 0 8710   2 8745  1	* A caryatid
+E 1 8708  -1   16	*   a stone scimitar
+G 1 8709  -1     	*   a stone key
+O 0 8710   1 8745	* a mighty stone sarcophagus
+P 1 8711   1 8710  1	*   some ancient dust
+P 1 8712   1 8710  1	*   a small emerald scarab
+M 0 8711   1 8723  1	* The djinn
+E 1 8713  -1   17	*   the lamp
+M 0 8712   3 8748  1	* A hieracosphinx
+M 0 8712   3 8749  1	* A hieracosphinx
+M 0 8712   3 8751  1	* A hieracosphinx
+M 0 8713   2 8750  2	* A gynosphinx
+M 0 8713   2 8750  2	* A gynosphinx
+G 1 8714  -1     	*   an ankh
+M 0 8714   2 8752  2	* A criosphinx
+M 0 8714   2 8752  2	* A criosphinx
+G 1 8715  -1     	*   a book of riddles
+M 0 8715   1 8747  1	* An androsphinx
+G 1 8716  -1     	*   a lion's paw
+M 0 8716   1 8758  1	* The great sphinx
+E 1 8717  -1   17	*   the answer
+O 0 8718  -1 8759	* the treasure of the sphinx
+O 0 8724  -1 8759	* a blazing sun wand
+O 0 8725  -1 8759	* a sandy-colored ring
+O 0 8726  -1 8759	* a small golden sphinx
+O 0 8727  -1 8759	* a pair of sphinxian leggings
+M 0 8717   1 8732  1	* Ramses the Damned
+G 1 8719  -1     	*   a pile of sand
+G 1 8720  -1     	*   the curse of the mummy
+G 1 8721  -1     	*   a small elixir
+G 1 8721  -1     	*   a small elixir
+E 1 8722  -1    6	*   a golden mask
+O 0 8723   0 8719	* the diamond
+S
+
+#SHOPS
+0
+
+#SPECIALS
+M 8700 spec_poison         	* A horrible asp
+M 8701 spec_poison         	* A hooded cobra snake
+M 8704 spec_thief          	* A tomb thief
+M 8705 spec_thief          	* Ali Baba
+M 8709 spec_breath_fire    	* The efreeti
+M 8711 spec_cast_mage      	* The djinn
+M 8713 spec_cast_cleric    	* A gynosphinx
+M 8714 spec_cast_cleric    	* A criosphinx
+M 8715 spec_cast_cleric    	* An androsphinx
+M 8716 spec_breath_any     	* The great sphinx
+M 8717 spec_cast_cleric    	* Ramses the Damned
+S
+
+#$

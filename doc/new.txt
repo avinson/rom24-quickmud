@@ -1,0 +1,260 @@
+Merc Release 2.1
+Sunday 01 August 1993
+
+Furey	mec@shell.portal.com
+Hatchet	hatchet@uclink.berkeley.edu
+Kahn	michael@uclink.berkeley.edu
+
+
+
+=== What's new in 2.1
+
+2.1 is a maintenance release, and contains mainly bug fixes and
+contributions after 2.0.
+
+Affects in player files are stored with skill/spell names now, rather
+than sn's.  Old 2.0 player files with numbers are accepted and work
+fine as long as 'skill_table' in const.c doesn't change.
+
+The 'list' command takes an optional argument.
+
+Several small problems, and one memory corruption, related to voided
+characters have been fixed.
+
+'Check_parry' and 'check_dodge' now use the victim's level
+rather than attacker's level for base percentage.  (Oops!)
+
+The 'oload' command takes an optional level number.
+
+Container object numbers work now.
+
+Saving while fighting now works properly.
+
+Pets and charmed creatures no longer scavenge.
+
+Immortals have no carry limit or weight limit.
+
+The 'compare' command has a one-argument form now.
+
+The channel code is modular now, but not table-driven yet.  Some of the
+channel flags have changed, so players will need to reconfigure their
+channels.  Channels no longer pass user input as format strings to 'act'.
+
+The mysterious port-binding bug is fixed.
+
+Merc no longer uses the host system random generator, using its own instead
+(the Mitchell-Moore algorithm from Knuth Volume 2).
+
+NPC's no longer steal from immortals.
+
+The anti-corpse-looting code now simply prohibits looting corpses of people in
+your group, rather than giving a flag.  Similarly, killing charmed creatures is
+simply prohibited rather than flagged (although murdering them is allowed).
+Players were getting flagged too easily by accident.
+
+The telnet GA option is now configurable, and the default is off.
+
+There is a donation pit at the altar.
+
+No-exit rooms are automatically given the no-mob attribute.
+
+Eq level randomization is a little more random.
+
+There is a new 'socials' command, analogous to 'commands' and 'wizhelp'.
+
+Corpse sacrificing no longer gives experience points, not even 1.
+
+Non-prime attributes may raise as high as 20 with magical aid.  The 18
+training limit is still in effect.
+
+Fleeing and recalling don't cost as many xp.
+
+
+
+=== What was new in 2.0
+
+Many of the changes from 2.0 Beta to 2.0 were contributed by our beta testers.
+See 'contrib.txt' for acknowledgements.
+
+Several new platforms are supported.
+
+The 'startup' script now works on many more Unix systems.
+
+Containers are back.
+
+Memory management has been redone (again).  Almost all of the static limits
+from 1.0 and 2.0 Beta are gone, with neglible performance loss; memory use is
+slightly less than 2.0 Beta.
+
+New and improved mortal commands: 'commands' to list all commands; 'configure'
+to configure 'brief', 'compact', the 'auto' stuff, et cetera; a new 'who'
+command with lots of options.
+
+New and improved immortal commands: 'slookup' to find sn's and slot numbers;
+'trust' to give the effect of advancement without changing level;
+'transfer' now takes a destination room; 'ban' now matches sites by suffix
+(so you can 'ban foo.edu'); 'log all' has been added; 'snoop' now prevents
+snoop-looping; 'oset' can set extended descriptions; 'mset' can set a mobile's
+spec_fun.
+
+Bug fixes: auto-dropping aligned items had a nasty linked-list bug; 'pose'
+was fixed; 'force all' was rewritten.
+
+Several new areas have been added.
+
+Ascii save files are in effect.  Equipment and container contents are saved in
+the right place.  Objects which have been oset will keep their new values.
+This includes description strings and extra descriptions, so you can look cool
+in your Ray-Ban's without restringing them every time you log in.
+
+Object lists are (optionally) displayed with item counts now.
+
+Players may loot only their own corpses or their own groups' corpses.  Other
+corpse looting is punished with a PLR_THIEF flag.
+
+
+
+=== What was new in 2.0 Beta
+
+The 'lib' directory is gone.  Most of the *.txt files have been moved into
+'help.are' as 'help' entries.
+
+The 'doc' directory is much larger.  All the files have been rewritten (with
+the exception of 'license.doc').
+
+The help file 'help.are' has been rewritten.  It is now complete and correct.
+
+Merc now uses a different area file system: one area, one file.  Each area is
+stored in a separate file.  The list of areas to read on bootup is stored in
+the file 'area.lst' in the directory where the server boots.  The server reads
+in all area files once on bootup and never touches them again.
+
+The server now generates mobile and object statistics on its own, ignoring the
+values in the files.  Statistics are subject to random variation.
+
+We have a dozen new areas.
+
+The server has very good error checking on areas.  Most diagnostics are
+accompanied by area file name and line number.  The server does exit after
+finding just one error, but Merc loads areas so fast (4 seconds on a Sun-4)
+that you can easily use the whole server as a syntax checker.
+
+All code has been re-written.  The entire code base is about 6000 lines smaller
+than the 1.0 release, and runs in about half the memory as 1.0.
+
+The external declarations have been re-organized to improve portability.  The
+files merc.h and comm.c have OS-specific declaration sections for suitable
+external declarations, and comm.c has several OS-dependent sections.  Outside
+of these files all of the code is machine-independent.
+
+Many new Unix-based operating systems are supported, and a single-user MS-DOS
+version is supported as well.
+
+The code for classes has been consolidated into tables in const.c, making it
+much easier to add new classes.  See 'class.txt'.
+
+The skill / spell code has been rewritten.  The entire cast_* layer has been
+removed.  The miserable SPELLO declarations have been replaced by more
+extensive declarations of skills and spells in 'const.c'.  In particular, the
+slot number in #OBJECT area is no longer equal to the internal index number of
+a skill or spell, so adding new skills and spells is an order of magnitude
+easier.  See 'skill.txt'.
+
+The horrible 'board.c' code has been sent to /dev/null.  In its place we have a
+new 'notes' facility.
+
+Player files are now in Ascii form.  You can read them, grep them, edit them,
+move them to other machines, do whatever you want with them.  Some fields (in
+particular, class, skill, and spell names) have been separated further from
+internal constants, making it easier to add new classes, skills, and spells
+without upsetting existing player files.
+
+Auto-save is implemented.  One player is saved each tick (whomever has the
+most time since previously saving).  Thus with 20 players online, each player
+will be saved once every ten minutes.
+
+Many immortal commands are now logged automatically.
+
+All unimplemented spells have been removed.  In particular, several of the
+partially implemented 1.0 spells were taken from an undocumented 'magic.c' we
+found on ucbvax.berkeley.edu.  These spells were originally written by Dan
+Brumleve and we apologize to him for the past infringement.  All of this code
+is gone from Merc now.
+
+The main menu ('press 1 to enter the game') has been removed.  There are two
+new game commands, 'password' and 'description', to accomplish the same effect.
+The 'password' command is protected against logging and snooping.
+
+Tick times and area update times are now random (with an average time set
+by PULSE_TICK and PULSE_AREA respectively).
+
+Players no longer gain experience from pkilling.
+
+Players may no longer log in with the same name as mobiles in the game.
+
+The new 'areas' command lists all areas available.  The 'memory' immortal
+command shows memory usage.  There are many new and upgraded immortal commands,
+and all of them have on-line help now.
+
+The new 'respond' command allows players to hold up their end of the
+conversation with invisible or switched immortals.
+
+The 'tell' command may no longer be used to talk to mobiles outside of the
+room.
+
+The 'pick' command is now limited.  Mobs will guard a lock against picking by
+low level thieves.
+
+The 'steal' command is now limited.  One may not steal from a PC nor from a mob
+more than 5 levels above one's level.
+
+Several commands have been removed, including 'ask', 'info', 'pour', 'whisper',
+and 'tick'.
+
+The group code has been redesigned, eliminating several bugs in the process.
+
+Mobiles now will join in fights, especially when other mobiles of the same
+type are fighting.  Players also automatically auto-assist other players in
+their group.
+
+There is a pet shop.  Many bugs related to 'charm' have been fixed.
+
+Several nasty memory allocation bugs were fixed.  These didn't show up on SunOS
+or Ultrix, but crashed Linux, NextOS, and many other OS's.  Thanks to Vic for
+debugging help.
+
+The bug where getting killed with an 'armor' spell on left one's AC at 120 
+(instead of 100) has been fixed.
+
+The server emits a telnet GA sequence at the end of the prompt.
+
+The 'prompt' command disables or enables the prompt.  Handy for immortals who
+don't need the prompt, but it's primarily there to reduce output for blind
+mudders using speech synthesizers to read their output.  Thanks to
+davros@ccwf.cc.utexas.edu for suggesting this feature.
+
+The 'time' command now reports system time, so players in any time zone can
+know when your morning shutdown occurs.  It also reports bootup time, so you
+can see how reliable your Merc is.
+
+There are no more bags.  Item carrying limits are in effect.
+
+The recall command has been tweaked.  It works perfectly outside of combat.  In
+combat, it has a less-than-perfect chance of working, and it costs xp to try it
+(more than for flee).  The spell 'word of recall' now just calls the recall
+command.
+
+The 'flee' command now reports xp lost.  When a character flees, all characters
+fighting it will stop fighting, not just one.  This also fixes the mysterious
+'Extract_char: NULL' bugs.
+
+Link dead characters in combat are dealt with more harshly, to discourage
+intentional link killing as a way out of combat.
+
+The 'harm' spell is limited to 100 points of damage.
+
+The 'summon' spell is now limited.  One may not summon a person out of combat,
+and one may not summon a mob to a different zone.
+
+Characters may not practice until level 3.  They are encouraged to train
+instead.

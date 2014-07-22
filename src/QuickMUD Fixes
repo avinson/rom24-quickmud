@@ -1,0 +1,129 @@
+The following modifications were made to remove all warning messages
+Original Source: QuickMUD 2007
+Compiler: gcc version 4.4.3 (Ubuntu 4.4.3-4ubuntu5) (ubuntu10.04-64bit)
+Modifications done by: Nick Di Mario (Trom Lios)
+Date: March 12, 2012
+
+
+Fix 0 [MAKEFILE]
+
+Modified compiler to place 'rom' binary into 'area' folder directly.
+By default, the 'rom' binary can only work only in the 'area' directory, but was generated inside the 'src' directory.
+
+
+Fix 1 [COMM.C]
+
+Error Message: 
+(didn't copy) Problem involved incorrect variable type
+
+Solution: Used proper return type socklen_t for size variable
+
+
+Fix 2 [ACT_WIZ.C]
+
+Error Message: 
+act_wiz.c:4616: warning: ignoring return value of ‘fscanf’, declared with attribute warn_unused_result
+
+Solution: made use of fscanf return value
+
+
+Fix 3 [DB.C]
+
+Error Messages:
+db.c:3340: warning: format ‘%8d’ expects type ‘int’, but argument 4 has type ‘long unsigned int’
+db.c:3358: warning: format ‘%8d’ expects type ‘int’, but argument 4 has type ‘long unsigned int’
+db.c:3358: warning: format ‘%d’ expects type ‘int’, but argument 6 has type ‘long unsigned int’
+db.c:3367: warning: format ‘%8d’ expects type ‘int’, but argument 4 has type ‘long unsigned int’
+db.c:3367: warning: format ‘%d’ expects type ‘int’, but argument 6 has type ‘long unsigned int’
+db.c:3378: warning: format ‘%8d’ expects type ‘int’, but argument 4 has type ‘long unsigned int’
+db.c:3378: warning: format ‘%d’ expects type ‘int’, but argument 6 has type ‘long unsigned int’
+db.c:3390: warning: format ‘%8d’ expects type ‘int’, but argument 4 has type ‘long unsigned int’
+db.c:3407: warning: format ‘%8d’ expects type ‘int’, but argument 4 has type ‘long unsigned int’
+db.c:3407: warning: format ‘%d’ expects type ‘int’, but argument 6 has type ‘long unsigned int’
+db.c:3416: warning: format ‘%8d’ expects type ‘int’, but argument 4 has type ‘long unsigned int’
+db.c:3416: warning: format ‘%d’ expects type ‘int’, but argument 6 has type ‘long unsigned int’
+db.c:3420: warning: format ‘%8d’ expects type ‘int’, but argument 4 has type ‘long unsigned int’
+db.c:3424: warning: format ‘%8d’ expects type ‘int’, but argument 4 has type ‘long unsigned int’
+
+Solution:
+Changed %d to %ld
+
+
+Fix 4 [IMC.C]
+
+Error Messages:
+imc.c: In function ‘imc_recv_broadcast’:
+imc.c:1899: warning: the address of ‘sender’ will always evaluate as ‘true’
+imc.c: In function ‘imc_recv_chanwho’:
+imc.c:2026: warning: the address of ‘cwho’ will always evaluate as ‘true’
+imc.c: In function ‘imc_recv_isalive’:
+imc.c:2638: warning: the address of ‘url’ will always evaluate as ‘true’
+imc.c:2644: warning: the address of ‘version’ will always evaluate as ‘true’
+imc.c:2650: warning: the address of ‘netname’ will always evaluate as ‘true’
+imc.c:2662: warning: the address of ‘host’ will always evaluate as ‘true’
+imc.c:2668: warning: the address of ‘iport’ will always evaluate as ‘true’
+imc.c: In function ‘imc_recv_iceupdate’:
+imc.c:2745: warning: the address of ‘chan’ will always evaluate as ‘true’
+imc.c: In function ‘imc_process_authentication’:
+imc.c:3225: warning: the address of ‘rname’ will always evaluate as ‘true’
+imc.c:3238: warning: the address of ‘pw’ will always evaluate as ‘true’
+imc.c:3281: warning: the address of ‘encrypt’ will always evaluate as ‘true’
+imc.c: In function ‘imc_startup_network’:
+imc.c:5407: warning: ignoring return value of ‘fscanf’, declared with attribute warn_unused_result
+imc.c: In function ‘imcsetup’:
+imc.c:5594: warning: the address of ‘imccmd’ will always evaluate as ‘true’
+imc.c:5594: warning: the address of ‘chan’ will always evaluate as ‘true’
+imc.c:5662: warning: the address of ‘arg1’ will always evaluate as ‘true’
+imc.c: In function ‘imcfinger’:
+imc.c:6216: warning: the address of ‘arg’ will always evaluate as ‘true’
+imc.c: In function ‘imcconfig’:
+imc.c:6573: warning: the address of ‘arg1’ will always evaluate as ‘true’
+imc.c: In function ‘imcignore’:
+imc.c:6844: warning: the address of ‘arg’ will always evaluate as ‘true’
+imc.c: In function ‘imcban’:
+imc.c:6912: warning: the address of ‘arg’ will always evaluate as ‘true’
+imc.c: In function ‘imc_deny_channel’:
+imc.c:6971: warning: the address of ‘vic_name’ will always evaluate as ‘true’
+imc.c: In function ‘imcpermset’:
+imc.c:7087: warning: the address of ‘arg’ will always evaluate as ‘true’
+imc.c: In function ‘imcremoteadmin’:
+imc.c:7246: warning: the address of ‘server’ will always evaluate as ‘true’
+imc.c:7246: warning: the address of ‘cmd’ will always evaluate as ‘true’
+imc.c: In function ‘imccedit’:
+imc.c:7399: warning: the address of ‘name’ will always evaluate as ‘true’
+imc.c:7399: warning: the address of ‘option’ will always evaluate as ‘true’
+imc.c: In function ‘imchedit’:
+imc.c:7616: warning: the address of ‘name’ will always evaluate as ‘true’
+imc.c:7616: warning: the address of ‘cmd’ will always evaluate as ‘true’
+imc.c: In function ‘imc_send_social’:
+imc.c:8096: warning: the address of ‘socbuf’ will always evaluate as ‘true’
+imc.c:8103: warning: the address of ‘socbuf’ will always evaluate as ‘true’
+imc.c:8110: warning: the address of ‘socbuf’ will always evaluate as ‘true’
+
+Solution:
+
+Removed the boolean check in the if statement (in the majority of the warnings)
+imc.c:2026: Changed boolean check to cwho[0] == '\0'
+imc.c:5407: made use of fscanf return value
+
+
+Fix 5 [STRING.C]
+
+Error Message:
+string.c:648: error: conflicting types for ‘getline’
+/usr/include/stdio.h:651: note: previous declaration of ‘getline’ was here
+make: *** [obj/string.o] Error 1
+
+Solution:
+string.c:648: renamed getline to merc_getline
+string.c:687: renamed previous use of getline to merc_getline
+
+
+Fix 6 [SCAN command]
+
+Problem:
+The SCAN command was not available to the player
+
+Solution:
+Added SCAN to interp.c as one of the available commands, the source already contained scan.c, it just didn't use it.
+

@@ -1,0 +1,22 @@
+This is a gamma release of MOBprograms for ROM 2.4.
+---------------------------------------------------
+
+Date of this release: 28-JAN-1996, v. 0.98g
+
+This release contains the following files:
+README			- this file
+HOWTO			- installation instructions
+MOBPROG.DOC		- MOBprograms documentation
+HACKER.DOC		- about the implementation
+EXAMPLES.DOC		- some MOBprogram examples
+SURRENDER.HLP		- supplement to ROM help file
+dopatch			- utility to patch the ROM 2.4b2 sources
+*.patch			- patches to the existing ROM 2.4b2 sources
+*.c, *.h		- new source files
+
+The patch in this release works only for ROM 2.4b2.
+This release has been tested on Linux 1.2.8 (gcc 2.6.3), I have no idea about
+portability.
+
+If you find any bugs or have any suggestions for improvements, e-mail
+me: markku.nylander@uta.fi

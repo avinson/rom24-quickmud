@@ -1,0 +1,186 @@
+	Changes from 1.8 :
+
+	 1) 'asave changed' now saves changed helps too.
+
+	 2) Now you don't have to move/delete ANY resets when
+	    installing OLC first time. The new reset checking code (db.c)
+	    is probably buggy.
+
+	 3) Fixed some leaks (door resets are unused but were created).
+
+	 4) Added missing olc.hlp file (DOH!)
+
+	 5) Check the diff file.
+
+	    Thanks to zanthras@columbus.rr.com for telling me about
+	    1) and 4), and gblues@jps.net for posting a bugfix in the
+	    ROM list.
+
+	Changes from 1.72 :
+
+	 1) Help editor. Probably buggy.
+
+	 2) Fixed some stuff in change_exits (olc_act.c)
+
+	 3) Added a missing check for CHK_CLASS in mob_progs.c (?)
+
+	 4) alist bugfix. (force pet alist, etc)
+
+	Changes from 1.71 :
+
+	 1) Ported to 2.4b6.
+
+	 2) Fixed stupid bug in save_rooms (it's not a save_rooms problem,
+	    but...)
+
+	Changes from 1.7 :
+
+	 1) Added some value checking in db2.c for incorrect liqs, etc.
+	    (heh)
+
+	 2) Added some implementation of a help editor. OLC now saves
+	    helps in stock format.
+
+	 3) Moved some stuff from handler.c to lookup.c.
+
+	 4) Modified some stuff in do_asave, now you can do
+	    do_asave( NULL, "changed" ) to save changed areas in
+	    your code (probably doesn't work, untested).
+
+	 5) Removed flag_lookup2 from bit.c.
+
+	 6) Fixed the 'none' security bug.
+
+	Changes from 1.6 :
+
+	 1) Fixed some old bugs.
+
+	 2) Improved old functions (string.c, olc.c, ...)
+
+	 3) Some new commands.
+
+	 4) Just check the diff (patch16to17.olc) file.
+
+	Changes from 1.5a :
+
+	 1) Added Mobprogs and a editor for them.
+
+	 2) Maybe some new bugs added :)
+
+	Changes from 1.5 :
+
+	 1) Just a fix in change_exit for setting direction's
+	    names.
+
+	Changes from 1.4 :
+
+	 1) Replaced some obj things in save.c with free_obj.
+
+	 2) Added medit_group and redit_owner.
+
+	 3) Cleaned mem.c a bit.
+
+	 4) I think that's all.
+
+	Changes from 1.3 :
+
+	 1) Added Phoenix's fix of medit_shop.
+
+	 2) Added a missing table in help_table.
+
+	 3) Changed a thing in load_resets. Now when
+	    you do an 'stat obj <whatever>', Resets:
+	    will show a number telling how many times
+	    that obj is reset'd (in stock code that
+	    was already working).
+
+	 4) Fixed some spelling errors in olc_act.c.
+
+	 6) I don't remember...
+
+	Changes from 1.2 :
+
+	 1) New commands: addapply - for adding apply's to
+	    objects - for example, boots with fly affect
+	    and such.
+
+	 2) Fixed a little 'mistake' in mob saving...
+	    the 'remove bit' command wasn't implemented.
+	    For example, with previous version of OLC
+	    you COULDN'T set a brainless human and stuff.
+	    Now you can :)
+
+	 3) Modified a small thing in medit_race.
+
+	 4) I'm lazy for writing docs. Check the files.
+
+	Changes from 1.1 :
+
+	 1) Fixed bug in change_exits, you could set a key of an
+	    inexistent exit and some other weird things.
+
+	 2) NO_PASS exit flag wasn't saved. Fixed.
+
+	 3) In OLC-ized-areas, magic items's (wands,staffs,...)
+	    spells values were set to '(null)' if their values
+	    were 0, now in the files it will look like ''.
+
+	 4) Fixed some bugs in do_resets, added support for
+	    random exits flags. (didn't know how to code it)
+
+	 5) Got rid of weapon_table, now OLC uses the standard
+	    attack_table (const.c), also replaced that stupid
+	    'new command' in OLC 1.1 (liqlist) with the standard
+	    '? liquids'. (didn't know...)
+
+	 6) Fixed error in tables.c, polearm was set to 7, equal
+	    to whip, so you couldn't create a polearm weapon.
+
+	 7) Got rid of another idiotic table, material_type.
+	    (it was useless)
+
+	 8) Deleted two flags from tables.c (in furniture_flags
+	    and weapon_type2), they were just == 0.
+
+	 9) Yes, maybe other things that I can't remember.
+
+	Here are the changes from the previous OLC version (1.0) :
+
+	 1) Fixed small bug in convert_mobile that set oldstyle
+	   mobs with null materials.
+
+	 2) * Fixed bug that prevented items contained in other items
+	   to reset properly.
+
+	 3) * Container lock and keys properties added.
+
+	 4) OLC was saving poisoned liq containers in a Rom 2.4-
+	   incompatible way.
+
+	 5) Potions, pill & scroll's 4th value was not written
+	   properly.
+
+	 6) Got rid of liquid_flags table, there was no sense in
+	   having two liquid tables (the one in const.c and
+	   the OLC table liquid_flags). New command added to
+	   OEDIT, liqlist, shows the available liquid types.
+
+	 7) Added new options for prompt, %o and %O, that will
+	   show you in the prompt what editor are you using
+	   (REdit, OEdit, etc.) and which vnum are you editing.
+
+	 8) Modified help for reset editor.
+
+	 9) Now when you change the resets for an area, the area
+	   is marked as changed.
+
+	10) Maybe other things that I can't remember.
+
+	Changes marked with (*) aren't bugs...look in doc/Rom2.4.doc
+	and you'll see why...I've made the changes from 2.3 to 2.4
+	based on that document...it contains several bugs, that
+	appeared in OLC, but now seems that all of these type of
+	bugs are out.
+
+						Ivan
+	   

@@ -1,0 +1,73 @@
+QuickMUD
+Currently by Jim Robinson, and many others before me...
+
+
+Downloading:
+	Please note on the QuickMUD download page, the filesize is
+	shown in bytes. This is dynamically generated and guaranteed
+	to be accurate. If your download appears to be over 4MB, then
+	it is your browser/whatever you are using to download the
+	quickmud.tar.gz file being helpful and gunzipping the archive
+	on the fly. Just rename the thing to quickmud.tar if there
+	are any problems with this.
+
+Compiling:
+	I have changed the entire Makefile philosophy. Basically,
+	QuickMUD/src/Makefile is it. That's about the only one I
+	edit anymore. Period. It's setup so that it will compile
+	on a Debian GNU/Linux system, and probably a Windows +
+	Cygwin setup out of the box. Outside of that, there are
+	no garauntees. Sorry. I may maintain some FreeBSD
+	compatibility, but that's only a thought, as it's an interest
+	of mine. Anyway...
+
+	Briefly, about compiling under Windows. The Makefile is set
+	up so that the crypt library isn't used, hopefully eliminating
+	the senseless abuse of the ROM mailing list with "I have this
+	weird/odd/rare crypt error..." messages. A side effect is the
+	player's passwords are stored in plain text in the player
+	files. No big deal in my opinion, as if someone has read access
+	to your source tree, you probably have bigger issues to worry
+	about than player's MUD passwords ;-)
+
+	This should by-God compile out-of-the-box in Cygwin now. The
+	random()/urandom() issues have been worked around by adding a
+	-DQMFIXES to the Makefile. I consider these issues now buried.
+
+	Your best bet is to just go into the "QuickMUD/src" and run
+	"make". If you don't have "make", or don't know what "make"
+	is, that's beyond the scope of this document (and probably a
+	good indication you should stick to playing MUDs and not
+	tryign to code on them).
+
+	So, change directory to "QuickMUD/src" and run "make". That's
+	it. The other Makefiles? Well, they are there for posterity's
+	sake I guess. Just in case, you know? Got sense enough to run
+	another free OS platform, you have sense enough to compile this
+	code. 'nuff said ;-)
+
+QuickMUD stuff:
+	qmconfig [option] [on|off]
+		This command sets up stuff that has been coded into
+		QuickMUD for your convenience. The options are as
+		follows:
+
+		ansiprompt - whether or not all logins will see a
+		  "ANSI Color?" prompt when initially logging in.
+
+		ansicolor - whether or not color is automatically
+		  turned on for new players.
+
+		telnetga - the telnet go-ahead code will be sent to
+		  players by default if this is enabled. Good for
+		  players who use MUD clients like "mcl".
+
+		These variables are set in area/qmconfig.rc. "1" means
+		turn it on, "0" means turn it off.
+
+Well, that's enough for now. It's a start. I'll be using emails I
+receive as suggestions for new content :-)
+
+Jim Robinson
+aka "Flugh"
+

@@ -1,0 +1,1042 @@
+#AREA
+mega1.are~
+Mega City One~
+{ 5 35} Glop    Mega-City One ~
+8000 8099
+
+#MOBILES
+#8000
+oldstyle juve~
+a juve~
+A juve is standing here plotting mischief.
+~
+He is a tall, thin boy.  He is looking for his gang mates.  He and his
+mates have cost city authorities many millions of creds a week in
+vandalism repairs.
+~
+human~
+AC 0 -400 0
+5 0 2d6+60 2d9+100 1d6+1 none
+5 5 5 9
+EFNU 0 0 0
+stand stand male 0
+0 0 medium 0
+#8001
+oldstyle punk~
+a punk~
+A punk is here plotting a crime wave.
+~
+This punk is from one of the rowdiest, scruffiest, and definitely most
+fashionable of all gangs -- the Grunge Mongers.
+~
+human~
+ACG 0 -500 0
+10 0 2d7+121 5d9+100 2d4+2 none
+1 1 1 8
+EFNU 0 0 0
+stand stand male 0
+0 0 medium 0
+#8002
+oldstyle Futsie~
+a Futsie~
+A Futsie is here reciting Monty Python sketches.
+~
+A sad victim of Future Shock, this man is immensely dangerous and will
+not be stopped by anyone who tries to deter him from revenge upon the
+Justice Department.
+~
+human~
+ABF D 0 0
+17 0 3d9+258 8d9+100 3d4+4 none
+-3 -3 -3 7
+EFNU 0 0 0
+stand stand male 0
+0 0 medium 0
+#8003
+oldstyle Citi-Def Militiaman~
+a Citi-Def Militiaman~
+A Citi-Def Militiaman is here contemplating a Block War.
+~
+A member of a local Block's Citi-Def militia, this man is well-armed
+and undersupervised.
+~
+human~
+ACG J 0 0
+16 0 3d9+233 8d9+100 2d6+4 none
+-2 -2 -2 7
+EFNU 0 0 0
+stand stand male 0
+0 0 medium 0
+#8004
+oldstyle dunk~
+a dunk~
+A dunk is here blending into the crowd.
+~
+He blends into the crowd as his hand travels into another citizen's pocket.
+~
+human~
+ACGHS DF -150 0
+10 0 2d6+110 5d9+100 1d8+2 none
+2 2 2 8
+BEFJNU 0 0 0
+stand stand male 0
+0 0 medium 0
+#8005
+oldstyle tap~
+a tap~
+A tap is here eyeing your belongings.
+~
+A practitioner in Mega-City One's largest growth industry, mugging, is
+looking you over for a possible business transaction.
+~
+human~
+ACG 0 -400 0
+14 0 2d10+190 7d9+100 1d12+3 none
+-1 -1 -1 8
+EFNU 0 0 0
+stand stand female 0
+0 0 medium 0
+#8006
+oldstyle rookie judge~
+a rookie judge~
+A Rookie judge is on his first beat here.
+~
+A member of Mega-City One's Justice Department is here considering what
+crimes you have committed.  Being a rookie he will probably be easier on
+you though.
+~
+human~
+AG DF 300 0
+20 0 3d9+333 10d9+100 2d8+5 none
+-4 -4 -4 7
+EFNU 0 0 0
+stand stand male 0
+0 0 medium 0
+#8007
+oldstyle Wallaby Gleep~
+Wallaby Gleep~
+Mr. Gleep is here wanting to know what you want.
+~
+Wallaby Gleep is a heavy-set man who gives you the impression that he is
+unintelligent and unimaginative, but looks can be deceiving.
+~
+human~
+ABC DFJ -600 0
+22 0 5d10+400 11d9+100 4d4+6 none
+-5 -5 -5 7
+EFNU 0 0 0
+stand stand male 0
+0 0 medium 0
+#8008
+oldstyle Pinkerton Throt~
+Pinkerton Throt~
+Pinky Throt is here Wringing his hands.
+~
+He is a thin angular crook, pretty close to everyone's idea of Ebeneezer
+Scrooge.  Indeed, the only thing guaranteed to bring a spark to his dead
+eyes is the mention of money.
+~
+human~
+ABCF DF -900 0
+25 0 5d10+550 12d9+100 2d10+7 none
+-7 -7 -7 6
+EFNU 0 0 0
+stand stand male 0
+0 0 medium 0
+#8009
+oldstyle Ernie Ramirez~
+Ernie Ramirez~
+Ernie Ramirez is here collecting for the mob.
+~
+Ramirez is a dour man who knows that he's never going to get a better
+deal out of life.  He is content to run the bite fights for Throt and
+Gleep.
+~
+human~
+ABC 0 -400 0
+19 0 3d9+308 9d9+100 2d7+5 none
+-4 -4 -4 7
+EFNU 0 0 0
+stand stand male 0
+0 0 medium 0
+#8010
+oldstyle Judge Eckersely~
+Judge Eckersely~
+Judge Eckersely is here shaking down a Perp.
+~
+He is a dedicated, if somewhat pessimistic Judge.  He is the Senior Judge
+of the Downtown Quadrant.
+~
+human~
+AG DFH 300 0
+30 0 6d12+853 15d9+100 4d6+8 none
+-9 -9 -9 6
+EFNU 0 0 0
+stand stand male 0
+0 0 medium 0
+#8011
+oldstyle Judge Beddows~
+Judge Beddows~
+Judge Beddows is here calling Resyk.
+~
+Beddows is a clone from the same stock as the ex-Chief Judge McGruder.
+She is fanatically dedicated to her job and has no ambitions other than
+to enforce the LAW.
+~
+human~
+AG DF 500 0
+25 0 5d10+550 12d9+100 2d10+7 none
+-7 -7 -7 6
+EFNU 0 0 0
+stand stand female 0
+0 0 medium 0
+#8012
+oldstyle bite fighter~
+a bite fighter~
+A bite fighter is here sharpening his teeth.
+~
+A bite fighter is here with sharpened teeth and a bad attitude.
+~
+human~
+ABF 0 -400 0
+20 0 3d9+333 10d9+100 2d8+5 none
+-4 -4 -4 7
+EFNU 0 0 0
+stand stand male 0
+0 0 medium 0
+#0
+
+#OBJECTS
+#8000
+spitgun spit gun~
+a spit gun~
+There is a spit gun laying here.~
+oldstyle~
+wand 0 AO
+20 10 10 'general purpose' 0
+17 20 48900 P
+E
+spit gun~
+A standard weapon in Mega-City One.  It uses general
+purpose ammunition.
+~
+#8001
+knee pads~
+a set of knee pads~
+There are some knee pads laying here.~
+oldstyle~
+armor 0 AF
+4 4 4 0 0
+5 30 480 P
+E
+knee pads~
+It is a set of Grak Brothers knee pads.  They are currently
+popular with the juve and punk gangs.
+~
+#8002
+stooky gland~
+a stooky gland~
+There is a stooky gland laying here.~
+oldstyle~
+pill 0 A
+20 '' 'cure poison' 'heal' ''
+13 10 1000 P
+E
+stooky gland~
+Stooky glands are known for the restorative properties.
+~
+#8003
+lawgiver~
+a lawgiver~
+There is a lawgiver laying here.~
+oldstyle~
+wand 0 AO
+30 10 10 'high explosive' 0
+27 20 58000 P
+E
+lawgiver gun~
+The standard weapon for the city's Judges.  It uses general
+high explosive ammunition.
+~
+#8004
+safe~
+the magnetically shielded safe~
+A indestructible, immobile safe is here.~
+oldstyle~
+container B 0
+1005 ACD 8005 200 100
+0 0 0 P
+E
+safe~
+This safe looks like not even a Sov-Cit Nuke could open it.
+You better find the code box.
+~
+#8005
+code box~
+a code box~
+A code box of indeterminate use is here.~
+oldstyle~
+key B AO
+0 0 0 0 0
+0 10 0 P
+E
+code box~
+The box looks like some kind of access device.
+~
+#8006
+bashball bat two-handed~
+a bashball bat~
+A bashball bat is laying here.~
+oldstyle~
+weapon 0 AN
+mace 3 5 pound F
+14 30 870 P
+A
+19 1
+E
+bashball bat~
+This is the same type of bat used by the little spuggers
+to play bashball.
+~
+#8007
+vibroblade~
+the vibroblade~
+The vibroblade is here.~
+oldstyle~
+weapon ABF AN
+dagger 3 5 slash 0
+18 20 2800 P
+A
+2 1
+A
+5 1
+A
+19 2
+A
+18 2
+E
+vibroblade~
+Obviously of alien manufacture, this blade enhances fighting
+and survival skills.
+~
+#8008
+vacuum cleaner two-handed~
+a Hoover vacuum cleaner~
+A Hoover vacuum cleaner is here idling.~
+oldstyle~
+weapon B AN
+exotic 4 4 suction F
+15 100 2100 P
+E
+vacuum cleaner~
+This vacuum looks well built and will last you many years of
+cleaning pleasure.
+~
+#8009
+knife~
+a knife~
+A knife is sitting here...contemplating life.~
+oldstyle~
+weapon 0 AN
+dagger 2 4 slice 0
+5 10 360 P
+E
+knife~
+It is a knife. 'Nuff said. (Marvel joke).
+~
+#8010
+wet noodle~
+a wet noodle~
+A wet noodle is laying here with clam sauce on it.~
+oldstyle~
+weapon 0 AN
+whip 1 4 whip 0
+5 10 670 P
+A
+3 1
+E
+noodle~
+It looks like a noodle freshly made at the Olive Garden.
+~
+#8011
+judge club~
+a Judge's club~
+A Judge's club is resting here.~
+oldstyle~
+weapon 0 AN
+mace 2 8 pound 0
+17 30 1050 P
+A
+19 2
+E
+judge club~
+It is a standard Justice Hall issue club.  Many a Perp's
+head has been bashed with this baby.
+~
+#8012
+vault key~
+a vault key~
+A vault key is here.~
+oldstyle~
+key B AO
+0 0 0 0 0
+0 10 0 P
+E
+vault key~
+The key looks like it could be useful.
+~
+#8013
+key card~
+a key card~
+A key card is laying here.~
+oldstyle~
+key 0 AO
+0 0 0 0 0
+0 10 0 P
+E
+key card~
+It looks like it fits a slot somewhere.
+~
+#8014
+judge club~
+a Judge's club~
+A Judge's club is resting here.~
+oldstyle~
+weapon 0 AN
+mace 2 12 pound 0
+26 30 1700 P
+A
+19 2
+E
+judge club~
+It is a head judge Justice Hall issue club.  Many a Perp's
+head has been bashed with this baby.
+~
+#8015
+club electric shock~
+a shock club~
+A sparking electric club is here.~
+steel~
+weapon A AN
+mace 3 5 shock 0
+15 30 750 P
+#8016
+stunner police stick~
+a police stun stick~
+A police issue stunner is here, must be stolen.~
+rubber~
+weapon 0 AN
+mace 2 11 pound G
+23 20 1160 P
+#0
+
+#ROOMS
+#8001
+Entrance to Mega-City One~
+A road begins here in the glowing sands.  You follow it through a gate
+in a Plasteen wall onto the Megway of Mega-City One.
+~
+0 0 1
+D0
+You see the glowing sand of the badlands.
+~
+~
+0 0 5062
+D2
+The Megway continues in this direction.
+~
+~
+0 0 8002
+S
+#8002
+Mahmount Allesh Megway~
+You are on one mile of over 13 and a half billion kilometers of
+roadway in Mega-City One.  The Megway continues north and south.
+~
+0 0 1
+D0
+The entrance to Mega-City One is in this direction.
+~
+~
+0 0 8001
+D2
+There is an intersection ahead.
+~
+~
+0 0 8003
+S
+#8003
+Intersection of Junket Way and Megway~
+The Megway intersects with Junket Way here.  Junket Way is to the east,
+the Megway continues north and south, and the Pustule Palace Cafe is
+to the west.
+~
+0 0 1
+D0
+The Megway continues in this direction.
+~
+~
+0 0 8002
+D1
+Junket way continues in this direction.
+~
+~
+0 0 8010
+D2
+The Megway continues in this direction.
+~
+~
+0 0 8004
+D3
+The Pustule Palace Cafe is in this direction.
+~
+~
+0 0 8021
+S
+#8004
+Mahmount Allesh Megway~
+The traffic here is really congested due in part to the over 11 million
+people driving Mo-Pads, the mobile homes which are constantly on the
+move until their owners can find an apartment in one of the City-blocks.
+The Megway continues north and south.
+~
+0 0 1
+D0
+An intersection lies in this direction.
+~
+~
+0 0 8003
+D2
+The Megway continues in this direction.
+~
+~
+0 0 8005
+S
+#8005
+Mahmount Allesh Megway~
+The Megway continues north and south.  On the off-ramps here you see
+many of the citizens of Mega-City One doing nothing.  You see of
+every hundred citizens, it can be guaranteed that 87 of them will
+be totally unemployed, and that a further five will not work more
+than ten hours a week.  To the east there is a dark alley and to the
+west is Rietzik's Shuggy Hall.
+~
+0 0 1
+D0
+The Megway continues in this direction.
+~
+~
+0 0 8004
+D1
+A dark alley lies to the east.
+~
+~
+0 0 8011
+D2
+A large plaza is in this direction.
+~
+~
+0 0 8006
+D3
+A building is in this direction.
+~
+~
+0 0 8022
+S
+#8006
+Central Plaza~
+You are at the Central Plaza of the downtown district.  There are a couple
+of juves Boingging (tm) in the air above you.  Max Jaffa Boulevard goes
+east, the Megway continues north and south, and Bazza's Home for the
+Terminally Sarky is to the west.
+~
+0 0 1
+D0
+The Megway continues in this direction.
+~
+~
+0 0 8005
+D1
+Max Jaffa Boulevard goes in this direction.
+~
+~
+0 0 8012
+D2
+The Megway continues in this direction.
+~
+~
+0 0 8007
+D3
+A home for Sarky people is to the west.
+~
+~
+0 0 8023
+S
+#8007
+Corner of Ed Hilldreth Memorial Parkway and Megway~
+Another major intersection which is being negotiated by vehicles that
+are bound to minimum speed limits.  Many Slow Driving offenses are being
+handed out by the Judges.  The Megway goes north and south, a Parkway
+goes east, and Nu Phisog Parlour is west.
+~
+0 0 1
+D0
+A plaza is to the north.
+~
+~
+0 0 8006
+D1
+Ed Hilldreth Mem. Parkwy is to the east.
+~
+~
+0 0 8013
+D2
+The Megway continues in this direction.
+~
+~
+0 0 8008
+D3
+A City Block lies to the west.
+~
+~
+0 0 8024
+S
+#8008
+Mahmount Allesh Megway~
+As you travel the Megway you notice many citizens participating in their
+favorite hobbies such as spot welding and metalwork, scratch building
+fashion Kneepads, giving blood, or just looking out the window.  The
+Megway continues north and south.
+~
+0 0 1
+D0
+The Megway continues in this direction.
+~
+~
+0 0 8007
+D2
+The Megway continues in this direction.
+~
+~
+0 0 8009
+S
+#8009
+Mahmount Allesh Megway~
+The Megway ends here.  To the west is Ziggi Piggi's Home for the
+Semi-Stiff, to the east and south are construction areas, and the
+Megway goes north.
+~
+0 0 1
+D0
+The Megway is ahead.
+~
+~
+0 0 8008
+D1
+There is construction this way.
+~
+~
+0 0 8014
+D2
+There is construction ahead.
+~
+~
+0 0 8020
+D3
+Ziggi Piggi's Home the Semi-Stiff is ahead.
+~
+~
+0 0 8025
+S
+#8010
+Junket Way~
+Junket Way a small Skedway continues east and west.
+~
+0 0 1
+D1
+An intersection is ahead.
+~
+~
+0 0 8015
+D3
+An intersection is ahead.
+~
+~
+0 0 8003
+S
+#8011
+Davies Alley~
+You are in a very dark and seedy alley.  This is just the right place for
+a bite fight.  Bite fighting is an illegal activity where both combatants
+can only use their sharpened teeth as weapons.
+~
+0 A 1
+D1
+An intersection is ahead.
+~
+~
+0 0 8017
+D3
+An intersection is ahead.
+~
+~
+0 0 8005
+S
+#8012
+Max Jaffa Boulevard~
+Max Jaffa Boulevard continues east and west.
+~
+0 0 1
+D1
+An intersection is ahead.
+~
+~
+0 0 8018
+D3
+A large plaza is to the west.
+~
+~
+0 0 8006
+S
+#8013
+Ed Hilldreth Memorial Parkway ~
+The Parkway goes east and west.
+~
+0 0 1
+D1
+An intersection is ahead.
+~
+~
+0 0 8019
+D3
+An intersection is ahead.
+~
+~
+0 0 8007
+S
+#8014
+Construction site of the Harold Finkelbaum Block.~
+A Mega-City One City Block is being constructed at this site.  A
+typical block is from 100 to 1000 stories high with hundreds of
+thousands inhabitants.
+~
+0 0 1
+D3
+An intersection is ahead.
+~
+~
+0 0 8009
+S
+#8015
+Corner of Junket Way and Threep Lane~
+There is a second-hand kneepad stall is doing a brisk business with a
+group of juves on their way to school.  Junket Way goes west and Threep
+Lane travels south.
+~
+0 0 1
+D2
+Threep Lane continues ahead.
+~
+~
+0 0 8016
+D3
+Junket Way is ahead.
+~
+~
+0 0 8010
+S
+#8016
+Threep Lane~
+Threep Lane continues north and south.  There is a building to the east
+with a sign next to the door.
+~
+0 0 1
+D0
+An intersection is ahead.
+~
+~
+0 0 8015
+D1
+A door to the east bodes ill.
+~
+door~
+1 0 8026
+D2
+Threep Lane continues south.
+~
+~
+0 0 8017
+E
+sign~
+Throt and Gleep's Megger Store est. 2107
+~
+S
+#8017
+Threep Lane~
+Threep Lane continues north and south.  There is a dark alley to the west.
+~
+0 0 1
+D0
+Threep Lane continues north.
+~
+~
+0 0 8016
+D2
+An intersection is ahead.
+~
+~
+0 0 8018
+D3
+A dark alley is west.
+~
+~
+0 0 8011
+S
+#8018
+Corner of Max Jaffa Blvd and Threep Way~
+A proprietor of Uncle Sumpty's Ugly Emporium meanders by.  Threep Lane
+continues north and south while Max Jaffa Boulevard goes west.
+~
+0 0 1
+D0
+Threep Lane continues north.
+~
+~
+0 0 8017
+D2
+Threep Lane continues south.
+~
+~
+0 0 8019
+D3
+Max Jaffa Blvd continues west
+~
+~
+0 0 8012
+S
+#8019
+Corner of Ed Hilldreth Mem. Prkwy and Threep Lane~
+Threep Lane goes north from here while Ed Hilldreth Memorial Parkway goes
+west.
+~
+0 0 1
+D0
+Threep Lane continues north.
+~
+~
+0 0 8018
+D3
+Ed Hilldreth continues west.
+~
+~
+0 0 8013
+S
+#8020
+Construction Site for the Brit-Cit One tunnel.~
+Construction is under way for the Black Atlantic Tunnel to connect
+Mega-City One and Brit-Cit One.
+~
+0 0 1
+D0
+An intersection lies north.
+~
+~
+0 0 8009
+S
+#8021
+Pustule Palace Cafe~
+A scabrous hole.  Run by Ernie Ramirez, an ex-perp, it is a meeting place
+for the low-life in the area.
+~
+0 D 0
+D1
+An intersection lies east.
+~
+~
+0 0 8003
+S
+#8022
+Rietzik's Shuggy Hall~
+A sleazy dive and the meeting place of a lot of perps.  Shuggy is a
+twenty-second Century version of pool, played on a hilly table, usually
+with large side bets.
+~
+0 D 0
+D1
+An intersection lies east.
+~
+~
+0 0 8005
+S
+#8023
+Bazza's Home for the Terminally Sarky~
+This is an experimental psychiatric home.  Named after a 20th Century
+vid-critic, the home attempts, by various methods, to readjust the
+socially unacceptable attitudes of the inmates.
+~
+0 D 0
+D1
+A large plaza lies east.
+~
+~
+0 0 8006
+S
+#8024
+Nu Phisog Parlour~
+Opened as a direct rival to the New You Face Parlour chain to offer quick
+and cheap face-changing facilities to the general public.  However,
+since the closure of Sump's Ugly clinics, the craze for face-changing has
+died down.
+~
+0 D 0
+D1
+An intersection lies east.
+~
+~
+0 0 8007
+S
+#8025
+Ziggi Piggi's Home for the Semi-Stiff~
+The only suspended animation parlour in the area.  It has a high turnover
+rate.  It is rumored that the patrons are being used in body sharking and
+organ legging activities.
+~
+0 D 0
+D1
+An intersection lies east.
+~
+~
+0 0 8009
+S
+#8026
+Throt & Gleep's Megger Store~
+This place promises to provide everything that the citizens don't need,
+with the utmost discourtesy.  Of course, something as crazy as this was
+bound to succeed.  There is a door to the north with a slot next to it.
+There is also a sign next to the slot.
+~
+0 D 0
+D0
+~
+door~
+2 8013 8027
+D3
+~
+door~
+1 0 8016
+E
+sign~
+To open insert card.
+~
+S
+#8027
+Stockroom of Throt & Gleep's Megger Store~
+Many useless items stock the shelves of this stockroom.  A door leads
+south and large vault door is to the north.
+~
+0 D 0
+D0
+~
+vault door~
+2 8012 8028
+D2
+~
+door~
+2 8013 8026
+E
+vault door~
+This vault seems impervious to breaking.  There is a keyhole in the lock
+however.
+~
+S
+#8028
+Throt & Gleep's Vault~
+The vault is musty with a slight smell of ozone in the air.
+~
+0 D 0
+D2
+~
+vault door~
+2 8012 8027
+S
+#0
+
+#RESETS
+M 0 8000   4 8004  2	* a juve
+E 1 8009  40   16	*   a knife
+M 0 8000   4 8004  2	* a juve
+E 1 8009  40   16	*   a knife
+M 0 8000   4 8006  1	* a juve
+E 1 8009  40   16	*   a knife
+M 0 8000   4 8015  1	* a juve
+E 1 8009  40   16	*   a knife
+E 1 8001  40    7	*   a set of knee pads
+M 0 8001   5 8006  2	* a punk
+E 1 8009  40   16	*   a knife
+M 0 8001   5 8009  1	* a punk
+E 1 8009  40   16	*   a knife
+E 1 8001  40    7	*   a set of knee pads
+M 0 8001   5 8011  2	* a punk
+E 1 8009  40   16	*   a knife
+M 0 8003   4 8013  2	* a Citi-Def Militiaman
+E 1 8001  40    7	*   a set of knee pads
+M 0 8003   4 8014  2	* a Citi-Def Militiaman
+G 1 8000  10     	*   a spit gun
+M 0 8002   4 8023  2	* a Futsie
+E 1 8008  40   16	*   a Hoover vacuum cleaner
+M 0 8002   4 8024  2	* a Futsie
+E 1 8010  40   16	*   a wet noodle
+M 0 8004   3 8003  1	* a dunk
+M 0 8004   3 8006  1	* a dunk
+M 0 8004   3 8005  1	* a dunk
+M 0 8005   3 8010  1	* a tap
+E 1 8006  40   16	*   a bashball bat
+M 0 8005   3 8017  1	* a tap
+E 1 8015  40   16	*   a shock club
+M 0 8005   3 8019  1	* a tap
+M 0 8006   3 8018  1	* a rookie judge
+E 1 8011  40   16	*   a Judge's club
+M 0 8006   3 8012  1	* a rookie judge
+E 1 8011  40   16	*   a Judge's club
+M 0 8006   3 8025  1	* a rookie judge
+E 1 8011  40   16	*   a Judge's club
+M 0 8007   1 8027  1	* Wallaby Gleep
+E 1 8016  40   16	*   a police stun stick
+G 1 8012  10     	*   a vault key
+M 0 8009   1 8021  1	* Ernie Ramirez
+E 1 8006  40   16	*   a bashball bat
+G 1 8002  10     	*   a stooky gland
+G 1 8013   5     	*   a key card
+M 0 8010   1 8007  1	* Judge Eckersely
+E 1 8014  40   16	*   a Judge's club
+G 1 8003  20     	*   a lawgiver
+M 0 8011   1 8009  1	* Judge Beddows
+E 1 8014  40   16	*   a Judge's club
+G 1 8003  20     	*   a lawgiver
+M 0 8012   2 8011  2	* a bite fighter
+M 0 8012   2 8011  2	* a bite fighter
+O 0 8004   1 8028	* the magnetically shielded safe
+M 0 8008   1 8028  1	* Pinkerton Throt
+E 1 8016  40   16	*   a police stun stick
+G 1 8005  10     	*   a code box
+P 1 8007  10 8004  1	*   the vibroblade
+D 0 8016   1    1	* Threep Lane east
+D 0 8026   3    1	* Throt & Gleep's Megger Store west
+D 0 8026   0    2	* Throt & Gleep's Megger Store north
+D 0 8027   2    2	* Stockroom of Throt & Gleep's Megger Store south
+D 0 8027   0    2	* Stockroom of Throt & Gleep's Megger Store north
+D 0 8028   2    2	* Throt & Gleep's Vault south
+S
+
+#SHOPS
+0
+
+#SPECIALS
+M 8003 spec_cast_judge     	* a Citi-Def Militiaman
+M 8004 spec_thief          	* a dunk
+M 8006 spec_cast_judge     	* a rookie judge
+M 8010 spec_cast_judge     	* Judge Eckersely
+M 8011 spec_cast_judge     	* Judge Beddows
+S
+
+#$

@@ -1,0 +1,2054 @@
+A.  Last modification date
+
+B.  Credits
+
+C.  Basic format
+
+D.  Organization
+	I. 	Area headers
+	II.	Numbering
+	III.	Mailing
+	IV.	A note about help files
+	V.	Potential errata
+
+E.  The area format breakdown
+	1.  #AREA:  (not sure)
+		I. #AREA
+		II. filename.are~
+		III. Area Name
+		IV. {1 50} Builder Sample Area  
+		V. ZX00 ZX99     
+
+	2.  #MOBILES
+		I. 	<vnum> 
+		II. 	name list
+		III. 	short description 
+		IV.  	long description 
+		V. 	look description 
+		VI.  	race
+		VII.  Act, Affect, Alignment and group
+		VIII.	Level, hit bonus, hit dice, mana dice, damage, damtype
+		IX.	Armor classes
+		X. 	Offenses, Immunities, Resistances, Vulnerabilites
+		XI.	Positions, Gender and Treasure
+		XII.	Form, Parts, Size and Material
+
+	3.  #OBJECTS
+		I.    <vnum>
+		II.   <object_name>
+		III.  <object_short>
+		IV.   <object_long> 
+		V.    <description>
+ 		VI.   <material>
+		VII.  Flags, Extras, Wear locations
+		VIII.	V0 through V4
+		IX.   <level> <weight> <cost> 
+		X.	<applies>
+		XI.  <flags>
+		XII.  Object extra descriptions
+
+	4.  #ROOMS
+		I.	#<vnum>
+		II.	<room header>
+		III.  <room description>
+		IV.   <room flags>
+		V.    <exit direction>
+		VI.   <extended description of what is seen in direction>
+		VII.  <door keyword>
+		VIII. <door state> <exit vnum> <key vnum>
+		IX.   <extra descriptions>
+		X.    Mana and hp recovery adjustments
+		XI.   <S>
+
+	5.  #RESETS
+		I.    M    load a mobile into a room 
+		II.   O    load an object into a room
+		III.  P    put an object in an object (gold in a safe, etc.) 
+		IV.   G    give an object to mobile 
+		V.    E    equip an object to mobile 
+		VI.   D    set state of door 
+		VII.  S    stop (END OF LIST) 
+
+	6.  #SHOPS
+		<mob#> <items> <profit-buy> <p-sell> <op-hour> <close> 
+
+	7.  #SPECIALS
+		M <mobvnum> <special>
+
+	8.  #$  -- closing the area file
+
+
+F.  Definitions
+	1.  vnum
+	2.  warpstone
+	3.  trash
+	4.  pickproof
+	5.  dice
+	6.  mobile
+	7.  jukebox
+
+G.  Closing notes
+
+A.  Last modification date
+
+Rom 2.4/2.5 docs version 1, compiled by Satin (Gabrielle Taylor)
+7-9-1995.
+
+Don't forget to look for appendices dated past this document on the ftp 
+site!  There may be additional area-related code added in future Rom
+releases, and rather than force you to print out a whole new copy
+each time, a dated appendix will be placed on this ftp site.
+
+
+B. Credits
+      
+This file contains material and information from the Merc release 2.1 
+Area help files (done by Furey, Hatchet, and Kahn), material from the 
+Merc Diku Mud code itself, material and examples from various area files 
+that are found in both ROM2 and MadROM, as well as coding material that 
+was adapted and modified by Alander for ROM1 and ROM2, and later by 
+Madman for MadROM.  It also contains information from Alander written 
+for ROM 2.3 and ROM2.4x, from Zump for Rom 2.4x, and information from 
+ozy.doc by Ozymandias.  It was compiled and rewritten by Satin for Tesseract (hypercube.org 9000), and then adapted by her to Rom 2.4x.
+
+Many of my examples are drawn from Diku's Midgaard, and my example of a fountain is drawn from Conner's New Thalos area.
+
+C.  Basic Format
+An area file consists of 8 basic sections, as follows:
+
+The area header:	vital statistics for the area
+The mobiles:	the stats and descriptions of all monsters in the area
+The objects:	the stats and descriptions of all objects in the area
+The rooms:  	a listing of all rooms and exits in the area
+Area resets:	instructions for loading/maintaining the area
+The shops:  	a listing of any shops that the area contains
+Specials:		procedures to enchance the performance of mobiles
+
+
+Areas may also include special notes and procedures, such as a help 
+file, information on where on the area should be placed, and any special 
+code that should be written to make the area work properly.  This should 
+be included outside the main body of the area, but within the same file.
+
+
+D. Organization
+
+I.  The sections should all be contained in one large file, organized in 
+the following manner (the file proto.are can be used as a template):
+
+#AREA
+<area header>
+
+#MOBILES
+<the mobiles>
+#0
+
+#OBJECTS
+<the objects>
+#0
+
+#ROOMS
+<the rooms and exits>
+#0
+
+#RESETS
+<the area resets>
+S
+
+#SHOPS
+<shops>
+#0
+
+#SPECIALS
+<special procedures>
+S
+
+#$ 
+<to terminate the file>
+
+II. Numbering
+
+You will notice below that all these sections require numbers.  For 
+example, Hassan is mobile #1203, and the temple of Midgaard is room 
+#3001.  To make your area as simple to add as possible, number your 
+files as follows:
+
+XX00-XX99 (1st 100 of anything)
+XY00-XY99 (2nd 100 of anything)
+And so on.  Thus, your mobile, object, and world files should ALL begin 
+with XX00 as the first entry.
+
+III.  mailing
+
+If you are on a unix system, please use the following protocol for 
+mailing your area:  ([name] is the name of the area, preferably a short 
+one, i.e. shire.are or chapel.are.
+
+If you have gzip:
+gzip [name]
+uuencode [name].gz [name].gz | mail target@address
+(make SURE you type the name twice here)
+
+Otherwise use compress and the .Z suffix (instead of .gz).
+
+If you can't compress your area and it is over 100k, make sure the
+person you are mailing it to can handle receiving large files.
+
+IV.  A note about help files
+
+It used to be possible to include help files in areas.  However, it is 
+now preferred that the help file be sent in a separate file for 
+inclusion in another file set aside specifically for helps.
+
+V.
+
+If you notice anything wrong or confusing in these docs, please mail me at gtaylor@pacinfo.com, and I will attempt to explain the confusion or correct the error -- these docs weren't exactly banged out overnight, but pretty damn close.  :)
+
+E.  The area format
+
+1.  #AREA:
+
+I. #AREA
+II. filename.are~
+III. Area Name~
+IV. {1 50} Builder Sample Area~  
+V. ZX00 ZX99     
+
+Breakdown:
+
+I.  #AREA is the signifier that the code uses to mark the beginning of a 
+zone.
+
+II.  Select an appropriately unique filename for your area to be saved 
+as.  Keep it short -- for instance, if your area is titled 'The Dell of the Darkness' an appropriate name is darkdell.are.  Do not forget to close with a tilde.
+
+III.  Type in the area name here as you expect it to appear when the 
+'area' command is typed, plus a closing tilde.
+
+IV.  This is the line that will appear in the 'area' command.  The 
+numbers in brackets signify the minimum and maximum levels that a player 
+character should be before venturing into the area.  Insert the area 
+author's name in the spot labeled 'Builder' above, and the area name 
+where the example says 'Sample Area'.  Do not forget to close with a 
+tilde.
+
+V.  This is the virtual number (vnum) range your area is using.  You 
+must declare a range from 0 to 99 here even if you don't use that many 
+numbers, or a range from 0 to 199 if you use more than 100, etc.  Use a 
+placeholder or variable such as 'ZX' instead of a specific range unless 
+you have been assigned a range by the implementor of the mud you are 
+writing for.
+
+2. #MOBILES
+
+I. <vnum> 
+II. name list~ 
+III. short description~ 
+IV.  long description 
+~
+V. look description 
+~
+VI.  race~ 
+VII.  <act flags> <affect flags> <alignment> <mobile group> 
+VIII.  <level> <+ to hit> <hit dice> <mana dice> <damage> <damage type> 
+IX.  <pierce ac> <bash ac> <slash ac> <magic ac> 
+X.  <offensive flags> <immunities> <resistances> <vulnerabilities> 
+XI.  <start position> <default position> <sex> <treasure> 
+XII.  <form flags> <part flags> <size> <material> 
+
+example mobile: 
+#ZX01
+Sample~
+Sample~
+A sample mobile is here, waiting for a face.
+~
+It looks bland and boring, and like it belongs nowhere near an area 
+file, but is a good example of a mobile.
+~
+human~
+ABTV CDFJVZ 1000 3000 
+45 30 1d1+3999 1d1+499 5d4+40 crush 
+-25 -25 -25 -15 
+ACDEFHIKLNOT ABP CD 0 
+stand stand either 0 
+0 0 medium 0 
+
+Breakdown:
+ 
+I.  The vnum is the number used to reference your mobile.  There may 
+only be one mobile of any given vnum at one time.  (see definitions)
+
+II.  name list~ 
+This is a list of names that the mobile can be referenced by, for 
+example a fat, ugly worm might have a name list of: 
+fat worm~
+It's best to have more than one name per mobile. Don't forget the ~ at 
+the end of the line. 
+
+III.  short description~ 
+The short description is seen when the mobile fights or performs 
+actions, i.e. "The large orc".  It should be kept fairly short, 
+preferably 20 characters or less. Don't forget the ~ at the end of the 
+line. 
+
+IV.  long description~ 
+The long description is seen whenever a character looks at the room a 
+mobile is in (provided, of course, that they can see the mobile in question).  
+Example:
+The large orc peers suspiciously at you.
+~
+Ideally it should be one line in length, but in some cases two line or 
+longer long descriptions are justified.  Be sure to put a ~ BELOW the 
+description (not at the end of the line). 
+
+V.  look description~ 
+This is the equivalent of a character's description, and is seen when 
+you look at a mobile.  It can be as long as you like, but 1-5 lines is 
+probably best.  Try and make it at least a little descriptive, players should feel rewarded for looking at a mobile.  Be sure to put a ~ BELOW the description (not at the end of the line). 
+
+VI.  race~ 
+Every mobile should have a race, whether it be goblin, orc, troll, or 
+whatever.  See the list below for races that already exist.  If you feel 
+your race is sufficiently distinct to merit creation of a new one, include a note containing the abilities the race should have to the implementor you are working with.  Do not forget to put a ~ at the end of the line.
+
+The following is a list of acceptable races on Tesseract.  Your
+mileage on other muds may vary.
+
+bat 
+  affect flags: flying, dark vision 
+  offensive flags: dodge, fast 
+  vulnerabilities: light 
+  form: edible, animal, mammal 
+  parts: ACDEFHJKP 
+
+bear 
+  offensive flags: crush, disarm, berserk 
+  resistances: bash, cold 
+  form: edible, animal, mammal  
+  parts: ABCDEFHJKUV 
+
+cat 
+  affect flags: dark vision 
+  offensive flags: fast, dodge 
+  form: edible, animal, mammal 
+  parts: ACDEFHJKQUV 
+
+centipede 
+  affect flags: dark vision 
+  resistances: pierce, cold 
+  vulnerabilities: bash 
+  form: edible, poison, animal, insect 
+  parts: ACK 
+
+dog 
+  offensive flags: fast 
+  form: edible, animal, mammal 
+  parts: ACDEFHJKUVo 
+
+doll 
+  immunities: cold, poison, holy, negative, mental, disease, drowning 
+  resistances: bash, light 
+  vulnerabilities: slash, fire, acid, lightning, energy 
+  form: other, construct, biped, cold-blooded 
+  parts: ABCGHK 
+
+dragon (NPC dragons will typically have some flags stripped)
+  affect flags: infravision, flying 
+  resistances: fire, bash 
+  vulnerabilities: pierce, cold 
+  form: edible, sentient, dragon 
+  parts: ACDEFGHIJKPQUVX 
+
+dwarf 
+  affect flags: infravision 
+  resistances: poison, disease 
+  vulnerabilities: drowning 
+  form: edible, sentient, biped, mammal 
+  parts: ABCDEFGHIJK 
+
+elf 
+  affect flags: infravision 
+  resistances: charm 
+  vulnerabilities: iron 
+  form: edible, sentient, biped, mammal 
+  parts: ABCDEFGHIJK 
+
+fido 
+  offensive flags: dodge, assist race 
+  vulnerabilities: magic 
+  form: edible, poison, animal, mammal 
+  parts: ACDEFHJKQV 
+
+fox 
+  affect flags: dark vision 
+  offensive flags: fast, dodge 
+  form: edible, animal, mammal 
+  parts: ACDEFHJKQV 
+
+giant 
+  resistances: fire, cold 
+  vulnerabilities: mental, lightning 
+  form: edible, sentient, biped, mammal 
+  parts: ABCDEFGHIJK 
+
+goblin 
+  affect flags: infravision 
+  resistances: disease 
+  vulnerabilities: magic 
+  form: edible, sentient, biped, mammal 
+  parts: ABCDEFGHIJK 
+
+hobgoblin 
+  affect flags: infravision 
+  resistances: disease, poison 
+  form: edible, sentient, biped, mammal 
+  parts: ABCDEFGHIJKY 
+
+human 
+  form: edible, sentient, biped, mammal 
+  parts: ABCDEFGHIJK 
+
+kobold 
+  affect flags: infravision 
+  resistances: poison 
+  vulnerabilities: magic 
+  form: edible, poison, sentient, biped, mammal 
+  parts: ABCDEFGHIJKQ 
+
+lizard 
+  resistances: poison 
+  vulnerabilities: cold 
+  form: edible, animal, reptile, cold-blooded 
+  parts: ACDEFHKQV 
+
+modron 
+  affect flags: infravision 
+  offensive flags: assist race, assist alignment 
+  immunities: charm, disease, mental, holy, negative 
+  resistances: fire, cold, acid 
+  form: sentient 
+  parts: ABCGHJK 
+
+orc 
+  affect flags: infravision 
+  resistances: disease 
+  vulnerabilities: light 
+  form: edible, sentient, biped, mammal 
+  parts: ABCDEFGHIJK 
+
+pig 
+  form: edible, animal, mammal 
+  parts: ACDEFHJK 
+
+rabbit 
+  offensive flags: dodge, fast 
+  form: edible, animal, mammal 
+  parts: ACDEFHJK 
+
+school monster 
+  action flags: no alignment 
+  immunities: charm, summon 
+  vulnerabilities: magic 
+  form: edible, biped, mammal 
+  parts: ABCDEFHJKQU 
+
+snake 
+  resistances: poison 
+  vulnerabilities: cold 
+  form: edible, animal, reptile, snake, cold-blooded 
+  parts: ADEFKLQVX 
+
+song bird 
+  affect flags: flying 
+  offensive flags: fast, dodge 
+  form: edible, animal, bird 
+  parts: ACDEFHKP 
+
+troll 
+  affect flags: regeneration, infravision, detect hidden 
+  offensive flags: berserk 
+  resistances: charm, bash 
+  vulnerabilities: fire, acid 
+  form: edible, poison, sentient, biped, mammal 
+  parts: ABCDEFGHIJKUV 
+
+water fowl 
+  affect flags: swim, flying 
+  resistances: drowning 
+  form: edible, animal, bird 
+  parts: ACDEFHKP 
+
+wolf 
+  affect flags: dark vision 
+  offensive flags: fast, dodge 
+  form: edible, animal, mammal 
+  parts: ACDEFJQV 
+
+wyvern 
+  affect flags: flying, detect invisible, detect hidden 
+  offensive flags: bash, fast, dodge 
+  immunities: poison 
+  vulnerabilities: light 
+  form: edible, poison, animal, dragon 
+  parts: ACDEFHJKQVX 
+
+VII.  Act, Affects, Aggression, Alignment, Mobile group
+
+Act flags (short for "action") determine the in-game behavior of your 
+mobile. Input all of the flags you have chosen into the proper mobile section (as shown in the examples above).  Following is a listing of act flags:
+
+A  NPC          Mobile is an NPC (set automatically by the game) 
+B  sentinel     Mobile doesn't wander 
+C  scavenger    Mobile picks up items on the floor 
+F  aggressive   Mobile attacks any character in the same room
+		    (see the section dealing with aggression) 
+G  stay area    Mobile will not leave a zone (this should be set) 
+H  wimpy        Mobile will fly when badly hurt 
+J  pet          Mobile is a pet (and hence safe from attack) 
+K  train        Mobile can train statistics 
+O  undead       Mobile has special undead powers (i.e. life draining) 
+Q  cleric       Mobile has cleric casting powers 
+R  mage         Mobile has mage casting powers 
+S  thief        Mobile has thief combat skills (backstab, etc.) 
+T  warrior      Mobile has warrior combat skills (disarm, parry, etc.) 
+U  noalign      Mobile is unaligned (unintelligent animals, golems, etc.)
+V  nopurge      Mobile isn't removed by the purge command 
+W  outdoors     Mobile will not wander outside a building 
+Y  indoors      Mobile will not wander into a building 
+a  healer       Mobile can heal characters (i.e. the heal command) 
+b  gain         Mobile can grant new skills (i.e. the gain command) 
+c  update       Mobile is always updated, even in idle zones (rarely 
+		    needed) 
+d  changer      Mobile can change coins (i.e. Otho the Money Changer) 
+
+
+Affect Flags 
+Affect flags are used to assign various spell and spell-like effects to 
+a mobile, such as sanctuary, hidden, or detections.  The following list 
+contains all usable affect flags:
+
+B  invisible    Mobile is invisible 
+C  detect evil  Mobile can sense evil 
+D  detect invis Mobile can see invisible. **
+E  detect magic Mobile can see magic
+F  detect hide  Mobile can see hidden (sneaking/hiding) characters 
+G  detect good  Mobile can sense good 
+H  sanctuary    Mobile is protected by a sanctuary spell. **
+I  faerie fire  Mobile is surrounded by faerie fire (a hindrance) 
+J  infravision  Mobile can see heat sources in the dark 
+N  protect evil Mobile takes less damage from evil characters 
+O  protect good Mobile takes less damage from good characters 
+P  sneaking     Mobile is sneaking (hard to detect while moving) 
+Q  hiding       Mobile is hiding (cannot be seen without detect hidden) 
+T  flying       Mobile is flying 
+U  pass door    Mobile can walk through closed doors 
+V  haste        Mobile is affected by a haste spell 
+Z  dark vision  Mobile can see in the dark without a light source 
+b  swimming     Mobile is swimming (or capable of swimming) 
+c  regeneration Mobile recovers hit points and mana faster than usual 
+
+** Sanctuary and detect invisible are often overused, so please be 
+careful with them. Not every mobile should be able to see invisible, or the spell is worthless, and similarly not every hard mobile should have a sanctuary spell. 
+
+Example: a glowing ghost might have faerie fire, flying, and protect 
+good, for an affect flag of IOT.  There is no limit to the number of affect flags that may be set on a mobile, but be sure not to type the same letter twice.
+
+
+Alignment 
+Alignment is a number between -1000 and 1000, meant to represent the 
+ethos of your creature. -1000 is irredeemably evil, 1000 is saintly.  All but the most extreme monsters should fall between -500 and 500, and in particular it is hard to justify any low-level mobiles having extreme alignment. 
+
+Mobile Group 
+The mobile is used to group mobiles into allied groups.  They are 
+assigned by XXYY, where XX is your zone number (for Midgaard 30) and YY is some increasing number (so Midgaard's groups will be 3000, 3001, etc.).  Any mobile in the same group as another mobile will assist it in combat.  The actual number has no real meaning, but please use the numbering system above so that each area keeps unique grouping. 
+
+VIII.  Level, Hit bonus, Hit dice, Mana dice, Damage, Damage type:
+(See the appendix at the end of the documentation for details on 
+recommended values depending on the mobile level)
+
+Level 
+This is a very important statistic, as it determines the  recommended 
+values for your mobile's combat abilities.  Try and make the level choice reasonable to believe.  Just as a level 2 Ancient Blue Wyrm makes no sense, neither does a level 50 snail.  Look over the recommended values for the level and please try to stay fairly close to them, otherwise your mobile may well be out of balance with the others in the game. 
+
+Hit bonus
+This statistic is normally 0, but in mobiles with exceptional (and I do 
+mean exceptional) combat abilities it may be higher. Clumsy mobiles may 
+deserve a -1 or -2. 
+
+Hit dice
+Hit dice are expressed as ndn+n (so many d-whatevers + a bonus).  
+Consult the recommended mobile values to get a rough idea how many hit points  your mobile should have. The hit points will determine how much raw damage your monster can take before expiring.  For a fixed quantity of hit points enter it as x+1d1: i.e., for 100 hps, 1d1+99.
+
+Mana dice
+Mana dice are expressed as ndn+n.  Consult the recommended mobile values 
+to get a rough idea how much mana your mobile should have.  
+This value will determine how many spells your mobile can cast in a combat (non-spellcasters have a mana value as well, as their mana can be tapped by the energy drain spell).   Note that the mana value is not currently used, but mobiles WILL in future use it (and therefore be able to run out of it) so don't forget to define this section.
+
+Damage
+The damaging power of a mobile is expressed as ndn+n, just like hit 
+points and mana.  It is very important to stay close to the values recommended, in particular where the damage bonus is concerned, or the mobile's balance will be skewed. 
+
+Damage Types 
+A mobile's damage type defines three things: what message is seen when 
+it attacks in combat, what armor class is used to defend against the 
+attack, and what type of resistance or vulnerability affects the damage received from the attack.  The following damage types are supported, listed by the type of attack and the damage messaged sent (if a name follows the damage message, you should use that name in your area file, otherwise just use the message itself). If you can't find a damage type that fits your mobiles, by all means make a new one (but be sure to note that a new damage type was added and how it should be defined, or your mobile will not function properly!) 
+
+piercing attacks (pierce ac): 
+bite                    pierce                  sting 
+chomp                   scratch                 thrust 
+peck                    stab 
+
+bashing attacks (bash ac): 
+beating                 crush                   smash 
+blast                   peck(peckb)             suction 
+pound                   punch                   thwack 
+charge                  slap 
+
+slashing attacks (slash ac): 
+claw                    grep                    slice 
+cleave                  slash                   whip 
+
+acid attacks (magic ac): 
+acidic bite (acbite)    digestion               slime    
+
+cold attacks (magic ac): 
+chill                   freezing bite (frbite) 
+
+energy attacks (magic ac): 
+magic                   wrath 
+
+fire attacks (magic ac): 
+flame                   flaming bite (flbite) 
+
+holy attacks (magic ac): 
+divine power (divine) 
+
+lightning attacks (magic ac): 
+shock                   shocking bite(shbite) 
+
+negative attacks (magic ac): 
+life drain (drain) 
+
+The acceptable kinds of damage (some with no damage messages as yet) 
+are: 
+bash                    disease                 light 
+pierce                  drowning                lightning 
+slash                   energy                  mental 
+acid                    fire                    negative 
+charm                   harm                    poison 
+cold                    holy                    sound 
+
+Harm, disease, and poison are generally used only on spells, but are 
+included here on the outside chance that a mobile might need them. 
+
+This list is by no means exhaustive, so please feel free to expand it as 
+your write your area. 
+
+IX.  Armor Classes 
+In order, the 4 armor class values for a mobile are piercing (i.e. 
+daggers and spears), bashing (i.e. clubs, rocks), slashing (swords and axes), and magical (everything else).  Usually the first three will be fairly close to each other (it's nice to have them be a little different, however), and the magical AC will be considerably weaker.  Please adhere to the AC guidelines set out in the appendix dealing with recommended values for such. 
+
+X. Offensive flags, Vulnerabilities, Resistances and Immunities:
+
+Offensive Flags 
+Offensive flags control mobile behavior in combat -- allowing some 
+variety in how your mobiles fight back against players.  A typical mobile should have a few (2-3) attack abilities and one or none defensive abilities, more skilled mobiles may have more, but try not to make them too flexible.  
+
+The following offensive flags are available, although not all are currently active (please use them anyway if they are appropriate, as they will be enabled at some future date): 
+
+A  area attack  Mobile hits all characters fighting against it. Very 
+powerful. 
+B  backstab     Mobile can backstab to start a combat 
+C  bash         Mobile can bash characters off their feet 
+D  berserk      Mobile may go berserk in a fight 
+E  disarm       Mobile can disarm _without_ a weapon wielded** 
+F  dodge        Mobile dodges blows 
+G  fade*        Mobile can fade "out of phase" to avoid blows 
+H  fast         Mobile is faster than most others, so has extra attacks 
+I  kick         Mobile can kick in combat for extra damage 
+J  kick dirt    Mobile kicks dirt, blinding opponents 
+K  parry        Mobile can parry _without_ a weapon wielded** 
+L  rescue*      Mobile may rescue allies in a fight 
+M  tail*        Mobile can legsweep with its tail or tentacles 
+N  trip         Mobile trips in combat 
+O  crush*       Mobile can crush opponents in its arms 
+
+*    not yet enabled 
+**   warrior and thief mobs (see action bits) can disarm and parry 
+     with a weapon wielded automatically 
+
+Offensive flags also control the assisting behavior of a mobile, by 
+using the following flags: 
+
+P  all          Mobile helps all other mobiles in combat 
+Q  align        Mobile assists mobiles of like alignment 
+R  race         Mobile will assist other mobiles of the same race 
+S  players      Mobile will assist players (by race/alignment)
+T  guard        Mobile assists as a cityguard
+U  vnum         Mobile assists mobiles of the same number only 
+
+Assisting by race and vnum are by the far the most common assist types.  
+Mobiles also assist mobiles in the same group, as defined by the group 
+number.
+
+Notes: The area attack and fast flags are quite powerful, and mustn't be 
+    overused. Only the most powerful mobiles should be capable of area  
+    attack, and only mobiles that really are faster than most should be 
+    fast.  Proper assist flag setting can greatly enhance the
+    cooperation within an area. 
+
+Example: An orc might have bash, kick, and kick dirt (it will probably 
+be a warrior, so will parry and disarm if armed), and will assist by 
+race and alignment, for an offensive flag of CIJQR. There is no limit to 
+the number of offensive flags that may be set on a mobile, but be sure 
+not to use the same letter twice.
+
+Immunities, resistances, and vulnerabilities 
+Mobiles have differing immunities, resistances, and vulnerabilites both 
+to better explain certain creatures (i.e. dragons) and to make fighting 
+them take a little more strategy than just mindlessly pumping out damage.  Most normal mobiles probably won't have much in the way of these flags, so don't add flags without sound reason.  It's important to make shopkeeper-type mobiles (as well as guild masters, healers, et cetera) immune to summon, charm, magic, and weapons (immunity flag ABCD) just to insure that they cannot be killed.  Similarly, weak, low-level mobiles (goblins, for example) might be made vulnerable to magic just to accent their weakness. All three flags share the same fields, which are as follows: 
+
+A  summon       Summoning and gating magic 
+B  charm        Charm spells (the beguiling spell group) 
+C  magic        All magic (be very careful using this flag) 
+D  weapons      All physical attacks (be very careful using this flag) 
+E  bash         Blunt weapons 
+F  pierce       Piercing weapons 
+G  slash        Slashing weapons 
+H  Fire         Flame and heat attacks and spells 
+I  Cold         Cold and ice attacks and spells 
+J  Lightning    Electrical attacks and spells 
+K  Acid         Corrosive attacks and spells 
+L  Poison       Venoms and toxic vapors 
+M  Negative     Life draining attacks and spells, or unholy energies 
+N  Holy         Holy or blessed attacks 
+O  Energy       Generic magical force (i.e. magic missile) 
+P  Mental       Mental attacks (such as a mind flayer's mind blasts) 
+Q  Disease      Disease, from the common cold to the black death 
+R  Drowning     Watery attacks and suffocation 
+S  Light        Light-based attacks, whether blinding or cutting 
+T  Sound        Sonic attacks and weapons, or deafening noises 
+X  Wood         Wooden weapons and creatures 
+Y  Silver       Silver or mithril weapons and creatures 
+Z  Iron         Iron and steel weapons and creatures 
+
+Note: Resist the temptation to make "Achilles Heel" style mobiles, that 
+is creatures that are immune (or almost immune) to all but a single 
+attack type. Such mobiles are extremely boring to fight, and ultimately 
+not very hard to defeat.  Strive to make a balanced mobile, with no flags that aren't explainable by its nature. 
+
+Important Note: the two generic categories (weapon and magic) are merged 
+with more specific flags, so that a mobile which is (for example) immune 
+to magic but vulnerable to fire will take normal damage from fire. 
+
+Example: a fire demon might be immune to fire and negative energy (HM), 
+resistant to mental attacks and weapons (DP), and vulnerable to holy  attacks as well as cold (IN). 
+
+XI.  Start position, Default position, Gender, Treasure
+
+start and default position 
+The start position is the position a mobile will be loaded in, the 
+default position is the position it returns to after a fight. These are often the same, but a sleeping mobile (for example) is not likely to go back to sleep.
+ 
+The acceptable positions are stand, sit, rest, and sleep. 
+
+sex 
+Mobile sex (as in gender, mobiles don't reproduce) can be none, male, 
+female, or either (either will be set randomly for each mobile of that type which is loaded).  It has no real game effects, but does add color.  It's a good idea to make generic mobiles (i.e. rabbits) sex 'either', just for variety. 
+
+treasure 
+The average treasure carried by the mobile, in silver pieces.  Most 
+mobiles should carry no more than 100 coins per level, and usually much less unless they are supposed to be wealthy.  Non-intelligent mobiles should usually have no treasure. 
+
+XII. Form, Part, Size, Material
+
+Form flags 
+
+The forms flag is used to define a body form for your mobile, and also 
+related data like what happens to its corpse when it dies, and whether or not it is edible.  Much of the forms code is not yet implemented, but please be as thorough as possible when defining your mobile, as it will all be used at some future point in time. The acceptable flags for body form are as follows (use your best judgment to determine which flags should be mutually exclusive):
+
+corpse-related flags: 
+
+A  edible       Mobile can be eaten 
+B  poison       Mobile is poisonous when eaten (should also be edible) 
+C  magical*     Mobile's magic nature causes strange effects when eaten
+D  vanishes*    Mobile vanishes after death (i.e. a wraith) 
+E  other*       Mobile is not flesh and blood (defined by material type) 
+
+form-related flags: 
+G  animal       Mobile is a "dumb" animal 
+H  sentient     Mobile is capable of higher reasoning 
+I  undead       Mobile is an undead, and not truly alive at all 
+J  construct    Mobile is a magical construct, such as a golem 
+K  mist         Mobile is a partially material mist 
+L  intangible   Mobile is immaterial (like a ghost) 
+M  biped        Mobile is bipedal (like a human) 
+N  centaur      Mobile has a humanoid torso, but a beast's lower body 
+O  insect       Mobile is an insect 
+P  spider       Mobile is an arachnid 
+Q  crustacean   Mobile is a crustacean (i.e. a crab or lobster) 
+R  worm         Mobile is a worm, that is a tube-shaped invertebrate 
+S  blob         Mobile is a formless blob (when used with mist, a cloud) 
+V  mammal       Mobile is a mammal 
+W  bird         Mobile is a bird 
+X  reptile      Mobile is a reptile (and should be cold-blooded) 
+Y  snake        Mobile is a snake (and should be a reptile) 
+Z  dragon       Mobile is a dragon
+a  amphibian    Mobile is an amphibian (and should be able to swim) 
+b  fish         Mobile is a fish (and should be able to swim) 
+c  cold blood   Mobile is cold-blooded, cannot be seen with infravis. 
+
+* Not yet implemented 
+
+parts flags 
+The body parts flag is used to detail what limbs and organs a creature 
+has, and currently has no game effect beyond determining what hits the ground when you kill a monster.  In the future, body parts will also determine what can be worn by the creature in question, and possibly special attacks (i.e. the tail attack) that the mobile may do, so please do try to be thorough in describing your mobile's body parts.  The following body parts are defined: 
+
+A  head         Mobile has a head 
+B  arms         Mobile has arm(s) (usually assumed to be 2) 
+C  legs         Mobile has leg(s) 
+D  heart        Mobile has a heart 
+E  brains       Mobile has brains (not all mobs with heads have brains) 
+F  guts         Mobile has intestines 
+G  hands        Mobile has hands capable of manipulating objects 
+H  feet         Mobile has feet 
+I  fingers      Mobile has fingers capable of wearing rings 
+J  ear          Mobile has ear(s) 
+K  eye          Mobile has eye(s) 
+L  tongue       Mobile has a _long_ tongue (like a lizard) 
+M  eyestalks    Mobile has eyestalks (it should also have eyes) 
+N  tentacles    Mobile has one or more tentacles 
+O  fins         Mobile has fins 
+P  wings        Mobile has wings 
+Q  tail         Mobile has a usable tail (no stubs) 
+U  claws        Mobile has combat-capable claws 
+V  fangs        Mobile has combat-capable teeth 
+W  horns        Mobile has horns, not necessarily dangerous ones 
+X  scales       Mobile is covered with scales 
+Y  tusks        Mobile has some teeth elongated into tusks 
+
+
+size 
+The size of the mobile has many game effects, and should be chosen 
+carefully. 
+The acceptable sizes are as follows: 
+tiny: small birds and anything smaller 
+small: large birds (ducks and up) to halflings 
+medium: elves and dwarves to humans 
+large: ogres, gnolls, and other large humanoids 
+huge: giants, small dragons, and wyverns 
+giant: for VERY large critters, i.e. dragons, titans, and the biggest 
+giants 
+
+material 
+The material type for mobiles is not currently supported. It should be 
+left blank (0) for flesh-and-blood creatures, or spirits, but golems and 
+other animated beings should have a material appropriate to their body 
+construction (i.e. stone, iron, diamond). Put the material in single 
+quotes if it is longer than one word. 
+
+Appendix A:  Recommended Values 
+The following values should be followed closely for all mobiles -- try 
+not to go more than 1 level away from the recommended values unless you are absolutely sure you want your mobile to be harder or easier than a 
+default monster. In particular, avoid making them easier.  Certain action flags (namely the 4 class-related flags) can modify the recommendations, they are explained in detail at the end of this section. 
+
+level  hit pts    ac    damage          level  hit pts    ac    damage 
+  1   2d6+10      9     1d4+0            31   6d12+928    -10   4d6+9 
+  2   2d7+21      8     1d5+0            32  10d10+1000   -10   6d4+9 
+  3   2d6+35      7     1d6+0            33  10d10+1100   -11   6d4+10 
+  4   2d7+46      6     1d5+1            34  10d10+1200   -11   4d7+10 
+  5   2d6+60      5     1d6+1            35  10d10+1300   -11   4d7+11 
+
+  6   2d7+71      4     1d7+1            36  10d10+1400   -12   3d10+11 
+  7   2d6+85      4     1d8+1            37  10d10+1500   -12   3d10+12 
+  8   2d7+96      3     1d7+2            38  10d10+1600   -13   5d6+12 
+  9   2d6+110     2     1d8+2            39  15d10+1700   -13   5d6+13 
+ 10   2d7+121     1     2d4+2            40  15d10+1850   -13   4d8+13 
+
+ 11   2d8+134     1     1d10+2           41  25d10+2000   -14   4d8+14 
+ 12   2d10+150    0     1d10+3           42  25d10+2250   -14   3d12+14 
+ 13   2d10+170   -1     2d5+3            43  25d10+2500   -15   3d12+15 
+ 14   2d10+190   -1     1d12+3           44  25d10+2750   -15   8d4+15 
+ 15   3d9+208    -2     2d6+3            45  25d10+3000   -15   8d4+16 
+
+ 16   3d9+233    -2     2d6+4            46  25d10+3250   -16   6d6+16 
+ 17   3d9+258    -3     3d4+4            47  25d10+3500   -17   6d6+17 
+ 18   3d9+283    -3     2d7+4            48  25d10+3750   -18   6d6+18 
+ 19   3d9+308    -4     2d7+5            49  50d10+4000   -19   4d10+18 
+ 20   3d9+333    -4     2d8+5            50  50d10+4500   -20   5d8+19 
+
+ 21   4d10+360   -5     4d4+5            51  50d10+5000   -21   5d8+20 
+ 22   5d10+400   -5     4d4+6            52  50d10+5500   -22   6d7+20 
+ 23   5d10+450   -6     3d6+6            53  50d10+6000   -23   6d7+21 
+ 24   5d10+500   -6     2d10+6           54  50d10+6500   -24   7d6+22 
+ 25   5d10+550   -7     2d10+7           55  50d10+7000   -25   10d4+23 
+
+ 26   5d10+600   -7     3d7+7            56  50d10+7500   -26   10d4+24 
+ 27   5d10+650   -8     5d4+7            57  50d10+8000   -27   6d8+24 
+ 28   6d12+703   -8     2d12+8           58  50d10+8500   -28   5d10+25 
+ 29   6d12+778   -9     2d12+8           59  50d10+9000   -29   8d6+26 
+ 30   6d12+853   -9     4d6+8            60  50d10+9500   -30   8d6+28 
+
+Thief* mobiles should read their hp, ac, and damage at one level lower 
+Mage mobiles read hp and ac at one level lower, and damage three levels 
+lower 
+Cleric mobiles read damage at two levels lower 
+Warrior mobiles read hit points one level higher 
+Armor class vs. magical attacks should be computed by this formula: 
+(ac - 10) / n + 10, where n is 4 for most mobiles, 3 for thieves and 
+clerics, and 2 for mages. 
+
+Remember, +hit should only be given to very exceptional mobiles.
+
+* a thief mobile either has ACT_THIEF set or is decidedly thief-like in  
+nature. The same holds true for the other modifiers. 
+
+
+Appendix B: Removing Flags 
+There are times when a mobile will clearly belong to a certain race, but  
+for whatever reason you will not it to have certain flags belonging to 
+that race.  For examples, dragons may normally be resistant to fire, but you may wish to make a white dragon that is vulnerable to fire and immune to cold.  To remove flags from the mobile, add flag removal commands at the end of the entry (below the form/parts/size/material line). 
+
+The base syntax is: 
+F <flag type> <flags> 
+
+Flag type may be either action, affect, offensive, immunity, resistance,  
+vulnerability, form, or parts ( usually just written as act, aff, off, 
+imm, res, vul, for, and par). 
+
+For example, to make a dragon that is not vulnerable to cold or 
+resistant to fire, use: 
+
+F res H 
+F vul I 
+
+More than one flag can be removed on the same line, as long as they are 
+all part of the same flag group.  So to remove fast and dodge from a wolf, you would type: 
+
+F off FH 
+   
+Don't be afraid to move flags if you have to, and absolutely do NOT 
+define a new race just because a few of the default flags don't agree with you. 
+
+4. #OBJECTS
+
+I.      #<vnum> 
+II.     <object_name>~ 
+III.    <object_short>~ 
+IV.     <object_long>~ 
+V.      <material>~ 
+VI.     <type> <extra:flags> <wear:flags>
+VII.	  <V0> <V1> <V2> <V3> <V4>
+VIII.   <level> <weight> <cost>  
+**IX    <applies>
+**XI.   <flags>
+**XII.  <extended object description keyword>~
+        <extended object description text>
+~
+
+* varies by object type, may be nonexistent
+
+** optional
+
+
+Breakdown:
+
+I.  The vnum is the number used to reference your object.  There may 
+only be one object of any given vnum at one time.  (see glossary)
+
+II.  This is a list of names by which the object may be referenced.  Do 
+not forget to put a tilde at the end of it.
+
+III.  This is the short description of the object.  It is seen when the 
+object is used, picked up or worn.  Example: a short sword named 
+'Nightbringer', THE Long Sword, a scale mail coif, etc.  Do not forget to put a tilde at the end.
+
+IV.  This is the description seen when the object is on the ground.  
+Example:  A short sword lies here on the ground.~  Do not forget to put a tilde at the end.
+
+V.  This is the substance of which the object is composed.  Ie: a sword 
+might have material steel~, or a cloak have material wool~.  If you must define a new material type in your area, go ahead, but please make a note of this to the person you are submitting the area to.  A listing of material types that are already defined follows:
+
+plastic	slime		jelly		wax		rubber
+oil		balm		cream		hard/soft leather
+kid leather	fur		snakeskin	gut		food
+meat		bread		wood		hardwood	softwood
+bamboo	ebony		cork		horn		light laen
+sponge	elastic	silk		satin		lace
+wool		linen		canvas	cloth		velvet
+felt		paper		parchment	vellum	hemp
+feathers	webbing	cardboard	steel		gold
+silver	mithril	platinum	iron		lead
+copper	electrum	bronze	brass		wire
+tin		pewter	metal		dark laen	porcelain
+ivory		marble	stone		quartz	corundum
+flint		lodestone	granite	enamel	obsidian
+adamantite	glass		pottery	crystal	ice
+bone		shell		coral		energy	fire
+air		water		acid		coal		sandstone
+clay		ash		earth		diamond	etherealness	
+nothingness
+
+dragonscale, blue dragonscale, black dragonscale, white dragonscale, red 
+dragonscale.
+
+Although you would normally have to place multiple words in single 
+quotes, in this instance, do NOT.  Do not forget to end the material type with a tilde.
+
+VII.  Type, Extras, Wear
+
+Type
+Type determines what kind of object you are creating.  A list of item types used by Rom 2.4x follows:
+
+*weapon
+*armor
+*container
+*light
+*food
+*drink
+*money
+*wand
+*staff
+*potion
+*scroll
+*pill
+*furniture
+*portal
+innkey
+clothing
+*fountain
+key
+boat
+map
+warpstone
+treasure
+jewelry
+gem
+trash
+
+* indicates that the item has special values, examples of which will be given at the end of this section.
+
+Many of the item types have no practical purpose aside from to 
+control what shops they may be sold at.  A jeweler might buy only jewelry, and not gems or treasure, for example. 
+
+V0 through V4
+
+Items marked with an asterisk in the Item Types section have special values that must be given in the area file.  Items not marked with an asterisk have *no* special settings and a 0 must be placed in each slot.
+
+Example of an item with no special values:
+
+#3043
+ring protection~
+a ring of protection~
+an enchanted ring of protection sits on the floor.~
+silver~
+treasure G AB
+0 0 0 0 0 <-- vo through v4 slots held with zeroes
+8 10 640 P
+
+Examples follow, with explanation of what each special value denotes:
+
+Weapon:
+
+#3005
+scimitar blade~
+Hassan's scimitar~
+Hassan's scimitar lies upon the ground, waiting for its owner.~
+adamantite~
+weapon BI AN
+sword 4 10 cleave EF
+42 450 5600 P
+E
+scimitar blade~
+It is quite heavy.  The blade is made of some metal that you can't even
+spell.  The edge of the blade looks as if it could cut through anything
+or anyone.
+~
+For weapons, v0 is the weapon type (sword in the example), v1 is the
+number of dice (4 here), v2 is the number of sides each die has (10),
+v3 is the damage message (cleave) and v4 holds the weapon flags (E is vorpal, F is two-handed).  Acceptable damage messages are listed in the mobiles section, and a listing of acceptable weapon flags follows:
+
+      A   flaming     D  sharp      G  shocking (electrical)
+      B   frost       E  vorpal     H  poisoned
+      C   vampiric    F  two-handed 
+	    (energy drain)
+
+Armor:
+
+#3045
+jacket scale mail~
+a scale mail jacket~
+A scale mail jacket is lying on the ground.~
+steel~
+armor 0 AD
+3 4 4 0 2
+5 160 850 G
+
+V0 is armor vs. pierce, v1 is armor vs. bash, v2 is armor vs. slash,
+v3 is armor vs. exotic weapons, v4 is bulk.  Bulk is currently unused
+by the code, but please enter it so that when it is implemented, your
+file will be current.  A listing of example bulks follows:
+
+clothing 			0		buckler		0
+hard leather		1		small	shield	1	
+scale/chainmail		2		medium shield	2
+platemail			3		kite shield		3
+light plate armor		4		tower shield	4
+heavy plate armor		5
+
+Light:
+
+#3031
+lantern~
+a hooded brass lantern~
+A hooded brass lantern has been left here.~
+brass~
+light 0 A
+0 0 250 0 0
+0 40 75 P
+E
+letters~
+They say, "Use 'hold lantern' to activate."
+~
+E
+lantern~
+It is a large and robust but somewhat battered oil lantern made from brass,
+equipped with a handle to make it handy and a hood to protect its flame.
+Some letters have been scratched on its bottom.
+~
+
+V0 and V1 are empty, held with a 0.  V2 is light duration in game hours,
+(250 hours in this case).  If V2 is set to -1 the light is permanent.
+V3 and V4 are empty and held with zeroes.
+
+Money:
+
+#3132
+silver coins~
+the silver coins~
+A lot of silver is here.~
+silver~
+money 0 A
+1000 0 0 0 0
+0 0 0 P
+E
+silver~
+Looks like at least a thousand coins.
+~
+
+V0 is the silver value (in this case, 1000) of the money object.  V1
+is the gold value (remember that Rom 2.4x uses both silver and
+gold coins).  V2, V3 and V4 are held with zeroes.
+
+Drink containers:
+
+#3138
+skin water buffalo~
+a buffalo water skin~
+A bloated dead buffalo is on the floor.~
+leather~
+drink 0 A
+64 64 'water' 0 0
+0 40 24 G
+
+V0 is the maximum amount of liquid the container may hold (64 here).
+V1 is the current amount it holds (64 here, as the container is full,
+but it will decrease as the player drinks from it.  You may also
+make half-full containers that may be filled up.)  V2 is the type
+of liquid the container holds when it is loaded (water here).  V3 has
+two settings: 0 for normal and A for poisoned.  V4 is unused.
+
+A listing of acceptable liquid types follows:
+
+    Name			   Color	    Proof  Hunger Thirst 
+
+    water                  clear           0, 	1,	  10, 	
+    beer                   amber          12, 	1,  	   8, 	
+    red wine               burgundy       30, 	1,  	   8, 	
+    ale                    brown          15, 	1,  	   8, 	
+    dark ale               dark           16, 	1,  	   8, 	
+    whisky                 golden        120, 	1,  	   5, 	
+    lemonade               pink            0, 	1,  	   9, 	
+    firebreather           boiling       190, 	0,  	   4, 	
+    local specialty        clear         151, 	1,  	   3, 	
+    slime mold juice       green           0, 	2,      -8, 	
+    milk                   white           0, 	2,  	   9, 	
+    tea                    tan             0, 	1,  	   8, 	
+    coffee                 black           0, 	1,  	   8, 	
+    blood                  red             0, 	2,      -1, 	
+    salt water             clear           0, 	1,      -2, 	
+    coke                   brown           0, 	2,  	   9, 	
+    root beer              brown           0, 	2,  	   9, 	
+    elvish wine            green          35, 	2,  	   8, 	
+    white wine             golden         28, 	1,  	   8, 	
+    champagne              golden         32, 	1,  	   8, 	
+    mead                   honey-colored  34, 	2,  	   8, 	
+    rose wine              pink           26, 	1,  	   8, 	
+    benedictine wine       burgundy       40, 	1,  	   8, 	
+    vodka                  clear         130, 	1,  	   5, 	
+    cranberry juice        red             0, 	1,  	   9, 	
+    orange juice           orange          0, 	2,  	   9, 	
+    absinthe               green         200, 	1,  	   4, 	
+    brandy                 golden         80, 	1,  	   5, 	
+    aquavit                clear         140, 	1,  	   5, 	
+    schnapps               clear          90, 	1,  	   5, 	
+    icewine                purple         50, 	2,  	   6, 	
+    amontillado            burgundy       35, 	2,  	   8, 	
+    sherry                 red            38, 	2,  	   7, 	
+    framboise              red            50, 	1,  	   7, 	
+    rum                    amber         151, 	1,  	   4, 	
+    cordial                clear         100, 	1,  	   5, 	
+
+Fountains:
+
+19 2
+#9601
+fountain water~
+a fountain~
+A large fountain is here gurgling out an endless stream of water.~
+marble~
+fountain G 0
+100000 100000 'water' 0 0
+0 0 0 P
+
+V0 and V1 for fountains are technically set the same as drink containers
+(max capacity and current capacity) but since a fountain holds an
+endless supply of liquid, usually V0 and V1 are set to some arbitrarily
+large number.  Any number above zero should work fine.  :)  V2
+is the type of liquid the fountain holds.  Any liquid in the table
+associated with drink containers will work in a fountain.  V3
+and V4 are held with zeroes.
+
+(And yes, you can have fountains of wine, or fountains of coffee :)
+
+Wands and Staves:
+
+#3044
+wand magic missile missiles~
+a wand of magic missiles~
+a wooden stick lies on the ground.~
+wood~
+wand G AO
+4 10 10 'magic missile' 0
+2 10 320 P
+E
+wand~
+It has a little note that says 'point this end at target'.
+~
+
+Wands and staves have exactly the same v0-v4 formatting.  V0 is
+spell level (the example wand having a 4th level magic missile),
+v1 is the maximum number of charges, v2 is the current number of
+charges (the mud will decrement the charge number as the wand is used,
+but you could also make a half-charged wand that could be refilled
+with the 'recharge' spell.)  V3 is the spell name, which must be
+enclosed in quotes.  V4 is unused and held with a zero.
+
+Potions, Scrolls and Pills:
+
+#3241
+potion yellow~
+a yellow potion of see invisible~
+A small yellow potion has carelessly been left here.~
+glass~
+potion G AO
+12 'detect invis' '' '' ''
+0 10 220 P
+E
+potion yellow~
+The potion has a small label 'Detect The Invisible'.
+~
+
+V0 holds the level of the spell (this potion having a level 12
+detect invisible spell in it).  v1 through v4 hold the spells --
+potions, scrolls and pills may have up to 4 spells in them.  Should
+you not wish to have all four slots filled, use empty quotes (as
+shown in the above example, a potion with only one spell) as
+placeholders.
+
+Containers:
+
+#3032
+bag~
+a bag~
+A small bag.~
+leather~
+container 0 A
+50 0 0 5 100
+0 10 9 G
+
+V0 holds the maximum weight that the container may store.  V1 holds container flags, a list of which follows.  V2 is unused.  V3 holds
+the maximum weight of a given object that the container may store.
+(i.e.: the above bag may be able to hold 50 pounds, but the opening
+of the bag is so small that nothing larger than a 5 pound object
+can fit through it.  The bag could then hold up to 10 5 pound objects,
+50 1 pound objects, some combination thereof, or some other combination
+of weights.)  V4 holds the weight multiplier of the container, which
+is a number that may not be less than 1.
+
+A weight multiplier of 100 means that the objects, while inside the
+container, weigh 100% of their normal weight.  If v4 were set to,
+for example, 75, the objects would weigh 75% of normal (a 100 pound
+object would have an effective weight of 75 pounds); if v4 were set
+to 125, objects would weigh 125% of normal (the 100 pound object would
+weigh 125 pounds).  Be conservative with weight multipliers --
+a container with, for example, a weight multiplier of 1% is an extremely
+powerful item!
+
+Food:
+
+#3014
+danish blueberry~
+a blueberry danish~
+A scrumptious blueberry danish is here.~
+food~
+food 0 A
+8 6 0 0 0
+0 10 5 P
+
+V0 holds the number of game hours the food will keep the person who
+eats it full.  V1 holds the number of hours it will keep the person
+from getting hungry.  (Think of it as the distinction between food
+caloric value and food density -- pasta is both dense and high
+calorie, so the fullness and hunger values of a plate of linguine
+should be roughly the same -- whereas cotton candy as a high calorie
+value but a low density, so you can eat a lot more of it before you
+get full, but the sugar will keep you from feeling hungry.)  V2 is
+unused and held with a zero.  V3 is either 0 for normal or A for
+poisoned.  V4 is unused.
+
+Portals:
+
+#XX00
+black hole~
+a black hole~
+A swirling black hole spins in the centre of the room.~
+energy~
+portal 0 0
+0 
+0 0 0 P
+
+V0 is the number of charges the portal has (for limited use portals) --
+similar to how a wand or staff has charges.  Set it to -1 for a permanent portal.  V1 is exit flags -- see the section of #ROOMS dealing with doors for a listing of usable exit flags.  V2 is gate flags, a listing of which is at the end of this example.  V3 is the vnum of the room that the portal goes to.  V4 is unused, and held with a zero.
+
+Gate flags:
+
+A	Normal exit (should be set if no other portal flags are used)
+B	No curse (can't be used by people who are cursed)
+C	Go with (portal entrance moves with the person using it)
+D	Gate buggy (chance it will teleport the person to a random room)
+E	Random (will always teleport the person to a random room)
+
+Furniture:
+
+#XX00
+white wicker couch~
+a white wicker couch~
+A white wicker couch with pink cushions is tucked into a corner.~
+wood~
+furniture 0 0
+2 200 BEHKN 100 100
+0 0 0 P
+
+V0 is the number of people that can fit onto the piece of furniture 
+(in the case of the couch, 2 people).  V1 is the total weight the 
+piece of furniture can support (200 pounds here, meaning while in
+theory 2 people can sit on the couch, the people sitting on it can't
+weigh more than a total of 200 pounds).  V2 is furniture flags, which
+determine the message to the room when the person uses the furniture
+in various different ways.  The couch can be sat on, rested on, slept
+on, stood on, and have things put on it.  However, a bathtub might be
+sit in, rest in, have no setting for sleep (sleeping in a bathtub is
+a bad idea) and allow things to be put in it -- hence the configurability on the messages.  You can only flag the furniture with one of each type of message -- one sit, one rest, one sleep, one stand and one put -- and you don't have to use all of them, like I said in my bathtub example.  V3 determines how much of a healing bonus or penalty the person receives for using the furniture -- look at the section dealing with heal/mana bonus/penalty under #ROOMS.  V4 determines the mana recovery bonus or penalty.  100 is normal heal/mana recovery.
+
+A list of furniture flags for V2 follows:
+
+A	Stand at
+B	Stand on
+C	Stand in
+D	Sit at
+E	Sit on
+F	Sit in
+G	Rest at
+H	Rest on
+I	Rest in
+J	Sleep at
+K	Sleep on
+L	Sleep in
+M	Put at
+N	Put on
+O	Put in
+P	Put inside
+
+(Note that the Put flags in furniture are not yet enabled, but please design your furniture using them anyhow, so that when the code is written, your area will be current to it.)
+
+Extra flags
+
+Extra flags are visual effects and other controls on how the object may 
+be used.  A listing of extra flags follows:
+
+(Glowing)			A		(Humming)		B
+Dark (hidden)		C		Evil			E
+Invis				F		Magic			G
+Nodrop			H		Bless			I
+Anti-good			J		Anti-evil		K
+Anti-Neutral		L		Noremove		M	
+Inventory			N		Nopurge		O	
+Rot_death			P		Vis_death		Q
+Nosac				R		Nolocate		T	
+Melt_drop			U		Sell extract	W
+Burn proof			Y
+
+Items with applies or other magical effects should be flagged magic.  Anti-good/evil/neutral prevents the item from being worn by persons of those aligns -- you may mix and match two of three, but do NOT flag an item as unwearable by all three aligns, it will cause problems for the mud.  Inventory should usually be present on items given to a shopkeeper, and NEVER on any other object.  It ensures that the item never runs out in a shop.  A shop item not flagged inventory will only be able to be sold once.  Nopurge means that the 'purge' command cannot affect this item unless it is directly purged -- stationary objects like furniture should be flagged this.  Rot death places a short timer on the object when the mobile carrying it dies and it disintegrates when the timer is up.  Vis death means that the item is undetectable until after the mobile carrying it is dead.  Nosac means the item cannot be sacrificed.  Nolocate prevents locate object from finding the object.  Melt drop means that the item dissolves when dropped (used for sub issue eq to prevent clutter).  Sell extract ensures that the item will be purchased at the full value it was sold at (this should ONLY be used for gem stores where people may convert gold, which is very heavy, into more 
+valuable and light gemstones).  Burn proof makes the item invulnerable to damage by fire or acid.
+
+Wear flags
+
+Wear flags determine where an object may be worn.  Note that if you want 
+the item to be able to be picked up it should be flagged Take, AS WELL AS having a wear location flagged if the object should be worn.  Leaving off a take flag but flagging it wearable will make it impossible to pick up the object should it be dropped.  So to make a ring that can be picked up and worn on finger it should be flagged AB.  Note that items can not have multiple wear locations (take does not count as a wear location, it only determines if the item can be picked up).
+
+A     Take              H    Hands           O  Hold 
+B     Finger            I    Arms            Q  Float 
+C     Neck              J    Shield 
+D     Body              K    About body 
+E     Head              L    Waist 
+F     Legs              M    Wrist 
+G     Feet              N    Wield 
+
+IX.  Level, Weight, Cost
+
+Level determines how high of level a character must be to use an item.  
+Higher level items should be more powerful, and lower level correspondingly less powerful.
+
+Weight determines how heavy an object is, which factors into how much a 
+character may carry.  It is entered into the area file as tenths of 
+pounds, so a three pound dagger would have an entry of 30.
+
+Cost determines how much an item may be sold to a shop for (although 
+shops virtually always buy for less than they will sell at) or how much a shop will charge for it.  When in doubt on an item sold in a shop, overprice it; when in doubt on an item that can be found in an area, underprice it.
+
+The fourth slot on objects is timer, which is not implemented, and should be set to P.  So far as I'm aware, setting it to anything other than P can cause the area to not boot.
+
+XI.  Applies
+
+apply <location> <modifier> 
+
+Location is the type of affect being placed on the item.  Modifier is a 
+positive or negative number that will increase or decrease the location 
+in question.  A listing of locations follows:
+
+1   Strength             12  Mana 
+2   Dexterity            13  Hitpoints 
+3   Intelligence         14  Movement 
+4   Wisdom               17  AC 
+5   Constitution         18  Hitroll 
+6   Sex                  19  Damroll 
+7   Charisma		 20  Spell (includes rods, staves, etc.)
+
+example 
+apply 1 1 
+apply 13 4 
+The above would be the pink ice ring's affects.
+
+XII.  Flags 
+
+flag <affect immune resist vulnerability> <location> <modifier> <bits> 
+
+Flags let you put what are usually perm aff bits as well as 
+immune/resist and vulnerability bits when wearing an item.  Note that you may also specify a location here (or 0 if none) so that spells with two effects can be done (like a ring of haste would have a dex modifier in addition to the bit).  
+A 
+listing of affects follows:
+
+affect bits: 
+ *A  Blind           *I  Faerie_fire         Q  Hide       *Y  Weaken 
+  B  Invisible        J  Infrared           *R  Sleep       Z  Dark_vis
+  C  Detect_evil      K  Curse              *S  Charm      *a  Berserk 
+  D  Detect_invis   **L  Flaming             T  Flying    **b  Swim 
+  E  Detect_magic    *M  Poisoned            U  Pass_door   c  Regen. 
+  F  Detect_hidden    N  Prot_evil           V  Haste       d  Slow 
+  G  Detect_good      O  Prot_good          *W  Calm 
+  H  Sanctuary        P  Sneak              *X  Plague 
+ * items will be detrimental to the character, possibly for cursed 
+items.
+ ** not yet implemented
+
+examples: 
+flag affect 2 3 V       dex+3   and AFF_HASTE 
+flag affect 0 0 CDEFG   a true sight item 
+flag immune 0 0 CD      immune to weapons and magic!   :) 
+
+For obvious reasons, be VERY careful in creating permanent affected 
+items.  A permanent sanctuary item, for instance, would be of questionable balance and will likely be stripped from your area unless you have some extreme justification for it.
+
+See the #MOBILES section for a listing of imm/resist/vul flags.
+
+XIII.  Extra descriptions.
+
+E
+extra description~
+Yep, this is an extra desc alright.
+~
+
+extra signifies the start of an extra description.  'extra description' 
+are the keywords that 'examine' will accept.  Typing 'examine extra' or 
+'examine description' would yield the output of 'Yep, this is an extra desc alright.'  
+
+For further examples, see the section dealing with extra descs in #ROOMS.
+
+5. #ROOMS
+
+II.  The #ROOMS section
+
+I.     <#vnum>
+II.    <room header>~
+III.   <room description>
+~
+IV.    <room flags>
+{V.    <exit direction>
+*VI.   <extended description of what is seen in that direction>
+~
+*VII.  <door keyword>
+VIII.  <door state> <exit vnum> <key vnum>}
+*IX.   <extra>
+       <extended room description keywords>~
+       <extended room description data>~
+*X.    <mana recovery adjust>  <healing recovery adjust>
+*XI.	 <clan rooms>
+XII.    <S>
+
+* denotes optional, not necessary for the room to function.  
+
+Sections that are enclosed in braces must be kept together, and placed 
+in the order that the above example shows.  Example:  if there are doors north, south and west, all of three sets of door data must go before the extended description related information.
+
+Example:
+
+#1000
+The Lego temple~
+You stand in a tiny, red temple; built entirely from Lego bricks. It is, 
+sadly, not a very interesting place, and perhaps you should leave through the portal which leads south to a sunny garden.
+~
+0 BC 0
+D2
+You see the grand portal of the Lego church. Beyond is an inviting 
+garden.
+~
+portal grand~
+1 1001 1007
+extra
+portal~
+The portal is high and arched, built out of lego bricks of the finest 
+quality.
+~
+extra
+brick~
+The bricks are all in bright different colours.
+~
+M 110 H 90
+S
+#1001
+<data for the next room>
+
+
+I.  The vnum is the number used to reference your room.  There may only 
+be one room of any given vnum at one time.  (see glossary)
+
+II.  This is the label of the room, and should be short.  Characters 
+with 'brief' mode on will only see this section of the room.  Do not forget to end it with a tilde.
+
+III.  This is the room description.  It should be a minimum of three 
+lines, preferably at least four or five, but not more than eight to ten.   (if you want more information than that, do it in extra descriptions)  Do not forget to end it with a tilde.
+
+IV.  Room flags, sector types
+
+The first slot of line IV is a hangover from old file format, retained 
+for compatibility.
+
+The second slot is room flags.  A listing of room flags follows:
+
+DARK           (A)  A light source must be carried to see in this room
+NO_MOB         (C)  Monsters cannot enter this room
+INDOORS        (D)  Room is inside (i.e. not affected by weather)
+PRIVATE        (J)  Room is limited to two characters (i.e. chat rooms)
+SAFE           (K)  Safe from pkilling and aggressive mobs
+SOLITARY       (L)  One character only can enter this room
+PET_SHOP       (M)  see addendum about pet shops
+NO_RECALL      (N)  players cannot use the 'recall' command to leave 
+this room
+
+Pet shops:  the room that the pets are to be sold in must be flagged 
+act_pet.  However, the pets themselves must be loaded into the sequentially next room (ie if the shop is 1036, the pets MUST be loaded into 1037 for the shop to work).
+
+The third slot is sector type.  A listing of sector types follows:
+
+Sector types:
+
+type       number  move pts  notes
+INSIDE      0         1   
+CITY        1         2
+FIELD       2         2
+FOREST      3         3
+HILLS       4         4
+MOUNTAIN    5         6
+WATER       6         4       swimmable
+DEEP WATER  7         -       boat required
+AIR         9         -       fly spell required
+DESERT     10         9       will eventually affect thirst and recovery
+
+V.  Exit directions
+
+Exit directions are signified by a line with D# on it, with # replaced 
+by 0 for north, 1 for east, 2 for south, 3 for west, 4 for up and 5 for down.  An exit line containing D2 signifies an exit south.
+
+VI.  Exit descriptions
+
+This section determines what will be seen if a character looks in the 
+direction the exit designates.  Ie:
+
+You see a river south.
+
+Would be what would be seen if a character typed 'look south' and the 
+above was the exit description.  Do not forget to put a tilde on the line *after*.  
+Ie:
+
+You see a river south.
+~
+
+VII.  Door keyphrase
+
+If the exit you are working on is to be a door, you may define a 
+keyphrase that the character may access to open the door and will see when he opens it.  
+Ie:
+
+D5
+You see a dusty trap door.
+~
+trap door~
+
+as the keyphrase will allow the character to type 'open trap' or 'open 
+door' or 'open down' to open the entryway, and when they do, they will see the message: 
+'You open the trap door.'
+
+VIII.  Door state, Connecting room vnum, Key vnum
+
+Slot one sets the door as open, closed, locked, etc.  0 denotes an open 
+door, 1 denotes closed, and 2 denotes closed and locked.
+
+Slot two denotes the vnum of the room that this exit links to.
+
+Slot three denotes the vnum of the key used to unlock the door, if the 
+door is lockable and if you choose to have a key that allows it to be unlocked.
+
+IX.  extra, extra keywords, and extra description text
+  
+E denotes the beginning of an extra description.  Extras are used to flesh out room descriptions by giving keywords that may be looked at or 
+examined to give more information.  Also, to have multiple sets of 
+extras, you must input all of the data under independent extra lines.
+
+Example: in the following room description:
+
+You stand under a trellis on which climb beautiful roses.  A lovely 
+flower garden extends to the north and west of here, and a path leads to a small white summerhouse to the south.
+
+with the extended descriptions
+
+E
+beautiful roses~
+They smell sweet and are delicately soft to the touch.
+~
+E
+trellis~
+It is made of wicker and painted white.
+~
+
+would yield the following result when 'exa beautiful', 'exa roses', 
+'look beautiful' or 'look roses' was typed:
+
+They smell sweet and are delicately soft to the touch.
+
+or the following if 'look trellis' or 'exa trellis' was typed:
+
+It is made of wicker and painted white.
+
+Do not forget to put a tilde after the keywords or the text.
+
+X.  Mana recovery adjustments, Healing recovery adjustments
+
+The default recovery rate is 100% (normal).  However, you may adjust 
+recovery of mana or hit points up or down to 1% of normal or 200% of normal.  To adjust mana, the syntax is M <number>  (ie: M 90 to decrease mana to 90% of normal recovery rate) or H <number> to adjust hit point recovery (ie: H 110 to increase healing by 10%).
+
+Example:
+
+M 75 H 125
+
+Note!  Increasing healing or mana recovery is a room option that should 
+be used very sparingly.  Decrease of healing/mana recovery may be used more frequently.
+
+XI.  If your mud has clans, you may wish to have clan halls that are restricted from access by anyone who is not a member of that clan.
+
+Example for a room for the hall of clan Moonstone:
+
+clan Moonstone~
+
+XII.  S
+
+S signifies the end of the room.  All rooms MUST be ended with S.
+
+6. #RESETS
+      
+This is the section that installs all the mobiles in their various 
+locations,equips the mobiles, locks and closes any necessary doors, randomizes any random room exits, and generally sets up the area and populates it. 
+      
+To reset an area, the server executes each command in the list of reset 
+commands once.  Each area is reset once when the server loads, and again 
+periodically as it ages.  An area is reset if it is at least 3 area-
+minutes old and is empty of players, or if it is 15 area-minutes old and has players in it. 
+      
+An 'area-minute' varies between 30 and 90 seconds of real time, with an 
+average of 60 seconds.  The variation defeats area time-keepers. 
+      
+The #RESETS section contains a series of single lines. 
+      
+The reset commands are:   
+
+I.    M    load a mobile into a room 
+II.   O    load an object into a room
+III.  P    put an object in an object (gold in a safe, etc.) 
+IV.   G    give an object to mobile 
+V.    E    equip an object to mobile 
+VI.   D    set state of door 
+VII.  S    stop (END OF LIST) 
+
+Note!  You may put a comment after an asterisk (*) on any line, but NOT 
+on a line that is blank otherwise.
+
+Breakdown:
+      
+I.  Loading a mobile into a room
+
+M 0 <mobile vnum> <room vnum> <global mob limit> <local mob limit>
+
+M signifies that a mobile is being loaded.  0 is a placeholder for a no 
+longer used field.  The third slot is the vnum of the mobile to be loaded; the fourth slot is the number of the room that the mobile is being loaded into; the fifth slot is the total number of copies of that mobile that may exist in the game world; the sixth is the number of copies of that mobile that may exist in that room.
+
+Example:  M 0 1000 1000 6 1
+
+Will reset mobile 1000 into room 1000 once, but allow you to place five 
+other copies of that mobile in other rooms.
+
+Note that if you wish to have multiple copies of the same mobile you 
+must enter multiple resets for them.  Example:
+
+M 0 1000 1000 6 2
+M 0 1000 1000 6 2
+
+Will reset mobile 1000 into room 1000 twice.
+
+II.  Loading an object into a room
+
+O 0 1000 0 1000
+
+O 0 <object vnum> 0 <room vnum>
+
+Breakdown:
+
+O denotes that an object is being loaded.  0 in both instances is a 
+placeholder for a defunct reset slot.  The third slot is the object vnum 
+and the fifth slot is the room it is being reset into.  Ergo, the above 
+example will reset object 1000 into room 1000.
+      
+That loads (O)bject ZX01 once into room ZX02.  Again, 0 denotes unused.
+
+III.  Putting an object into another object:
+
+P 0 1001 0 1000 3
+
+P denotes that this reset is putting an object into another object.  
+Both 0 entries denote placeholders for defunct slots.  The third slot is the vnum of the object that is being contained, the fifth slot denotes the vnum of the container.  The sixth slot denotes the number of copies of the object that will be loaded into the container.  The above example will put 3 copies of object 1001 into container 1000.
+
+Note!  If you wish to have, for example, five mobiles carrying containers called 'backpacks' with 'bread' 'cheese' and 'water jug' items in them, and have an abandoned backpack with the same gear as would be in the carried backpacks, you are best off making a total of six *individual* 'backpack' containers and resetting the *same* 'bread', 'cheese' and 'water' items.
+
+Let's try explaining that one again.  :)
+
+If you wish to have multiple copies of a container resetting with things being Put into them, you are in fact having several identical container objects with different vnums for the things to be put into.  If you have six backpacks with bread, cheese and water resetting into them, after it finds the first backpack to place the items into, the mud sometimes becomes confused and misplaces items.  If you have different containers, the mud will not become confused.  We are not sure what causes containers to become confused, and doubtless this attempt at explanation is confusing, but hopefully you get the idea.
+
+You may use the same items *going into* the containers but *not* the same container item.  Get it?  Good.  :)
+
+IV.  Giving an object to a mobile
+
+G 0 1006 0
+
+G denotes that a give reset to a mobile is being done.  This reset 
+places the object being given into the inventory of the mobile.  0 denotes, as before, a placeholder for a defunct option.   The third slot in the reset is the vnum of the object being given.
+
+Note!  The give reset MUST be placed, in the reset ordering, DIRECTLY 
+after the loading of the mobile that the object is being given to.  Example:
+
+M 0 1000 1000 6 2 <resetting mob 1000 into room 1000 with a global limit 
+			of 6 and a local limit of 2>
+G 0 1006 0 <places object 1006 into the inventory of the most recently 
+		loaded mobile>
+
+V.  Equipping an object to a mobile
+
+E 0 1007 0 3
+
+E denotes that an equip reset is being done.  0 denotes unused slots.  
+The third slot indicates the vnum of the object being equipped.  The fifth slot is the number of the wear location that is being equipped to (in this instance, 3, which is <worn on finger>).
+
+Wear flags are as follows: 
+      
+Left finger  1		Right finger 2
+Neck (1)	 3		Neck (2)	 4
+On Torso	 5		Head		 6
+Legs		 7		Feet		 8
+Hands		 9		Arms		10
+Shield 	11		About body	12
+Waist		13		Left Wrist	14
+Right Wrist	15		Wield		16
+Held		17		Floating	18
+
+VI.  Door resets
+
+D 0 1000 1 BC
+
+D denotes that a door reset is being generated.  0 denotes a placeholder 
+for an unused slot.  The third slot is the vnum of the room that the door reset is being generated in.  The fourth slot is the direction of the door reset is being generated in (since any room may have up to six doors) and the fifth is the condition that the door is being placed in.  The above example shows the eastern door of room 1000 being set in a closed and locked position.  The following list shows the correlating numbers for the door directions:
+
+0  North	1 East	2 South
+3 West	4 Up		5 Down
+
+The following is a list of door flags that may be used:
+
+0 -- Normal exit, no door
+A -- door that may be opened and closed, but no lock and resets to open
+B -- door resets to closed
+C -- door that is locked
+F -- door with a lock that cannot be picked (key needed to open)
+G -- door that the 'pass door' spell will not allow passage through (the 
+lock may still be picked, however)
+H -- lock that is easy to pick *
+I -- lock that is hard to pick *
+J -- lock that is infuriating to pick *
+K -- door that cannot be closed
+L -- door that cannot be locked
+
+* not yet implemented, but use them in conjunction with C (door resets 
+to locked) for when the code is enabled.
+
+So for a closed, locked door that can't be passed through but which is 
+easy to pick, the flags are BCGH.
+
+Note!  If you have a door going north from room 1001 to room 1002, you must also have a door going south from room 1002 to room 1001, unless you wish the door in 1001 to be ONE WAY ONLY.
+
+VII.  Ending the resets:
+
+S
+
+S denotes the end of the #RESETS section.
+
+Remember, for all LIMIT-NUMBERS, a '-1' means an infinite number of the 
+objects, mobiles, etc. can exist in the world, and the game will keep 
+loading up these objects/mobiles.  Keep this in mind, if you are thinking of using a '-1' for a limit-number. 
+      
+It's a good idea to comment your resets thoroughly for debugging 
+purposes.
+            
+7.  #SHOPS
+
+<mob#> <item types> <profit-buy> <p-sell> <op-hour> <close> 
+0
+
+Example:
+
+3000  2  3  4 10  0 	 105  15 	 0 23 	* the wizard
+
+All of these options are on the same line.  0 ends the section.
+      
+The first value, the mobile-vnum, is the 'keeper', or the mobile who is 
+the shopkeeper.  ALL MOBILES with that vnum will be shopkeepers. 
+      
+The <item types> section designates what the keeper will buy.  He may buy up to five types of items, and zeroes must be placed in the shop entry for anything less than five.  (The wizard above buys scrolls, wands, staves and potions, and a zero is placed in the last option since he only buys four types of things.  If all the slots were set to zero, he wouldn't buy anything, but he would still sell what he was loaded as having.)
+
+The following is a list of acceptable object numbers and their corresponding types:
+
+1	Light
+2	Scroll
+3	Wand
+4	Staff
+5	Weapon
+8	Treasure
+9	Armor
+10	Potion
+11	Clothing
+12	Furniture
+15	Container
+17	Drink container
+22	Boat
+26	Pill
+28	Map
+29	Portal
+30	Warpstone
+32	Gem
+33	Jewelry
+      
+(Any item type not listed in the above is not listed either because it is not appropriate to have a shopkeeper that would buy that type of item, or because that type of item can't be sold (like money :).)
+
+The 'profit-buy' number is a markup for players buying the item, in 
+percentage points.  100 is nominal price;  150 is 50% markup, and so on.  The 'profit-sell' number is a markdown for players selling the item, in percentage points.  100 is nominal price, 75 is 25% markdown, and so on.  The buying markup should be at least 100, generally greater, and the selling markdown should be no more than 100, generally lower. 
+      
+The 'open-hour' and 'close-hour' numbers define the hours when the 
+shopkeeper will do business.  For a 24-hour shop, these numbers would be 0 and 23. 
+      
+Everything beyond 'close-hour' to the end of the line is taken to be a 
+comment. 
+      
+Note that there is no room number for a shop.  Just load the shopkeeper 
+mobile in to the room of your choice, via that #RESETS section, and make the mobile a sentinel in the ACT-FLAGS section of the mobile in #MOBILES.  Or, for a wandering shopkeeper, just make it non-sentinel. 
+      
+The objects the shopkeeper sells are exactly those loaded by the 'G' 
+reset command in #RESETS for that shopkeeper.  These items replenish 
+automatically.  If a player sells an object to a shopkeeper, the shopkeeper will keep it for resale if he, she, or it doesn't already have an identical object.  The items a player sells to a shopkeeper, however, do not replenish. 
+
+Shopkeepers should generally be flagged as NO_PURGE.
+
+8. #SPECIALS
+
+M <mobvnum> <special>
+
+example
+M 1000 breath_gas
+
+Special procedures are not assigned in the mobile structure itself, but 
+they do relate directly to mobiles.  The procedure for assigning procedures will be detailed in another document, but the basic function is covered here. 
+
+A special procedure gives a mobile some added functionality, allowing it 
+do more complicated actions than are normally possible. Examples are 
+Hassan's guardian duties, the fido's ability to eat corpses, and the warring mobiles in the dangerous neighborhood.  New specials can be requested, but don't rely on someone else being willing to code one for you. At this time, no mobile may have more than one special procedure. 
+
+The following specials are available: 
+
+breath_acid      Mobile breathes acid in combat 
+breath_fire      Mobile breathes fire in combat (area attack) 
+breath_frost     Mobile breathes frost in combat (area attack) 
+breath_gas       Mobile breathes poison gas in combat area attack) 
+breath_lightning Mobile breathes lightning in combat 
+breath_any       Mobile may use any breath weapon 
+cast_adept       Mobile casts helpful spells on low-level players 
+cast_cleric      Mobile casts clerical spells (ALWAYS cleric act flag) 
+cast_judge       Mobile fires bullets (for Mega-City One only) 
+cast_mage        Mobile casts mage spells (ALWAYS set the mage act flag) 
+cast_undead      Mobile casts spells appropriate for the undead 
+executioner      Mobile attacks Killers and Thieves 
+fido             Mobile devours corpses 
+guard            Mobile protects good-aligned people from attack 
+janitor          Mobile cleans up junk lying on the ground 
+poison           Mobile has a poison attack 
+thief            Mobile steals gold (ALWAYS set the thief act flag) 
+nasty_thief      Mobile attacks, robs, and runs (ALWAYS set thief flag)
+  
+The following specials are coded, but should NOT be used because they 
+are tailored to specific mobiles.  Check them out online for examples of 
+unique or area-specific specials that can possibly be coded for your mobiles:
+
+cast_judge       Mobile fires bullets (for Mega-City One only) 
+troll_member     Mobile attacks ogre gang members (gangland mobs only) 
+ogre_member      Mobile attacks troll gang members (gangland mobs only) 
+patrolman        Mobile tries to break up fights (gangland mobs only) 
+mayor		     The Midgaard mayor special (opens/closes city gates, 
+etc.)
+
+    
+9. Closing your area file:
+
+The syntax to end the file is:
+
+#$
+
+Be sure to put a couple of carriage returns at the end of the file.
+
+F.  Definitions
+
+Vnum
+A vnum is a unique number used to identify a mobile, object or room.  
+You can use the same vnum for a mob as for an object or for a room (since the code keeps track of them separately) but NOT for different mobs, objects or rooms.
+
+Warpstone
+A component used in the portal and nexus spells.  Further spell 
+components will eventually be implemented.  Keep them rare and NEVER describe an object in such a way as to suggest that it might be a warpstone.  It should be indistinguishable from a normal gem or rock except by identifying it.  Lore will eventually identify components (including warpstones) as such.
+
+Trash
+Mobs will spec_janitor target trash as the first thing to pick up.  It's 
+the catch-all for objects that fall under no other categories.  
+
+Pickproof
+Immune to being picked with the pick lock spell.
+
+Dice
+Role playing games commonly use dice of more or less than six sides for 
+purpose of generating random numbers for damage, hit probability, etc.  
+For example, 1d11 (not possible in real life, but possible in the game) 
+would generate a value from 1 to 11.  2d4 would generate a range from 2 to 8.  Usage of multiple dice generates a belled result where a range generates a linear one (for example, 2d4 averages 5, whereas a range from 1 to 8 averages 4.5).
+
+Mobile or mob
+A being/monster within the game capable of the functions the area 
+builder defines.  Note that mobiles that have ACT_SENTINEL (stay in one place) aren't mobile per se, but why quibble?  :)
+
+Jukebox
+The jukebox will 'play' songs either in the room you are in or play them loud (over the MUSIC channel).  Ask your implementor for a list of songs that the jukebox (if used on your mud) uses.
+
+G.  Closing Notes
+
+Make your rooms direction insensitive unless there is only one exit.  If 
+a room has a south exit and a west exit, the line 'You enter through the 
+southern door' is a bad line.  However, if the southern door is the only 
+entrance to the room, it's permissible.  Also, if you are using one way 
+doors, direction sensitivity is permissible.
+
+Also, a room doesn't know if you've seen it before, so avoid lines like 
+'you gaze on the mighty mirror of Zenabit for the first time'.
+
+Avoid putting sentiments into the mind of the reader.  If the line has 
+'you think' in it, it's probably bad, since you don't know if that's really what they think.  Try to convey things in another manner as to make them think what you want them to think.
+
+Avoid pointless anachronism.  It's tacky.  Areas should have some 
+internal logic, as well as logic to the rest of the world, instead of just being a lump of anachronism to provoke a titter the first time, and gradually to become tiresome.  Strive for cleverness and wit instead.
+
+Put in extra descriptions in rooms especially, but also on objects.  It 
+fleshes the area out more.  Overdo extra descs rather than underdoing 
+them.
+
+Write utility linker rooms.  If you have a long and winding road going 
+up to the castle -- write at least a couple of road rooms.  Be sure to say 'the castle to the north' and not 'the castle in front of you' since the person might have left it.
+
+Write 'useless' objects for colour.  If the princess is the sort to wear
+perfume, put some type furniture perfume in a type object vanity table 
+that could be found if looked for.  It too fleshes out the world.  (Note that Satin wrote 600 useless objects for Cordreas Heart, but you don't have to be asthorough (read, insane) as her.  ;)
+
+If there's furniture in a room, write it as an object and load it there, 
+so that it could be sat on/etc.
+
+If you have no_take objects (such as the donation pit) or mobs that 
+cannot be killed and are sentinel (shopkeepers, adepts, etc.) write them as normal objects/mobs, consider giving them no long description, just a ~, and describe them as part of the room, to blend them into the world more.  If the mob can be killed, or the object taken, though, you should give it a long desc, since it might not be there.
+
+Do NOT write descriptions of a mobile into the room description if you 
+also load that mobile in the area.  Do not do the following:
+
+<room desc>
+You are in a throne room.  A huge gold throne with the king of the 
+goblins sitting on it is in front of you.  He cries out and several bodyguards attack!
+
+Instead do:
+
+<room desc>
+You are in a throne room.  A huge gold throne is immediately in front of 
+you.  Tapestries depicting the greatness of the ruler whose castle you have intruded hang on all walls.
+<mobile>
+The king of the goblins is here.  He cries for help!
+<mobiles>
+A bodyguard screams and attacks!
+A bodyguard screams and attacks!
+A bodyguard screams and attacks!
+A bodyguard screams and attacks!
+
+NEVER write an area that is too easy, or that has absurdly powerful equipment, just to make it popular.  Do not rely on a mobile being 'really tough' as the sole balance to an otherwise overpowered item -- people have soloed 30,000hp mobiles (admittedly, people with nothing better to do, but you get the idea).  A well-balanced item (for example, the enchanted leather bracer) will ultimately earn popularity of its own right, and be less likely to be adjusted by a disgusted implementor who was tired of seeing people immort after spending a half day in your zone.  Besides, then all the Real Studly Area Builders like Satin and Andersen will laugh at you.  :)

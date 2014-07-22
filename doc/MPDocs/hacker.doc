@@ -1,0 +1,122 @@
+MOBprograms for ROM 2.4b2
+
+HACKER'S GUIDE
+
+Newt@Imperium Gothique (mn54196@uta.fi)
+Jan-Feb 1996
+
+TABLE OF CONTENTS
+
+	How MOBprograms Are Implemented
+	Adding New MOBcommands
+	Adding New Trigger Events
+	Adding New If_checks
+	About OLC and MOBprograms
+
+---------------------- How MOBprograms Are Implemented --------------------
+
+	As explained in MOBPROG.DOC, the each MOBprogram is a string,
+lines are separated with CR/LFs. The strings are stored independently,
+a global linked list of type MPROG_CODE contains pointers to all existing
+MOBprograms. This allows all mobiles in game to share MOBprograms,
+and MOBprograms can be used as subroutines. A MOBprogram is identified by
+a unique virtual number. MPROG_CODE contains fields:
+
+	sh_int vnum;		/* The unique virtual number */
+	char * code;		/* A pointer to MOBprogram commands */
+
+	Each mobile prototype (MOB_INDEX_DATA) has a pointer to a linked list
+of type MPROG_LIST:
+
+	int trig_type;		/* The trigger type (a bitvector) */
+	char * trig_phrase;	/* The trigger phrase */
+	char * code;		/* A pointer to MOBprogram commands */
+
+	During MUD bootup, the 'code' pointer in each mprog_list node is
+linked to MOBprogram commands through a vnum lookup to the global list.
+MOBprograms are designed to be permanently allocated, so the address of the
+actual code is copied both to the global list and to the mobile prototype's
+mprog_list (see "About OLC and MOBprograms"). 
+
+	When a trigger event occurs, the mobile is checked for the event
+trigger. If a trigger is found, the trigger phrase (converted to a number if
+necessary) is checked. If the check succeeds, a pointer to the MOBprogram
+code is passed to program_flow() for execution.
+
+	Here's a simple diagram:
+
+GLOBAL MPROG_LIST--->MPROG_CODE-->MPROG_CODE-->MPROG_CODE-->... -->NULL
+                                                  code
+MOBILE--+                                          |
+        |                                          |
+MOB PROTOTYPE-->MPROG_LIST-->... -->NULL           |
+        +------>trigger type TRIG_SPEECH           |
+        |  +--->trigger phrase 'hello'             V
+        |  |    code ------------------------->say Greetings $n
+        |  +---------+                             |
+        |            |                             V
+TRIGGER EVENT-->TRIGGER CHECK----------------->EXECUTION ------>OUTPUT
+   do_say()     mp_act_trigger()               program_flow()   expand_arg()
+        |                                                           |
+interpret()                                                     interpret()
+        |                                                           |
+say 'hello'                             The mobile says 'Greetings, Player!'
+        |                                                           |
+PLAYER--+ <---------------------------------------------------------+
+
+------------------------- Adding New MOBcommands -------------------------
+
+	Adding new MOBcommands is fairly simple:
+
+- Write the command function. It should be of type DO_FUN (see merc.h).
+  Note that 'ch' parameter means the mobile, not the character who triggered
+  the event! Add the function to file mob_prog.c
+- Add the function prototype to mob_prog.h (DECLARE_DO_FUN).
+- Add a line defining the command keyword to mob_cmd_table[] in mob_prog.c
+
+	Note that even though mobiles can perform immortal-like actions via
+MOBcommands, their character level is NOT modified; i.e. mobiles are not
+immortals by default!
+
+----------------------- Adding New Trigger Events ------------------------
+
+	By trigger events is meant player actions that cause the existence
+of a trigger on a given mobile to be checked. For example, giving money to
+a mobile is a trigger event, since it causes a trigger function to be
+called (see act_obj.c). Here are is the procedure for adding new trigger
+events:
+
+- Define the trigger flag. Add a #define TRIG_nnnn line to merc.h and
+  the corresponding line to mprog_flags[] table in tables.c. The flag
+  is a bit vector, so you may have up to 31 different trigger events
+  defined (assuming a signed int is 32 bits).
+- Add a trigger check to the function of your choice. A trigger check
+  typically checks if the mobile has the trigger flag set (macro
+  HAS_TRIGGER) and calls a trigger function. There are two general
+  purpose trigger functions in mob_prog.c: mp_act_trigger() for string
+  trigger phrases and mp_percent_trigger() for numeric ones.
+- If you write your own trigger function, it should call program_flow()
+  if the check is successful. Make sure that parameters are passed in
+  correct order to program_flow()!
+
+------------------------- Adding New If_checks ---------------------------
+
+	Adding new if_checks is not difficult, but you'll have to be
+careful. You should familiarize yourself with the source code in mob_prog.c
+before trying to add new if_checks. This is how you do it:
+
+- Add a #define CHK_nnnn line to mob_prog.c, and a corresponding keyword
+  to the fn_keywords[] table. It is important that the value of the
+  #define corresponds to the order of the keyword in the keyword table!
+- Determine the if_check type (there are five different types of if_check,
+  see MOBPROG.DOC). Add a line to the appropriate place in function
+  cmd_eval().
+
+----------------------- About OLC and MOBprograms ------------------------
+
+	Bear in mind that the addresses of MOBprogram code are copied both
+in the MOBprogram definitions of mobile prototypes AND in the global list.
+If you change the code via free_string() and str_dup(), you must update
+both the pointer in each mobile prototype and in the global list.
+
+--------------------------------------------------------------------------

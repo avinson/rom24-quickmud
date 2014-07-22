@@ -1,0 +1,935 @@
+Merc Release 2.1
+Sunday 01 August 1993
+
+Furey	mec@shell.portal.com
+Hatchet	hatchet@uclink.berkeley.edu
+Kahn	michael@uclink.berkeley.edu
+
+
+
+=== Acknowledgement
+
+This document contains information from 'database.doc', 'dbsup.doc', and
+'values.doc', part of the original Diku mud release and copyrighted by the
+Diku folks.  See their 'license.doc'.
+
+
+
+=== Overview of Areas
+
+An area is one piece of the world.  Each area is defined in a separate file.
+All of our area files have the extension '.are', but you can call your area
+files anything you want.
+
+Because each area is defined in one file, it is easy to incorporate new areas
+into Merc, or to send Merc areas to others for use.
+
+All of our areas may be freely distributed, as long as the internal notices
+(such as those on plaques, signs, graffiti, or tombstones) are kept.  If you
+write new areas, and would like to contribute them back to Merc, just e-mail to
+one of the addresses above.  As you can see from typing 'areas' in the game, we
+credit the original authors whenever we can find them.
+
+Although the format of Merc areas is (mostly) compatible with other Diku muds,
+Merc ignores many of the fields in the area files, generating its own values
+based on mobile and object levels.  We adopted this policy in order to maintain
+balance between areas originally written by many different authors.
+
+
+
+=== Sections of an Area
+
+An area file contains the following sections:
+
+    #AREA
+    #HELPS
+    #MOBILES
+    #OBJECTS
+    #ROOMS
+    #RESETS
+    #SHOPS
+    #SPECIALS
+    #$
+
+An area is a collection of sections starting with #AREA until the next #AREA.
+All of our area files (except 'help.are') contain just one #AREA section, which
+is at the top of the file.
+
+The file 'proto.are' contains a prototype for developing new area files.
+
+Each of the sections contains its own format.  For #MOBILES, #OBJECTS, #ROOMS,
+and #RESETS, this format is upward compatible with the original Diku formats
+for tinyworld.mob, tinyworld.obj, tinyworld.wld, and tinyworld.zon,
+respectively.  The #HELPS, #SHOPS, and #SPECIALS sections have new formats.
+
+
+
+=== Memory Usage
+
+In order to simplify the code, the Merc server has a fixed maximum size on
+strings in the area database.  This size is defined at the beginning of 'db.c'
+'db.c' with a '#define' statement.  As distributed, this size is:
+
+    #define MAX_STRING	 1048576
+
+This size is 10% larger than needed for the areas we distribute.  Thus, you
+can add about 4 more areas without touching the server at all.  The server
+will tell you when the string table overflows, and you can simply increase the
+maximum limit and recompile.  The immortal 'memory' command will show you
+memory usage from within the game.
+
+There is no other limit on area sizes or memory usage.
+
+We decided to use a fixed size because it simplifies our job.  It also allows
+significant performance improvements: compare our load time and memory usage
+versus other Diku muds with the same quantity of areas.
+
+
+
+=== Data Types
+
+All of the data in an area file (even the section headers) consists of a series
+of values.  Each value has a specific type.  The server parses the file by
+reading in data values one at a time according to the types it expects.
+
+Blank characters (spaces, tabs, new lines, carriage returns) at the beginning
+of a data value are always ignored (this includes strings).  Thus, you can
+format the area files whatever way suits your taste and your needs.
+
+The individual types are: 'letter', 'word', 'string', 'number', and 'to_eol'.
+
+A 'letter' is a single non-blank character.
+
+A 'word' is a sequence of non-blank characters terminated by a blank.
+
+A 'string' is a seqence of non-tilde characters terminated by a tilde.  A tilde
+is this character: '~'.  Thus, strings may contain blanks, and may be multiple
+lines long.  There is no limit on the length of an individual string; however,
+all strings go into a common memory pool whose size is fixed when the server is
+compiled.
+
+A 'number' is a decimal number with an optional leading '-' or '+'.  The '|'
+character may be used in any number: '1|64|1048576' has the value 1048641.  The
+individual values separated by '|' are added together, so '5|6' is 11, not 7.
+The components need not be powers of 2.  This feature is extremely useful for
+defining bit vectors, such as the ACT_* and AFF_* bits for mobiles, but is not
+restricted to bit vectors: any number may use the '|' construction.
+
+A 'to_eol' is all the characters from the current position to the end of the
+current input line.  It is used for parsing comments at the ends of lines.
+
+In the syntax description below, <value:type> indicates a value to be read of
+the indicated type.  A backslash '\' indicates that the file format itself has
+only one line, but several lines are used in this description to fit within
+80 columns.
+
+Braces '{ ... }' are used to enclose elements.  They are NOT literal parts of
+the file format, but a way of indicating that the enclosed elements may be
+repeated zero or more times.  Braces at the same level of indentation indicate
+that the parallel elements may be present in any order.
+
+All other characters in the syntax description are literal characters.
+
+The file 'merc.h' lists the meanings of most of the flags and values.  The
+section useful to area builders is set off by big comments; you can't miss it.
+The file 'const.c' contains the spell list with slot numbers, and the file
+'special.c' contains the list of special procedures.
+
+Mobiles, objects, and rooms are identified by vnum (virtual number).  The range
+of vnum's is 1 to 32767.  Vnum's must be unique (for that particular kind of
+vnum).  Vnums do not have to be in increasing order.
+
+Typically an area uses the same range of vnum's for mobile vnum's, object
+vnum's, and room vnum's, starting with a multiple of 100.  This facilitates
+adding the area into an existing set of areas.
+
+
+
+
+=== The #AREA section
+
+The syntax of this section is:
+
+    #AREA	<area-name:string>
+
+The 'area-name' can be any string.  The 'areas' command provides a list of
+areas, so it's worth while to follow the standard Merc format for this string:
+
+    #AREA	{ 5 35} Merc    Prototype for New Area~
+
+The first two numbers are recommended level range.  The name is the name of the
+original author of the area.  The last phrase is the name of the area.
+
+
+
+
+=== The #HELPS section
+
+The syntax of this section is:
+
+    #HELPS
+    {
+	<level:number> <keywords:string>
+	<help-text:string>
+    }
+    0 $~
+
+The 'level' number is the minimum character level needed to read this section.
+This allows for immortal-only help text.
+
+The 'keywords' are a set of keywords for this help text.
+
+The 'help-text' is the help text itself.
+
+Normally when a player uses 'help', both the keywords and the help-text are
+shown.  If the 'level' is negative, however, the keywords are suppressed.  This
+allows the help file mechanism to be used for certain other commands, such as
+the initial 'greetings' text.
+
+If a 'help-text' begins with a leading '.', the leading '.' is stripped off.
+This provides for an escape mechanism from the usual leading-blank stripping of
+strings, so that picturesque greeting screens may be used.
+
+
+    
+
+=== The #MOBILES section
+
+The syntax of this section is:
+
+    #MOBILES
+    {
+	#<vnum:number>
+	<keywords:string>
+	<short-description:string>
+	<long-description:string>
+	<description:string>
+	<act-flags:number> <affected-flags:number> <alignment:number> S
+	<level:number> <hitroll:number> <armor:number>			\
+	<hitnodice:number> d <hitsizedice:number> + <hitplus:number>	\
+	<damnodice:number> d <damsizedice:number> + <damroll:number>
+	<gold:number> <exp:number>
+	<position:number> <position:number> <sex:number>
+    }
+    #0
+
+The 'vnum' is the virtual number of the mobile.
+
+The 'keywords' are words which can be used in commands to identify the mobile.
+
+The 'short-description' is the description used by the 'act' function and other
+functions to identify the mobile.
+
+The 'long-description' is the description used when a character walks in the
+room and the mobile is visible.
+
+The 'description' is the longest description.  It is used when a character
+explicitly looks at the mobile.
+
+The 'act-flags' define how the mobile acts, and the 'affected-flags' define
+more attributes of the mobile.
+
+The 'alignment' of the mobile ranges from -1000 to +1000.  Keep in mind that
+certain spells ('protection' and 'dispel evil') give characters fighting evil
+monsters an advantage, and that experience earned is influenced by alignment.
+
+The literal letter 'S' must be present after the alignment.  In the original
+Diku mob format, 'S' stands for simple.  Merc supports only simple mobs, so the
+'S' is redundant.  It is retained not only for compatibility with the Diku
+format, but also because it helps the server report errors more accurately.
+
+The 'level' is typically a number from 1 to 35, although there is no upper
+limit.
+
+The 'hitroll', 'armor', 'hitnodice, 'hitsizedice', 'hitplus', 'damnodice',
+'damsizedice', 'damroll', 'gold', 'exp', 'position', and 'position' fields are
+present for compatibility with original Diku mud, but their values are ignored.
+Merc generates these values internally based on the level of the mobile.
+
+The 'sex' value may be 0 for neutral, 1 for male, and 2 for female.
+
+
+
+=== The #OBJECTS section
+
+The syntax of this section is:
+
+    #OBJECTS
+    {
+	#<vnum:number>
+	<keywords:string>
+	<short-description:string>
+	<long-description:string>
+	<action-description:string>
+	<item-type:number> <extra-flags:number> <wear-flags:number>
+	<value-0:number> <value-1:number> <value-2:number> <value-3:number>
+	<weight:number> <cost:number> <cost-per-day:number>
+	{
+	    E
+	    <keyword:string>
+	    <description:string>
+	}
+	{
+	    A
+	    <apply-type:number> <apply-value:number>
+	}
+    }
+    #0
+
+The 'vnum' is the virtual number of the object.
+
+The 'keywords' are words which can be used in commands to identify the object.
+
+The 'short-description' is the description used by the 'act' function and other
+functions to identify the object.  The first character of the short-description
+should be lower case, because this description is used in the middle of
+sentences.
+
+The 'long-description' is the description used when a character walks in the
+room and the object is visible.
+
+The 'action-description' is not used.
+
+The 'item-type' is the type of the item (weapon, armor, potion, et cetera).
+
+The 'extra-flags' describe more attributes of the object.  The 'wear-flags'
+describe whether the item can be picked up, and if so, what bodily locations
+can wear it.
+
+The interpretation of the four 'value' numbers depends upon the type of the
+object.  Interpretations are given below.
+
+The 'weight' of the object is just that.
+
+'Cost' and 'cost-per-day' are ignored.  'Cost' is generated internally based on
+the level of the object.  Because Merc has no rent, 'cost-per-day' is
+completely ignored.
+
+The optional 'E' sections and 'A' sections come after the main data.
+An 'E' section ('extra description') contains a keyword-list and a string
+associated with those keywords.  This description string is used when a
+character looks at a word on the keyword list.
+
+An 'A' section ('apply') contains an apply-type and an apply-value.  When a
+character uses this object as equipment (holds, wields, or wears it), then
+the value of 'apply-value' is added to the character attribute identified by
+'apply-type'.  Not all 'apply-types' are implemented; you have to read the
+function 'affect_modify' in handler.c to see exactly which ones are.
+
+An object may have an unlimited number of 'E' and 'A' sections.
+
+
+
+=== The #ROOMS section
+
+The syntax of this section is:
+
+    #ROOMS
+    {
+	#<vnum:number>
+	<name:string>
+	<description:string>
+	<area:number> <room-flags:number> <sector-type:number>
+	{
+	    D <door:number>
+	    <description:string>
+	    <keywords:string>
+	    <locks:number> <key:number> <to_room:number>
+	}
+	{
+	    E
+	    <keywords:string>
+	    <description:string>
+	}
+	S
+    }
+    #0
+
+The 'vnum' is the virtual number of the room.
+
+The 'name' is the name of the room.
+
+The 'description' is the long multi-line description of the room.
+
+The 'area' is obsolete and unused.  Rooms belong to whatever area was most
+recently defined with #AREA.
+
+The 'room-flags' describe more attributes of the room.
+
+The 'sector-type' identifies the type of terrain.  This affects movement cost
+through the room.  Certain sector types (air and boat) require special
+capabilities to enter.
+
+Unlike mobiles and objects, rooms don't have any keywords associated with them.
+One may not manipulate a room in the same way one manipulates a mobile or
+object.
+
+The optional 'D' sections and 'E' sections come after the main data.  A 'D'
+section contains a 'door' in the range from 0 to 5:
+
+	0	north
+	1	east
+	2	south
+	3	west
+	4	up
+	5	down
+
+A 'D' command also contains a 'description' for that direction, and 'keywords'
+for manipulating the door.  'Doors' include not just real door, but any kind of
+exit from the room.  The 'locks' value is 0 for an unhindered exit, 1 for a
+door, and 2 for a pick-proof door.  The 'key' value is the vnum of an object
+which locks and unlocks the door.  Lastly, 'to_room' is the vnum of the room to
+which this door leads.
+
+You must specify two 'D' sections, one for each side of the door.  If you
+specify just one then you'll get a one-way exit.
+
+An 'E' section (extended description) contains a 'keywords' string and a
+'description' string.  As you might guess, looking at one of the words in
+'keywords' yields the 'description' string.
+
+The 'S' at the end marks the end of the room.  It is not optional.
+
+
+
+=== The #RESETS section
+
+The syntax of this section is:
+
+    #RESETS
+    {
+	* <comment:to_eol>
+    }
+    {
+	M <:number> <mob-vnum:number> <limit:number> <room-vnum:number>	\
+	<comment:to_eol>
+    }
+    {
+	O <:number> <obj-vnum:number> <:number> <room-vnum:number>	\
+	<comment:to_eol>
+    }
+    {
+	P <:number> <obj-vnum:number> <:number> <obj-vnum:number>	\
+	<comment:to_eol>
+    }
+    {
+	G <:number> <obj-vnum:number> <:number>				\
+	<comment:to_eol>
+    }
+    {
+	E <:number> <obj-vnum:number> <:number> <wear_loc:number>	\
+	<comment:to_eol>
+    }
+    {
+	D <:number> <room-vnum:number> <door:number> <state:number>	\
+	<comment:to_eol>
+    }
+    {
+	R <:number> <room-vnum:number> <last-door:number>		\
+	<comment:to_eol>
+    }
+    S
+
+To reset an area, the server executes each command in the list of reset
+commands once.  Each area is reset once when the server loads, and again
+periodically as it ages.  An area is reset if it is at least 3 area-minutes old
+and is empty of players, or if it is 15 area-minutes old.  At the 14
+area-minute mark, each (awake) player in the area is warned of the impending
+reset.  These values are coded into the function 'reset_area' in 'db.c'.
+
+An 'area-minute' varies between 30 and 90 seconds of real time, with an
+average of 60 seconds.  The variation defeats area timekeepers.
+
+The 'resets' section contains a series of single lines.  The backslashes and
+line splitting above are for readability; they are not part of the file format.
+Because of the end-of-line comments, this section is not as free-format as
+other sections.
+
+The reset commands are:
+
+    *	comment
+    M	read a mobile 
+    O	read an object
+    P	put object in object
+    G	give object to mobile
+    E	equip object to mobile
+    D	set state of door
+    R	randomize room exits
+    S	stop (end of list)
+
+The '*' lines contain comments.  The 'S' line is the last line of the section.
+
+Every other command contains four numbers (three for the 'G' command).  The
+first number is ignored.  The next three (or two) numbers are interpreted as
+follows:
+
+For the 'M' command, the second number is the vnum of a mobile to load.  The
+third number is the limit of how many of this mobile may be present in the
+world.  The fourth number is the vnum of the room where the mobile is loaded.
+
+For the 'O', 'P', 'G', and 'E' commands, the second number is the vnum of an
+object to load.  The third number is ignored.
+
+For the 'O' command, the fourth number is the vnum of the room where the object
+is loaded.  The object is not loaded if the target room already contains any
+objects with this vnum.  The object is also not loaded if any players are
+present in the area.
+
+For the 'P' command, the fourth number is the vnum of a container object where
+the object will be loaded.  The actual container used is the most recently
+loaded object with the right vnum; for best results, there should be only one
+such container in the world.  The object is not loaded if no container object
+exists, or if someone is carrying it, or if it already contains one of the
+to-be-loaded object.
+
+For the 'G' command, there is no fourth number.  If the most recent 'M' command
+succeeded (e.g. the mobile limit wasn't exceeded), the object is given to that
+mobile.  If the most recent 'M' command failed (due to hitting mobile limit),
+then the object is not loaded.
+
+For the 'E' command, the fourth number is an equipment location.  If the most
+recent 'M' command succeeded, that mobile is equipped with the object.  If the
+most recent 'M' command failed, then the object is not loaded.
+
+All objects have a level limit, which is computed by inheritance from the most
+recently read 'M' command (whether it succeeded or not) in 'area_update' in
+'db.c'.  As distributed, an object's level equals the mobile level minus 2,
+clipped to the range 0 to 35.
+
+For the 'D' command, the second number is the vnum of a room.  The third number
+is a door number from 0 to 5.  The fourth number indicates how to set the door:
+0 for open and unlocked; 1 for closed and unlocked; 2 for closed and locked.
+
+Room exits must be coherent: if room 1 has an exit to room 2, and room 2 has an
+exit in the reverse direction, that exit must go back to room 1.  This doesn't
+prevent one-way exits; room 2 doesn't HAVE to have an exit in the reverse
+direction.
+
+For the 'R' command, the second number is the vnum of a room.  The third number
+is a door number.  When this command, the doors from 0 to the indicated door
+number are shuffled.  The room will still have the same exits leading to the
+same other rooms as before, but the directions will be different.  Thus, a door
+number of 4 makes a two-dimensional maze room; a door number of 6 makes a
+three-dimensional maze room.
+
+Use of both the 'D' and 'R' commands on the same room will yield unpredicatable
+results.
+
+Any line (except an 'S' line) may have a comment at the end.
+
+
+
+=== The #SHOPS section
+
+The syntax of this section is:
+
+    #SHOPS
+    {
+	<keeper:number>						\
+	<trade-0:number> <trade-1:number> <trade-2:number>	\
+	<trade-3:number> <trade-4:number>			\
+	<profit-buy:number> <profit-sell:number>		\
+	<open-hour:number> <close-hour:number>			\
+	<comment:to_eol>
+    }
+    0
+
+Like the #RESETS section, the #SHOPS section has one command per line.
+
+The 'keeper' is the vnum of the mobile who is the shopkeeper.  All mobiles
+with that vnum will be shopkeepers.
+
+The 'trade-0' through 'trade-5' numbers are item types which the shopkeeper
+will buy.  Unused slots should have a '0' in them; for instance, a shopkeeper
+who doesn't buy anything would have five zeroes.
+
+The 'profit-buy' number is a markup for players buying the item, in percentage
+points.  100 is nominal price; 150 is 50% markup, and so on.  The 'profit-sell'
+number is a markdown for players selling the item, in percentage points.
+100 is nominal price; 75 is a 25% markdown, and so on.  The buying markup
+should be at least 100, and the selling markdown should be at most 100.
+
+The 'open-hour' and 'close-hour' numbers define the hours when the shopkeeper
+will do business.  For a 24-hour shop, these numbers would be 0 and 23.
+
+Everything beyond 'close-hour' to the end of the line is taken to be a comment.
+
+Note that there is no room number for a shop.  Just load the shopkeeper mobile
+into the room of your choice, and make it a sentinel.  Or, for a roving
+shopkeeper, just make it non-sentinel.
+
+The objects a shopkeeper sells are exactly those loaded by 'G' reset commands
+for that shopkeeper.  These items replenish automatically.  If a player sells
+an object to a shopkeeper, the shopkeeper will keep it for resale if he, she,
+or it doesn't already have an identical object.  These items do not replenish.
+
+
+
+=== The #SPECIALS section
+
+The syntax of this section is:
+
+    #SPECIALS
+    {
+	* <comment_to_eol>
+    }
+    {
+	M <mob-vnum:number> <spec-fun:word> <comment:to_eol>
+    }
+    S
+
+Like the #RESETS section, the #SPECIALS section has one command per line.
+
+This section defines special functions (spec-fun's) for mobiles.  A spec-fun
+is a C function which gives additional behavior to all mobiles with a given
+vnum, such as the peripatetic mayor or the beholder casting spells in combat.
+See 'special.c' for a list of available spec-fun's.
+
+The 'M' command assigns 'spec-fun' to all mobiles of with virtual number
+'mob-vnum'.  All spec-fun's are assigned by name.  An 'M' line may have a
+comment at the end.
+
+Every three seconds, the server function 'mobile_update' examines every mobile
+in the game.  If the mobile has an associated spec-fun, then 'mobile_update'
+calls that spec-fun with a single parameter, the 'ch' pointer for that mob.
+The spec-fun returns TRUE if the mobile did something, or FALSE if it did not.
+If the spec-fun returns TRUE, then further activity by that mobile is
+suppressed.
+
+To add a new special function:
+
+(1) Add a DECLARE_SPEC_FUN line to the top of 'special.c'.
+
+(2) Add a line for translating the ascii name of the function into a function
+    pointer to the function 'spec_lookup' in 'special.c'.
+
+(3) Write the spec-fun and add it to 'special.c'.  Note that Merc special
+    functions take a single parameter, rather than the three parameters of
+    Diku.  If you have an Ansi C compiler, you're protected against accidental
+    mismatches.
+
+(4) Assign the spec-fun by writing an appropriate line into the #SPECIALS
+    section in an area file.  Any number of mobs may have the same spec-fun.
+
+
+
+=== The #$ section
+
+The syntax of this section is:
+
+    #$
+
+This section marks the end of an area file.  If you concatenate several area
+files into one, remember to delete the terminating '#$' from all but the last
+file.  Conversely, if you split area files, remember to terminate each new file
+with a '#$'.
+
+
+
+=== Meaning of Value Numbers by Item Type
+
+In the values below, 'sn' is a spell, indexed by slot number.  A zero or
+negative sn means 'no spell'.
+
+01 ITEM_LIGHT
+   value[0]	unused
+   value[1]	unused
+   value[2]	hours of light available, 0 is dead, -1 is infinite
+   value[3]	unused
+
+02 ITEM_SCROLL
+   value[0]	level
+   value[1]	sn 1
+   value[2]	sn 2
+   value[3]	sn 3
+
+03 ITEM_WAND
+   value[0]	level
+   value[1]	max charges
+   value[2]	current charges
+   value[3]	sn
+
+04 ITEM_STAFF
+   value[0]	level
+   value[1]	max charges
+   value[2]	current charges
+   value[3]	sn
+
+05 ITEM_WEAPON
+   value[0]	unused
+   value[1]	unused
+   value[2]	unused
+   value[3]	weapon type:
+      01	   slice
+      02	   stab
+      03	   slash
+      04	   whip
+      05	   claw
+      06	   blast
+      07	   pound
+      08	   crush
+      09	   grep
+      10	   bite
+      11	   pierce
+      12	   suction
+
+08 ITEM_TREASURE
+   value[0]	unused
+   value[1]	unused
+   value[2]	unused
+   value[3]	unused
+
+09 ITEM_ARMOR
+   value[0]	unused
+   value[1]	unused
+   value[2]	unused
+   value[3]	unused
+
+10 ITEM_POTION
+   value[0]	level
+   value[1]	sn 1
+   value[2]	sn 2
+   value[3]	sn 3
+
+12 ITEM_FURNITURE
+   value[0]	unused
+   value[1]	unused
+   value[2]	unused
+   value[3]	unused
+
+13 ITEM_TRASH
+   value[0]	unused
+   value[1]	unused
+   value[2]	unused
+   value[3]	unused
+
+15 ITEM_CONTAINER
+   value[0]	weight capacity
+   value[1]	flags: 1 closeable, 2 pickproof, 4 closed, 8 locked
+   value[2]	key vnum
+   value[3]	unused
+
+17 ITEM_DRINK_CON
+   value[0]	capacity
+   value[1]	current quantity
+   value[2]	liquid number (see 'liq_table' in const.c)
+   value[3]	if non-zero, drink is poisoned
+
+18 ITEM_KEY
+   value[0]	unused
+   value[1]	unused
+   value[2]	unused
+   value[3]	unused
+
+19 ITEM_FOOD
+   value[0]	hours of food value
+   value[1]	unused
+   value[2]	unused
+   value[3]	if non-zero, food is poisoned
+
+20 ITEM_MONEY
+   value[0]	value in gold pieces
+   value[1]	unused
+   value[2]	unused
+   value[3]	unused
+
+22 ITEM_BOAT
+   value[0]	unused
+   value[1]	unused
+   value[2]	unused
+   value[3]	unused
+
+23 ITEM_CORPSE_NPC
+   value[0]	unused
+   value[1]	unused
+   value[2]	unused
+   value[3]	unused
+
+24 ITEM_CORPSE_PC
+   value[0]	unused
+   value[1]	unused
+   value[2]	unused
+   value[3]	unused
+
+25 ITEM_FOUNTAIN
+   value[0]	unused
+   value[1]	unused
+   value[2]	unused
+   value[3]	unused
+
+26 ITEM_PILL
+   value[0]	level
+   value[1]	sn 1
+   value[2]	sn 2
+   value[3]	sn 3
+
+
+
+=== Slot Numbers
+
+These slot numbers are used in magical objects to indicate spells.  Save files
+do not use slot numbers; they use names instead.
+
+	  0	NULL
+	 70	acid blast
+	  1	armor
+	  3	bless
+	  4	blindness
+	  5	burning hands
+	  6	call lightning
+	 63	cause critical
+	 62	cause light
+	 64	cause serious
+	 82	change sex
+	  7	charm person
+	  8	chill touch
+	 10	colour spray
+	 57	continual light
+	 11	control weather
+	 12	create food
+	 80	create spring
+	 13	create water
+	 14	cure blindness
+	 15	cure critical
+	 16	cure light
+	 43	cure poison
+	 61	cure serious
+	 17	curse
+	 18	detect evil
+	 44	detect hidden
+	 19	detect invis
+	 20	detect magic
+	 21	detect poison
+	 22	dispel evil
+	 59	dispel magic
+	 23	earthquake
+	 24	enchant weapon
+	 25	energy drain
+	 72	faerie fire
+	 73	faerie fog
+	 26	fireball
+	 65	flamestrike
+	 56	fly
+	 83	gate
+	 39	giant strength
+	 27	harm
+	 28	heal
+	 53	identify
+	 77	infravision
+	 29	invis
+	 58	know alignment
+	 30	lightning bolt
+	 31	locate object
+	 32	magic missile
+	 69	mass invis
+	 74	pass door
+	 33	poison
+	 34	protection
+	 81	refresh
+	 35	remove curse
+	 36	sanctuary
+	 67	shield
+	 37	shocking grasp
+	 38	sleep
+	 66	stone skin
+	 40	summon
+	  2	teleport
+	 41	ventriloquate
+	 68	weaken
+	 42	word of recall
+
+	200	acid breath
+	201	fire breath
+	202	frost breath
+	203	gas breath
+	204	lightning breath
+
+
+
+=== Booting and Testing Areas
+
+When the Merc server starts, it reads a file named 'area.lst' in the current
+directory.  This file contains a list of all the area files to read in.  To add
+or delete areas, simply edit area.lst.
+
+The server reads all of the area files into memory once at load time and then
+closes them.  Thus you can edit area files while the server is running.
+Changes will take effect the next time the server boots.  Because the server is
+completely memory-based, zone resets are fast, too.  (And paradoxically, moving
+to a memory-based system allowed certain memory optimizations to be made,
+cutting memory usage by 50% from Merc 1.0).
+
+You can test areas by running Merc in a different directory with a different
+'area.lst' file with new areas dropped into it.  Setting up an appropriate
+directory structure is an exercise for the student.  (You DID say you're
+running a mud because you wanted to learn more about system administration,
+right?)  Hint: you can run a program in another directory just by invoking its
+full name: '../src/merc', for example.
+
+The server reports syntax errors, including the area file name and a line
+number.  Take the line number with a grain of salt; some kinds of errors cause
+the server to run on for quite a few lines before ultimately detecting the
+error.
+
+The server also reports semantic errors, such as references to non-existent
+mobiles, objects, or rooms.
+
+Error recovery is simply not possible without far more sophisticated input
+parsing than we're willing to write.  (Hey, feel free to write your own.)
+Thus the server exits after reporting any error.  Merc takes only a few seconds
+to load, however, so it's quite practical to use the whole server as a syntax
+checker.
+
+
+
+=== Compressing the Area Files
+
+It is possible to run Merc with a single combined, compressed area file.
+Here's how to do this on a Unix system:
+
+(1) In 'area.lst', remove the last line (the '$' line).
+
+(2) Execute the command:
+
+	cat `cat area.lst` | compress > all_area.Z
+
+(3) Edit 'area.lst' again.  Insert a '-' at the beginning of every line.
+    Do not put any spaces between the '-' and the file name.  Put the last
+    '$' line back at the end of the file.
+
+(4) Edit 'startup'.  Change the line:
+
+	../src/merc $port >&! $logfile
+
+    to:
+
+	zcat all_area.Z | ../src/merc $port >&! $logfile
+
+(5) Test the changes so far.  Merc should start up normally, although it
+    may take a few seconds longer to zcat everything.
+
+Now you can remove all the original *.are files.
+
+Notice that all of the compression and decompression takes place outside of the
+Merc server.  Thus, you can substitute any archiving program of your choice, as
+long as it can write its output to standard output.
+
+You can recover the original areas simply by running 'uncompress all_area.Z'
+and dissecting them out of all_area.
+
+From the server's point of view, when an area file name starts with '-', it
+simply reads standard input for the area, terminating at '#$' as usual (but
+without closing standard input).  Diagnostic messages are given with the full
+name (e.g. '-arachnos.are'), but the line number will be reported as zero.
+
+You can freely mix areas from standard input with ordinary area files.  Thus,
+you could compress all the Merc standard zones into a file such as merc_area.Z,
+prefixing them with '-' in 'area.lst'.  Then you could add your own areas
+anywhere in the file (beginning, middle, end, wherever your areas need to go),
+and omit the '-' on the lines for your areas.
+
+The server will take a little longer to load with compressed area files,
+because 'zcat' needs time to run.  This is offset by a reduction in time spent
+opening disk files.  After loading, the server has all of the area database in
+memory and never rereads the files.  Thus, there is zero performance impact
+on server operation after loading.

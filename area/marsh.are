@@ -1,0 +1,818 @@
+#AREA
+marsh.are~
+Marsh~
+{15 25} Generic Old Marsh~
+8300 8399
+
+#MOBILES
+#8301
+oldstyle troll~
+a swamp troll~
+A swamp troll charges towards you.
+~
+This huge behemoth towers to a height of 15 feet.  He sneers at you 
+as he approaches and raises two black taloned claws to strike you.
+~
+troll~
+ABCFG 0 -600 0
+16 0 3d9+233 8d9+100 2d6+4 none
+-2 -2 -2 7
+EFNR 0 0 0
+stand rest male 500
+0 0 medium 0
+#8302
+oldstyle troll~
+a green troll~
+A green troll attempts to get a hold on you.
+~
+This big troll towers several feet over you.  He has a large spear
+which he seems to ply with utmost prowess.  He jabs his spear at you
+and cackles with glee.
+~
+troll~
+ACFG 0 -400 0
+14 0 2d10+190 7d9+100 1d12+3 none
+-1 -1 -1 8
+EFNR 0 0 0
+stand stand male 400
+0 0 medium 0
+#8303
+oldstyle ogre~
+an ogre~
+An ogre stands here getting ready to beat in your face.
+~
+This mean bastard looks like he could tear you limb from limb.
+~
+human~
+ACFG 0 -500 0
+20 0 3d9+333 10d9+100 2d8+5 none
+-4 -4 -4 7
+EFNU 0 0 0
+stand stand male 500
+0 0 medium 0
+#8304
+oldstyle thing~
+the Swamp Thing~
+The Swamp Thing shambles about here.  It seems hungry.
+~
+The Swamp Thing has huge fists, which look like they could pound you flat.
+~
+human~
+ACFG 0 -700 0
+24 0 5d10+500 12d9+100 2d10+6 none
+-6 -6 -6 6
+EFNU 0 0 0
+stand rest none 1250
+0 0 medium 0
+#8305
+oldstyle gnoll~
+a gnoll~
+There is a mean looking gnoll here.
+~
+The Gnoll seems annoyed at your presence.
+~
+human~
+ACG DF -1000 0
+30 0 6d12+853 15d9+100 4d6+8 none
+-9 -9 -9 6
+EFNU 0 0 0
+stand stand male 1250
+0 0 medium 0
+#8306
+oldstyle beast~
+a huge hairy beast~
+A huge hairy beast shambles towards you with death in his eyes.
+~
+This huge beast stands about 20 feet in height and has huge green clawed
+appendages. 
+~
+human~
+ACFG DF -450 0
+21 0 4d10+360 10d9+100 4d4+5 none
+-5 -5 -5 7
+EFNU 0 0 0
+stand stand male 500
+0 0 medium 0
+#8307
+oldstyle beast~
+a rather small beast~
+A rather small beast cringes in terror as it notices you.
+~
+This rather small beast looks like you could take it out with a single
+sword blow.
+~
+human~
+ACGH P 0 0
+3 0 2d6+35 1d9+100 1d6+0 none
+7 7 7 10
+EFNU 0 0 0
+stand stand male 25
+0 0 medium 0
+#8308
+oldstyle will will-o-wisp~
+the Will-O-Wisp~
+A Will-O-Wisp darts hear and there, making fun of you.
+~
+This strange little creature seems very hard to keep your eyes on.
+You stare as hard as you can at the glowing ball of floating light and
+are just able to notice a small pair of glowing eyes.
+~
+human~
+ACGH P 0 0
+10 0 2d7+121 5d9+100 2d4+2 none
+1 1 1 8
+EFNU 0 0 0
+stand stand none 150
+0 0 medium 0
+#8309
+oldstyle snake anaconda~
+the monstrous snake~
+A monstrous snake slithers towards you, thinking 'breakfast'.
+~
+This 10 meter anaconda looks rather hungry.
+~
+snake~
+ACFGH PQ -100 0
+16 0 3d9+233 8d9+100 2d6+4 none
+-2 -2 -2 7
+EFNR 0 0 0
+stand stand male 500
+0 0 medium 0
+#8310
+oldstyle snake python~
+a large snake~
+A rather large python rests in a coil here.
+~
+It's the largest Amazon python you have ever seen.
+~
+snake~
+ACFGH PQ -100 0
+11 0 2d8+134 5d9+100 1d10+2 none
+1 1 1 8
+EFNR 0 0 0
+stand stand female 0
+0 0 medium 0
+#8312
+oldstyle hag~
+the Marsh Hag~
+A Marsh Hag is here.
+~
+Yech!  She manages to make even Smurfette look attractive.  That's ok,
+because she thinks you stink too, and she's about to do something about it.
+~
+human~
+ACGS DF -200 0
+9 0 2d7+96 4d9+100 1d7+2 none
+3 3 3 8
+BEFJNU 0 0 0
+stand stand female 50
+0 0 medium 0
+#8313
+oldstyle slaad~
+a Death Slaad~
+A Death Slaad is standing here distraught.  He seems lost.
+~
+This dark apparition stands a meager 13 feet in height.  Even in the dim
+swamp light, the blade of his scythe gleams.
+~
+human~
+ACG DF -200 0
+20 0 3d9+333 10d9+100 2d8+5 none
+-4 -4 -4 7
+EFNU 0 0 0
+stand stand male 700
+0 0 medium 0
+#8314
+oldstyle wolf~
+a marsh wolf~
+A marsh wolf sniffs the ground has followed your scent.
+~
+This wolf looks plump.  She probably ate a friend or two of yours who came
+into the marsh.
+~
+wolf~
+ACFG 0 -200 0
+8 0 2d7+96 4d9+100 1d7+2 none
+3 3 3 9
+ENR 0 0 0
+stand stand female 0
+0 0 medium 0
+#8318
+oldstyle mound shambling~
+a shambling mound~
+A heap of garbage shambles towards you.
+~
+This grotesque pile of plant matter fills you with utmost horror.
+~
+human~
+ACG Q -100 0
+13 0 2d10+170 6d9+100 2d5+3 none
+-1 -1 -1 8
+EFNU 0 0 0
+stand stand none 0
+0 0 medium 0
+#8319
+oldstyle shaman orc~
+the orc shaman~
+An orc shaman stands before you holding a staff and wearing robes.
+~
+This old orc has an array of bones stuck in his hair and strange symbols
+painted on his face and hands.
+~
+human~
+ABCDFGQ DF -100 0
+12 0 2d10+150 12d9+100 2d4+3 none
+0 0 0 7
+EIKU 0 0 0
+stand stand male 17
+0 0 medium 0
+#8320
+oldstyle giant~
+a marsh giant~
+A marsh giant stomps towards you.
+~
+This huge monster of a man has green gnarly teeth and a BIG stick.
+~
+giant~
+ABCDFG DF -100 0
+15 0 3d9+208 7d9+100 2d6+3 none
+-2 -2 -2 7
+EFNR 0 0 0
+stand stand male 600
+0 0 medium 0
+#8321
+oldstyle gargoyle~
+a gargoyle~
+A large gargoyle lands next to you, baring his fangs at you.
+~
+This creepy fellow looks like he could use you as a meal.
+~
+human~
+ABCDFG DF -100 0
+12 0 2d10+150 6d9+100 1d10+3 none
+0 0 0 8
+EFNU 0 0 0
+stand stand none 100
+0 0 medium 0
+#0
+
+#OBJECTS
+#8301
+spear long two-handed~
+a long spear~
+A strange spear lies here.~
+oldstyle~
+weapon J AN
+staff 1 12 stab F
+11 100 1330 P
+A
+2 1
+A
+19 3
+#8302
+horned helmet~
+a dark horned helmet~
+A wicked looking horned helmet lies here.~
+oldstyle~
+armor J AE
+6 6 5 2 0
+10 50 0 P
+A
+3 -3
+A
+19 1
+E
+horns horn~
+These horns appear to be made of adamantite.~
+#8303
+chain mail chainmail~
+a suit of chainmail~
+An old suit of chainmail lies here, corroded by the marsh.~
+oldstyle~
+armor J AD
+5 8 7 0 0
+20 200 2700 P
+#8306
+scythe~
+a huge, wicked-looking scythe~
+An evil, wicked-looking scythe lies in the shadows.~
+oldstyle~
+weapon HJ AN
+polearm 4 4 slice F
+19 160 1770 P
+A
+19 3
+A
+18 3
+#8307
+green potion~
+a murky green potion~
+A murky green potion lies here in the mud.~
+oldstyle~
+potion AB A
+43 'cure critical' '' '' ''
+5 10 690 P
+E
+potion~
+It looks really disgusting and doesn't smell very nice either.~
+#8308
+claymore rusty sword~
+a rusty claymore~
+A huge rusted sword lies in a pool of water.~
+iron~
+weapon 0 AN
+sword 4 7 cleave F
+28 100 3000 P
+#0
+
+#ROOMS
+#8301
+Muddy Path~
+This section of the path is slowly being drowned by the nearby swamp to the
+south, which is creeping slowly inland.  Several caved-in buildings sprawl
+here, torn apart both by battle and the elements.
+~
+0 0 2
+D0
+The path looks drier here.
+~
+~
+0 -1 6125
+D2
+A broken road leading southward into the marsh.
+~
+~
+0 -1 8302
+E
+swamp~
+The swamp to the south even reaches as far as this point ... it makes the
+ground and air about you moist and fetid.
+~
+S
+#8302
+Swamp's Edge~
+Briars and marsh plants stick to your boots and clothes, and clouds cover the
+skies above the murky marsh, leaving the path before you dark and sinister.
+You see some disturbances in the marsh, but after a few strangled screams,
+the sounds stop.
+~
+0 0 5
+D0
+~
+~
+0 -1 8301
+D1
+To the east lies a series of bogs and shallows that look rather threatening.
+~
+~
+0 -1 8303
+D2
+You notice a large hill rising out of the marsh to the south.
+~
+~
+0 -1 8304
+S
+#8303
+Marshy Forest~
+This area is by no means a forest, but for those who dwell in these sparse
+trees it is one.  Occasionally you see a whole humanoid form floating face down
+in the water, but mostly you only find pieces.  You hear a loud bellow in the
+distance.  And feel fear creep into your heart.
+~
+0 A 5
+D1
+Eastward is the thick bog of ooze...
+~
+~
+0 -1 8305
+D3
+Westward lies the remanents of a broken and shattered roadway being swallowed
+by the marsh.
+~
+~
+0 -1 8302
+E
+pieces~
+You see severed limbs and spongy intestines.
+~
+E
+humanoid corpse~
+He looks mangled and shredded.  You see one large gash mark that looks
+like it came from the claw of some huge beast.
+~
+S
+#8304
+On a hill.~
+You stand atop a hill on the northwestern side of the evil swamp. Dark
+clouds whip around you and the wind raises its voice and assails you.
+~
+0 A 4
+D0
+To the north lies a damp broken roadway.
+~
+~
+0 -1 8302
+D1
+A dark pool congeals to the east.
+~
+~
+0 -1 8309
+D2
+A gloomy path leads down the hill into the swamp.
+~
+~
+0 -1 8310
+S
+#8305
+An Oozing Bog~
+You stand in an oozing quagmire.  A creaking beat fills the air, 
+accompanied by groans and soughing of the air.  Several large winged
+beasts flap over you and send chilling glares your way.  You feel out
+of place, and feel that the occupants of this realm will soon 
+have you for a feast.
+~
+0 A 5
+D1
+Eastward lies a horde of disgusting looking monsters.
+~
+~
+0 -1 8306
+D3
+Westward lies a marshy area.
+~
+~
+0 -1 8303
+E
+beasts~
+You see a large creature, possibly a demon, flapping heavily above you.
+~
+S
+#8306
+An Oozing Bog~
+The ground here is soft and oozing.  You feel slimy water seeping into your
+boots.  Better stop and check for leeches when you get out of here.
+~
+0 A 5
+D3
+You see a large tree limb that looks easily moved.
+~
+limb~
+1 -1 8305
+E
+limb~
+The limb looks like it is attached to a trap door in the ground.
+~
+S
+#8307
+Swamp Thing's Lair~
+A horrible swamp thing resides here.  Mutilated corpses suffuse the air with
+the overwhelming stench of putrid flesh.
+~
+0 A 6
+D3
+A pool of quick sand lies to the west.
+~
+~
+0 -1 8308
+E
+corpses~
+You notice a note on one of the corpses reading:  'Best ye forget the temple,
+it is not for the likes of you...'
+~
+S
+#8308
+Pool of Quick Sand~
+You stand by a large oozing pool of quick sand.  Luckily only a complete
+klutz could not avoid it.  Dancing lights fly about you and one seems to
+be taunting you towards the pool.
+~
+0 A 6
+D1
+The swamp thing's lair.
+~
+~
+0 -1 8307
+D2
+A murky bog.
+~
+~
+0 -1 8314
+D3
+A dark pool lies to the west.
+~
+~
+0 -1 8309
+E
+quicksand~
+It looks deadly to the foolish.
+~
+E
+lights ~
+From the stories you have heard, you recognize them as will-o-wisps.
+~
+S
+#8309
+A Dark Pool.~
+You stand beside a large dark pond.  The water boils not with heat, but with
+motion, as if it is alive.  A creaking beat pulses through the air, leaving
+you with a cold sweat and fear in your heart.
+~
+0 A 6
+D1
+A large pool of quicksand lies to the east.
+~
+~
+0 -1 8308
+D2
+You see a cloud of darkness to the south.
+~
+~
+0 -1 8311
+D3
+A hill rises out of the swamp to the east.
+~
+~
+0 -1 8304
+E
+pond~
+It looks ALIVE ...
+~
+S
+#8310
+Gloomy Path Through the Marsh.~
+To the north lies a hill, shrouded in dark clouds, and to the south lies
+a huge patch of vegetation.  You sense an evil presence and notice 
+a beast flying overhead to the south east, towards what looks to be a 
+huge fortress, half buried in the marsh.
+~
+0 A 6
+D0
+To the north a hill protrudes from the marshes.
+~
+~
+0 -1 8304
+D2
+To the south a huge mass of vegetation seems to quiver with life.
+~
+~
+0 -1 8312
+E
+vegetation~
+It looks sentient.
+~
+E
+fortress~
+It is surrounded by walls nearly 20 meters high.  In a tall tower on the
+northeast side, a window glows blue with magical energy.
+~
+E
+beast~
+It looks to be a demon of some foul breed.
+~
+E
+clouds~
+The clouds look dark and foreboding.
+~
+S
+#8311
+Cloud of Darkness.~
+As you travel through this cloud of darkness, a fear such as you have never
+known before assails you.
+~
+0 A 6
+D0
+A dark pool lies to the north.
+~
+~
+0 -1 8309
+D2
+An obelisk lies to the south.
+~
+~
+0 -1 8313
+S
+#8312
+Near Vegetation from Hell.~
+You stand near some of the strangest plant life you have ever seen, a mixture
+of tumescent vegetables, evil-smelling fruit trees, and malignant ferns.
+~
+0 A 6
+D0
+To the north is a gloomy path through the marsh.
+~
+~
+0 -1 8310
+D1
+Eastward is a large, black stone monolith.
+~
+~
+0 -1 8313
+E
+plant plants~
+They look rather violent, and snap at you when you come near.
+~
+S
+#8313
+By the Monolith.~
+You are standing near a monolith which protrudes some 20 feet from the
+marsh into the air.  Its black obsidian surface shines darkly in the 
+strange, almost unearthly light that enters through the clouds above.
+~
+0 A 5
+D0
+To the north is a cloud of darkest evil.
+~
+~
+0 -1 8311
+D1
+Eastward lies a murky bog.
+~
+~
+0 -1 8314
+D3
+Near Vegetation from Hell.
+~
+~
+0 -1 8312
+E
+monolith~
+This huge monolith resembles nothing you have ever seen before.
+You have a strong feeling not to go within.
+~
+S
+#8314
+Murky Bog.~
+A murky bog surrounds you.  To the east a black monolith juts forth from the
+ground.  Far to the north lies a huge pool of quicksand.  Snarls can be heard
+echoing as if from a great distance.
+~
+0 A 5
+D0
+To the north lies a huge pool of quicksand.
+~
+~
+0 -1 8308
+D1
+To the east the marsh turns into a small lake.
+~
+~
+0 -1 8315
+D3
+Westward a large monolith awaits adventurers.
+~
+~
+0 -1 8313
+E
+monolith~
+This is a huge obsidian stone block stuck in the marsh.
+~
+S
+#8315
+Northern Lake Side.~
+Floating on this boiling lake is not what you would consider an enjoyable 
+experience.  Many a creature bumps the bottom of your boat, and glares 
+at you through unblinking eyes from the waters below.  The southern 
+portion of the lake looks calm and serene compared to this wild place.
+~
+0 A 7
+D2
+The southern portion of the lake lies to the south.
+~
+~
+0 -1 8316
+D3
+To the west lies a murky bog.
+~
+~
+0 -1 8314
+S
+#8316
+Southern Lake Side.~
+You are floating on a calm section of blue crystal water.  You feel much more
+at ease then you were before in this area.  Then a wave of fear passes over
+you.  You are not alone.
+~
+0 A 7
+D0
+Northern lake side.
+~
+~
+0 -1 8315
+D3
+To the west is a beach where your boat can land.
+~
+~
+0 -1 8317
+E
+north~
+The way to the north seems to be impassable, due to the rough water and
+strange wild life.
+~
+S
+#8317
+Beach~
+You are on a sandy shore.  Marsh life creeps across the surface.  To the west
+lies an evil fortress.  You see figures walking along the battlements.
+~
+0 A 5
+D1
+To the east lies the southern portion of a small lake.
+~
+~
+0 -1 8316
+D3
+The great gates.
+~
+~
+0 -1 8318
+E
+fortress~
+It is hewn of black stone and heavily fortified.
+~
+S
+#8318
+Before the Great Gates.~
+You stand before the gates of a huge fortress.  The drawbridge is up, the
+gates closed, and the portcullis down.  This place looks very dangerous,
+and you decide not to continue onward.
+~
+0 A 3
+D1
+To the east is a marshy beach.
+~
+~
+0 -1 8317
+D2
+~
+~
+1 -1 -1
+S
+#0
+
+#RESETS
+M 0 8301   2 8303  1	* a swamp troll
+M 0 8301   2 8308  1	* a swamp troll
+M 0 8302   6 8303  2	* a green troll
+G 1 8307  -1     	*   a murky green potion
+M 0 8302   6 8304  2	* a green troll
+G 1 8307  -1     	*   a murky green potion
+M 0 8302   6 8306  2	* a green troll
+M 0 8303   3 8303  1	* an ogre
+M 0 8303   3 8313  1	* an ogre
+M 0 8303   3 8307  1	* an ogre
+M 0 8304   1 8307  1	* the Swamp Thing
+M 0 8305   2 8306  2	* a gnoll
+E 1 8303  20    5	*   a suit of chainmail
+E 1 8308  20   16	*   a rusty claymore
+M 0 8306   2 8304  1	* a huge hairy beast
+M 0 8306   2 8310  1	* a huge hairy beast
+M 0 8307   2 8305  1	* a rather small beast
+M 0 8307   2 8313  1	* a rather small beast
+M 0 8308   1 8308  1	* the Will-O-Wisp
+M 0 8309   2 8305  1	* the monstrous snake
+M 0 8309   2 8311  1	* the monstrous snake
+M 0 8310   2 8304  1	* a large snake
+M 0 8310   2 8305  1	* a large snake
+M 0 8312   2 8310  1	* the Marsh Hag
+M 0 8312   2 8309  1	* the Marsh Hag
+M 0 8313   1 8310  1	* a Death Slaad
+E 1 8306   1   16	*   a huge, wicked-looking scythe
+E 1 8302   5    6	*   a dark horned helmet
+M 0 8314   6 8304  1	* a marsh wolf
+M 0 8314   6 8305  1	* a marsh wolf
+M 0 8314   6 8306  1	* a marsh wolf
+M 0 8314   6 8307  1	* a marsh wolf
+M 0 8314   6 8308  1	* a marsh wolf
+M 0 8314   6 8309  1	* a marsh wolf
+M 0 8318   2 8312  2	* a shambling mound
+G 1 8307  -1     	*   a murky green potion
+M 0 8318   2 8312  2	* a shambling mound
+G 1 8307  -1     	*   a murky green potion
+M 0 8321   2 8318  2	* a gargoyle
+M 0 8321   2 8318  2	* a gargoyle
+M 0 8320   5 8307  1	* a marsh giant
+G 1 8301  10     	*   a long spear
+M 0 8320   5 8309  1	* a marsh giant
+G 1 8301  10     	*   a long spear
+M 0 8320   5 8311  1	* a marsh giant
+G 1 8301  10     	*   a long spear
+M 0 8320   5 8313  1	* a marsh giant
+G 1 8301  10     	*   a long spear
+G 1 8307  -1     	*   a murky green potion
+M 0 8320   5 8315  1	* a marsh giant
+G 1 8301  10     	*   a long spear
+E 1 8302   5    6	*   a dark horned helmet
+S
+
+#SHOPS
+0
+
+#SPECIALS
+M 8309 spec_poison         	* the monstrous snake
+M 8310 spec_poison         	* a large snake
+M 8312 spec_thief          	* the Marsh Hag
+M 8313 spec_cast_undead    	* a Death Slaad
+M 8319 spec_cast_cleric    	* the orc shaman
+S
+
+#$

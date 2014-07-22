@@ -1,0 +1,57 @@
+(these are in addition to the standard credits listed for both the
+diku dev team and the merc dev team)
+
+The following people contributed to the ROM flavor of the merc base code:
+
+Socials --
+    Kelsey and Liralen
+
+New, Improved Valhalla --
+    Liralen
+
+Puff's new special proc and improved poofin/poofout code --
+    Seth
+
+Maps and map shop --
+    Ezra, Regnan (Olympus)
+
+Nirvana zone --
+    Forstall (mobiles rewritten by Alander)
+
+Mob Factory --
+    Pinkfloyd (originally written for ROM, mobiles rewritten by Alander)
+
+Geographically correct Midgaard (tm) --
+    Alander
+
+Ideas and playtesting --
+    Thousands of dedicated mudders around the world
+
+The New Thalos area was donated by Onivel of Jedi, who was also the originator
+of the ASCII flags used in the zone files
+
+Beta testing --
+    Ken Blosser, Doug Araya, and Sherene Neil all helped with bugs reports
+    and suggestions, saving a lot of headaches
+
+Bug reports --
+    Thanks to Shad Muegge, Jerome Despret, Phoenix, Will Hongach,
+    Erwin S. Andreasen, Adam Debus and especially Gary Turkington
+    (author of the ROM FAQ) for help spotting bugs
+
+ROM 2.4 was developed during my time with Moosehead mud, and the release
+shares many of the features I wrote while I was there.  Additional code
+was written by Seth Scott (the new poofin/poofout), and many contributions
+and ideas from the Merc list were used.  Portions of Rusty's work on
+Moosehead also remain.
+
+The new features of 2.4 were largely produced in bull sessions with
+Gabrielle Taylor and Brian Moore, without whom this release wouldn't
+have happened.  In particular, the new privacy code, furniture, and
+wiznet are the results of Gabrielle's ideas.
+
+Changes to the standard diku mob and object format, as well as the changes
+to Merc 2.1 source code, were done by Alander over many a late night of
+hair-pulling. Hope you enjoy it.
+
+(my apologies if anyone was forgotten in this list)

@@ -1,0 +1,260 @@
+#COMMAND
+Name      imc
+Code      imc_other
+Perm      Mort
+Connected 0
+End
+
+#COMMAND
+Name      imchelp
+Code      imchelp
+Perm      Mort
+Connected 0
+End
+
+#COMMAND
+Name      imccedit
+Code      imccedit
+Perm      Imp
+Connected 0
+End
+
+#COMMAND
+Name      imchedit
+Code      imchedit
+Perm      Admin
+Connected 0
+End
+
+#COMMAND
+Name      imclisten
+Code      imclisten
+Perm      Mort
+Connected 1
+Alias     ichan
+End
+
+#COMMAND
+Name      imcchanlist
+Code      imcchanlist
+Perm      Mort
+Connected 1
+Alias     ilist
+End
+
+#COMMAND
+Name      imclist
+Code      imclist
+Perm      Mort
+Connected 1
+End
+
+#COMMAND
+Name      imcinvis
+Code      imcinvis
+Perm      Mort
+Connected 0
+End
+
+#COMMAND
+Name      imcwho
+Code      imcwho
+Perm      Mort
+Connected 1
+Alias     rwho
+End
+
+#COMMAND
+Name      imclocate
+Code      imclocate
+Perm      Mort
+Connected 1
+Alias     rwhois
+End
+
+#COMMAND
+Name      imctell
+Code      imctell
+Perm      Mort
+Connected 1
+Alias     rtell
+End
+
+#COMMAND
+Name      imcreply
+Code      imcreply
+Perm      Mort
+Connected 1
+Alias     rreply
+End
+
+#COMMAND
+Name      imcbeep
+Code      imcbeep
+Perm      Mort
+Connected 1
+Alias     rbeep
+End
+
+#COMMAND
+Name      imcignore
+Code      imcignore
+Perm      Mort
+Connected 0
+End
+
+#COMMAND
+Name      imcfinger
+Code      imcfinger
+Perm      Mort
+Connected 0
+Alias     rfinger
+End
+
+#COMMAND
+Name      imcinfo
+Code      imcinfo
+Perm      Mort
+Connected 1
+Alias     rquery
+End
+
+#COMMAND
+Name      imccolor
+Code      imccolor
+Perm      Mort
+Connected 0
+End
+
+#COMMAND
+Name      imcchanwho
+Code      imcchanwho
+Perm      Mort
+Connected 1
+End
+
+#COMMAND
+Name      imcconnect
+Code      imcconnect
+Perm      Imm
+Connected 0
+Alias     rconnect
+End
+
+#COMMAND
+Name      imcdisconnect
+Code      imcdisconnect
+Perm      Imm
+Connected 1
+Alias     rdisconnect
+End
+
+#COMMAND
+Name      imcperms
+Code      imcpermstats
+Perm      Imm
+Connected 0
+End
+
+#COMMAND
+Name      imcdeny
+Code      imc_deny_channel
+Perm      Imm
+Connected 1
+End
+
+#COMMAND
+Name      imcpermset
+Code      imcpermset
+Perm      Admin
+Connected 0
+End
+
+#COMMAND
+Name      imcsetup
+Code      imcsetup
+Perm      Admin
+Connected 1
+Alias     isetup
+End
+
+#COMMAND
+Name      imccommand
+Code      imccommand
+Perm      Admin
+Connected 1
+Alias     icommand
+End
+
+#COMMAND
+Name      imcban
+Code      imcban
+Perm      Admin
+Connected 1
+Alias     rignore
+End
+
+#COMMAND
+Name      imcconfig
+Code      imcconfig
+Perm      Admin
+Connected 0
+End
+
+#COMMAND
+Name      imcucache
+Code      imc_show_ucache_contents
+Perm      Admin
+Connected 1
+End
+
+#COMMAND
+Name      imcadmin
+Code      imcremoteadmin
+Perm      Imp
+Connected 1
+End
+
+#COMMAND
+Name      imcdebug
+Code      imcdebug
+Perm      Imp
+Connected 0
+End
+
+#COMMAND
+Name      imcafk
+Code      imcafk
+Perm      Mort
+Connected 0
+End
+
+#COMMAND
+Name      imcnotify
+Code      imcnotify
+Perm      Mort
+Connected 0
+End
+
+#COMMAND
+Name      imclast
+Code      imclast
+Perm      Mort
+Connected 1
+End
+
+#COMMAND
+Name      imcrefresh
+Code      imcrefresh
+Perm      Admin
+Connected 1
+End
+
+#COMMAND
+Name      imctemplates
+Code      imctemplates
+Perm      Admin
+Connected 0
+End
+
+#END

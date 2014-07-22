@@ -1,10 +1,3 @@
-rom24-quickmud
-==============
-
-ROM 2.4b6 with a few additional features (a.k.a. QuickMUD). Compiles succesfully on Ubuntu 14.04.
-
-
------
 QuickMUD is a Rom24b6 codebase with the following major features added:
   ** OLC 1.81
   ** Lope's Color 2.0

@@ -1,0 +1,7370 @@
+#AREA
+newthalos.are~
+New Thalos~
+{10 35} Conner  New Thalos~
+9500 9799
+
+#MOBILES
+#9500
+mage guildmaster~
+the guildmaster~
+Your guildmaster stands here.
+~
+An old man peering through ancient tomes rests here.
+~
+human~
+ABJKRVb DF 0 0
+40 10 1d1+30000 1d1+499 5d8+5 pierce
+-15 -15 -15 -15
+FHN ABCD 0 0
+stand stand male 15000
+0 0 medium 0
+#9501
+cleric guildmaster~
+the guildmaster~
+Your guildmaster stands here.
+~
+An older man wrapped in purple, long-flowing robes meditates here.
+~
+human~
+ABJKQVb DFH 250 0
+40 10 1d1+30000 1d1+499 6d7+8 bite
+-15 -15 -15 -15
+EFGIK ABCD 0 0
+stand stand male 15000
+0 0 medium 0
+#9502
+warrior guildmaster~
+the guildmaster~
+Your guildmaster stands here.
+~
+A smaller man dressed in nothing but a tunic stands here waiting to train you.
+~
+human~
+ABJKTVb DF 0 0
+40 20 1d1+30000 1d1+99 2d4+30 digestion
+-15 -15 -15 -15
+ACEFHIK ABCD 0 0
+stand stand male 15000
+0 0 medium 0
+#9503
+thief guildmaster~
+the guildmaster~
+Your guildmaster stands here.
+~
+A small elf dressed in black rests in the corner. As you enter he grabs
+a knife an throws it at you. It lands the wall next to your left ear. We
+will now begin, is all he says.
+~
+elf~
+ABJKTVb DF -100 0
+40 15 1d1+30000 1d1+99 1d4+10 digestion
+-15 -15 -15 -15
+BEFHJKN ABCD 0 0
+stand stand male 35000
+0 0 medium 0
+#9504
+oldstyle receptionist~
+the receptionist~
+A dark skinned, veiled woman greets you from behind the desk.
+~
+This arabian beauty is obviously the daughter of some high ranking
+official. As you attempt to sneak a peek under her veil you notice
+a small moon-shaped birthmark on her left cheek.
+~
+human~
+AB 0 800 0
+20 0 3d9+333 10d9+100 2d8+5 none
+-4 -4 -4 7
+EFNU 0 0 0
+sit sit female 505
+0 0 tiny 0
+F par GHIJK
+#9505
+oldstyle bartender~
+the withered mage/bartender~
+An old withered mage/bartender leans against the bar.
+~
+He looks distracted as he pours five drinks at once without error.
+~
+human~
+ABRVXYZ D 800 0
+23 0 5d10+450 11d9+100 3d6+6 none
+-6 -6 -6 6
+EFNU 0 0 0
+stand stand male 505
+0 0 tiny 0
+F par GHIJK
+#9506
+oldstyle john brother singer lead~
+Brother John~
+Brother John, lead singer for the Lokettes, stands on stage.
+~
+You see the lead singer of the Lokettes lip synching to an old Zeppelin tune.
+~
+human~
+ABG D 0 0
+18 0 3d9+283 9d9+100 2d7+4 none
+-3 -3 -3 7
+EFNU 0 0 0
+stand stand male 250
+0 0 tiny 0
+F par GHIJK
+#9507
+oldstyle panhandler~
+a panhandler~
+A panhandler rests here.
+~
+A small skinny man rests here hoping to find a warm heart.
+~
+human~
+ACGH 0 -20 0
+2 0 2d7+21 1d9+100 1d5+0 none
+8 8 8 10
+EFNU 0 0 0
+rest rest male 1
+0 0 tiny 0
+F par GHIJK
+#9508
+oldstyle panhandler~
+a panhandler~
+A panhandler rests here.
+~
+A small skinny man rests here staring at your clothes.
+~
+human~
+ACGH 0 -20 0
+3 0 2d6+35 1d9+100 1d6+0 none
+7 7 7 10
+EFNU 0 0 0
+rest rest male 2
+0 0 tiny 0
+F par GHIJK
+#9509
+oldstyle beggar~
+a beggar~
+A grubby beggar sits here in the filth.
+~
+This poor soul seems down on his luck, perhaps you might spare a dime?
+~
+human~
+ACGHS 0 -20 0
+1 0 2d6+10 0d9+100 1d4+0 none
+9 9 9 10
+EFNU 0 0 0
+stand stand male 1
+0 0 tiny 0
+F par GHIJK
+#9510
+oldstyle baker~
+the baker~
+The baker stands here playing solitaire.
+~
+You see a large man in a white apron covered in flour from head to toe.
+~
+human~
+ABVXYZ D 800 0
+23 0 5d10+450 11d9+100 3d6+6 none
+-6 -6 -6 6
+EFNU 0 0 0
+stand stand male 505
+0 0 tiny 0
+F par GHIJK
+#9511
+oldstyle shopkeeper~
+the shopkeeper~
+The shopkeeper stands here.
+~
+You see a half-elf sitting on a stool behind his counter.
+~
+human~
+ABVXYZ D 800 0
+23 0 5d10+450 11d9+100 3d6+6 none
+-6 -6 -6 6
+EFNU 0 0 0
+stand stand male 505
+0 0 tiny 0
+F par GHIJK
+#9512
+oldstyle Nabil shopkeeper~
+Nabil~
+Nabil, purveyor of exotic pets, is waiting to serve you.
+~
+A large, well-fed shopkeeper, Nabil is adept at finding animals from all 
+parts of the world. He welcomes you warmly and offers to show you a pair
+of priceless parrots.
+~
+human~
+AB D 800 0
+23 0 5d10+450 11d9+100 3d6+6 none
+-6 -6 -6 6
+EFNU ABCD 0 0
+stand stand male 505
+0 0 medium 0
+F par GHIJK
+#9513
+oldstyle ahkeem tailor~
+Ahkeem the tailor~
+Ahkeem the tailor welcomes you to his store.
+~
+This middle-aged man looks over you with disdain and quickly suggests a new
+wardrobe.
+~
+human~
+ABVXYZ D 800 0
+23 0 5d10+450 11d9+100 3d6+6 none
+-6 -6 -6 6
+EFNU 0 0 0
+stand stand male 505
+0 0 tiny 0
+F par GHIJK
+#9514
+oldstyle vera~
+Vera the veggie lady~
+Vera the veggie lady beams as you look over her stand.
+~
+A tall slender elf stands before you smiling broadly.
+~
+human~
+ABVXYZ D 800 0
+23 0 5d10+450 11d9+100 3d6+6 none
+-6 -6 -6 6
+EFNU 0 0 0
+stand stand female 505
+0 0 tiny 0
+F par GHIJK
+#9515
+oldstyle butch~
+Butch the meatcutter~
+Butch the meatcutter stands here in his bloodied apron.
+~
+This stocky dwarf has a mad glint in his eye as he twirls his cleaver
+carelessly into the air.
+~
+human~
+ABTVXYZ D 800 0
+23 0 5d10+450 11d9+100 3d6+6 none
+-6 -6 -6 6
+EFNU 0 0 0
+stand stand male 505
+0 0 tiny 0
+F par GHIJK
+#9516
+oldstyle abdul armorer~
+Abdul the armorer~
+Abdul stands here, waiting to help you.
+~
+Abdul returns your gaze with a steady eye. You quickly glance away under
+his cold stare and place your order.
+~
+human~
+ABTVXYZ D 800 0
+23 0 5d10+450 11d9+100 3d6+6 none
+-6 -6 -6 6
+EFNU 0 0 0
+stand stand male 505
+0 0 tiny 0
+F par GHIJK
+#9517
+oldstyle igor weaponsmith~
+Igor the weaponsmith~
+Igor stands here doing... something.
+~
+You see a small dwarf with a large hump on his left shoulder.
+~
+human~
+ABTVXYZ D 800 0
+23 0 5d10+450 11d9+100 3d6+6 none
+-6 -6 -6 6
+EFNU 0 0 0
+stand stand male 505
+0 0 tiny 0
+F par GHIJK
+#9518
+oldstyle cassandra~
+Cassandra~
+Cassandra stands proudly over her selection.
+~
+You see a happy weather-worn face whose lines suggest many years on the
+open sea. It is only through years of fishing that she is able to withstand
+the smell that permeates the air.
+~
+human~
+AB D 800 0
+23 0 5d10+450 11d9+100 3d6+6 none
+-6 -6 -6 6
+EFNU 0 0 0
+stand stand female 505
+0 0 tiny 0
+F par GHIJK
+#9519
+oldstyle foreman man~
+the foreman~
+The foreman stands here screaming at the workers.
+~
+A worried working dwarf stands here constantly making notes in his
+book and looking at his watch.
+~
+human~
+ABGT 0 0 0
+15 0 3d9+208 7d9+100 2d6+3 none
+-2 -2 -2 7
+EFNU 0 0 0
+stand stand male 125
+0 0 tiny 0
+F par GHIJK
+#9520
+oldstyle construction worker~
+a construction worker~
+A construction worker steadily works here.
+~
+A large sweaty looking man doesn't even return your glance.
+~
+human~
+ABGT 0 10 0
+10 0 2d7+121 5d9+100 2d4+2 none
+1 1 1 8
+EFNU 0 0 0
+stand stand male 45
+0 0 tiny 0
+F par GHIJK
+#9521
+oldstyle statue~
+the statue of Nati~
+The statue of Nati stands here.
+~
+~
+human~
+ABQTX 0 1000 0
+35 0 10d10+1300 35d9+100 6d4+11 none
+-11 -11 -11 3
+EIKU 0 0 0
+stand stand female 1150
+0 0 huge 0
+F par GHIJK
+#9522
+oldstyle statue~
+the statue of Alander~
+The statue of Alander stands here.
+~
+Alander has been caught in the pose of casting a bolt of flame
+down to some hapless victim.  He is dressed in the robes of a mage,
+yet bears a sword carved into the glittering stone of his statue.
+~
+human~
+ABQTX 0 1000 0
+31 0 6d12+928 31d9+100 2d12+9 none
+-10 -10 -10 4
+EIKU 0 0 0
+stand stand male 1150
+0 0 huge 0
+F par GHIJK
+#9523
+oldstyle statue~
+the statue of Zump~
+The statue of Zump stands here.
+~
+A statue of a stocky, angry looking dwarf with a cigarette in his mouth.
+~
+human~
+ABQTX 0 1000 0
+31 0 6d12+928 31d9+100 2d12+9 none
+-10 -10 -10 4
+EIKU 0 0 0
+stand stand male 1150
+0 0 tiny 0
+F par GHIJK
+#9524
+oldstyle statue~
+the statue of Nightshade~
+The statue of Nightshade stands here.
+~
+A tall, swirling dark stone formed this statue.  As you peer at him
+longer, it seems to chuckle.
+~
+human~
+ABQTX 0 1000 0
+31 0 6d12+928 31d9+100 2d12+9 none
+-10 -10 -10 4
+EIKU 0 0 0
+stand stand male 1190
+0 0 tiny 0
+F par GHIJK
+#9525
+oldstyle statue~
+the statue of Satin~
+The statue of Satin stands here.
+~
+The statue of Satin, a small elven woman in mage robes, smiles serenely
+and her eyes twinkle with gentle humour.  You take a step back in fear.
+~
+human~
+ABQTX 0 1000 0
+31 0 6d12+928 31d9+100 2d12+9 none
+-10 -10 -10 4
+EIKU 0 0 0
+stand stand female 1150
+0 0 tiny 0
+F par GHIJK
+#9526
+oldstyle statue~
+the statue of Shandra~
+The statue of Shandra stands here.
+~
+This statue poses the Lady of the Mountains in a simple robe, with
+her long tresses sensibly pulled back from her smooth, smiling face.
+~
+human~
+ABQTX 0 1000 0
+31 0 6d12+928 31d9+100 2d12+9 none
+-10 -10 -10 4
+EIKU 0 0 0
+stand stand female 1150
+0 0 tiny 0
+F par GHIJK
+#9527
+oldstyle statue~
+the statue of Furey~
+There a statue of Furey standing here.
+~
+A statue of Furey.
+~
+human~
+ABQRTX 0 1000 0
+34 0 10d10+1200 34d9+100 6d4+10 none
+-11 -11 -11 3
+EIKU 0 0 0
+stand stand male 3250
+0 0 tiny 0
+F par GHIJK
+#9528
+oldstyle statue~
+the statue of Landru~
+The statue of Landru stands here.
+~
+Landru is carved from shimmering polished hematite, and a smile seems
+to flicker over his face.  A pair of dice are enclosed in one hand.
+~
+human~
+ABQRTUWX 0 1000 0
+35 0 10d10+1300 35d9+100 6d4+11 none
+-11 -11 -11 3
+EIKU 0 0 0
+stand stand male 3250
+0 0 tiny 0
+F par GHIJK
+#9529
+oldstyle aziz~
+Aziz~
+Aziz the Human Canon stands here.
+~
+You see nothing special...
+~
+human~
+ACGHQR D 0 0
+11 0 2d7+121 11d9+100 1d7+2 none
+1 1 1 6
+FU 0 0 0
+stand stand male 65
+0 0 tiny 0
+F par GHIJK
+#9530
+oldstyle mustafah~
+Mustafah~
+Mustafah the Human Robber stands here.
+~
+You see nothing special...
+~
+human~
+ACGHS DF 0 0
+7 0 2d7+71 3d9+100 1d7+1 none
+4 4 4 8
+BEFJNU 0 0 0
+stand stand male 11
+0 0 tiny 0
+F par GHIJK
+#9531
+oldstyle fatima~
+Fatima~
+Fatima the Elven Invoker stands here.
+~
+You see nothing special...
+~
+human~
+ACGHRU D 0 0
+9 0 2d7+96 9d9+100 1d7+1 none
+3 3 3 7
+FU 0 0 0
+stand stand male 30
+0 0 tiny 0
+F par GHIJK
+#9532
+oldstyle kareem~
+Kareem~
+Kareem the Dwarven Mercenary stands here.
+~
+You see nothing special...
+~
+human~
+ACGHT D 0 0
+12 0 2d10+170 6d9+100 1d10+3 none
+0 0 0 8
+CDEIKLU 0 0 0
+stand stand male 60
+0 0 tiny 0
+F par GHIJK
+#9533
+oldstyle nomad merchant~
+A nomad merchant~
+A nomad merchant looks you over.
+~
+This robust fellow returns your gaze with a smile, but something inside
+tells you not to trust him very far.
+~
+human~
+ACFHT 0 -100 0
+10 0 2d7+121 5d9+100 2d4+2 none
+1 1 1 8
+EFNU 0 0 0
+stand stand male 45
+0 0 tiny 0
+F par GHIJK
+#9534
+oldstyle bodyguard~
+A bodyguard~
+A bodyguard sizes you up.
+~
+The large half-orc quickly glances you over and returns to his duties.
+~
+human~
+AGT 0 0 0
+12 0 2d10+150 6d9+100 1d10+3 none
+0 0 0 8
+EFNU 0 0 0
+stand stand male 60
+0 0 tiny 0
+F par GHIJK
+#9535
+oldstyle kid thief~
+the skinny kid~
+A skinny kid wanders around.
+~
+This small child sees you looking at him and quickly looks away.
+~
+human~
+ACHS DF 100 0
+7 0 2d7+71 3d9+100 1d7+1 none
+4 4 4 8
+BEFJNU 0 0 0
+stand stand male 11
+0 0 tiny 0
+F par GHIJK
+#9536
+oldstyle dockworker~
+the dockworker~
+A strong dockworker walks by moving crates.
+~
+Although seemingly dull witted, this hulking mass carries the huge
+crates from the boats like so many lilies.
+~
+human~
+AGT 0 0 0
+12 0 2d10+150 6d9+100 1d10+3 none
+0 0 0 8
+EFNU 0 0 0
+stand stand male 60
+0 0 tiny 0
+F par GHIJK
+#9537
+oldstyle man tax collector~
+the tax collector~
+A small man walks around scribbling in a notebook.
+~
+The city's tax collector walks from store to store collecting the
+Sultan's fee for living in his grand city.
+~
+human~
+AGH 0 0 0
+5 0 2d6+60 2d9+100 1d6+1 none
+5 5 5 9
+EFNU 0 0 0
+stand stand male 3
+0 0 tiny 0
+F par GHIJK
+#9538
+oldstyle gord~
+Gord~
+Gord the Rogue stands here.
+~
+You see nothing special.
+~
+human~
+ACGSTU DF -200 0
+25 0 5d10+500 12d9+100 2d10+6 none
+-6 -6 -6 5
+BEFJNU 0 0 0
+stand stand male 615
+0 0 tiny 0
+F par GHIJK
+#9539
+oldstyle caramon~
+Caramon~
+Caramon the Knight stands here.
+~
+You see nothing special.
+~
+human~
+AGTU 0 -200 0
+25 0 5d10+600 12d9+100 2d10+7 none
+-7 -7 -7 6
+CDEIKLU 0 0 0
+stand stand male 615
+0 0 tiny 0
+F par GHIJK
+#9540
+oldstyle raistlin~
+Raistlin~
+Raistlin, the Arch-Magician stands here.
+~
+You see nothing special.
+~
+human~
+ACGHR D 200 0
+25 0 5d10+500 25d9+100 4d4+6 none
+-6 -6 -6 2
+FU 0 0 0
+stand stand male 615
+0 0 tiny 0
+F par GHIJK
+#9541
+oldstyle curley greenleaf~
+Curley GreenLeaf~
+Curley GreenLeaf stands here.
+~
+You see nothing special.
+~
+human~
+AGQT D 0 0
+25 0 5d10+550 25d9+100 3d6+7 none
+-7 -7 -7 5
+EIKU 0 0 0
+stand stand male 615
+0 0 tiny 0
+F par GHIJK
+#9542
+oldstyle man wandering prophet~
+the wandering prophet~
+A small grey-haired man walks around spouting gospel.
+~
+This sad case may have been an evangelist in another lifetime. He is known
+to stand on corners and accost passers-by with his doomsday preaching.
+~
+human~
+AHQ 0 0 0
+7 0 2d6+85 7d9+100 1d6+1 none
+4 4 4 8
+EIKU 0 0 0
+stand stand male 11
+0 0 tiny 0
+F par GHIJK
+#9543
+oldstyle alley cat feline~
+the alley cat~
+A small harmless feline searches for food.
+~
+You see a small starved cat.
+~
+human~
+ACHU 0 -10 0
+2 0 2d7+21 1d9+100 1d5+0 none
+8 8 8 10
+EFNU 0 0 0
+stand stand male 1
+0 0 tiny 0
+F par GHIJK
+#9544
+oldstyle vulture~
+the vulture~
+A vulture circles above you.
+~
+As you look up at this bird, you see the only thing it wants is a corpse.
+~
+human~
+AGH 0 -200 0
+2 0 2d7+21 1d9+100 1d5+0 none
+8 8 8 10
+EFNU 0 0 0
+stand stand male 0
+0 0 tiny 0
+F par GHIJK
+#9545
+oldstyle old man~
+the old man~
+An old man sits here playing chess.
+~
+He seems intent on winning.
+~
+human~
+AH 0 200 0
+4 0 2d7+46 2d9+100 1d5+1 none
+6 6 6 9
+EFNU 0 0 0
+stand stand male 3
+0 0 tiny 0
+F par GHIJK
+#9546
+oldstyle conan librarian~
+Conan the Librarian~
+Conan the Librarian sits behind a desk.
+~
+The huge hulking mass rises as someone asks him a question.
+~
+human~
+ABETU 0 300 0
+20 0 3d9+333 10d9+100 2d8+5 none
+-4 -4 -4 7
+EFNU 0 0 0
+sit sit male 345
+0 0 tiny 0
+F par GHIJK
+#9547
+oldstyle dirt devil~
+the dirt devil~
+The wind kicks up some dust.
+~
+What you see before you is really a baby air elemental.
+~
+human~
+ACFU 0 -1000 0
+1 0 2d6+10 0d9+100 1d4+0 none
+9 9 9 10
+EFNU 0 0 0
+stand stand male 1
+0 0 tiny 0
+F par GHIJK
+#9548
+oldstyle lamia~
+the lamia~
+A lamia stands here.
+~
+A half snake half woman creature rears back to attack you.
+~
+human~
+ACFRT 0 -500 0
+8 0 2d6+85 8d9+100 1d6+1 none
+4 4 4 7
+FU 0 0 0
+stand stand female 18
+0 0 tiny 0
+F par GHIJK
+#9549
+oldstyle dervish~
+the raggety dervish~
+A raggety dervish stands here.
+~
+This man looks like he could use a lot of rest.
+~
+human~
+AEFR U -750 0
+9 0 2d6+110 4d9+100 1d8+2 none
+2 2 2 8
+EFNU 0 0 0
+stand stand male 30
+0 0 tiny 0
+F par GHIJK
+#9550
+oldstyle sultan~
+The Sultan~
+The Sultan rests here on his throne.
+~
+You see a large wealthy man in red robes smiling at you.
+~
+human~
+ABTW D 200 0
+35 0 10d10+1300 17d9+100 4d7+11 none
+-11 -11 -11 5
+EFNU 0 0 0
+rest rest male 2200
+0 0 tiny 0
+F par GHIJK
+#9551
+oldstyle harem girl~
+a harem girl~
+A lovely, veiled harem girl stands here.
+~
+You see a dark skinned beauty, wearing almost transparent silks and 
+light blue viel. Her loyalty to the sultan is unwavering.
+~
+human~
+AB 0 0 0
+3 0 2d6+35 1d9+100 1d6+0 none
+7 7 7 10
+EFNU 0 0 0
+stand stand female 2
+0 0 tiny 0
+F par GHIJK
+#9552
+oldstyle jailer~
+the jailer~
+The Jailer sleeps here, snoring loudly.
+~
+You see a pathetic soul lying here. Some ex-nobleman that has fallen
+out of grace with the Sultan.
+~
+human~
+ABCHT D -100 0
+18 0 3d9+283 9d9+100 2d7+4 none
+-3 -3 -3 7
+EFNU 0 0 0
+sleep sleep male 250
+0 0 tiny 0
+F par GHIJK
+#9553
+oldstyle eunuch~
+a eunuch~
+A eunuch stands here watching over the girls.
+~
+You see a large man whose only duty is to protect the harem. He has been
+castrated for the ladies' safety.
+~
+human~
+ABFT D 0 0
+15 0 3d9+208 7d9+100 2d6+3 none
+-2 -2 -2 7
+EFNU 0 0 0
+stand stand none 125
+0 0 tiny 0
+F par GHIJK
+#9554
+oldstyle sultans favorite girl nichole~
+Nichole, the sultan's favorite~
+Nichole, the sultan's favorite girl rests on a mound of pillows.
+~
+You see the most beautiful arabian girl that has ever met your eyes. Too
+bad she's about to kill you.
+~
+human~
+AET D 100 0
+20 0 3d9+333 10d9+100 2d8+5 none
+-4 -4 -4 7
+EFNU 0 0 0
+rest rest female 345
+0 0 tiny 0
+F par GHIJK
+#9555
+oldstyle allah~
+Allah~
+Allah is here.
+~
+You see the all-knowing Allah.
+~
+human~
+ABQRTUWX DHU 1000 0
+32 0 10d10+1000 32d9+100 4d6+9 none
+-10 -10 -10 4
+EIKU 0 0 0
+rest rest none 1400
+0 0 tiny 0
+F par GHIJK
+#9556
+oldstyle mage guildguard~
+the guildguard~
+The Guard for the Guild of Mages stand here.
+~
+This man looks like a mage/warrior, i wouldn't mess with him.
+~
+human~
+ABRT D 0 0
+21 0 4d10+360 10d9+100 4d4+5 none
+-5 -5 -5 7
+EFNU 0 0 0
+stand stand male 395
+0 0 tiny 0
+F par GHIJK
+#9557
+oldstyle cleric guildguard~
+the guildguard~
+The Guard for the Guild of Clerics stands here.
+~
+This man looks like a cleric/warrior, I wouldn't mess with him.
+~
+human~
+ABQT D 0 0
+21 0 4d10+360 10d9+100 4d4+5 none
+-5 -5 -5 7
+EFNU 0 0 0
+stand stand male 395
+0 0 tiny 0
+F par GHIJK
+#9558
+oldstyle warrior guildguard~
+the guildguard~
+The Guard for the Guild of Warriors stands here.
+~
+The man looks like Conan's cousin, I wouldn't mess with him.
+~
+human~
+ABTU D 0 0
+21 0 4d10+360 10d9+100 4d4+5 none
+-5 -5 -5 7
+EFNU 0 0 0
+stand stand male 395
+0 0 tiny 0
+F par GHIJK
+#9559
+oldstyle thief guildguard~
+the guildguard~
+The Guard for the Guild of theives stands here.
+~
+You see a thief dressed all in black, he quickly stands as you enter
+and steps to bar your way. You notice his hands resting on two sheafs.
+~
+human~
+ABST D 0 0
+21 0 4d10+360 10d9+100 4d4+5 none
+-5 -5 -5 7
+EFNU 0 0 0
+stand stand male 395
+0 0 tiny 0
+F par GHIJK
+#9560
+oldstyle servant boy~
+a servant boy~
+A servant boy is here running errands.
+~
+You see a small boy running around the halls of the palace.
+~
+human~
+AG 0 0 0
+2 0 2d7+21 1d9+100 1d5+0 none
+8 8 8 10
+EFNU 0 0 0
+stand stand male 1
+0 0 tiny 0
+F par GHIJK
+#9561
+oldstyle sultans guard~
+the sultan's guard~
+A guard stands here, protecting the innocent.
+~
+You see a trained fighter, ready to help those in need.
+~
+human~
+AGHT 0 1000 0
+10 0 2d8+134 5d9+100 2d4+2 none
+1 1 1 8
+CDEIKLU 0 0 0
+stand stand male 45
+0 0 tiny 0
+F par GHIJK
+#9562
+oldstyle sultans guard~
+the sultans guard~
+A guard stands here, watching the gate.
+~
+You see a trained fighter, ready to defend the city.
+~
+human~
+ABGT 0 1000 0
+10 0 2d8+134 5d9+100 2d4+2 none
+1 1 1 8
+CDEIKLU 0 0 0
+stand stand male 45
+0 0 tiny 0
+F par GHIJK
+#9563
+oldstyle sultans guard chief~
+The chief guard~
+The chief of the sultan's guard stands here.
+~
+You see a large man skilled in hunting and killing.
+~
+human~
+ABGTU D 1000 0
+20 0 3d9+333 10d9+100 2d8+5 none
+-4 -4 -4 7
+EFNU 0 0 0
+stand stand male 345
+0 0 tiny 0
+F par GHIJK
+#9564
+oldstyle mercenary~
+the mercenary~
+A mercenary stands here waiting for a job.
+~
+You see an assassin down on his luck looking to be freelanced out.
+~
+human~
+ABTU 0 0 0
+5 0 2d7+71 2d9+100 1d6+1 none
+5 5 5 9
+CDEIKLU 0 0 0
+stand stand male 3
+0 0 tiny 0
+F par GHIJK
+#9565
+oldstyle shipwright captain~
+the shipwright~
+An old captain rests here carving on a stick.
+~
+You see the shipwright of New Thalos, waiting to make someone a boat. He
+beams a smile at you through his beard as you walk in.
+~
+human~
+ABVXYZ 0 0 0
+30 0 6d12+853 15d9+100 4d6+8 none
+-9 -9 -9 6
+EFNU 0 0 0
+stand stand male 1150
+0 0 tiny 0
+F par GHIJK
+#9566
+oldstyle blacksmith~
+the blacksmith~
+The blacksmith stands here pumping air into his fire.
+~
+You see a large human, dripping in sweat, standing before you. He takes a
+break from his swealtering work to bid you welcome.
+~
+human~
+ABVXYZ 0 0 0
+30 0 6d12+853 15d9+100 4d6+8 none
+-9 -9 -9 6
+EFNU 0 0 0
+stand stand male 1150
+0 0 tiny 0
+F par GHIJK
+#9567
+oldstyle horse~
+a horse~
+A horse stands here.
+~
+You see one of the fine arabian beasts known about the land.
+~
+human~
+ACGHU 0 0 0
+4 0 2d7+46 2d9+100 1d5+1 none
+6 6 6 9
+EFNU 0 0 0
+stand stand male 3
+0 0 tiny 0
+F par GHIJK
+#9568
+oldstyle tourist~
+a tourist~
+A tourist stands here looking lost.
+~
+You see a small round japanese man, with a camera around his neck and
+a nose guard. He's looking at a small road map that he seems to be holding
+upside down.
+~
+human~
+ACGH 0 0 0
+4 0 2d7+46 2d9+100 1d5+1 none
+6 6 6 9
+EFNU 0 0 0
+stand stand male 3
+0 0 tiny 0
+F par GHIJK
+#9569
+oldstyle shelbye~
+Shelbye~
+Shelbye stands here.
+~
+You see nothing special.
+~
+human~
+A 0 -1000 0
+30 0 6d12+853 15d9+100 4d6+8 none
+-9 -9 -9 6
+EFNU 0 0 0
+stand stand male 1150
+0 0 tiny 0
+F par GHIJK
+#9570
+oldstyle cryohydra~
+the cryohydra~
+The cryohydra stands here.
+~
+A grey-brown reptillian creature with amber eyes stands before you.
+~
+human~
+AFGTW 0 0 0
+8 0 2d7+96 4d9+100 1d7+2 none
+3 3 3 9
+EFNU 0 0 0
+stand stand none 18
+0 0 tiny 0
+F par GHIJK
+#9571
+oldstyle giant minotaur lizard~
+the minotaur lizard~
+The minotaur lizard stands here.
+~
+A huge lizard like reptile with horns like a minotaur.
+~
+giant~
+AFGT 0 0 0
+8 0 2d7+96 4d9+100 1d7+2 none
+3 3 3 9
+EFNR 0 0 0
+stand stand none 18
+0 0 tiny 0
+#9572
+oldstyle dog death~
+the death dog~
+The death dog stands here.
+~
+A large two-headed hound barks at you viciously.
+~
+dog~
+AFGU 0 0 0
+8 0 2d7+96 4d9+100 1d7+2 none
+3 3 3 9
+EFNR 0 0 0
+stand stand none 18
+0 0 tiny 0
+#9573
+oldstyle lion spotted~
+the spotted lion~
+The spotted lion stands here.
+~
+A large fierce dapple skinned lion glares at you.
+~
+human~
+AFGU 0 0 0
+8 0 2d7+96 4d9+100 1d7+2 none
+3 3 3 9
+EFNU 0 0 0
+stand stand none 18
+0 0 tiny 0
+F par GHIJK
+#9574
+oldstyle behir~
+the behir~
+A behir slithers on the ground.
+~
+You see a large snake like reptile with more than a dozen legs.
+~
+human~
+ABFT D -300 0
+12 0 2d10+150 6d9+100 1d10+3 none
+0 0 0 8
+EFNU 0 0 0
+stand stand male 60
+0 0 tiny 0
+F par GHIJK
+#9575
+oldstyle chimera~
+the chimera~
+A creature with three heads: lion, goat, and dragon stands here.
+~
+The chimera is still a mystery, better left unexplored. This creature has
+the hindquarters of a goat, the forepaws of a lion and the body of a red
+dragon.
+~
+human~
+ABFT D -500 0
+9 0 2d6+110 4d9+100 1d8+2 none
+2 2 2 8
+EFNU 0 0 0
+stand stand male 30
+0 0 tiny 0
+F par GHIJK
+#9576
+oldstyle couatl~
+the couatl~
+A couatl hovers here.
+~
+A beautiful creature with the body of a serpent and feathered wings the
+color of the rainbow.
+~
+human~
+ABEQU B 300 0
+15 0 3d9+208 7d9+100 2d6+3 none
+-2 -2 -2 7
+EFNU 0 0 0
+stand stand male 125
+0 0 tiny 0
+F par GHIJK
+#9577
+oldstyle giant hornet~
+the giant hornet~
+The giant hornet hovers here.
+~
+The giant hornet hits you very hard!
+You wish you wounds would stop BLEEDING so much!
+~
+giant~
+AFGU 0 0 0
+5 0 2d6+60 2d9+100 1d6+1 none
+5 5 5 9
+EFNR 0 0 0
+stand stand male 3
+0 0 tiny 0
+#9578
+oldstyle pegasus~
+the pegasus~
+The pegasus stands here, flexing its wings.
+~
+A magnificant winged steed, this horse looks much like the arabian
+thoroughbred you've seen in the stables.
+~
+human~
+ABHU 0 1000 0
+10 0 2d7+121 5d9+100 2d4+2 none
+1 1 1 8
+EFNU 0 0 0
+stand stand male 45
+0 0 tiny 0
+F par GHIJK
+#9579
+oldstyle elvira~
+Elvira~
+Elvira stands here mixing a love potion.
+~
+You see a very healthy female dressed in black, with long flowing
+hair to match her outfit.
+~
+human~
+ABRVXYZ 0 0 0
+30 0 6d12+853 15d9+100 4d6+8 none
+-9 -9 -9 6
+EFNU 0 0 0
+stand stand female 1190
+0 0 tiny 0
+F par GHIJK
+#9580
+oldstyle braheem~
+Braheem~
+Braheem stands here talking to the walls.
+~
+You see a powerful but slighty insane mage.
+~
+human~
+ABRVXYZ 0 0 0
+30 0 6d12+853 15d9+100 4d6+8 none
+-9 -9 -9 6
+EFNU 0 0 0
+stand stand male 1190
+0 0 tiny 0
+F par GHIJK
+#9581
+oldstyle high priest~
+the high priest~
+The high priest rests here meditating, well he WAS meditating.
+~
+He does NOT look real happy that you have disturbed him.
+~
+human~
+ABEQ DH 1000 0
+30 0 6d12+853 15d9+100 4d6+8 none
+-9 -9 -9 6
+EFNU 0 0 0
+stand stand male 1190
+0 0 tiny 0
+F par GHIJK
+#9582
+oldstyle royal guard elite~
+The Royal Guard~
+An Elite Royal Guard stands here smiling happily.
+~
+You see one of the Royal Guards from Midgaard who seems to have gone
+through some training.
+~
+human~
+AGHTU D 1000 0
+31 0 10d10+1000 15d9+100 4d6+9 none
+-10 -10 -10 5
+CDEIKLU 0 0 0
+stand stand male 1250
+0 0 tiny 0
+F par GHIJK
+#9583
+oldstyle patch bartender~
+Patch the bartender~
+A large half-orc with a patch over one eye pours beer behind the counter
+~
+You see a really big guy here who seems to have lost an eye in one manner
+or another.
+~
+human~
+ABHVXYZ D -500 0
+20 0 3d9+333 10d9+100 2d8+5 none
+-4 -4 -4 7
+EFNU 0 0 0
+stand stand male 345
+0 0 tiny 0
+F par GHIJK
+#9584
+oldstyle stitch~
+Stitch, the leather dude.~
+Stitch, the leather dude reclines in his chair.
+~
+You see a small hobbit with his feet kicked up on his desk waiting for
+some sucker, um, customer to walk in his store.
+~
+human~
+ABHVXYZ D -500 0
+20 0 3d9+333 10d9+100 2d8+5 none
+-4 -4 -4 7
+EFNU 0 0 0
+stand stand male 345
+0 0 tiny 0
+F par GHIJK
+#9585
+oldstyle gardener small elf~
+the gardener~
+A small elf stands here tending the garden.
+~
+A young elf stands here in dirt covered overalls. He seems to be weeding
+his garden.
+~
+human~
+ABU 0 0 0
+20 0 3d9+333 10d9+100 2d8+5 none
+-4 -4 -4 7
+EFNU 0 0 0
+stand stand male 345
+0 0 tiny 0
+F par GHIJK
+#9586
+oldstyle nightmare demon horse~
+the nightmare~
+A large horse, black as night, stands here.
+~
+You see the largest horse you have ever seen before. Standing 10' at the
+shoulder he breathes flame from his nostrils and leaps to protect
+his love.
+~
+human~
+ABGTU BDU 1000 0
+12 0 2d10+150 6d9+100 1d10+3 none
+0 0 0 8
+EFNU 0 0 0
+stand stand female 60
+0 0 tiny 0
+F par GHIJK
+#9587
+oldstyle wolverine~
+the wolverine~
+A large wolf like creature leaps out from the darkness.
+~
+You see a half wolf- half human beast wearing a glove with long thin
+blades on it.
+~
+human~
+ABETUW D 0 0
+12 0 2d10+150 6d9+100 1d10+3 none
+0 0 0 8
+EFNU 0 0 0
+stand stand female 60
+0 0 tiny 0
+F par GHIJK
+#9588
+oldstyle mimic painting~
+the mimic~
+You see an incredibly life-like painting of the Sultan's mother.
+~
+Boy is she ugly.
+~
+human~
+ABR 0 0 0
+10 0 2d7+121 5d9+100 2d4+2 none
+1 1 1 8
+EFNU 0 0 0
+stand stand male 45
+0 0 tiny 0
+F par GHIJK
+#9589
+oldstyle mayor~
+the mayor~
+The Mayor of New Thalos stands here.
+~
+You see a chubby hobbit dressed in his best suit.
+~
+human~
+AG 0 1000 0
+20 0 3d9+333 10d9+100 2d8+5 none
+-4 -4 -4 7
+EFNU 0 0 0
+stand stand male 345
+0 0 tiny 0
+F par GHIJK
+#9590
+oldstyle chef~
+the chef~
+The chef stands here making dinner.
+~
+You see a very large human who seems to taste everything he makes.
+~
+human~
+AB 0 400 0
+20 0 3d9+333 10d9+100 2d8+5 none
+-4 -4 -4 7
+EFNU 0 0 0
+stand stand male 345
+0 0 tiny 0
+F par GHIJK
+#9591
+oldstyle ixitxachitl~
+the Ixitxachitl~
+A very large ray with a wicked looking tail swims here.
+~
+You see a large ray with sharp fangs and a barbed tail.
+~
+human~
+ABEQT D -500 0
+30 0 6d12+853 15d9+100 4d6+8 none
+-9 -9 -9 6
+EFNU 0 0 0
+stand stand none 1190
+0 0 tiny 0
+F par GHIJK
+#9592
+oldstyle guard bodyguard~
+the bodyguard~
+A bodyguard stands here.
+~
+A big, strong, helpful, trustworthy guard.
+~
+human~
+AT 0 1000 0
+10 0 2d8+134 5d9+100 2d4+2 none
+1 1 1 8
+CDEIKLU 0 0 0
+stand stand male 45
+0 0 tiny 0
+F par GHIJK
+#0
+
+#OBJECTS
+#9500
+palace key~
+the palace key of New Thalos~
+A large key bearing the crest of New Thalos lies here.~
+oldstyle~
+key 0 A
+1 0 0 0 0
+0 30 0 P
+#9501
+city key~
+the Key to the City of New Thalos~
+The heavy city key lies here in the dust~
+oldstyle~
+key 0 ACO
+1 0 0 0 0
+0 30 0 P
+#9503
+morning star morningstar~
+a morningstar~
+A small spiked metal ball connected to a rod by links of chain lies here.~
+oldstyle~
+weapon 0 AN
+flail 2 6 blast 0
+10 50 620 P
+#9504
+awl pike awl-pike~
+an awl-pike~
+An awl pike lies here.~
+oldstyle~
+weapon 0 AN
+staff 1 10 pierce 0
+6 30 108 P
+#9505
+bardiche~
+a bardiche~
+A bardiche lies here.~
+oldstyle~
+weapon 0 AN
+polearm 2 6 cleave F
+8 40 270 P
+#9506
+bec corbin~
+a bec de corbine~
+A bec de corbine lies here.~
+oldstyle~
+weapon 0 AN
+polearm 1 8 pierce F
+2 30 148 P
+#9507
+bill guisarme~
+a bill-guisarme~
+A bill-guisarme lies here.~
+oldstyle~
+weapon 0 AN
+polearm 1 8 slash F
+2 30 148 P
+#9508
+fauchard~
+a fauchard~
+A fauchard lies here.~
+oldstyle~
+weapon 0 AN
+polearm 1 8 slash F
+2 30 148 P
+#9509
+glaive~
+a glaive~
+A glaive lies here.~
+oldstyle~
+weapon 0 AN
+polearm 1 10 chop F
+4 30 192 P
+#9510
+guisarme~
+a guisarme~
+A guisarme lies here.~
+oldstyle~
+weapon 0 AN
+polearm 2 4 slash F
+3 40 169 P
+#9511
+sickle~
+a sickle~
+A sickle lies here.~
+oldstyle~
+weapon 0 AN
+sword 1 4 slash 0
+0 10 210 P
+#9512
+bastard two sword~
+a two-handed bastard sword~
+A two handed bastard sword lies here.~
+oldstyle~
+weapon 0 AN
+sword 3 5 cleave F
+13 160 1190 P
+#9513
+scimitar~
+a scimitar~
+A scimitar lies here.~
+oldstyle~
+weapon 0 AN
+sword 1 9 slash 0
+5 100 490 P
+#9514
+rapier~
+a rapier~
+A rapier lies here.~
+oldstyle~
+weapon 0 AN
+sword 3 4 slash 0
+11 100 850 P
+#9515
+banded mail suit~
+a suit of banded mail~
+A suit of banded mail lies here.~
+oldstyle~
+armor 0 AD
+7 7 7 0 0
+20 250 2900 P
+#9516
+brigandine suit~
+a suit of brigandine~
+A suit of brigandine lies here.~
+oldstyle~
+armor 0 AD
+7 7 7 0 0
+20 200 2900 P
+#9517
+field plate suit~
+a suit of field plate~
+A suit of field plate lies here.~
+oldstyle~
+armor FGIKL AD
+8 8 8 0 0
+25 280 3900 P
+#9518
+ringmail ring mail suit~
+a suit of ringmail~
+A suit of ringmail lies here.~
+oldstyle~
+armor 0 AD
+3 3 3 0 0
+0 360 176 P
+A
+12 -20
+#9519
+splintmail splint mail suit~
+a suit of splintmail~
+A suit of splintmail armor lies here.~
+oldstyle~
+armor 0 AD
+5 5 5 0 0
+8 450 1280 P
+A
+12 -10
+#9520
+wooden shield~
+a wooden shield~
+A wooden shield lies here~
+oldstyle~
+armor 0 AJ
+2 2 2 0 0
+0 10 250 P
+#9521
+splinted shield~
+a splinted shield~
+A splinted shield lies here.~
+oldstyle~
+armor 0 AJ
+4 4 4 0 0
+5 80 710 P
+#9522
+buckler shield~
+a buckler~
+A buckler lies here.~
+oldstyle~
+armor 0 AJ
+1 1 1 0 0
+0 60 108 P
+#9523
+jacket leather~
+a leather jacket~
+A leather jacket lies here.~
+oldstyle~
+armor 0 AD
+1 1 1 0 0
+0 60 144 P
+#9524
+sleeves leather~
+a pair of leather sleeves~
+A pair of leather sleeves lies here.~
+oldstyle~
+armor 0 AI
+1 1 1 0 0
+0 20 72 P
+#9525
+cap leather~
+a leather cap~
+A leather cap lies here~
+oldstyle~
+armor 0 AE
+1 1 1 0 0
+0 20 72 P
+#9526
+leather pants~
+a pair of leather pants~
+A pair of leather pants lies here.~
+oldstyle~
+armor 0 AF
+1 1 1 0 0
+0 20 72 P
+#9527
+leather gloves~
+a pair of leather gloves~
+A pair of leather gloves lies here.~
+oldstyle~
+armor 0 AH
+1 1 1 0 0
+0 20 72 P
+#9528
+padded leather boots~
+a pair of padded leather boots~
+A pair of padded leather boots lies here.~
+oldstyle~
+armor 0 AG
+1 1 1 0 0
+0 20 72 P
+#9529
+studded leather jacket~
+a studded leather jacket~
+A studded leather jacket lies here.~
+oldstyle~
+armor 0 AD
+2 2 2 0 0
+0 100 340 P
+#9530
+studded leather sleeves~
+a pair of studded leather sleeves~
+A pair of studded leather sleeves lies here.~
+oldstyle~
+armor 0 AI
+2 2 2 0 0
+0 30 168 P
+#9531
+studded leather pants~
+a pair of studded leather pants~
+A pair of studded leather pants lies here.~
+oldstyle~
+armor 0 AF
+2 2 2 0 0
+0 30 168 P
+#9532
+studded leather gloves~
+a pair of studded leather gloves~
+A pair of studded leather gloves lies here.~
+oldstyle~
+armor 0 AH
+2 2 2 0 0
+0 30 168 P
+#9533
+leather shield~
+a leather shield~
+A leather shield lies here.~
+oldstyle~
+armor 0 AJ
+2 2 2 0 0
+0 30 250 P
+#9534
+sack~
+a sack~
+A sack lies here~
+oldstyle~
+container 0 AO
+50 0 0 5 100
+0 10 12 P
+#9535
+oil lamp oillamp~
+an oil lamp~
+An oil lamp lies here~
+oldstyle~
+light 0 A
+0 0 100 0 0
+0 10 50 P
+#9536
+backpack back pack~
+a backpack~
+A backpack lies here~
+oldstyle~
+container 0 AK
+100 A 0 10 100
+0 40 50 P
+#9537
+basket~
+a basket~
+A basket lies here.~
+oldstyle~
+container 0 A
+50 0 0 5 100
+0 40 8 P
+#9538
+belt pouch~
+a belt pouch~
+A belt pouch lies here~
+oldstyle~
+container 0 AL
+25 0 0 2 100
+0 10 27 P
+#9539
+candle~
+a candle~
+A candle lies here~
+oldstyle~
+light 0 AO
+0 0 50 0 0
+0 10 4 P
+#9540
+cheese~
+a hunk of cheese~
+A hunk of cheese lies here.~
+oldstyle~
+food 0 A
+5 5 0 0 0
+0 10 4 P
+#9541
+bread~
+a bread~
+A bread lies here.~
+oldstyle~
+food 0 A
+5 3 0 0 0
+0 10 6 P
+#9542
+dry rations~
+some dry rations~
+Some dry rations lie here.~
+oldstyle~
+food 0 A
+15 20 0 0 0
+0 20 24 P
+#9543
+iron rations~
+some iron rations~
+A tin of iron rations lies here.~
+oldstyle~
+food 0 A
+18 30 0 0 0
+0 10 50 P
+#9545
+nuts~
+some nuts~
+Some nuts lies scattered on the ground.~
+oldstyle~
+food 0 A
+1 1 0 0 0
+0 10 3 P
+#9546
+belt~
+a belt~
+A nicely made belt lies here.~
+oldstyle~
+clothing 0 AM
+0 0 0 0 0
+0 20 8 P
+#9547
+hiking boots~
+a pair of hiking boots~
+A nicely made pair of boots lies here.~
+oldstyle~
+clothing 0 AG
+0 0 0 0 0
+0 30 12 P
+#9548
+fur cloak~
+a fur cloak~
+A nicely made fur cloak lies here.~
+oldstyle~
+clothing 0 AK
+0 0 0 0 0
+0 20 200 P
+#9549
+girdle~
+a girdle~
+A nicely made girdle lies here.~
+oldstyle~
+clothing 0 AL
+0 0 0 0 0
+0 10 12 P
+#9550
+hose~
+a pair of hose~
+A nicely made pair of hose lie here.~
+oldstyle~
+clothing 0 AF
+0 0 0 0 0
+0 10 8 P
+#9551
+common robe~
+a common robe~
+A nicely made robe of common cloth lies here.~
+oldstyle~
+clothing 0 AD
+0 0 0 0 0
+0 20 36 P
+#9552
+embroidered robe~
+an embroidered robe~
+A nicely made robe of embroidered cloth lies here.~
+oldstyle~
+clothing 0 ADK
+0 0 0 0 0
+0 20 200 P
+#9553
+sandles~
+a pair of sandles~
+A nicely made pair of sandles lies here.~
+oldstyle~
+clothing 0 AG
+0 0 0 0 0
+0 10 20 P
+#9554
+sash~
+a sash~
+A nicely made sash lies here.~
+oldstyle~
+clothing 0 AL
+0 0 0 0 0
+0 10 8 P
+#9555
+silk jacket~
+a silk jacket~
+A nicely made silk jacket lies here.~
+oldstyle~
+clothing 0 AK
+0 0 0 0 0
+0 10 320 P
+#9556
+egg~
+an egg~
+An egg lies here.~
+oldstyle~
+food 0 A
+2 2 0 0 0
+0 10 4 P
+#9557
+carrot~
+a carrot~
+A carrot lies here.~
+oldstyle~
+food 0 A
+3 3 0 0 0
+0 10 6 P
+#9558
+tomato~
+a tomato~
+A tomato lies here.~
+oldstyle~
+food 0 A
+2 2 0 0 0
+0 10 12 P
+#9559
+fig~
+a fig~
+A fig lies here.~
+oldstyle~
+food 0 A
+2 1 0 0 0
+0 10 3 P
+#9560
+dates~
+some dates~
+A bunch of dates lies here.~
+oldstyle~
+food 0 A
+2 2 0 0 0
+0 10 6 P
+#9561
+leg lamb~
+a leg of lamb~
+A leg of land lies here.~
+oldstyle~
+food 0 A
+10 12 0 0 0
+0 20 10 P
+#9562
+side beef~
+a side of beef~
+A side of beef lies here.~
+oldstyle~
+food 0 A
+15 15 0 0 0
+0 50 20 P
+#9563
+whole chicken~
+a whole chicken~
+A whole skinned chicken lies here.~
+oldstyle~
+food 0 A
+12 12 0 0 0
+0 30 12 P
+#9564
+herring salted~
+a salted herring~
+A salted herring lies here.~
+oldstyle~
+food 0 A
+8 8 0 0 0
+0 10 8 P
+#9565
+mussel~
+a mussel~
+A mussel lies here.~
+oldstyle~
+food 0 A
+4 4 0 0 0
+0 10 4 P
+#9567
+liquor glass blue oasis~
+a glass of blue oasis~
+A glass of blue alcohol rests here.~
+oldstyle~
+drink 0 A
+2 2 'whisky' 0 0
+0 10 10 P
+#9568
+wine glass~
+a glass of wine~
+A glass rests here.~
+oldstyle~
+drink 0 A
+6 6 'red wine' 0 0
+0 10 13 P
+#9569
+bottle grog~
+a bottle of grog~
+A bottle lies here.~
+oldstyle~
+drink 0 A
+16 16 'ale' 0 0
+0 10 8 P
+#9570
+glowing vial blue~
+a glowing blue vial~
+A glowing blue vial lies here.~
+oldstyle~
+potion AG AO
+12 'sleep' '' '' ''
+1 10 270 P
+#9571
+potion green~
+a deep-green potion~
+A deep-green potion lies here.~
+oldstyle~
+potion G AO
+10 'stone skin' 'blindness' '' ''
+12 10 950 P
+#9572
+potion crystal clear~
+a crystal clear potion~
+A crystal clear potion lies here.~
+oldstyle~
+potion G AO
+10 'detect invis' '' '' ''
+0 10 200 P
+#9573
+white potion~
+an off white potion~
+An off white potion lies here.~
+oldstyle~
+potion G AO
+21 'haste' '' '' ''
+11 10 820 P
+#9574
+potion dark blue~
+a dark blue potion~
+A dark blue potion lies here.~
+oldstyle~
+potion G AO
+10 'detect evil' 'refresh' '' ''
+0 10 200 P
+#9575
+beer bottle scorpion flaming~
+a flaming scorpion~
+A bottle of strong beer lies here.~
+oldstyle~
+drink 0 A
+16 16 'beer' 0 0
+0 10 6 P
+#9576
+barrel beer~
+a barrel of beer~
+A barrel of beer lies here.~
+oldstyle~
+drink 0 A
+150 150 'beer' 0 0
+0 80 120 P
+#9577
+whisky shot~
+a shot~
+A shot of strong liquor lies here.~
+oldstyle~
+drink 0 A
+2 2 'whisky' 0 0
+0 10 12 P
+#9578
+scroll recall~
+a scroll of recall~
+A scroll of recall lies here.~
+oldstyle~
+scroll G AO
+12 'word of recall' '' '' ''
+17 40 2700 P
+#9579
+wand call lightning~
+a grey-silver wand~
+A grey-silver wand lies here.~
+oldstyle~
+wand AG AO
+15 3 3 'call lightning' 0
+13 10 2800 P
+E
+wand~
+You see a small engraved storm cloud at the base of this wand.
+~
+#9580
+wand detect invis~
+a wand of glinting yellow~
+A wand of glinting yellow lies here.~
+oldstyle~
+wand G AO
+1 15 15 'detect invis' 0
+5 10 580 P
+E
+wand~
+You see a shape slowly fading into exsistance at the base of this wand.
+~
+#9581
+wand armor~
+a wand of oak~
+A wand of oak lies here.~
+oldstyle~
+wand G AO
+5 10 10 'armor' 0
+3 10 410 P
+#9582
+wand faerie fire~
+a pink wand~
+A pink wand lies here~
+oldstyle~
+wand G AO
+3 3 3 'faerie fire' 0
+2 10 250 P
+#9583
+sewing shears~
+a pair of sewing shears~
+A pair of sewing shears lies here.~
+oldstyle~
+weapon 0 AN
+dagger 2 4 chop 0
+5 20 360 P
+#9584
+meat cleaver~
+a meat cleaver~
+A meat cleaver lies here~
+oldstyle~
+weapon KL AN
+dagger 1 5 cleave 0
+0 50 190 P
+#9585
+fountain pen~
+a fountain pen~
+A fountain pen lies here.~
+oldstyle~
+weapon B AN
+dagger 3 4 stab 0
+11 10 640 P
+E
+fountain pen~
+Well, then pen IS mightier than the sword...
+~
+#9586
+sledge hammer~
+a sledge hammer~
+A sledge hammer lies here.~
+oldstyle~
+weapon 0 AN
+mace 2 7 smash F
+10 240 660 P
+#9587
+horse shoe~
+a horse shoe~
+A horse shoe lies here.~
+oldstyle~
+armor BG ACO
+1 1 1 0 0
+5 20 300 P
+A
+18 1
+#9588
+saddle~
+a saddle~
+A saddle lies here.~
+oldstyle~
+furniture 0 A
+0 0 0 0 0
+0 40 600 P
+#9589
+crop riding~
+a riding crop~
+A riding crop lies here.~
+oldstyle~
+weapon 0 AN
+whip 1 4 whip 0
+0 10 105 P
+#9590
+chessboard~
+a chessboard~
+A heavy marble chessboard lies here.~
+oldstyle~
+weapon 0 AN
+exotic 1 5 thwack 0
+0 100 380 P
+#9591
+sesame seed~
+a sesame seed~
+A sesame seed lies here.~
+oldstyle~
+key 0 AO
+0 0 0 0 0
+0 30 1 P
+#9592
+something~
+something~
+Something lies here.~
+oldstyle~
+weapon 0 N
+exotic 2 5 drain 0
+7 0 920 P
+#9593
+key~
+the jail key~
+The key to the jail lies here.~
+oldstyle~
+key 0 AO
+0 0 0 0 0
+0 30 0 P
+#9594
+key~
+the dungeon key~
+The dungeon key lies here.~
+oldstyle~
+key 0 AO
+0 0 0 0 0
+0 30 0 P
+#9595
+shirt tie dye~
+a tie-dye shirt~
+A multi-colored shirt lies here.~
+oldstyle~
+armor G AD
+7 7 7 0 0
+20 10 2900 P
+#9596
+bugle boy jeans~
+a pair of Bugle Boy jeans~
+A pair of jeans lie here.~
+oldstyle~
+armor G AF
+5 5 5 0 0
+10 10 730 P
+#9597
+sneakers reeboks reebok pumps~
+a pair of Reebok Pumps~
+A pair of nifty sneakers lie here.~
+oldstyle~
+armor G AG
+1 1 1 0 0
+7 10 770 P
+A
+2 1
+A
+14 10
+#9598
+daemon claw~
+the Daemon Claw~
+A glove with blades mounted on it lies here~
+oldstyle~
+weapon B AN
+exotic 2 8 claw 0
+14 200 1520 P
+A
+18 -2
+#9599
+wolverine claw~
+the wolverine claw~
+A claw from some animal lies here.~
+oldstyle~
+weapon B AN
+exotic 3 5 claw 0
+15 200 1680 P
+#9600
+halberd~
+the halberd~
+A mighty halberd lies against the wall.~
+oldstyle~
+weapon GI AN
+polearm 3 7 chop F
+22 160 1240 P
+A
+18 2
+A
+19 2
+#9601
+fountain water~
+a fountain~
+A large fountain is here gurgling out an endless stream of water.~
+oldstyle~
+fountain G 0
+100000 100000 'water' 0 0
+0 0 0 P
+#9602
+pearl~
+a beautiful white pearl~
+A well-formed pearl sits upon the ground, looking for an oyster.~
+oldstyle~
+warp_stone T AO
+0 0 0 0 0
+0 10 1000 P
+E
+pearl~
+It's a nicely-formed pearl, should be worth a fair amount at the jewellers.
+You look around to see if there are any others nearby.
+~
+#0
+
+#ROOMS
+#9500
+The Entrance to the Dancing Daemon Inn~
+You find yourself in an entrance foyer to the Dancing Daemon Inn. Chrome
+plated stairs spiral up to the reception area. To the south you hear the
+sounds of merriment and drinking and from the west you hear the bustling
+activity of New Thalos.
+~
+0 D 0
+D2
+You see people dancing and drinking.
+~
+~
+0 -1 9502
+D3
+You see people walking by on Sultan's Walk.
+~
+~
+0 -1 9520
+D4
+The spiral stairs lead up to the reception area.
+~
+~
+0 -1 9501
+S
+#9501
+The Reception Area~
+You are now standing in the reception of New Thalos. A huge mahogany
+desk is here along with two sofas and a coffee table covered in magazines.
+The plush carpeting under your feet is a nice change from the rugged paths
+you are used to travelling. A chrome stairway spirals downstairs to the
+tavern of the Dancing Daemon Inn, and your future adventures in New Thalos.
+~
+0 CDEFG 0
+D5
+The stairs lead down to the Daemon.
+~
+~
+0 -1 9500
+E
+4.picture~
+You see a picture of Loki... at least you think it's Loki.
+He seems to be hiding from the camera.
+~
+E
+3.picture~
+You see a picture of Hammor on the front porch of the Danjerhaus,
+drinking a guinness stout and petting Big Guy the Cat.
+~
+E
+2.picture~
+You see a picture of Shark standing behind his desk screaming at a newbie.
+Through a window in the back you see a large aquarium. The newbie seems to
+be cowering in fear.
+~
+E
+1.1picture~
+You see a picture of Felix here, standing before the arena.
+He seems to be doing a body count.
+~
+S
+#9502
+The Dancing Daemon Inn~
+A huge circling wet-bar takes up most of the east end of the Daemon. An
+old mage reclines against the mirror behind the bar absentmindedly pouring
+several drinks at once with his refined telekinesis. The Lokettes, a local
+band, are playing their usual gig on the stage. The large booths along the
+wall are filled with people drinking and having a grand time. You feel like
+partying here.
+The only obvious exit is to the north.
+~
+0 D 0
+D0
+You see the entrance to the Daemon.
+~
+~
+0 -1 9500
+E
+bar~
+The bar looks slightly out of place and you can only assume the powerful
+magic of the bartender allows it to revolve.
+~
+S
+#9503
+The Medina~
+You stand on the Medina, on the larger open areas in New Thalos. People
+walk to and fro carrying on their day to day business. The Common Square
+of the people opens up to the south and the Medina continues north.
+~
+0 0 1
+D0
+You see medina.
+~
+~
+0 -1 9504
+D2
+You see the Common square.
+~
+~
+0 -1 9510
+S
+#9504
+The Medina~
+You are walking along a wide open expanse of road connecting the market
+square to the common square. Panhandlers, beggars, and other such riff-
+raff wander about hoping to catch those few who with open hearts.
+The medina continues to the south and the market spreads out to the north.
+~
+0 0 1
+D0
+You see the market.
+~
+~
+0 -1 9505
+D2
+You see the medina.
+~
+~
+0 -1 9503
+S
+#9505
+The Southern Market Square~
+The large square of markets fills your vision. Strange sights and sounds,
+those known only to the New Thalos market, barrage your senses. The only
+hope of making any sense of what's going on here is to wander around. The
+Market continues north, west, and east, with the Medina trailing off south.
+~
+0 0 1
+D0
+~
+~
+0 -1 9506
+D1
+~
+~
+0 -1 9507
+D2
+~
+~
+0 -1 9504
+D3
+~
+~
+0 -1 9508
+S
+#9506
+The Center of Market Square~
+You are standing on the Center of Market Square, the famous square of
+New Thalos. A large, peculiar looking statue is standing in the middle
+of the square. The square extends in every direction.
+~
+0 0 0
+D0
+~
+~
+0 -1 9515
+D1
+~
+~
+0 -1 9517
+D2
+~
+~
+0 -1 9505
+D3
+~
+~
+0 -1 9509
+E
+statue~
+Before you is a statue of the Mighty Beholder!
+A great beast with multiple eyes and wicked... wicked... um.... eyes...
+The Mighty Beholder is in Excellent condition.
+~
+S
+#9507
+The Southeastern Market Square~
+In this corner of the market some of the largest warriors in the land
+tower over you. It's easy to understand why they hangout here once you
+notice the weapon shop and the armory close by. Perhaps you might stop
+in and take a look at the wares these shops have to offer.
+~
+0 0 1
+D0
+~
+~
+0 -1 9517
+D1
+~
+~
+0 -1 9629
+D2
+~
+~
+0 -1 9636
+D3
+~
+~
+0 -1 9505
+S
+#9508
+The Southwestern Market Square~
+This area of the market seems relatively quiet, save the high-pitched
+banter of the shopkeeps attempting to lure you into their stores.  South
+you see the bread stand and west is the entrance to the general store.
+The market's sprawl continues east and north of here.
+~
+0 0 1
+D0
+~
+~
+0 -1 9509
+D1
+~
+~
+0 -1 9505
+D2
+You see the grocer's.
+~
+~
+0 -1 9635
+D3
+You see the general store.
+~
+~
+0 -1 9628
+S
+#9509
+The Western Market Square~
+This area of the square seems a bit more subdued than the rest. You
+notice that most of the outland adventurers mill around the southern
+end of the market, while the townfolk seem to keep their business in
+the northern end.  West Main Street begins here and heads for the
+gate. The market's expanse fills the other directions.
+~
+0 0 1
+D0
+~
+~
+0 -1 9514
+D1
+~
+~
+0 -1 9506
+D2
+~
+~
+0 -1 9508
+D3
+~
+~
+0 -1 9526
+S
+#9510
+The Common Square~
+People pass by talking to each other, or rest their weary bones on this
+grassy field. You can hear faint sounds of the river to the south of you
+as it passes through the city. Ishtar drive heads east and west from here
+and the medina is to the north. South lies the Ishtar River bridge and the
+southern gate.
+~
+0 0 1
+D0
+You see the medina.
+~
+~
+0 -1 9503
+D1
+~
+~
+0 -1 9537
+D2
+You see the bridge over the river.
+~
+~
+0 -1 9512
+D3
+~
+~
+0 -1 9536
+S
+#9511
+Outside the Southern Gate of New Thalos~
+You see before you the expanse of the Sands of Sorrow.  The shifting sands 
+stretch on endlessly to the south, hiding treasure and adventure.
+~
+0 0 1
+D0
+~
+gate~
+1 9501 9513
+D2
+~
+~
+0 -1 -1
+S
+#9512
+The Southern Bridge~
+Walking over the bridge you see the rushing waters of the Ishtar River.
+To the south you see the Southern Gate of New Thalos and the Common
+Square stretches out to the north.
+~
+0 0 1
+D0
+~
+~
+0 -1 9510
+D2
+~
+~
+0 -1 9513
+D5
+~
+~
+0 -1 9585
+S
+#9513
+Inside the South Gate of New Thalos~
+Two large stone towers rise up to greet you with the massive iron gate
+swinging on ornately crafted hinges and emblazoned with the crest of
+New Thalos. The makers of the city spared no expense in rebuilding the
+defenses or their home. The Ishtar River bridge lies to the north and
+wilderness to the south.
+~
+0 0 1
+D0
+~
+~
+0 -1 9512
+D2
+~
+gate~
+1 9501 9511
+S
+#9514
+The Northwestern Market Square~
+This corner of the market contains some of the most civilized folk in
+New Thalos. To the north lies the humble store of the merchant Ahkeem, his
+weavings known to be the best in the city. West of here is the entrance
+to Nabil's Exotic Animals.
+~
+0 0 1
+D0
+~
+~
+0 -1 9614
+D1
+~
+~
+0 -1 9515
+D2
+~
+~
+0 -1 9509
+D3
+~
+~
+0 -1 9621
+S
+#9515
+The Northern Market Square~
+You stand in one of the most heavily used parts of town. To the north lies
+the Palace of New Thalos and the Casbah; east west and south of here the
+busy market thrives with life.
+~
+0 0 1
+D0
+~
+~
+0 -1 9518
+D1
+~
+~
+0 -1 9516
+D2
+~
+~
+0 -1 9506
+D3
+~
+~
+0 -1 9514
+S
+#9516
+The Northeastern Market Square~
+Pandemonium. Chaos. Madness. A few other choice words come to mind as you
+gaze into this corner of the market. The vegetable stand seems quiet enough
+so you have to assume the noise comes from the Butchery. You have to
+think for a while before you muster the will to enter this shop.
+The market continues to the south and west.
+~
+0 0 1
+D0
+~
+~
+0 -1 9615
+D1
+~
+~
+0 -1 9622
+D2
+~
+~
+0 -1 9517
+D3
+~
+~
+0 -1 9515
+S
+#9517
+The Eastern Market Square~
+You stand in the market of New Thalos, the gem of the desert. The
+market is the hub of the city; all trade and commerce of any significance is
+carried on here. The market spreads out in all directions save east; here
+Main Street heads for the eastern gate.
+~
+0 0 1
+D0
+~
+~
+0 -1 9516
+D1
+~
+~
+0 -1 9527
+D2
+~
+~
+0 -1 9507
+D3
+~
+~
+0 -1 9506
+S
+#9518
+Sultan's Walk~
+This cobblestone road aides your journey through town. Traveling north will
+take you by the palace and the Dancing Daemon Inn, and south will put you on
+the market square.
+~
+0 0 0
+D0
+~
+~
+0 -1 9519
+D2
+~
+~
+0 -1 9515
+S
+#9519
+Sultan's Walk~
+This part of the road travels between one of the sturdy walls of the
+Palace and the Dancing Daemon. To the east you peer through a small
+window into the Daemon, seeing many people dancing and drinking. After
+you tend to your other chores you plan on visiting the Daemon.
+The walk continues north and south from here.
+~
+0 0 1
+D0
+~
+~
+0 -1 9520
+D2
+~
+~
+0 -1 9518
+S
+#9520
+Sultan's Walk~
+The road here between the palace and the Dancing Daemon Inn seems well
+worn by the travel of horses, carts, and leather boots. From the west you
+hear the faint sound of trumpets announcing the arrival of some duke or
+duchess to the palace. Safe haven awaits you to the east in the halls
+of the Daemon, and Sultan's Walk continues north and south.
+~
+0 0 1
+D0
+~
+~
+0 -1 9521
+D1
+~
+~
+0 -1 9500
+D2
+~
+~
+0 -1 9519
+D3
+~
+~
+0 -1 9658
+S
+#9521
+Sultan's Walk~
+The main road north from the square continues here, surrounded by the walls
+of the palace and the Daemon. To the north you see the heavily guarded gate
+and can make out faint sounds of trade to the south.
+~
+0 0 1
+D0
+~
+~
+0 -1 9522
+D2
+~
+~
+0 -1 9520
+S
+#9522
+Inside the Northern Gate of New Thalos~
+Two large stone towers rise up to greet you with a massive iron gate
+swinging between on ornately crafted hinges and emblazend with the crest of
+New Thalos. The makers of this city spared no costs in rebuilding the
+defenses of their home. Sultan's Walk runs to the south and the Casbah
+stretches out east and west. To the north lay wilderness of the desert.
+~
+0 0 0
+D0
+~
+gate~
+1 9501 9667
+D1
+~
+~
+0 -1 9549
+D2
+~
+~
+0 -1 9521
+D3
+~
+~
+0 -1 9548
+S
+#9523
+Inside the West Gate of New Thalos~
+Two large stone towers embedded in the wall loom over you. The massive
+iron gate, emblazoned with the crest of New Thalos, swings easily on
+four ornately crafted hinges. It is obvious the makers of this city
+spared no expense to protect their home.  Main street heads towards
+the market eastward and the eastern road passes through the Sands of
+Sorrow to your west. To the south lies the entrance of the warrior's guild.
+~
+0 0 1
+D1
+~
+~
+0 -1 9524
+D2
+~
+~
+0 -1 9626
+D3
+~
+gate~
+1 9501 9669
+S
+#9524
+West Main Street~
+This is the main road traveling though the city. To the south you hear
+the hammering of the repair shop and to the north is the grassy field
+known as the temple square. Main street continues east and west.
+~
+0 0 1
+D0
+~
+~
+0 -1 9620
+D1
+~
+~
+0 -1 9525
+D2
+~
+~
+0 -1 9627
+D3
+~
+~
+0 -1 9523
+S
+#9525
+West Main Street~
+A foreman stands stand here watching over two construction workers
+fixing a pothole. The road here branches off north and south into
+two alleys behind the stores of the market. The main street continues
+east and west from here.
+~
+0 0 1
+D0
+~
+~
+0 -1 9571
+D1
+~
+~
+0 -1 9526
+D2
+~
+~
+0 -1 9572
+D3
+~
+~
+0 -1 9524
+S
+#9526
+West Main Street~
+You are strolling on the street between Nabil's Exotic Animals and the general
+store. To the west you hear a roadcrew at work and to the East, the sounds of
+commerce taking place.  The air is filled with the smell of gold and riches.
+On the wall of the store is a poster.
+~
+0 0 1
+D1
+~
+~
+0 -1 9509
+D3
+~
+~
+0 -1 9525
+E
+poster~
+A wealthy man in red robes is smiling at you.  The caption reads:
+
+THE SULTAN REMINDS YOU TO PAY YOUR TAXES!
+
+~
+S
+#9527
+East Main Street~
+Here on East Main, you smell the odor of freshly slaughtered meat and
+hear the pounding of new metal from the armory.  The Square is to
+the west and a junction is to the East.
+~
+0 0 1
+D1
+~
+~
+0 -1 9528
+D3
+~
+~
+0 -1 9517
+S
+#9528
+East Main Street~
+You are on East Main Street.  To the North is the beginning of
+Guildsman's Row.  To the South is a dark alley.  The road also
+continues to the East. There is a small sign on a wire hanging
+across the junction.
+~
+0 0 1
+D0
+~
+~
+0 -1 9564
+D1
+~
+~
+0 -1 9529
+D2
+~
+~
+0 -1 9565
+D3
+~
+~
+0 -1 9527
+E
+sign~
+NO LOITERING!
+
+(by order of the Sultan of New Thalos)
+~
+S
+#9529
+East Main Street~
+As you walk by the mercenary guild a cold chill causes you to shiver
+uncontrollably. You see some shady looking characters lurking about the
+entrance to this house of 'helpful' people. Perhaps curiosity gets the
+best of you, but you wonder what could be going on inside. To the north
+you see the open doors of the apothecary shop where one may buy many
+magical livations.
+Main Street continues east and west from here.
+~
+0 0 1
+D0
+~
+~
+0 -1 9623
+D1
+~
+~
+0 -1 9530
+D2
+~
+~
+0 -1 9630
+D3
+~
+~
+0 -1 9528
+S
+#9530
+East Main Street~
+The Main street through eastern New Thalos begins here and heads westward
+towards the marketplace. One of the main gates can be seen to the east, and
+Braheem's Magic Shop awaits your business to the north.
+~
+0 0 1
+D0
+~
+~
+0 -1 9624
+D1
+~
+~
+0 -1 9531
+D3
+~
+~
+0 -1 9529
+S
+#9531
+Inside the Eastern Gate of New Thalos~
+Two large stone towers imbedded in the wall loom over you. The massive
+iron gate, emblazened with the crest of New Thalos, swings easily on
+four ornately crafted hinges. It is obvious the makers of this city spared no
+expense in protecting their home.  Main street heads towards the market
+westward and the wilderness beckons from the east. To the north lies the
+entrance to the mages' guild.
+~
+0 0 1
+D0
+~
+~
+0 -1 9625
+D1
+~
+gate~
+1 9501 9668
+D3
+~
+~
+0 -1 9530
+S
+#9532
+Cassandra's Catch of the Day~
+Nothing in your life has prepared you for the odor which fills your lungs.
+Not wanting to offend the beautiful shopkeeper you hold your tongue and
+quietly look over her selection.
+~
+0 DEF 0
+D2
+~
+~
+0 -1 9541
+S
+#9533
+West Ishtar Drive~
+This is the warehouse district of New Thalos. Strong men walk back and
+forth from the docks to the warehouse carrying large crates loading
+and unloading the boats as they sail down the river. To the north is
+one of the entrances of the warehouse and West Ishtar leads east.
+~
+0 0 1
+D0
+~
+~
+0 -1 9640
+D1
+~
+~
+0 -1 9534
+S
+#9534
+West Ishtar Drive~
+A few men walk by almost pushing you out of the way as they go about
+their business of loading and unloading the boats. An entrance to the
+huge warehouses of New Thalos is to the north and the Ishtar River
+quietly flows by to the south. Ishtar Drive continues east and west.
+~
+0 0 1
+D0
+~
+~
+0 -1 9641
+D1
+~
+~
+0 -1 9535
+D3
+~
+~
+0 -1 9533
+S
+#9535
+West Ishtar Drive~
+The cobblestone road is moist here, the trail of water heading down to
+the boat ramp. Catching your balance as you start to slide on the slick
+pavement you grab on to the handrail someone has conveniently placed here.
+To the north is the Shipwright and Ishtar Drive continues east and west.
+~
+0 0 1
+D0
+~
+~
+0 -1 9642
+D1
+~
+~
+0 -1 9536
+D2
+~
+~
+0 -1 9543
+D3
+~
+~
+0 -1 9534
+S
+#9536
+West Ishtar Drive~
+A cool breeze blows up off the river chilling the sweat otherwise present
+on you skin. Orders and sometimes curses can be heard from the west
+in the direction of the warehouses. The common square opens up to the east
+and Ishtar Drive continues west.
+~
+0 0 1
+D1
+~
+~
+0 -1 9510
+D3
+~
+~
+0 -1 9535
+S
+#9537
+East Ishtar Drive~
+Loud hammering and the sound of red hot iron cooling in water reaches
+your ears as you stand in front of the blacksmith. A small boy runs up
+to you with big eyes and as you return his gaze runs off down the road.
+The common square can be seen to the west and Ishtar Drive continues
+to the east.
+~
+0 0 1
+D0
+~
+~
+0 -1 9644
+D1
+~
+~
+0 -1 9539
+D3
+~
+~
+0 -1 9510
+S
+#9538
+East Ishtar Drive~
+The wide road bordering the south of town continues to the east and
+west here, bordered only by the hay-loft to the north and the Ishtar
+River to the south.
+~
+0 0 1
+D1
+~
+~
+0 -1 9540
+D3
+~
+~
+0 -1 9539
+S
+#9539
+East Ishtar Drive~
+Small clumps of hay strewn about the ground alerts you to the fact that
+you have reached the stables. Arabian stallions as well as many other
+fine breeds of horses can be purchased for a price. Ishtar road continues
+east and west.
+~
+0 0 1
+D0
+~
+~
+0 -1 9645
+D1
+~
+~
+0 -1 9538
+D3
+~
+~
+0 -1 9537
+S
+#9540
+East Ishtar Drive~
+Even in broad daylight, you can hardly see into the back alley that begins
+here and heads north. Sounds of loud drunken folk and the occasional
+screaming cat emenate from the direction. Luckily you have the choice of
+going east or west down the drive as well.
+~
+0 0 1
+D0
+You see murky darkness.
+~
+~
+0 -1 9568
+D1
+~
+~
+0 -1 9541
+D3
+~
+~
+0 -1 9538
+S
+#9541
+East Ishtar Drive~
+Your highly acute sense of smell reports you have reached the entrance
+to the fish market. Although renowned for it fresh catches and
+wide selection of aquarian delicacies you wonder how much longer you
+can endure the smell! The Ishtar River flows alongside to the south
+with the drive running alongside it east to west.
+~
+0 0 0
+D0
+~
+~
+0 -1 9532
+D1
+~
+~
+0 -1 9542
+D3
+~
+~
+0 -1 9540
+S
+#9542
+East Ishtar Drive~
+The sound of squawking gulls and the smell of rotting fish gives you a hint
+of your location. The Ishtar River flows south of you, but looks crystal
+clear, so it cannot be the source of this putrid smell. Looking north you
+notice a small sign hanging over the dump.
+~
+0 0 1
+D0
+~
+~
+0 -1 9647
+D3
+~
+~
+0 -1 9541
+E
+sign~
+==========================================================================
+                       THE DUMP OF NEW THALOS
+
+
+                              -----
+
+  Enter at your own risk.
+       -the management
+
+=========================================================================
+~
+S
+#9543
+Boat Ramp~
+This sloped slab of stone allows easy passage to and from the Ishtar.
+Boats are moored to the docks here awaiting their masters to return from
+the warehouses and the pubs. The waters of the Ishtar lap at your feet
+to the south and Ishtar Drive is to the north.
+~
+0 0 1
+D0
+~
+~
+0 -1 9535
+D2
+~
+~
+0 -1 9586
+S
+#9544
+West Casbah~
+The air takes on a somber note as you stand before the entrance to the
+jailhouse of New Thalos. Hopefully you won't ever see this structure from
+the inside. The northwest tower stands here with a spiral staircase
+leading up. The avenue ends here, only exiting to the east.
+~
+0 0 1
+D1
+~
+~
+0 -1 9545
+D2
+~
+~
+0 -1 9653
+D4
+~
+~
+0 -1 9659
+S
+#9545
+West Casbah~
+You have almost reached the end of the avenue in this direction, the
+number of guards in this part of town is nearly doubled. To the north
+the familiar city wall protects you from the wilderness. Looking south
+marble stairs rise towards the entrance of city hall surrounded by
+massive white pillars. The avenue continues west and south from here.
+~
+0 0 1
+D1
+~
+~
+0 -1 9546
+D2
+~
+~
+0 -1 9654
+D3
+~
+~
+0 -1 9544
+S
+#9546
+The Casbah~
+The wall of the palace curves south from here, a darkened alley runs along
+it in that direction. West of here you see the steps of the city hall
+and notice the increase in the number of guards. To the east the avenue
+continues.
+~
+0 0 1
+D1
+~
+~
+0 -1 9547
+D2
+~
+~
+0 -1 9558
+D3
+~
+~
+0 -1 9545
+S
+#9547
+The Casbah~
+As you travel down the road towards towards the city hall you look up
+at the guards walking along the wall keeping watch. South of you stands
+the great walls of the palace and the avenue goes east and west.
+~
+0 0 1
+D1
+~
+~
+0 -1 9548
+D3
+~
+~
+0 -1 9546
+S
+#9548
+The Casbah~
+The cobblestone pavement runs along the north wall here. South of you
+stand the great walls of the palace and the avenue goes east and west.
+~
+0 0 1
+D1
+~
+~
+0 -1 9522
+D3
+~
+~
+0 -1 9547
+S
+#9549
+The Casbah~
+The activity here is only slightly less than chaotic. Young boys run to
+and fro with stern intent, and older gentleman swagger down the street
+towards the library. To the west you can see the tall towers of the
+northern gate, and the avenue continues east.
+~
+0 0 1
+D1
+~
+~
+0 -1 9550
+D3
+~
+~
+0 -1 9522
+S
+#9550
+The Casbah~
+Walking along the cobblestone path you feel secure with the walls of the
+city towering over you. You hear the scraping sounds of metal on stone
+and look up to see a large, strong guard looking out to the north. To the
+east lies the intersection on Guildsman's Row and the northern gate is
+a short walk to the west.
+~
+0 0 1
+D1
+~
+~
+0 -1 9551
+D3
+~
+~
+0 -1 9549
+S
+#9551
+The Casbah~
+The din of the guilds assaults your senses as you reach this intersection;
+the sound of hammering, the smell of tanned leather, and the smoke rising
+from the smithy all rush up to greet you. The avenue continues east and
+west form here and the row leads south.
+~
+0 0 1
+D1
+~
+~
+0 -1 9552
+D2
+~
+~
+0 -1 9560
+D3
+~
+~
+0 -1 9550
+S
+#9552
+The Casbah~
+You walk between the solid stone wall of the city and that of the Mason's
+guild. Young children and their nannys walk around enjoying the safety
+of the city. The avenue runs east and west from here.
+~
+0 0 1
+D1
+~
+~
+0 -1 9553
+D3
+~
+~
+0 -1 9551
+S
+#9553
+The Casbah~
+You have almost reached the end of the avenue in this direction. Walking
+towards the north-east corner of the city you notice the population density
+here is much less then the rest of the town. A few old men hobbling on
+canes and young men intent on studies are the only travelers of the path
+to the library on a regular basis. The avenue continues east and west from
+here
+~
+0 0 1
+D1
+~
+~
+0 -1 9554
+D3
+~
+~
+0 -1 9552
+S
+#9554
+The Casbah~
+The avenue ends here, turning south to become Kali Row. Traveling in that
+direction will take you to the library and the grand dance hall of the city.
+The Northeast Tower of the wall is accessible here up a spiral staircase.
+~
+0 0 1
+D2
+~
+~
+0 -1 9555
+D3
+~
+~
+0 -1 9553
+D4
+~
+~
+0 -1 9662
+S
+#9555
+Kali Row~
+This is a small, newly added section of the town. The city's library
+can be entered through the door to the west and The Casbah
+begins it's journey a little ways north of here. The row and the
+entrance to the dance hall is to the south.
+~
+0 0 1
+D0
+~
+~
+0 -1 9554
+D2
+~
+~
+0 -1 9556
+D3
+~
+~
+0 -1 9651
+S
+#9556
+Kali Row~
+The short row ends abruptly here at the entrance to the dance hall of
+New Thalos. The entrance to the hall is to the west and the row continues
+northward.
+~
+0 0 1
+D0
+~
+~
+0 -1 9555
+D3
+~
+~
+0 -1 9652
+S
+#9557
+Underground~
+The small passage continues north and south.
+~
+0 AD 1
+D0
+~
+~
+0 -1 9578
+D2
+~
+~
+0 -1 9580
+S
+#9558
+Alley~
+This is a dark alley running between the palace and city hall. Not a lot
+here, unless you're partial to spiders and rats.
+~
+0 0 1
+D0
+~
+~
+0 -1 9546
+D2
+~
+~
+0 -1 9559
+S
+#9559
+Alley~
+The alley ends here.
+~
+0 A 1
+D0
+~
+~
+0 -1 9558
+D5
+You see a manhole covering an opening in the road.
+~
+manhole hole man~
+1 -1 9575
+S
+#9560
+Guildsman's Row~
+This row is a hive of activity second only to the actual market
+square itself. Along this row stands all the guilds of the working
+class citizens of New Thalos;  here all the items sold in the square
+are made. Along this particular stretch of the row lie the Bowyer/
+Fletcher to the west and the Mason's to the east. The row leads
+off to the south and East Casbah is to the north.
+~
+0 0 1
+D0
+~
+~
+0 -1 9551
+D1
+~
+~
+0 -1 9656
+D2
+~
+~
+0 -1 9561
+D3
+~
+~
+0 -1 9655
+S
+#9561
+Guildsman's Row~
+The guilds continue here, to the west is the Weaver's guild, and to the
+east stands the Craftsman's Guild. The row of guilds continues north
+and south from here.
+~
+0 0 1
+D0
+~
+~
+0 -1 9560
+D1
+~
+~
+0 -1 9607
+D2
+~
+~
+0 -1 9562
+D3
+~
+~
+0 -1 9606
+S
+#9562
+Guildsman's Row~
+Only one guild offers its door to this stretch of the row; the Tanner's
+Guild, to the west. To the east is a beautifully sculpted marble door
+allowing entrance to the Museum of the Greater Gods. The row of
+Guilds leads north and south.
+~
+0 0 1
+D0
+~
+~
+0 -1 9561
+D1
+~
+~
+0 -1 9611
+D2
+~
+~
+0 -1 9563
+D3
+~
+~
+0 -1 9664
+S
+#9563
+Guildsman's Row~
+After the guilds were built the people of the city used some of the extra
+space to erect a shrine to their patron saints. The result of this labor
+became the Museum of the greater gods. You may enter the sacred hall to
+the east.
+~
+0 0 1
+D0
+~
+~
+0 -1 9562
+D1
+~
+~
+0 -1 9616
+D2
+~
+~
+0 -1 9564
+S
+#9564
+Guildsman's Row~
+This small cramped road is worn with travel as apprentices to the guilds
+run merchandise from the guildhouses to the shops on market square. The
+guildhouses lie to the north and Main street is to the south.
+~
+0 0 1
+D0
+~
+~
+0 -1 9563
+D2
+~
+~
+0 -1 9528
+S
+#9565
+Alley~
+Even with your light you cannot seem to penetrate the magical cloak of
+darkness covering this alley.
+~
+0 A 1
+D0
+~
+~
+0 -1 9528
+D2
+~
+~
+0 -1 9566
+S
+#9566
+Alley~
+Even with your light you cannot seem to penetrate the magical cloak of
+darkness covering this alley.
+~
+0 A 1
+D0
+~
+~
+0 -1 9565
+D1
+~
+~
+0 -1 9567
+D3
+~
+~
+0 -1 9637
+S
+#9567
+Alley~
+Even with your light you cannot seem to penetrate the magical cloak of
+darkness covering this alley.
+~
+0 A 1
+D1
+~
+~
+0 -1 9638
+D2
+~
+~
+0 -1 9568
+D3
+~
+~
+0 -1 9566
+S
+#9568
+Alley~
+Even with your light you cannot seem to penetrate the magical cloak of
+darkness covering this alley.
+~
+0 A 1
+D0
+~
+~
+0 -1 9567
+D2
+~
+~
+0 -1 9540
+S
+#9569
+Alley~
+This is a tiny corner in the alley.  The temple walls are North and West.
+You notice a fair amount of footprints to the east.
+~
+0 A 1
+D1
+~
+~
+0 -1 9570
+D2
+~
+~
+0 -1 9571
+E
+footprint~
+Kind of looks like a yeti has been here....  Hmmmm.
+~
+S
+#9570
+Alley~
+This is a dead end to the tiny alley.  There is an unusual amount of wear
+appearent on the ground.
+~
+0 A 1
+D3
+~
+~
+0 -1 9569
+D5
+You see a small iron circle imbedded in the ground.
+~
+manhole man hole~
+1 -1 9578
+S
+#9571
+Alley~
+You are in a tiny ally between the temple and Nabil's Exotic Animals. You hear
+some shouting and general roadwork to the south.  The ground is rough and
+in need of repair.  In the road is a small pothole.
+~
+0 A 1
+D0
+~
+~
+0 -1 9569
+D2
+~
+~
+0 -1 9525
+E
+pothole~
+Why are you looking in a pothole??????
+You poor or something?
+~
+S
+#9572
+Alley~
+You are on a small alley between the repair shop and the general store.
+Nothing much here but small rodents and dust.
+~
+0 A 1
+D0
+~
+~
+0 -1 9525
+D2
+~
+~
+0 -1 9573
+S
+#9573
+Alley~
+This is a small corner in the alley behind the warehouses and the guild
+of warrior's. You notice  some small scrapings to the west.
+~
+0 A 1
+D0
+~
+~
+0 -1 9572
+D1
+~
+~
+0 -1 9574
+S
+#9574
+Alley~
+The alley ends here as do the footprints you had noticed earlier.
+~
+0 A 1
+D3
+~
+~
+0 -1 9573
+D5
+You see a small round iron plate set in the ground.
+~
+manhole man hole~
+1 -1 9581
+S
+#9575
+Underground~
+You are in a small underground passage beneath the city. You see a small
+glint of light from above and the passage continues south.
+~
+0 AD 1
+D2
+~
+~
+0 -1 9576
+D4
+~
+man hole manhole~
+1 -1 9559
+S
+#9576
+Underground~
+The passage continues north and south.
+~
+0 AD 1
+D0
+~
+~
+0 -1 9575
+D2
+~
+~
+0 -1 9577
+S
+#9577
+Underground~
+The tunnel branches here going north, east, and west.
+~
+0 AD 1
+D0
+~
+~
+0 -1 9576
+D1
+~
+~
+0 -1 9578
+D3
+~
+~
+0 -1 9579
+S
+#9578
+Underground~
+The alley turns again here and heads south and west. You notice a small
+glint of light from above.
+~
+0 AD 1
+D2
+~
+~
+0 -1 9557
+D3
+~
+~
+0 -1 9577
+D4
+~
+manhole man hole~
+1 -1 9570
+S
+#9579
+Underground~
+The passage ends here and you hear some low chanting from the west.
+You also notice the clearing of dust on the ground but can't seem to
+find any door in that direction.
+~
+0 AD 1
+D1
+~
+~
+0 -1 9577
+S
+#9580
+Underground~
+The small passage continues north and south from here.
+~
+0 AD 1
+D0
+~
+~
+0 -1 9557
+D2
+~
+~
+0 -1 9581
+S
+#9581
+Underground~
+The small passage heads north and east from here. You here the sounds
+of the city above you.
+~
+0 AD 1
+D0
+~
+~
+0 -1 9580
+D1
+~
+~
+0 -1 9582
+D4
+~
+manhole man hole~
+1 -1 9574
+S
+#9582
+Underground~
+The tunnel continues you west and east. Hopefully you have a good sense
+of direction.
+~
+0 AD 1
+D1
+~
+~
+0 -1 9592
+D3
+~
+~
+0 -1 9581
+S
+#9583
+Ishtar River~
+High above you on the top of the city wall guards look down to see if you
+wish to exit the city via water. To do so they must open the iron grating
+in front of you from above. The horrid smell of the dump wafts down from
+the shore.
+~
+0 0 7
+D1
+~
+~
+0 -1 9724
+D3
+~
+~
+0 -1 9584
+S
+#9584
+Ishtar River~
+The gentle flow of the river carries you eastward;  looking up you see
+couples strolling along the road. To the west you see the southern
+bridge and to the east you see the iron grating protecting the city from
+unwanted guests.
+~
+0 0 7
+D1
+~
+~
+0 -1 9583
+D3
+~
+~
+0 -1 9585
+S
+#9585
+Ishtar River~
+You hear your voice echo as you float under the bridge above. The city
+construction crews have just recently finished the small ladder giving
+common-folk easy access to the river.  From here, the river flows east and
+west.
+~
+0 0 7
+D1
+~
+~
+0 -1 9584
+D3
+~
+~
+0 -1 9586
+D4
+~
+~
+0 -1 9512
+S
+#9586
+Ishtar River~
+This part of the river seems alive with activity. Boats moored to the
+docks near the ramp north of here make navigation a bit more trying.
+As the river flows eastward you can see the southern bridge in that
+direction.
+~
+0 0 7
+D0
+~
+~
+0 -1 9543
+D1
+~
+~
+0 -1 9585
+D3
+~
+~
+0 -1 9587
+S
+#9587
+Ishtar River~
+The river flows through a huge iron grating from the wilderness through
+the city. Strong guards above await word to open the portal
+should any citizen require exit or entry.
+~
+0 0 7
+D1
+~
+~
+0 -1 9586
+D3
+~
+~
+0 -1 9723
+S
+#9588
+Dark Passage~
+You seem to have stumbled into a small hand made passage. The wall to
+the west  doesn't look quite right but searching it reveals no secret
+doors. The only exit it seems is east.
+~
+0 AD 1
+D1
+~
+~
+0 -1 9589
+S
+#9589
+Dark Passage~
+The small passage continues east and west from here. Again you notice
+something peculiar about the wall, this time to the north, but you
+fail to find any secret doors. Voices can be faintly heard from the north.
+~
+0 AD 1
+D1
+~
+~
+0 -1 9590
+D3
+~
+~
+0 -1 9588
+S
+#9590
+Dark Passage~
+The small passage continues west and east from here.
+~
+0 AD 1
+D1
+~
+~
+0 -1 9591
+D3
+~
+~
+0 -1 9589
+E
+boulder~
+A huge boulder stands here. In its center someone has carved out a
+perfect round hole.
+~
+S
+#9591
+Dark Passage~
+The small passage ends here for no apparent reason. Looking around you
+find a small ladder half buried in the dirt. setting it up you find a
+trap door in the ceiling. The passage continues west from here.
+~
+0 AD 1
+D3
+~
+~
+0 -1 9590
+D4
+~
+secret~
+1 -1 9670
+E
+fire~
+Moving closer you see this fire is actually FROZEN in place. The
+flames still radiate heat, but are not actually burning. Looking
+around you notice a small hole about the size of a piece of charcoal
+at the base of the flames.
+~
+S
+#9592
+Underground~
+The small passage continues west and east.
+~
+0 AD 1
+D1
+~
+~
+0 -1 9593
+D3
+~
+~
+0 -1 9582
+E
+cloud~
+Peering into the misty cloud the form a huge conch shell seems to fade
+in and out. Perhaps this is somehow the entrance to the next challenge
+~
+S
+#9593
+Underground~
+The small passage continues west and east.
+~
+0 AD 1
+D1
+~
+~
+0 -1 9600
+D3
+~
+~
+0 -1 9592
+S
+#9594
+Common Room of the Clan MacCleod~
+You have entered a large hall with passages leading off in all directions.
+A large table dominates the center of this hall with many chairs were
+the clan gathers for feasting, merriment, and meetings. On the walls
+hang large tapestries paying homage to their leader Conner MacCleod.
+~
+0 DF 0
+D0
+~
+iron gate~
+1 -1 9599
+D1
+~
+door east~
+1 -1 9596
+D2
+~
+drawbridge draw bridge door~
+2 7901 6100
+D3
+~
+door west~
+1 -1 9597
+D4
+~
+door up~
+1 -1 9595
+D5
+~
+door down~
+1 -1 9598
+S
+#9595
+Zippoii's Room~
+Climbing up the staircase you enter the hovel of a curious mage. A small
+uncomfortable looking bed rests in the corner, surrounded by ancient
+tomes. On the worn desk next to the window candles burn low, casting
+strange shadows on the walls. The only noticeable decor is the mounted
+head of the Demi-Lich.
+~
+0 DEFG 0
+D5
+~
+door~
+1 -1 9594
+S
+#9596
+Ice's Room~
+Brrrrrr, it's COLD in here. Must be 30 below. It would seem the cleric
+Ice lives up to his name. Healing herbs and other such things line
+the walls in racks, holy symbols and pictures cover the walls, and
+the smiley face button stuck on his bedpost tells you he'll probably
+help you out all he can. As you turn to leave the room the mounted head
+of Kalas stares past you into emptiness.
+~
+0 DEFG 0
+D3
+~
+door~
+1 -1 9594
+S
+#9597
+Naazgul's Room~
+Three Rings for the Elven-kings under the sky,
+  Seven for the Dwarf-lords in their halls of stone,
+Nine for Mortal Men doomed to die,
+  One for the Dark Lord on his Dark Throne
+In the Land of Mordor where Shadows lie.
+  One ring to rule them all, One ring to find them,
+  One ring to bring them all and in the darkness bind them
+In the Land of Mordor where the Shadows lie.
+
+If I have to explain, you wouldn't understand.
+~
+0 DEFG 0
+D0
+~
+~
+0 -1 9710
+D1
+~
+door~
+1 -1 9594
+S
+#9598
+Tank's Room~
+Now here's a room that is easy to understand. A bed, a dresser, and a
+rack for weapons and armor are all that occupy it. Some posters adorn
+the walls, to add color, proclaiming things such as Live fast, Die Young,
+and a homemade one in the corner with a picture of Ice and under it the
+inscription, "I LOVE the resurrection spell". The only thing out of
+place in this happy-go-lucky room is mounted head of Crimson Death.
+~
+0 DEFG 0
+D4
+~
+door~
+1 -1 9594
+S
+#9599
+Inside the Castle of Clan MacCleod~
+You have entered the grand hall of the castle. A huge throne dominates a
+raised area in the northern part of then room. In front of this stands a
+drafting table.
+~
+0 DEFG 0
+D2
+~
+iron gate~
+1 -1 9594
+S
+#9600
+Underground~
+The small passage continues west and east.
+~
+0 AD 0
+D1
+~
+~
+0 -1 9601
+D3
+~
+~
+0 -1 9593
+S
+#9601
+Underground~
+The small passage continues west and east.
+~
+0 AD 0
+D1
+~
+~
+0 -1 9602
+D3
+~
+~
+0 -1 9600
+S
+#9602
+Underground~
+The small passage continues west and east.
+~
+0 AD 0
+D1
+~
+~
+0 -1 9588
+D3
+~
+~
+0 -1 9601
+S
+#9603
+Cleric's Sanctum~
+You walk down the staircase into the silent inner sanctum. Here sits
+your guildmaster ready to assist you when the time is right. The room
+is completely silent. The only obvious exit is back up the staircase
+into the the Nectar.
+~
+0 CDEFG 0
+D1
+You notice the floor at the base of the eastern wall has some faint
+scratches in it.
+~
+secret door~
+1 -1 9579
+D4
+~
+~
+0 -1 9619
+S
+#9604
+Chamber of the High Priest~
+You have entered the chamber of the most holy man in New Thalos. The
+High Priest advises the Sultan on all matters in the world of the sacred.
+From what you have heard however, this holy man has a bit of a temper,
+and he doesn't look very happy that you've disturbed his prayers.
+The only obvious exit is south.
+~
+0 D 0
+D2
+~
+~
+0 -1 9608
+S
+#9605
+By the Altar~
+You are by the temple altar in the northern end of Temple of New
+Thalos. A huge altar made of highly polished black onyx is standing
+in front of you. Behind this altar sits a twelve foot tall statue of
+Loki, the highest god in all the lands.
+~
+0 CDG 0
+D2
+~
+~
+0 -1 9609
+E
+statue~
+Looking up the huge statue you see Loki calmly gazing out across his
+lands.  He seems pleased.
+~
+S
+#9606
+The Weaver's Guild~
+Rows and rows of uncut cloth lie about waiting to be hemmed up into
+tailored clothes. Cotton is brought in from the countryside and
+spun up into cloth and dyed different colors. A young boy walks
+in, grabs a pile of clothing and leaves.
+~
+0 D 0
+D1
+~
+~
+0 -1 9561
+S
+#9607
+The Craftsman's Guild~
+You have entered a busy workshop filled with people running amok
+with various tools and materials.  The air is tense with the rush to
+complete various projects and creations.
+~
+0 D 0
+D3
+~
+~
+0 -1 9561
+S
+#9608
+Inside the Temple~
+The temple continues here, but not on such a grand scale. The place
+still looks immaculate. To the north you see the chamber of the High
+Priest and a sign on the door in BIG letters thats says DO NOT DISTURB.
+To the south is the entrance to the Cleric's Guild.
+~
+0 D 0
+D0
+~
+~
+0 -1 9604
+D1
+~
+~
+0 -1 9609
+D2
+~
+~
+0 -1 9612
+S
+#9609
+Inside the Temple~
+Huge marble pillars rise on either side of you and grab hold of the ceiling.
+Between each of these, fine softstone frescoes have been carved depicting
+scenes from the religous history of New Thalos. Rows of pews face forward
+giving their full attention to the pulpit rising high  above the ground. The
+deep red carpeting underfoot shows not a speck of wear or dirt. It's obvious
+that New Thalonians take religion seriously.
+~
+0 DEFG 0
+D0
+~
+~
+0 -1 9605
+D1
+~
+~
+0 -1 9610
+D2
+~
+~
+0 -1 9613
+D3
+~
+~
+0 -1 9608
+S
+#9610
+Donation Room~
+This room is new to the temple.  It was created during the hard times
+that have struck the city in recent decades.  Luckily for them the sultan
+had been hoarding some of the basic necessities for just such an occasion.
+These days the donation room depends on the generosity of wealthy
+adventureres, and a curse on any that walk in to get all.
+~
+0 D 0
+D3
+~
+~
+0 -1 9609
+S
+#9611
+The Museum of the Greater Gods~
+Four large stone statues reside in the museum. They were constructed by
+the people of New Thalos to pay homage to the saints they believe to
+have saved all their lives.
+~
+0 D 0
+D2
+~
+~
+0 -1 9616
+D3
+~
+~
+0 -1 9562
+S
+#9612
+Entrance to the Guild of Clerics~
+This hall pales in comparison to that of the main hall, but is beautiful
+in its own right. Shaven heads and brown robes can be seen milling about
+quitely talking to each other. North is back inside the temple proper,
+and south is the entrance to the cleric's bar.
+~
+0 D 0
+D0
+~
+~
+0 -1 9608
+D2
+~
+~
+0 -1 9619
+S
+#9613
+The Temple Gates~
+You stand before the entrance way to the Temple of New Thalos. Two large
+wrought iron gates lie open before you. Although they might not ever be
+used, the priests in the temple are ready to defend themselves, should
+their city ever come under siege again.
+~
+0 0 1
+D0
+~
+~
+0 -1 9609
+D2
+~
+~
+0 -1 9620
+D5
+~
+~
+0 -1 9620
+S
+#9614
+Ahkeem's Stuff~
+You step into a shop swirling with smoke.  Ahkeem seems to have a liking for
+things not of this world...very strange stuff indeed.  There is a large sign on
+the wall.
+~
+0 DEFG 0
+D2
+~
+~
+0 -1 9514
+E
+note sign~
+LIST : gives you a list of items for sale.
+VALUE : tells you how much an item is worth to Ahkeem
+SELL : sells an item to Akheem for a generous sum
+BUY : Akheem's FAVORITE command lets you have an item for his low low price.
+
+                                       ~
+S
+#9615
+Vera's Veggies~
+This is a busy place.  Customers shuffle around, bartering for lower prices
+on the wide selection of vegetables.  You can still hear your mother telling
+you 'Eat your Veggies'.  That's probably why you're mudding right now and
+not hanging out with mom.  But wait...Vera looks just like your mother!
+There is a large poster, behind the counter, taped to the wall.
+~
+0 DEFG 0
+D2
+~
+~
+0 -1 9516
+E
+note poster~
+LIST : gives you a list of items for sale.
+VALUE : tells you how much an item is worth to Vera
+SELL : sells an item to Vera for a generous sum
+BUY : Vera's FAVORITE command lets you have an item for her low low price.
+
+                                        NEWBEE INTRUCTOR COMITEE
+~
+S
+#9616
+The Museum of the Greater Gods~
+This room is identical to the one north of it, but contains four differnt
+statues.
+~
+0 D 0
+D0
+~
+~
+0 -1 9611
+D3
+~
+~
+0 -1 9563
+S
+#9617
+Base of the Tower~
+You walk into a cold room whose only feature is an old wooden staircase
+spirling up along the wall to a higher level. Up these stairs, you are
+told, lies the old mage who may be able to help you advance in your
+studies.
+~
+0 D 0
+D1
+~
+~
+0 -1 9618
+D2
+You see some small scratches on the floor near the base of the wall.
+~
+secret door~
+1 -1 9624
+D4
+~
+~
+0 -1 9648
+S
+#9618
+The Mage's Courtyard~
+You enter a small tiled courtyard with a small fountain in the middle.
+Around the sides are four wrought iron benches with cushions where the
+mages of the land sit and exchange ideas. To the west stands a two-story
+tower where the leader of the mage's guild performs his experiments.
+~
+0 0 0
+D2
+~
+~
+0 -1 9625
+D3
+~
+~
+0 -1 9617
+S
+#9619
+Nectar of the Gods~
+You are startled by the lavishness of this place. From what you know of
+clerics they are supposed to be humble people, giving all their
+material goods to their cause. Perhaps because only clerics are
+allowed to enter this bar they have condoned making it as comfortable
+as possible. In the corner stands a staircase leading down to the
+meditaion chambers.
+~
+0 D 0
+D0
+~
+~
+0 -1 9612
+D5
+~
+~
+0 -1 9603
+S
+#9620
+The Temple Square~
+You are standing on the meeting grounds of those with holy intentions.
+Monks, bards, paladins and clerics mill around either preaching or
+listening to their fellows preach. Huge marble steps lead up to the
+gates of the temple and Main Street lies to the south.
+~
+0 F 1
+D0
+~
+~
+0 -1 9613
+D2
+~
+~
+0 -1 9524
+D4
+~
+~
+0 -1 9613
+S
+#9621
+Nabil's Exotic Animals~
+You stand in a large building decorated with black marble and red satin.
+A lavishly flourished sign details several exotics creatures and Nabil's
+smiling face.  Cages crowd the room, some large, some small, and filled with
+animals from the four corners of the world.  Various feeding and grooming
+supplies fill the back half of the room, along with an assortment of 
+leashes for everything from giant rats to minotaur lizards.
+~
+0 DEFGM 0
+D1
+~
+~
+0 -1 9514
+S
+#9622
+The Butchary~
+This shop has the aroma of freshly slaughterd beasts.  You feel right at home.
+You see a fairly simple set up.  The corpses..er...selections hang on hooks,
+still bleeding into catch pans that drain into a single underground vat.
+You wonder where that leads....  Taped to the counter, almost obscured by
+blood, there is a barely readable sign.
+~
+0 DEFG 0
+D3
+~
+~
+0 -1 9516
+E
+vat~
+You think you hear noises from the vat....nah.
+~
+E
+note sign~
+LIST : gives you a list of items for sale.
+VALUE : tells you how much an item is worth
+SELL : sells an item to Butch for a generous sum
+BUY : Butch's FAVORITE command lets you have an item for his low low price.
+
+                                        NEWBEE INTRUCTOR COMMITEE
+~
+S
+#9623
+The Witch's Brew~
+The first thing you notice as you walk into this spacious shop is the
+hundreds of candles that line the shelves. The swirling mist that surrounds
+your feet makes it seem that you have stepped into a gateway to another
+plane. A tall brunette stands behind her cluttered table unaware of
+your entrance.  An ornately lettered sign floats above your head.
+~
+0 DEFG 0
+D2
+~
+~
+0 -1 9529
+E
+note sign~
+LIST : gives you a list of items for sale.
+VALUE : tells you how much an item is worth to Elvira
+SELL : sells an item to Elvira for a generous sum
+BUY : Elvira's FAVORITE command lets you have an item for her low low price.
+
+
+~
+S
+#9624
+Braheem's Magic Shop~
+You enter a shop crowded with bookshelves and clutterd with scrolls. The
+owner seems to be hard at work on his latest magical creation. You see a
+small sign on the wall.
+~
+0 DEFG 0
+D2
+~
+~
+0 -1 9530
+E
+sign~
+Welcome to Braheem's.
+LIST -Shows you all of my wonderful creations.
+VAL  -Shows what an item might be worth to me.
+SELL -Allows you to rid yourself of excessive magic items.
+BUY  -Allows you to rid youself of excessive cash.
+~
+S
+#9625
+Entrance to the Mage's Tower~
+The entrance hall is a small poorly lit room. It would seem its only
+purpose is to house the powerful sorcerer standing here guarding
+the entrance.
+~
+0 D 0
+D0
+~
+~
+0 -1 9618
+D2
+~
+~
+0 -1 9531
+S
+#9626
+Entrance to the Guild of Warriors'~
+This small hall is merely a check point to keep the unwanted out.
+~
+0 D 0
+D0
+~
+~
+0 -1 9523
+D2
+~
+~
+0 -1 9633
+S
+#9627
+The Repair Shop~
+One of the most popular shops in New Thalos, this shop is always a hive
+of activity. It is almost inhuman the way one man can fix all the area's
+armor singlehandedly. If you have an item in need of repair simply give
+it to the man behind the counter.
+~
+0 D 0
+D0
+~
+~
+0 -1 9524
+S
+#9628
+The General Store~
+The new found wealth of this beautiful city is apearant in the exotic items
+for sale here.  You wonder what would happen if you typed....LIST...
+~
+0 DEFG 0
+D1
+~
+~
+0 -1 9508
+S
+#9629
+Abdul's Armor~
+The sound of hammering metal grows louder as you enter the armory.  Young
+boys run to and fro carrying buckets of water and coal.  A few dwarves work
+on sections of armor in the back of the shop, their hammers working too fast
+to follow.  The walls are adorned with all of Abdul's prize creations.  Here
+you can purchase suits of armor meant to keep monsters from hacking you into
+little pieces.
+A note on the wall beckons newbies.
+~
+0 DEFG 0
+D3
+~
+~
+0 -1 9507
+E
+note~
+LIST : gives you a list of items for sale.
+VALUE : tells you how much an item is worth to Abdul
+SELL : sells an item to Abdul for a generous sum
+BUY : Abdul's FAVORITE command lets you have an item for his low low price.
+
+
+~
+S
+#9630
+The Mercenary's Guild~
+This guild is frowned upon by most of the population of New Thalos, but
+the laws of supply and demand are irresistable. People come here when
+they feel unable or are unwilling to fight their own battles. For a
+small fee you may hire henchman.
+~
+0 0 0
+D0
+~
+~
+0 -1 9529
+D1
+You notice some small scratches in the floor next to the eastern wall.
+~
+secret door~
+1 -1 9632
+S
+#9631
+The Mercenary's Guild~
+This is the storage room for the mercenaries to be hired.
+~
+0 C 0
+S
+#9632
+Entrance to the Thieves' Guild~
+This small, dark room has a single torch mounted in the wall for light.
+There is a small wooden bench and a book lying on it. The assassin
+guarding the entrance from 'outsiders' stands as you walk in.
+~
+0 AD 0
+D2
+~
+~
+0 -1 9639
+D3
+~
+secret door~
+1 -1 9630
+S
+#9633
+The Whet Stone~
+Very large men with very large swords drink beer from very large mugs. Every-
+thing in this room is BIG. The large round tables are scuffed and nicked from
+the numerous bar brawls that have sprung up. It might be a good idea to hold
+your tounge for a while as you soak up the atmosphere. There is an exit to
+the east where the master swordsman awaits pupils to train with.
+~
+0 D 0
+D0
+~
+~
+0 -1 9626
+D1
+~
+~
+0 -1 9634
+S
+#9634
+Tournament and Practice Yard~
+This is a wide expanse of grass filled with dummies, punching bags and
+swordpupils. To the north you see a man dressed in black robes, unlike
+his iron clad comrades, who you assume to be your master.
+~
+0 CDEFG 0
+D1
+You see the grass near the base of the wall here is slightly torn.
+~
+secret door~
+1 -1 9573
+D3
+~
+~
+0 -1 9633
+S
+#9635
+The Bread Stand~
+A small stand has been set up here, showing the shopkeep's humble
+selection. You notice he has added a few things to his list.
+~
+0 DEFG 0
+D0
+~
+~
+0 -1 9508
+S
+#9636
+Igor's Implements of Destruction~
+You can't help but shiver as you look at the selection of vicious weapons.
+Huge swords and wicked looking axes hang on pegs around the room.  A dwarf
+sits at a bench in the back hammering away on his latest creation.  It is
+here you can buy rare and exotic items not found in other parts of the world.
+A note catches your eye.
+~
+0 DFG 0
+D0
+~
+~
+0 -1 9507
+D5
+~
+secret sesame~
+2 9591 9750
+E
+note~
+LIST : gives you a list of items for sale.
+VALUE : tells you how much an item is worth to Igor
+SELL : sells an item to Igor for a generous sum
+BUY : Igor's FAVORITE command lets you have an item for his low low price.
+
+                                        NEWBEE INTRUCTOR COMITEE
+~
+S
+#9637
+Ye Old Leather Shoppe~
+You are standing on a thick oriental rug surrounded on all sides by racks
+of numerous leather goods. A few women sit on leather cushions sewing in
+some detail work on custom ordered jackets.  There is a note on the counter.
+~
+0 DEFG 0
+D1
+~
+~
+0 -1 9566
+E
+note~
+LIST : gives you a list of items for sale.
+VALUE : tells you how much an item is worth
+SELL : sells an item for a generous sum
+BUY :  buy an item for an outrageous price.
+
+
+~
+S
+#9638
+Smuggler's Inn~
+You are inside a filthy inn, that seemingly hasn't  been cleaned in decades.
+Poker tables line the walls and everyone stares at you as you walk in.
+You don't feel very welcome. The bar has numerous knife holes in it
+and the bartender leans over waiting for your order.  A large sign, pinned
+to the wall by a knife, awaits your inspection.
+~
+0 D 0
+D3
+~
+~
+0 -1 9567
+E
+sign~
+LIST : gives you a list of items for sale.
+BUY :  buy something drinkable.
+
+
+~
+S
+#9639
+The Filthy Unicorn~
+A draft chills your bones as you enter, though you see no open window or
+door. Hooded figures lurk around in the shadows and speak in low voices.
+A flash of steel lets you know that weapons are in great abundance
+in this crowd. As you quickly check your beltpouch you notice
+a small staircase leading down.
+~
+0 D 0
+D0
+~
+~
+0 -1 9632
+D5
+~
+~
+0 -1 9646
+S
+#9640
+Warehouse~
+You are standing in a large room used to store merchandise made in the
+city before it is shipped off. All the items here are made in New Thalos
+and shipped to other parts of the land.
+~
+0 D 0
+D1
+~
+~
+0 -1 9641
+D2
+~
+~
+0 -1 9533
+S
+#9641
+Warehouse~
+Men walk to and fro counting crates and writing down their findings. This
+area of the warehouse is used for storing the raw materials brought in
+from areas outside the city. These goods are then delivered to the various
+guilds. The export area of the warehouses is to the south.
+~
+0 D 0
+D2
+~
+~
+0 -1 9534
+D3
+~
+~
+0 -1 9640
+S
+#9642
+Shipwright~
+The wood under you feet creaks from years of being soaked in saltwater. An
+old man with a curly, grey beard stand behind a small counter waiting to
+take your order. Behind him are mounted various model sailboats and large
+fish.  There is a large poster stapled to the counter.
+~
+0 DEFG 0
+D1
+~
+~
+0 -1 9643
+D2
+~
+~
+0 -1 9535
+E
+note poster~
+LIST : gives you a list of items for sale.
+VALUE : tells you how much an item is worth to the shipwright
+SELL : sells an item to the shipwright for a generous sum
+BUY : The shipwright's FAVORITE command lets you have an item for his low low pr
+ice.
+
+
+~
+S
+#9643
+Drafting Room~
+The walls are covered with paper sketchings of hull designs. This room is
+used by the shipwright to build his creations on paper before making
+a single cut in wood.
+~
+0 D 0
+D3
+~
+~
+0 -1 9642
+S
+#9644
+The Forge~
+Very much like the weaponsmith this man deals in the molding of metal. It
+seems that most of his creations deal with horses. On the walls you see
+several horseshoes made of iron. The room is hot, hotter than the desert
+just south of here, and one wonders how the smithy can stand it.  Some
+letters have been burned into the wooden wall.
+~
+0 CDEFG 0
+D2
+~
+~
+0 -1 9537
+E
+letters wall~
+LIST : gives you a list of items for sale.
+VALUE : tells you how much the blacksmith will give you for his merchandise
+SELL : sells an item to the blacksmith
+BUY : buy an item from the blacksmith for a fair price
+
+
+~
+S
+#9645
+The Royal Stables~
+Nothing you wouldn't expect is here. Several stalls hold the Sultan's
+choice Arabian Stallions, and each has its own trough for drinking.
+A small boy wanders in sometimes with a shovel to remove the offensive
+by-product of such beasts.
+~
+0 D 1
+D1
+~
+~
+0 -1 9649
+D2
+~
+~
+0 -1 9539
+S
+#9646
+The Secret Yard~
+This is a hidden yard known to only a few people in New Thalos. Here you
+may train in the arts of stealing, picking locks, and becoming almost
+invisible. A small staircase leads back up to the unicorn.
+~
+0 D 0
+D2
+You see some small scratches in the wall to the south.
+~
+secret door~
+1 -1 9589
+D4
+~
+~
+0 -1 9639
+S
+#9647
+The Dump~
+This is the place where the people of the city dump their trash. Due to
+the constant winds blowing down the moutains the smell is usually blown
+outside the walls and over the desert.
+~
+0 0 0
+D2
+~
+~
+0 -1 9542
+S
+#9648
+The Mage's Laboratory~
+You stand in the top of an old stone tower. Along the walls hundreds of
+potions, scroll, and wands lie in disarray. The man you see before you
+sits hunched over a small wooden table with two beakers of bubbling
+liquid in front of him. He looks up as you enter and smiles broadly.
+~
+0 D 0
+D5
+~
+~
+0 -1 9617
+S
+#9649
+The Hay Loft~
+Not as big as the ones you see on farms in the country, this hay loft
+serves as a storage area for the horses in the stables. The young boy
+you saw with the shovel seems to have taken up residence on the second
+story.
+~
+0 D 0
+D3
+~
+~
+0 -1 9645
+S
+#9650
+The Grand Entrance~
+Nowhere have you seen such an obscene display of wealth than in this
+corridor. The shag carpeting under your feet makes it seem as if you are
+walking on a cloud. Platinum candelabras hang delicately from the ceiling
+casting light on the ancient tapestries adorning the walls. The crick
+in your neck tells you it's time to stop staring. To the west the
+numerous halls of the palace begin and the gate lies to the east.
+~
+0 D 0
+D0
+~
+~
+0 -1 9660
+D1
+~
+gate~
+2 9500 9658
+D2
+~
+~
+0 -1 9657
+D3
+~
+~
+0 -1 9705
+S
+#9651
+The Library~
+This building holds the vast collection of books and documents that
+have been brought here by the committee appointed to recover the
+lost knowledge of Thalos.  Rows of shelves, filled with book in every
+condition, lines the walls.  The air has the aroma of old parchment and
+glue.
+~
+0 D 0
+D1
+~
+~
+0 -1 9555
+S
+#9652
+The Dance Hall~
+You seem to have missed a huge party.  The janitors are here cleaning up
+the confetti and cigarette butts.  Hundreds of empty beer mugs on the
+tables surrounding the dance floor suggest that the citizens love their
+drink.  There is still a banner on the wall.
+~
+0 D 0
+D1
+~
+~
+0 -1 9556
+E
+banner~
+========================================================================
+
+		H A P P Y   B I R T H D A Y   T O   U S
+
+========================================================================
+~
+S
+#9653
+Jail~
+You are in jail. For some reason the god's feel you've screwed up
+pretty bad and should be put away safely for a while.
+~
+0 DEFG 0
+D0
+~
+secret gate~
+2 9593 9544
+S
+#9654
+City Hall~
+You stand inside the administrative head of the city. Here the decisions
+regarding city policy are made. Although the Sultan's word is law, he
+usually spends his time on affairs outside the city wall.
+~
+0 D 0
+D0
+~
+~
+0 -1 9545
+S
+#9655
+The Boyer/Fletcher's~
+The walls in this room are covered with pegs that hold various types of
+bows.  There are few people working here, lending to the fact that
+the skills are rare to come by in the general populous.  A few boys are
+busy in the corner preparing feathers for the fine shafts used in making
+arrows.  Some Elven craftsmen are carefuly inspecting each bow as it is
+finished.
+~
+0 D 0
+D1
+~
+~
+0 -1 9560
+S
+#9656
+The Mason's~
+There is no doubt that the Dwarves here know what they're doing.  They
+have been invaluable in the building of this beautiful city.  Here they
+are hard at work doing what they do best.  The hammers fly in a blur as
+these talented craftsmen work the stone into ornate bricks, pillars, trim,
+and many other forms.
+~
+0 D 0
+D3
+~
+~
+0 -1 9560
+S
+#9657
+Guard House~
+You stand inside the southern of the two main guard houses. The stone
+interior has a spartan look to it, only the bare neccesities. A few
+weapons are mounted on the walls in case they might be needed.
+~
+0 D 0
+D0
+~
+~
+0 -1 9650
+S
+#9658
+The Palace Gate~
+You stand before a magnificantly crafted gate wrought in solid gold. You
+gape in awe at the splendor of the spiraling towers beyond the portal. The
+ruler of all the eastern lands resides in this fine palace, and he is not
+a poor man. The grand entrance lies byond the gate, and Sultan's walk is
+to the east.
+~
+0 0 1
+D1
+~
+~
+0 -1 9520
+D3
+~
+gate~
+2 9500 9650
+S
+#9659
+North-West Tower~
+You stand on one of the four towers guarding the city. The view from here
+is great! To the west you see the tall mountains that make up the divide
+between here an Midgaard. The Ishtar river slowly flows from that direction.
+South you can see the entire city of New Thalos and the Sands of Sorrow 
+to the south.
+~
+0 D 0
+D5
+~
+~
+0 -1 9544
+S
+#9660
+Guard House~
+You stand inside the northern of the two main guard houses. Strong
+guards are seated here, playing cards. The stone interior is clean
+but bare walled save the weapons and armor mounted in the walls.
+The only exit is south.
+~
+0 D 0
+D2
+~
+~
+0 -1 9650
+S
+#9661
+Kitchen~
+Your footsteps echo off the stone tiles of the kitchen. On the south wall
+you see the large fireplace and a huge copper pot bubbling merrily. The
+chef is busy chopping up greens and other vegetables at the wooden table
+for tonight's meal. Servants scurry about grabbing utensils and preparing
+fresh hares. A small door leads out into the hall northward and the door
+to the dining hall is west.
+~
+0 D 0
+D0
+~
+door~
+1 -1 9663
+D3
+~
+~
+0 -1 9671
+S
+#9662
+North-East Tower~
+You stand on one of the four towers guarding the city. To the north you
+see the wide plains and then the forest. South of here you see the city
+and the great eastern desert beyond.
+~
+0 D 0
+D5
+~
+~
+0 -1 9554
+S
+#9663
+Hall~
+You are at the eastern end of the southern hallway. A small servants'
+entrance give access to the kitchen and the hall continues west.
+~
+0 D 0
+D2
+~
+door small~
+1 -1 9661
+D3
+~
+~
+0 -1 9672
+S
+#9664
+The Tanner's Guild~
+You first notice the pungent smell of freshly tanned leather goods as
+you enter this strange place.  The next thing that grabs your attention
+is the many colors that these people have transformed the beautiful
+skins into.  The people are stretching the leather and cutting it into
+the shapes they need.  You notice a small message on a wall.
+~
+0 D 0
+D1
+~
+~
+0 -1 9562
+E
+message~
+I hate being a Tanner
+~
+S
+#9665
+Hall~
+You have come to the eastern end of the northern hallway. The only exit
+is west except for the simple wooden door to the north. There is a
+golden plaque above the door.
+~
+0 D 0
+D0
+~
+door~
+1 -1 9666
+D3
+~
+~
+0 -1 9674
+E
+plaque~
+The Holy Shrine of Allah
+
+
+                           (remember Allah is a god, I wouldn't attack him)
+~
+S
+#9666
+Shrine of Allah~
+As you step into this room you seem to leave the material plane. The
+walls here are decorated with beautiful, multi-colored tiles. There
+is a strange stillness about the air. You sense the presence of an
+almighty being.
+~
+0 D 0
+D2
+~
+door~
+1 -1 9665
+S
+#9667
+Outside the Northern Gate of New Thalos~
+You stand outside the gate of New Thalos. The city lies to the south, and
+wilderness to the north.  The Sands of Sorrow continues to the east
+and west.
+~
+0 0 1
+D0
+~
+~
+0 -1 9781
+D1
+~
+~
+0 -1 -1
+D2
+~
+~
+0 -1 9522
+D3
+~
+~
+0 -1 -1
+S
+#9668
+Outside the Eastern Gate of New Thalos~
+You stand outside the protective walls of the city. The massive iron gate
+sits to the west and the unknown awaits you eastward.
+~
+0 0 1
+D1
+~
+~
+0 -1 9790
+D2
+~
+~
+0 -1 9670
+D3
+~
+~
+0 -1 9531
+S
+#9669
+Outside the West Gate of New Thalos~
+You stand outside the city walls, the iron gate to the east. The city lies
+in that direction and the road to Midgaard lies west.
+~
+0 0 1
+D1
+~
+gate~
+1 9501 9523
+D3
+~
+~
+0 -1 3532
+S
+#9670
+Outside the wall~
+You are in a small clearing outside the east wall of the city. The
+ground seems well trodden but you can see no apparent exit save that
+north.
+~
+0 0 2
+D0
+~
+~
+0 -1 9668
+S
+#9671
+Grand Dining Hall~
+A long oaken table, coverd with silverware, plates, and a tablecloth
+with gold trim, dominates the room. Although no diners occupy the room
+as of yet, servants sprint about setting the table and placing condiments.
+The kitchen entrance is to the east, and two huge double doors open into
+the hallway north.
+~
+0 D 0
+D0
+~
+~
+0 -1 9672
+D1
+~
+~
+0 -1 9661
+S
+#9672
+Hall~
+You stand at a T-crossing in the long hallways. There are two
+large double doors to the south.
+~
+0 D 0
+D0
+~
+~
+0 -1 9673
+D1
+~
+~
+0 -1 9663
+D2
+~
+double doors~
+1 -1 9671
+D3
+~
+~
+0 -1 9677
+S
+#9673
+Hall~
+You stand at an intersection of the hallways. Wooden corridors lead off in
+all directions except west; the garden of the palace can be entered there.
+~
+0 D 0
+D0
+~
+~
+0 -1 9674
+D1
+~
+~
+0 -1 9705
+D2
+~
+~
+0 -1 9672
+D3
+~
+~
+0 -1 9678
+S
+#9674
+Hall~
+You have come to a T-crossing on the hallways. The wooden corridors
+continue east, west and south. There is a large iron door to the north.
+~
+0 D 0
+D0
+~
+iron heavy~
+1 -1 9675
+D1
+~
+~
+0 -1 9665
+D2
+~
+~
+0 -1 9673
+D3
+~
+~
+0 -1 9679
+S
+#9675
+Entrance to the Dungeon~
+You enter a cold damp room with bare, roughly hewn stone walls. This
+room seems very out of place compared to the splender of the rest of the
+palace. A large steel grating leads down into darkness, and an iron door
+returns you to the hallway.
+~
+0 D 0
+D2
+~
+iron~
+1 -1 9674
+D5
+~
+steel~
+1 -1 9691
+S
+#9676
+Guest Room~
+This is a simple room used for visiting noblemen. A small dresser stands
+on the east wall with a mirror hung right above it. A queen sized bed made
+up in satin sheets stands in the middle of the room against the south
+wall under a window. The only obvious exit is north back out into the
+hallway.
+~
+0 D 0
+D0
+~
+~
+0 -1 9677
+E
+window~
+Looking out this window you can see the grounds of the palace that
+seperate the walls of the palace from the building itself.
+~
+E
+mirror~
+You see a the fighting image of some armor clad humanoid wielding a weapon.
+~
+S
+#9677
+Hall~
+The long hall continues here with a wooden door in the south wall. On the
+north wall hangs the picture of some forgotten nobleman who once ruled
+the land.
+~
+0 D 0
+D1
+~
+~
+0 -1 9672
+D2
+~
+door~
+1 -1 9676
+D3
+~
+~
+0 -1 9682
+S
+#9678
+Garden~
+You have entered the Sultan's private gardens. A light sweat breaks out
+on your skin from the humidity here. All around you are thousands of
+exotic plants and flowers. The sweet smell of jasmine and honeysuckle
+reminds you of happier days at home. Off to the north, through the palm
+trees, you see a delicate white gazebo. To your right stands a gold sign.
+A path leads out into the hallway and west towards the gazebo.
+~
+0 0 2
+D1
+~
+~
+0 -1 9673
+D3
+~
+~
+0 -1 9683
+E
+sign~
+=========================================================================
+=========================================================================
+||                                                                     ||
+||                                                                     ||
+||                                                                     ||
+||                                                                     ||
+||        Welcome to my humble garden. I have created this             ||
+||        tiny bit of paradise for the pleasure of my people.          ||
+||        Take only pictures... Leave only footprints...               ||
+||                                                                     ||
+||                                                                     ||
+||                                                                     ||
+||                                 The Sultan                          ||
+||                                                                     ||
+||                                                                     ||
+||                                                                     ||
+=========================================================================
+=========================================================================
+~
+S
+#9679
+Hall~
+The long stretch of hallway continues east and west from here. The small
+red carpet covering the centerline is always underfoot and an occasional
+bench or potted plant lines the wall. There is a door here to the north
+with a plaque mounted over it.
+~
+0 D 0
+D0
+~
+door~
+1 -1 9680
+D1
+~
+~
+0 -1 9674
+D3
+~
+~
+0 -1 9684
+E
+plaque~
+ART EXHIBIT
+                                of
+                            NEW THALOS
+
+
+                               -management is not responsible for lost items.
+~
+S
+#9680
+Art Exhibit~
+You are standing in the Sultan's tribute to the finer virtues. Large
+paintings hang from the walls displaying nature scenes, nudes, and
+glorious victories in battle. Strange scupltures rest on pedestals
+at each corner of the room and mirrors are placed in strategic
+locations so the viewer may see an entire sculpture at a glance. Your
+eyes, however, are pulled towards a painting that dominates the far wall.
+~
+0 D 0
+D2
+~
+door~
+1 -1 9679
+S
+#9681
+Guest Room~
+This is another room made up for visiting nobles. There is a dresser up
+against the eastern wall with a mirror above it and a queen sized bed,
+made up in satin sheets, against the south wall.
+~
+0 D 0
+D0
+~
+~
+0 -1 9682
+S
+#9682
+Hall~
+You have reached the western end of the southern hallway. The only exit
+is east except for the doors in the southern and western walls.
+~
+0 D 0
+D1
+~
+~
+0 -1 9677
+D2
+~
+door south~
+1 -1 9681
+D3
+~
+door west~
+2 9601 9687
+S
+#9683
+Garden Gazebo~
+Walking through the gardens you come across a small white wooden structure.
+The sounds of birds, the smell of flowers, ahhh paradise. You believe
+you have never been in a more peaceful setting.
+~
+0 D 0
+D1
+~
+~
+0 -1 9678
+S
+#9684
+Hall~
+This is the western end of the northern hallway. Two doors are set in the
+walls here, one to the north, another to the west.
+~
+0 D 0
+D0
+~
+door north~
+1 -1 9685
+D1
+~
+~
+0 -1 9679
+D3
+~
+door west~
+1 -1 9689
+S
+#9685
+Guard Room~
+You stand in a barren chamber lined with nothing but cots and footlockers.
+The guards come here when off duty to sleep, for they may only leave the
+palace grounds with special permission. The only exit is to the south.
+~
+0 D 0
+D2
+~
+door~
+1 -1 9684
+S
+#9686
+Guard Room~
+This is living quarters for the guards of the palace. Barren compared to
+the rest of the palace, you see only cots and footlockers here. On the
+walls you see pictures of well known knights who have given a proud name
+to the Sultan's Guard.
+~
+0 D 0
+D0
+~
+~
+0 -1 9687
+S
+#9687
+Harem~
+This is the room where the Sultan keeps the beautiful women of his palace.
+There are ten girls here lying about the room dressed in silks you can
+almost see through. In the western end of the room stands a large mound
+of pillows and a beautiful young maiden sits perched atop. It is
+unfortunate for you that only the Sultan is allowed in here.
+~
+0 D 0
+D0
+~
+secret door~
+1 -1 9688
+D1
+~
+~
+0 -1 9682
+D2
+~
+~
+0 -1 9686
+S
+#9688
+Small room~
+This is secret chamber allowing the Sultan direct access to his harem
+at any time he chooses.
+~
+0 D 0
+D0
+~
+~
+0 -1 9689
+D2
+~
+~
+0 -1 9687
+S
+#9689
+Throne Room~
+You stand in the throne room of the mighty Sultan of New Thalos. Guards
+stand at attention near his side ready to make the ultimate sacrifice for
+their beloved leader. The gold inlaid throne studded with jewels stands
+upon a mable dias. The Sultan is not a man to be trifled with.
+~
+0 D 0
+D0
+~
+secret throne~
+2 9600 9690
+D1
+~
+door~
+1 -1 9684
+D2
+~
+secret door
+~
+1 -1 9688
+S
+#9690
+Treasure Room~
+You have somhow managed to gain access to the treaure vault of the Sultan.
+The alarm sounding in the background tells you that you must have
+tripped off some kind of alarm system. It might be adviseable to grab
+as much stuff as you possibly can and run for the door.
+~
+0 D 0
+D1
+~
+~
+0 -1 9685
+D2
+~
+~
+0 -1 9689
+S
+#9691
+Jailer's Room~
+Climbing down the old wooden ladder you enter a small cave-like
+room. There is a small bench with some old magazines and a low
+burning candle sitting off to one side. A door is set into the
+stone on the east wall, and the steel grating opens up above.
+~
+0 AD 0
+D1
+~
+door~
+1 -1 9692
+D4
+~
+steel~
+1 -1 9675
+S
+#9692
+Tunnel in the Dungeon~
+You stand in a roughly hewn stone tunnel with cells to the north and
+south. The tunnel continues east.
+~
+0 AD 0
+D0
+~
+cell north~
+2 9593 9697
+D1
+~
+~
+0 -1 9693
+D2
+~
+cell south~
+2 9593 9701
+D3
+~
+door~
+1 -1 9691
+S
+#9693
+Tunnel in the Dungeon~
+You stand in a roughly hewn stone tunnel with cells to the north and
+south. The tunnel continues east and west.
+~
+0 AD 0
+D0
+~
+cell north~
+2 9593 9698
+D1
+~
+~
+0 -1 9694
+D2
+~
+cell south~
+2 9593 9702
+D3
+~
+~
+0 -1 9692
+S
+#9694
+Tunnel in the Dungeon~
+You stand in a roughly hewn stone tunnel with cells to the north and
+south. The tunnel continues east and west.
+~
+0 AD 0
+D0
+~
+cell north~
+2 9593 9699
+D1
+~
+~
+0 -1 9695
+D2
+~
+cell south~
+2 9593 9703
+D3
+~
+~
+0 -1 9693
+S
+#9695
+Tunnel in the Dungeon~
+You stand in a roughly hewn stone tunnel with cells to the north and
+south. The tunnel continues west and you notice a small crack in the
+stone to the east.
+~
+0 AD 0
+D0
+~
+cell north~
+2 9593 9700
+D1
+~
+crack~
+1 9500 9696
+D2
+~
+cell south~
+2 9593 9704
+D3
+~
+~
+0 -1 9694
+S
+#9696
+Secret Cell~
+This room seems more like a lair than a cell. Small bits of hay lie
+strewn about the floor covering bones of unkown origin. Spatterd blood
+and tufts of grey hair lie matted in one corner. As you turn to leave
+you notice a pair of small red eyes peering at you from the darkness.
+~
+0 AD 0
+D3
+~
+crack~
+2 9500 9695
+S
+#9697
+Cell~
+You are in a cold, cramped chamber with only one exit.
+~
+0 AD 0
+D2
+~
+cell~
+2 9593 9692
+S
+#9698
+Cell~
+You are in a cold, cramped chamber with only one exit.
+~
+0 AD 0
+D2
+~
+cell~
+2 9593 9693
+S
+#9699
+Cell~
+You are in a cold, cramped chamber with only one exit.
+~
+0 AD 0
+D2
+~
+cell~
+2 9593 9694
+S
+#9700
+Cell~
+You are in a cold, cramped chamber with only one exit.
+~
+0 AD 0
+D2
+~
+cell~
+2 9593 9695
+S
+#9701
+Cell~
+You are in a cold, cramped chamber with only one exit.
+~
+0 AD 0
+D0
+~
+cell~
+2 9593 9692
+S
+#9702
+Cell~
+You are in a cold, cramped chamber with only one exit.
+~
+0 AD 0
+D0
+~
+cell~
+2 9593 9693
+S
+#9703
+Cell~
+You are in a cold, cramped chamber with only one exit.
+~
+0 AD 0
+D0
+~
+cell
+cell~
+2 9593 9694
+S
+#9704
+Cell~
+You are in a cold, cramped chamber with only one exit.
+~
+0 AD 0
+D0
+~
+cell
+cell~
+2 9593 9695
+S
+#9705
+Hall~
+You stand in a large cedar wood hall leading east and west. On the floor
+lies a thin and narrow purple rug. The hall leads west inside the palace
+and east to the Grand Entrance.
+~
+0 D 0
+D1
+~
+~
+0 -1 9650
+D3
+~
+~
+0 -1 9673
+S
+#9706
+Nabil's Back Room~
+Nabil's pets are kept here.
+~
+0 0 0
+S
+#9710
+Saska's Library~
+Fine, golden dust swirls and then settles as you enter Saska's
+library. Leatherbound volumes of Shakespeare rest next to paperbacks by
+Tom Robbins, and Toni Morrison's _Sula_ is open on the striking table: an
+antique birdbath of polished blond wood, with glass set over the waterwell
+to give the appearance of a perfectly still pool.  Trinkets, lightly
+lifted from the mantles of the wealthy whose chimneys she cleaned, line
+the windowsills and create space between the different sections of books.
+A crystal oil lamp seems to float on the table; a piece of paper on the
+wall, written in Saska's own lingering script, reads: "For what is your friend
+that you would seek him with hours to kill?  Seek him always with hours to
+live.  --Kahlil Gibran."
+    A cat purrs somewhere, though you cannot see the source, and you feel
+yourself tugged into the softened space. Have a seat in one of the enormous
+papasan chairs, and choose a title that strikes you.
+~
+0 CD 0
+O Saska~
+D2
+~
+~
+0 -1 9597
+S
+#9719
+Headwaters of the River of Lost Souls~
+The waters of the swamp pool in this low area and begin to flow southward.
+~
+0 0 7
+D2
+~
+~
+0 -1 9734
+S
+#9720
+Ishtar River~
+The river calms a bit after being thrashed in the interior of
+the mountain. Although still deep within the rocks you can see
+faint traces of green to the east.
+~
+0 0 7
+D1
+~
+~
+0 -1 9721
+D3
+~
+~
+0 -1 9739
+S
+#9721
+Ishtar River~
+The river flows east and west through the hills. To the north you can
+see a large volcano.
+~
+0 0 7
+D1
+~
+~
+0 -1 9722
+D3
+~
+~
+0 -1 9720
+S
+#9722
+Ishtar River~
+The river begins its decent out of the mountains now and continues
+its flow to the east.
+~
+0 0 7
+D1
+~
+~
+0 -1 9744
+D3
+~
+~
+0 -1 9721
+S
+#9723
+Ishtar River~
+The river flows under the wall of the city to the east and stretches
+off towards high snow capped mountains far far to the west.
+~
+0 0 7
+D1
+~
+~
+0 -1 9587
+D3
+~
+~
+0 -1 9749
+S
+#9724
+Ishtar River~
+The river flows out from the city down a long winding gully towards
+the Sea of Dragons. To the south of you lies the great eastern desert
+and north a wide open expanse of grass. You can just barely make out
+a road that seems to be traveling alongside the river but the banks are
+too steep for you to see very far.
+~
+0 0 7
+D1
+~
+~
+0 -1 9725
+D3
+~
+~
+0 -1 9583
+S
+#9725
+Ishtar River~
+The river continues its descent down the lowlands flowing
+ever so gently south. It's hard to believe this is the same river that
+came cascading down the mountainside.
+~
+0 0 7
+D1
+~
+~
+0 -1 9726
+D3
+~
+~
+0 -1 9724
+S
+#9726
+Ishtar River~
+Small animals and herd animals can be heard in the distance, though
+you don't actually see any near the river. Perhaps the steep slopes
+pervent them from using the river.
+~
+0 0 7
+D1
+~
+~
+0 -1 9784
+D3
+~
+~
+0 -1 9725
+S
+#9734
+The River of Lost Souls~
+The river flows south through a valley in the mountains. You can see a
+small village to the west.
+~
+0 0 7
+D0
+~
+~
+0 -1 9719
+D2
+~
+~
+0 -1 9735
+S
+#9735
+The River of Lost Souls~
+The river flows south in the southern end of this wide valley. The walls
+of the valley close in to the south.
+~
+0 0 7
+D0
+~
+~
+0 -1 9734
+D2
+~
+~
+0 -1 9736
+S
+#9736
+The River of Lost Souls~
+The river begins to speed up as it cascades down this mountain
+crevase. High above you a small rope bridge sways in the wind.
+~
+0 0 7
+D2
+~
+~
+0 -1 9737
+S
+#9737
+The River of Lost Souls~
+The river rapidly flows down this crack in the side of the mountain
+to the south. Hopefully you will hear any aproaching rapids.
+~
+0 0 7
+D0
+~
+~
+0 -1 9736
+D2
+~
+~
+0 -1 9738
+S
+#9738
+The River of Lost Souls~
+The river seems to calm a bit as the crevase widens lessens its
+stranglehold on the waters. The river continues to the north
+through a crack and flows to the south.
+~
+0 0 7
+D0
+~
+~
+0 -1 9737
+D2
+~
+~
+0 -1 9739
+S
+#9739
+A Split in the River~
+The waters of the river crash down upon a rock and split into
+two bodies of water. The river you are on continues its southern
+course and the new river heads off to the east. To the west you notice
+a flat area in the sheer rock where it would be possible to shore your
+craft. The River of lost souls also continues to the north.
+~
+0 0 7
+D0
+~
+~
+0 -1 9738
+D1
+~
+~
+0 -1 9720
+D2
+~
+~
+0 -1 9740
+S
+#9740
+The River of Lost Souls~
+The river continues north and south from here through a water
+eroded valley.
+~
+0 0 7
+D0
+~
+~
+0 -1 9739
+D2
+~
+~
+0 -1 9741
+S
+#9741
+The River of Lost Souls~
+The river continues north and south from here through a water
+eroded valley.
+~
+0 0 7
+D0
+~
+~
+0 -1 9740
+D2
+~
+~
+0 -1 9742
+S
+#9742
+The River of Lost Souls~
+The river continues north and south from here through a water
+eroded valley.
+~
+0 0 7
+D0
+~
+~
+0 -1 9741
+D2
+~
+~
+0 -1 9743
+S
+#9743
+The River of Lost Souls~
+The river makes a sharp bend here and heads east towards a large
+mountain and north through a valley.
+~
+0 0 7
+D0
+~
+~
+0 -1 9742
+S
+#9744
+Ishtar River~
+The river widens here, no longer bounded by rock, and flows east
+towards a plain.
+~
+0 0 7
+D1
+~
+~
+0 -1 9745
+D3
+~
+~
+0 -1 9722
+S
+#9745
+Ishtar River~
+The river continues here east to west.  There is a landing area to the
+north where you can gain access to the shore.
+~
+0 0 7
+D1
+~
+~
+0 -1 9746
+D3
+~
+~
+0 -1 9744
+S
+#9746
+Ishtar River~
+The river meanders through the foothills of the eastern mountains.
+The air is dryer on this side of the continental divide and it seems
+a bit warmer.
+~
+0 0 7
+D1
+~
+~
+0 -1 9747
+D3
+~
+~
+0 -1 9745
+S
+#9747
+Ishtar River~
+The river continues its journey eastward flowing through the
+plains. To the west you see the peaks of large snow capped
+mountains and to the east you see the outline of a large city.
+~
+0 0 7
+D1
+~
+~
+0 -1 9748
+D3
+~
+~
+0 -1 9746
+S
+#9748
+Ishtar River~
+The river flows east and west from here.
+~
+0 0 7
+D1
+~
+~
+0 -1 9749
+D3
+~
+~
+0 -1 9747
+S
+#9749
+Ishtar River~
+The river slows as it widens and meanders through the lowlands. A
+small dock give access to the north shore.
+~
+0 0 7
+D1
+~
+~
+0 -1 9723
+D3
+~
+~
+0 -1 9748
+S
+#9750
+Igor's Secret Chamber~
+~
+0 D 0
+D4
+~
+secret sesame~
+2 9591 9636
+S
+#9772
+On the Dark River~
+The river flows to the east under the walls of Midgaard and west
+snaking through a dark forest.
+~
+0 0 7
+D1
+~
+~
+0 -1 3200
+D3
+~
+~
+0 -1 9773
+S
+#9773
+On the Dark River~
+The river continues east and west meandering through the woods.
+~
+0 A 7
+D1
+~
+~
+0 -1 9772
+D3
+~
+~
+0 -1 9774
+S
+#9774
+On the Dark River~
+The river continues east and west meandering through the woods. You
+hear the sounds of chopping wood far off in the distance.
+~
+0 A 7
+D0
+~
+~
+0 -1 6123
+D1
+~
+~
+0 -1 9773
+D3
+~
+~
+0 -1 9775
+S
+#9775
+On the Dark River~
+The river continues east meandering through the woods.
+~
+0 A 7
+D1
+~
+~
+0 -1 9774
+S
+#9778
+Freefall~
+As your fingers slowly slip from the handguides you feel a sudden
+euphoria as you freefall the 200 + feet to your death.
+~
+0 BC 5
+S
+#9781
+On the Plains~
+You stand on an open expanse of grass extending in all directions. To
+the south of you stand the might northern gates of New Thalos. East
+and west of you the grassy fields continue and north, in the distance,
+you see a line of trees.
+~
+0 0 2
+D0
+~
+~
+0 -1 9782
+D1
+~
+~
+0 -1 9781
+D2
+~
+~
+0 -1 9667
+D3
+~
+~
+0 -1 9781
+S
+#9782
+On the Plains~
+You stand on an open field of grass. The forest to the north is
+closer but still a good distance away. To the south a small dirt
+path has been trodden into the ground heading towards New Thalos.
+~
+0 0 2
+D0
+~
+~
+0 -1 9783
+D1
+~
+~
+0 -1 9782
+D2
+~
+~
+0 -1 9781
+D3
+~
+~
+0 -1 9782
+S
+#9783
+Edge of the forest~
+You stand at the edge of a huge forest. The line of trees
+continues as far as the eye can see to the east and west. A large
+expanse of grass spreads out to the south.
+~
+0 0 2
+D1
+~
+~
+0 -1 9783
+D2
+~
+~
+0 -1 9782
+D3
+~
+~
+0 -1 9783
+S
+#9784
+Ishtar River~
+The river broadens even more here and the waters become murky. The
+smell of saltwater has reached you from the east. The Dragon Sea
+cannot be far away. To the east you can see the faint outline
+of a city and to the north you see a large expanse of grass.
+~
+0 0 7
+D1
+~
+~
+0 -1 9785
+D3
+~
+~
+0 -1 9726
+S
+#9785
+The river delta~
+This is where the river empties out into the Dragon Sea. The backrush
+of water has kicked up a lot of sand and the blue sea is stained where
+the river empties. Looking east, all you can see is water....all the way
+to the horizon. North of here is a small dock you think you should be
+able to reach with out too much trouble. The river stretches off to
+the west back towards New Thalos.
+~
+0 0 7
+D1
+~
+~
+0 -1 9786
+D3
+~
+~
+0 -1 9784
+S
+#9786
+The Dragon Sea~
+You are on the clear blue seas of the Dragon Sea.
+ Water extends in all directions as far as the eye
+ can see. Off in the distance you think you might
+ see a small dock to the north.
+~
+0 0 7
+D0
+~
+~
+0 -1 9787
+D3
+~
+~
+0 -1 9785
+S
+#9787
+The Dragon Sea~
+The Dragon Sea comes up along the shore here, the deep blue waters
+rolling in and crashing against the beach. To the north you see a
+small dock jutting out into the surf.
+~
+0 0 7
+D0
+~
+~
+0 -1 9795
+D1
+~
+~
+0 -1 9796
+D2
+~
+~
+0 -1 9786
+S
+#9788
+The Dragon Sea~
+You are on the clear blue seas of the Dragon Sea.
+ Water extends in all directions as far as the eye
+ can see. Off in the distance you think you might
+ see a small dock to the south.
+~
+0 0 7
+D1
+~
+~
+0 -1 9797
+D2
+~
+~
+0 -1 9795
+S
+#9789
+The Dragon Sea~
+You are on the clear blue seas of the Dragon Sea.
+ Water extends in all directions as far as the eye
+ can see. Off in the distance you think you might
+ see a small dock to the west.
+~
+0 0 7
+D2
+~
+~
+0 -1 9796
+D3
+~
+~
+0 -1 9795
+D5
+~
+~
+0 -1 9798
+S
+#9790
+On a road~
+The people of New Thalos take great pride in the services their
+city may provide. One of these services is the construction crews
+that go to great lengths to keep all the roads in order. Although
+the taxes in New Thalos are higher than other cities in the realm
+most of the money is used for the good of the people.
+~
+0 0 1
+D1
+~
+~
+0 -1 9791
+D3
+~
+~
+0 -1 9668
+S
+#9791
+On a road~
+You walk along a well used road with beautiful scenery. To the north
+tall pine trees form a wall that goes on for miles. Between the road
+and the trees lies a great expanse of grassy plains. South of here,
+beyond the river, lie the Sands of Sorrow. The road continues
+east and west.
+~
+0 0 1
+D1
+~
+~
+0 -1 9792
+D3
+~
+~
+0 -1 9790
+S
+#9792
+On a road~
+The Dragon Sea can be seen to the east now spreading out to unkown
+lands. The road continues east and west. To the south you hear the
+sounds of boats traveling the Ishtar delivering goods.
+~
+0 0 1
+D1
+~
+~
+0 -1 9793
+D3
+~
+~
+0 -1 9791
+S
+#9793
+On a road~
+This is the main land route through the land. Merchants can bring their goods
+to the coastline and have them ferried onto ships for export. Travel
+by foot west will take you through New Thalos up and over the Eastern
+Mountains and down into Midgaard.
+~
+0 0 1
+D1
+~
+~
+0 -1 9794
+D3
+~
+~
+0 -1 9792
+S
+#9794
+Near the shore~
+The road ends here turning into a small dirt path leading down the
+beach and onto a dock. To the north and south you see the coastline
+stretching out before you. West of here the lowlands roll up into
+huge snow capped mountains.
+~
+0 0 1
+D1
+~
+~
+0 -1 9795
+D3
+~
+~
+0 -1 9793
+S
+#9795
+On a dock~
+You stand on a simple wooden dock that acts as an extension of the road
+to the west. The dock seems to have been here for quite a long time
+but is still sturdy. A small ladder has been built on the eastern end
+to allow easy access to and from ships.
+~
+0 0 0
+D0
+~
+~
+0 -1 9788
+D1
+~
+~
+0 -1 9789
+D2
+~
+~
+0 -1 9787
+D3
+~
+~
+0 -1 9794
+S
+#9796
+The Dragon Sea~
+You are on the clear blue seas of the Dragon Sea.
+ Water extends in all directions as far as the eye
+ can see. Off in the distance you think you might
+ see a small dock to the west.
+~
+0 0 7
+D0
+~
+~
+0 -1 9789
+D3
+~
+~
+0 -1 9787
+S
+#9797
+The Dragon Sea~
+The ocean spreads out in all directions rolling gently. In the distance
+you can see an island on the horizon. To the west you see the mainland.
+~
+0 0 7
+D2
+~
+~
+0 -1 9789
+D3
+~
+~
+0 -1 9788
+S
+#9798
+Under the dock~
+You are swimming underneath the dock. You can see the four wooden
+pylons that support the structure. The murky water clouds your vision
+as you gaze westward, but you think you can make out an iron grating in
+that direction.
+~
+0 A 7
+D3
+~
+grate~
+1 1 9799
+D4
+~
+~
+0 -1 9789
+S
+#9799
+Lair of the Ixitxachitl~
+Blood swirls around in the water as the Ixitxachitl devours the
+last of its meal. Swirling around quickly as you intrude upon
+its meal the large sting ray attacks!
+~
+0 A 7
+D1
+~
+grate~
+1 -1 9798
+S
+#0
+
+#RESETS
+M 0 9504   1 9501  1	* the receptionist
+M 0 9505   1 9502  1	* the withered mage/bartender
+G 1 9569 910     	*   a bottle of grog
+G 1 9568 910     	*   a glass of wine
+G 1 9567 910     	*   a glass of blue oasis
+M 0 9506   1 9502  1	* Brother John
+O 0 3200   -1 9502  1
+M 0 9507   1 9503  1	* a panhandler
+M 0 9508   1 9504  1	* a panhandler
+M 0 9539   1 9505  1	* Caramon
+E 1 9515  60    5	*   a suit of banded mail
+E 1 9600   4   16	*   the halberd
+M 0 9537   2 9506  2	* the tax collector
+G 1 9500  10     	*   the palace key of New Thalos
+M 0 9540   1 9506  1	* Raistlin
+O 0 9601   1 9506	* a fountain
+M 0 9582  16 9507  2	* The Royal Guard
+M 0 9582  16 9508  2	* The Royal Guard
+M 0 9592  14 9509  2	* the bodyguard
+M 0 9592  14 9509  2	* the bodyguard
+M 0 9533  20 9509 11	* A nomad merchant
+M 0 9542  22 9510  3	* the wandering prophet
+M 0 9509  20 9510 20	* a beggar
+M 0 9547   1 9511  1	* the dirt devil
+M 0 9549   1 9511  1	* the raggety dervish
+M 0 9565   1 9642  1	* the shipwright
+G 1 3061  20     	*   a leather cap
+G 1 3060  30     	*   a leather jerkin
+M 0 9548   1 9511  1	* the lamia
+D 0 9511   0    1	* Outside the Southern Gate of New Thalos north
+M 0 9561  32 9512  2	* the sultan's guard
+E 1 9513  50   16	*   a scimitar
+E 1 9519  53    5	*   a suit of splintmail
+E 1 9521  52   11	*   a splinted shield
+M 0 9562  20 9513  5	* the sultans guard
+E 1 9513  50   16	*   a scimitar
+E 1 9519  53    5	*   a suit of splintmail
+E 1 9521  72   11	*   a splinted shield
+M 0 9562  20 9513  5	* the sultans guard
+E 1 9513  50   16	*   a scimitar
+E 1 9519  53    5	*   a suit of splintmail
+E 1 9521  42   11	*   a splinted shield
+D 0 9513   2    1	* Inside the South Gate of New Thalos south
+M 0 9582  16 9514  2	* The Royal Guard
+M 0 9541   1 9515  1	* Curley GreenLeaf
+M 0 9538   1 9515  1	* Gord
+M 0 9582  16 9516  2	* The Royal Guard
+M 0 9592  14 9517  4	* the bodyguard
+M 0 9592  14 9517  4	* the bodyguard
+M 0 9533  20 9517  1	* A nomad merchant
+M 0 9561  32 9518  2	* the sultan's guard
+E 1 9519  43    5	*   a suit of splintmail
+E 1 9521  42   11	*   a splinted shield
+M 0 9561  32 9519  2	* the sultan's guard
+E 1 9513   1   16	*   a scimitar
+E 1 9519  43    5	*   a suit of splintmail
+E 1 9521  42   11	*   a splinted shield
+M 0 9561  32 9520  2	* the sultan's guard
+E 1 9513   1   16	*   a scimitar
+E 1 9519  43    5	*   a suit of splintmail
+E 1 9521  42   11	*   a splinted shield
+M 0 9562  20 9522  5	* the sultans guard
+E 1 9513   1   16	*   a scimitar
+E 1 9519  43    5	*   a suit of splintmail
+E 1 9521  42   11	*   a splinted shield
+M 0 9562  20 9522  5	* the sultans guard
+E 1 9513   1   16	*   a scimitar
+E 1 9519  43    5	*   a suit of splintmail
+E 1 9521  42   11	*   a splinted shield
+D 0 9522   0    1	* Inside the Northern Gate of New Thalos north
+M 0 9562  20 9523  5	* the sultans guard
+E 1 9513   1   16	*   a scimitar
+E 1 9519  43    5	*   a suit of splintmail
+E 1 9521  42   11	*   a splinted shield
+M 0 9562  20 9523  5	* the sultans guard
+E 1 9513   1   16	*   a scimitar
+E 1 9519  43    5	*   a suit of splintmail
+E 1 9521  42   11	*   a splinted shield
+D 0 9523   3    1	* Inside the West Gate of New Thalos west
+M 0 9542  22 9524  4	* the wandering prophet
+M 0 9520   2 9525  2	* a construction worker
+E 1 9586   2   16	*   a sledge hammer
+M 0 9520   2 9525  2	* a construction worker
+E 1 9586   2   16	*   a sledge hammer
+M 0 9519   1 9525  1	* the foreman
+E 1 9585   1   16	*   a fountain pen
+M 0 9568  15 9527  8	* a tourist
+M 0 9568  15 9528  8	* a tourist
+M 0 9544  20 9529  2	* the vulture
+M 0 9544  20 9530  2	* the vulture
+M 0 9562  20 9531  5	* the sultans guard
+E 1 9519  43    5	*   a suit of splintmail
+E 1 9521  42   11	*   a splinted shield
+M 0 9562  20 9531  5	* the sultans guard
+E 1 9519  43    5	*   a suit of splintmail
+E 1 9521  42   11	*   a splinted shield
+D 0 9531   1    1	* Inside the Eastern Gate of New Thalos east
+M 0 9518   1 9532  1	* Cassandra
+G 1 9564  20     	*   a salted herring
+G 1 9565  20     	*   a mussel
+M 0 9536  18 9533  6	* the dockworker
+M 0 9536  18 9533  6	* the dockworker
+M 0 9536  18 9533  6	* the dockworker
+M 0 9536  18 9534  6	* the dockworker
+M 0 9536  18 9534  6	* the dockworker
+M 0 9536  18 9535  3	* the dockworker
+M 0 9536  18 9543  3	* the dockworker
+M 0 9582  16 9544  2	* The Royal Guard
+M 0 9561  32 9544  2	* the sultan's guard
+M 0 9582  16 9545  2	* The Royal Guard
+M 0 9561  32 9545  2	* the sultan's guard
+M 0 9561  32 9546  2	* the sultan's guard
+M 0 9561  32 9547  2	* the sultan's guard
+M 0 9582  16 9550  2	* The Royal Guard
+M 0 9582  16 9552  2	* The Royal Guard
+M 0 9544  20 9553  2	* the vulture
+M 0 9545   2 9555  2	* the old man
+E 1 9590   2   16	*   a chessboard
+M 0 9545   2 9555  2	* the old man
+E 1 9590   2   16	*   a chessboard
+D 0 9559   5    1	* Alley down
+M 0 9544  20 9563  1	* the vulture
+M 0 9543  13 9565  1	* the alley cat
+M 0 9530   1 9566  1	* Mustafah
+M 0 9532   1 9566  1	* Kareem
+M 0 9531   1 9566  1	* Fatima
+M 0 9529   1 9566  1	* Aziz
+M 0 9543  13 9567  1	* the alley cat
+M 0 9535   3 9568  3	* the skinny kid
+M 0 9535   3 9568  3	* the skinny kid
+M 0 9535   3 9568  3	* the skinny kid
+M 0 9543  13 9569  3	* the alley cat
+D 0 9570   5    1	* Alley down
+M 0 9543  13 9573  3	* the alley cat
+D 0 9574   5    1	* Alley down
+D 0 9575   4    1	* Underground up
+D 0 9578   4    1	* Underground up
+D 0 9581   4    1	* Underground up
+D 0 9591   4    0	* Dark Passage up
+D 0 9594   0    0	* Common Room of the Clan MacCleod north
+D 0 9594   1    0	* Common Room of the Clan MacCleod east
+D 0 9594   2    2	* Common Room of the Clan MacCleod south
+D 0 9594   3    0	* Common Room of the Clan MacCleod west
+D 0 9594   4    0	* Common Room of the Clan MacCleod up
+D 0 9594   5    0	* Common Room of the Clan MacCleod down
+D 0 9595   5    0	* Zippoii's Room down
+D 0 9596   3    0	* Ice's Room west
+D 0 9597   1    0	* Naazgul's Room east
+D 0 9598   4    0	* Tank's Room up
+M 0 9569   1 9599  1	* Shelbye
+M 0 9501   1 9603  1	* the guildmaster
+D 0 9603   1    1	* Cleric's Sanctum east
+M 0 9581   1 9604  1	* the high priest
+M 0 9544  20 9607  2	* the vulture
+M 0 9542  22 9608  2	* the wandering prophet
+M 0 9542  22 9609  2	* the wandering prophet
+M 0 9592  14 9611  1	* the bodyguard
+M 0 9524   1 9611  1	* the statue of Nightshade
+M 0 9528   1 9611  1	* the statue of Landru
+M 0 9523   1 9616  1	* the statue of Zump
+M 0 9521   1 9611  1	* the statue of Nati
+M 0 9533  20 9612  2	* A nomad merchant
+M 0 9557   1 9612  1	* the guildguard
+M 0 9542  22 9613  6	* the wandering prophet
+M 0 9592  14 9613  2	* the bodyguard
+M 0 9542  22 9613  6	* the wandering prophet
+M 0 9543  13 9614  3	* the alley cat
+M 0 9542  22 9614  3	* the wandering prophet
+M 0 9513   1 9614  1	* Ahkeem the tailor
+E 1 9583   1   16	*   a pair of sewing shears
+G 1 9555  10     	*   a silk jacket
+G 1 9554  10     	*   a sash
+G 1 9553  10     	*   a pair of sandles
+G 1 9552  10     	*   an embroidered robe
+G 1 9551  10     	*   a common robe
+G 1 9550  10     	*   a pair of hose
+G 1 9549  10     	*   a girdle
+G 1 9548  10     	*   a fur cloak
+G 1 9547  10     	*   a pair of hiking boots
+G 1 9546  10     	*   a belt
+M 0 9592  14 9615  2	* the bodyguard
+M 0 9514   1 9615  1	* Vera the veggie lady
+G 1 9560  10     	*   some dates
+G 1 9559  10     	*   a fig
+G 1 9558  10     	*   a tomato
+G 1 9557  10     	*   a carrot
+G 1 9556  10     	*   an egg
+M 0 9522   1 9616  1	* the statue of Alander
+M 0 9527   1 9616  1	* the statue of Furey
+M 0 9526   1 9611  1	* the statue of Shandra
+M 0 9525   1 9616  1	* the statue of Satin
+D 0 9617   2    1	* Base of the Tower south
+M 0 9512   1 9621  1	* Nabil
+M 0 3097   1 9706  1
+M 0 3096   1 9706  1
+M 0 3095   1 9706  1 
+M 0 9544  20 9622  2	* the vulture
+M 0 9515   1 9622  1	* Butch the meatcutter
+E 1 9584   1   16	*   a meat cleaver
+G 1 9563  10     	*   a whole chicken
+G 1 9562  10     	*   a side of beef
+G 1 9561  10     	*   a leg of lamb
+M 0 9544  20 9623  2	* the vulture
+M 0 9579   1 9623  1	* Elvira
+G 1 9574  10     	*   a dark blue potion
+G 1 9573  15     	*   an off white potion
+G 1 9572  10     	*   a crystal clear potion
+G 1 9571  10     	*   a deep-green potion
+G 1 9570  10     	*   a glowing blue vial
+M 0 9544  20 9624  2	* the vulture
+M 0 9592  14 9624  2	* the bodyguard
+M 0 9580   1 9624  1	* Braheem
+G 1 9582  10     	*   a pink wand
+G 1 9581  10     	*   a wand of oak
+G 1 9579  10     	*   a grey-silver wand
+G 1 9578  10     	*   a scroll of recall
+M 0 9556   1 9625  1	* the guildguard
+M 0 9533  20 9626  2	* A nomad merchant
+M 0 9558   1 9626  1	* the guildguard
+M 0 9511   1 9628  1	* the shopkeeper
+G 1 9538  10     	*   a belt pouch
+G 1 9539  10     	*   a candle
+G 1 9537  10     	*   a basket
+G 1 9536  10     	*   a backpack
+G 1 9535  10     	*   an oil lamp
+G 1 9534  10     	*   a sack
+M 0 9516   1 9629  1	* Abdul the armorer
+G 1 9521 140     	*   a splinted shield
+G 1 9520  10     	*   a wooden shield
+G 1 9519  10     	*   a suit of splintmail
+G 1 9518  10     	*   a suit of ringmail
+G 1 9517  22     	*   a suit of field plate
+G 1 9516  10     	*   a suit of brigandine
+G 1 9515  20     	*   a suit of banded mail
+D 0 9630   1    1	* The Mercenary's Guild east
+M 0 9564   1 9631  1	* the mercenary
+M 0 9544  20 9632  2	* the vulture
+M 0 9559   1 9632  1	* the guildguard
+D 0 9632   3    0	* Entrance to the Thieves' Guild west
+M 0 9502   1 9634  1	* the guildmaster
+D 0 9634   1    1	* Tournament and Practice Yard east
+M 0 9510   1 9635  1	* the baker
+G 1 9545  10     	*   some nuts
+G 1 9543  10     	*   some iron rations
+G 1 9542  10     	*   some dry rations
+G 1 9541  10     	*   a bread
+G 1 9540  10     	*   a hunk of cheese
+M 0 9533  20 9636  2	* A nomad merchant
+M 0 9517   1 9636  1	* Igor the weaponsmith
+E 1 9591   1   17	*   a sesame seed
+G 1 9514  10     	*   a rapier
+G 1 9513  18     	*   a scimitar
+G 1 9512  10     	*   a two-handed bastard sword
+G 1 9511  10     	*   a sickle
+G 1 9510  10     	*   a guisarme
+G 1 9509  10     	*   a glaive
+G 1 9508  10     	*   a fauchard
+G 1 9507  10     	*   a bill-guisarme
+G 1 9506  10     	*   a bec de corbine
+G 1 9505  10     	*   a bardiche
+G 1 9504  10     	*   an awl-pike
+G 1 9503  10     	*   a morningstar
+D 0 9636   5    2	* Igor's Implements of Destruction down
+M 0 9584   1 9637  1	* Stitch, the leather dude.
+G 1 9533  10     	*   a leather shield
+G 1 9532  10     	*   a pair of studded leather gloves
+G 1 9531  10     	*   a pair of studded leather pants
+G 1 9530  10     	*   a pair of studded leather sleeves
+G 1 9529  10     	*   a studded leather jacket
+G 1 9528  10     	*   a pair of padded leather boots
+G 1 9527  10     	*   a pair of leather gloves
+G 1 9526  10     	*   a pair of leather pants
+G 1 9525  10     	*   a leather cap
+G 1 9524  10     	*   a pair of leather sleeves
+G 1 9523  10     	*   a leather jacket
+G 1 9522  10     	*   a buckler
+M 0 9583   1 9638  1	* Patch the bartender
+G 1 9577  10     	*   a shot
+G 1 9576  10     	*   a barrel of beer
+G 1 9575  10     	*   a flaming scorpion
+O 1 3200   -1 9638 
+M 0 9566   1 9644  1	* the blacksmith
+G 1 9589 100     	*   a riding crop
+G 1 9588  10     	*   a saddle
+G 1 9587  10     	*   a horse shoe
+M 0 9567   6 9645  6	* a horse
+M 0 9567   6 9645  6	* a horse
+M 0 9567   6 9645  6	* a horse
+M 0 9567   6 9645  6	* a horse
+M 0 9567   6 9645  6	* a horse
+M 0 9567   6 9645  6	* a horse
+M 0 9503   1 9646  1	* the guildmaster
+D 0 9646   2    1	* The Secret Yard south
+M 0 9500   1 9648  1	* the guildmaster
+M 0 9544  20 9649  2	* the vulture
+D 0 9650   1    0	* The Grand Entrance east
+D 0 9653   0    0	* Jail north
+M 0 9589   1 9654  1	* the mayor
+G 1 9501  10     	*   the Key to the City of New Thalos
+M 0 9544  20 9655  1	* the vulture
+D 0 9658   3    0	* The Palace Gate west
+M 0 9560   2 9661  2	* a servant boy
+M 0 9560   2 9661  2	* a servant boy
+M 0 9590   1 9661  1	* the chef
+D 0 9661   0    1	* Kitchen north
+D 0 9663   2    1	* Hall south
+D 0 9665   0    0	* Hall north
+M 0 9555   1 9666  1	* Allah
+D 0 9666   2    0	* Shrine of Allah south
+M 0 9544  20 9667  1	* the vulture
+M 0 9544  20 9668  1	* the vulture
+M 0 9592  14 9668  1	* the bodyguard
+M 0 9543  13 9669  2	* the alley cat
+D 0 9669   1    0	* Outside the West Gate of New Thalos east
+M 0 9561  32 9672  1	* the sultan's guard
+M 0 9533  20 9672  2	* A nomad merchant
+D 0 9672   2    0	* Hall south
+D 0 9674   0    0	* Hall north
+D 0 9675   2    0	* Entrance to the Dungeon south
+D 0 9675   5    1	* Entrance to the Dungeon down
+D 0 9677   2    0	* Hall south
+M 0 9585   1 9678  1	* the gardener
+D 0 9679   0    0	* Hall north
+M 0 9588   1 9680  1	* the mimic
+D 0 9680   2    0	* Art Exhibit south
+M 0 9561  32 9681  5	* the sultan's guard
+M 0 9561  32 9682  5	* the sultan's guard
+D 0 9682   2    0	* Hall south
+D 0 9682   3    0	* Hall west
+M 0 9586   1 9683  1	* the nightmare
+M 0 9578   1 9683  1	* the pegasus
+D 0 9684   0    0	* Hall north
+D 0 9684   3    0	* Hall west
+D 0 9685   2    0	* Guard Room south
+M 0 9553   4 9687  4	* a eunich
+M 0 9553   4 9687  4	* a eunich
+M 0 9553   4 9687  4	* a eunich
+M 0 9553   4 9687  4	* a eunich
+M 0 9554   1 9687  1	* Nichole, the sultan's favorite
+M 0 9551   8 9687  8	* a harem girl
+M 0 9551   8 9687  8	* a harem girl
+M 0 9551   8 9687  8	* a harem girl
+M 0 9551   8 9687  8	* a harem girl
+M 0 9551   8 9687  8	* a harem girl
+M 0 9551   8 9687  8	* a harem girl
+M 0 9551   8 9687  8	* a harem girl
+M 0 9551   8 9687  8	* a harem girl
+D 0 9687   0    0	* Harem north
+M 0 9561  32 9688  5	* the sultan's guard
+M 0 9550   1 9689  1	* The Sultan
+D 0 9689   0    0	* Throne Room north
+D 0 9689   1    0	* Throne Room east
+D 0 9689   2    0	* Throne Room south
+M 0 9552   1 9691  1	* the jailer
+G 1 9593  10     	*   the jail key
+D 0 9691   1    1	* Jailer's Room east
+D 0 9691   4    1	* Jailer's Room up
+D 0 9692   0    2	* Tunnel in the Dungeon north
+D 0 9692   2    2	* Tunnel in the Dungeon south
+D 0 9692   3    1	* Tunnel in the Dungeon west
+D 0 9693   0    2	* Tunnel in the Dungeon north
+D 0 9693   2    2	* Tunnel in the Dungeon south
+D 0 9694   0    2	* Tunnel in the Dungeon north
+D 0 9694   2    2	* Tunnel in the Dungeon south
+D 0 9695   0    2	* Tunnel in the Dungeon north
+D 0 9695   1    1	* Tunnel in the Dungeon east
+D 0 9695   2    2	* Tunnel in the Dungeon south
+M 0 9587   1 9696  1	* the wolverine
+E 1 9599   1   16	*   the wolverine claw
+D 0 9696   3    1	* Secret Cell west
+M 0 9575   1 9697  1	* the chimera
+D 0 9697   2    2	* Cell south
+M 0 9574   1 9698  1	* the behir
+D 0 9698   2    2	* Cell south
+M 0 9572   5 9699  5	* the death dog
+M 0 9572   5 9699  5	* the death dog
+M 0 9572   5 9699  5	* the death dog
+M 0 9572   5 9699  5	* the death dog
+M 0 9572   5 9699  5	* the death dog
+D 0 9699   2    2	* Cell south
+M 0 9570   1 9700  1	* the cryohydra
+D 0 9700   2    2	* Cell south
+M 0 9577   1 9701  1	* the giant hornet
+D 0 9701   0    2	* Cell north
+M 0 9576   1 9702  1	* the couatl
+D 0 9702   0    2	* Cell north
+M 0 9573   1 9703  1	* the spotted lion
+D 0 9703   0    2	* Cell north
+M 0 9571   1 9704  1	* the minotaur lizard
+D 0 9704   0    2	* Cell north
+O 0 9598   1 9750	* the Daemon Claw
+D 0 9750   4    2	* Igor's Secret Chamber up
+D 0 9798   3    0	* Under the dock west
+M 0 9591   1 9799  1	* the Ixitxachitl
+G 1 9602  10     	*   a beautiful white pearl
+D 0 9799   1    0	* Lair of the Ixitxachitl east
+S
+
+#SHOPS
+9505  0  0  0  0  0 	 110  90 	 0 23 	* the withered mage/bartender
+9510  0  0  0  0  0 	 110  90 	 0 23 	* the baker
+9511  1  8 12 13 15 	 200 100 	 0 23 	* the shopkeeper
+9513  8 11  9 16 21 	 200  40 	 0 23 	* Ahkeem the tailor
+9514  0  0  0  0  0 	 150  40 	 0 23 	* Vera the veggie lady
+9515  0  0  0  0  0 	 100  50 	 0 23 	* Butch the meatcutter
+9516  9 11  0  0  0 	 150  10 	 0 23 	* Abdul the armorer
+9517  5  6  7  0  0 	 130  10 	 0 23 	* Igor the weaponsmith
+9518  0  0  0  0  0 	 150  40 	 0 23 	* Cassandra
+9565 22  0  0  0  0 	 131  86 	 0 23 	* the shipwright
+9566  0  0  0  0  0 	 250  50 	 0 23 	* the blacksmith
+9579 10  0  0  0  0 	 187  25 	 0 23 	* Elvira
+9580  2  3  4  0  0 	 170  30 	 0 23 	* Braheem
+9583  0  0  0  0  0 	 110  90 	 0 23 	* Patch the bartender
+9584  9 11  0  0  0 	 105  15 	 0 23 	* Stitch, the leather dude.
+0
+
+#SPECIALS
+M 9521 spec_cast_cleric    	* the statue of Nati
+M 9522 spec_cast_cleric    	* the statue of Alander
+M 9523 spec_cast_cleric    	* the statue of Zump
+M 9524 spec_cast_cleric    	* the statue of Nightshade
+M 9525 spec_cast_cleric    	* the statue of Satin
+M 9526 spec_cast_cleric    	* the statue of Shandra
+M 9527 spec_cast_cleric    	* the statue of Furey
+M 9528 spec_cast_cleric    	* the statue of Landru
+M 9529 spec_cast_mage      	* Aziz
+M 9530 spec_thief          	* Mustafah
+M 9531 spec_cast_mage      	* Fatima
+M 9535 spec_thief          	* the skinny kid
+M 9538 spec_thief          	* Gord
+M 9540 spec_cast_mage      	* Raistlin
+M 9541 spec_cast_cleric    	* Curley GreenLeaf
+M 9542 spec_cast_cleric    	* the wandering prophet
+M 9544 spec_fido           	* the vulture
+M 9548 spec_cast_mage      	* the lamia
+M 9555 spec_cast_cleric    	* Allah
+M 9561 spec_guard          	* the sultan's guard
+M 9562 spec_guard          	* the sultans guard
+M 9570 spec_breath_frost   	* the cryohydra
+M 9574 spec_breath_lightning	* the behir
+M 9575 spec_breath_fire    	* the chimera
+M 9577 spec_poison         	* the giant hornet
+M 9582 spec_guard          	* The Royal Guard
+M 9592 spec_guard          	* the bodyguard
+S
+
+#$

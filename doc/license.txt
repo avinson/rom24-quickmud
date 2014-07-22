@@ -1,0 +1,46 @@
+Merc Release 2.1
+Sunday 01 August 1993
+
+Furey	mec@shell.portal.com
+Hatchet	hatchet@uclink.berkeley.edu
+Kahn	michael@uclink.berkeley.edu
+
+
+
+=== Copyright and License Terms
+
+Diku Mud is copyright (C) 1990, 1991 by Sebastian Hammer, Michael Seifert,
+Hans Henrik St{rfeldt, Tom Madsen, and Katja Nyboe.  Their license agreement
+is in the file 'license.doc'.
+
+Merc Diku Mud is a derivative of the original Diku Mud and is subject to their
+copyright and license agreement.  Merc Diku Mud contains substantial
+enhancements to Diku Mud.  These enhancements are copyright 1992, 1993 by
+Michael Chastain, Michael Quan, and Mitchell Tse.
+
+In order to use Merc you must follow the Diku license and our license.  The
+exact terms of the Diku license are in the file 'license.doc'.  A summary of
+these terms is:
+
+	-- No resale or operation for profit.
+	-- Original author's names must appear in login sequence.
+	-- The 'credits' command must report original authors.
+	-- You must notify the Diku creators that you are operating a Diku mud.
+
+Our license terms are:
+
+	-- Copyrights must remain in original source.
+	-- 'Help merc' must report our help text, as shipped.
+
+Notice that our license terms don't include keeping our names in the login
+sequence.  If you want to keep a line in there referring to Merc, or referring
+to us by name (Furey, Hatchet, and Kahn), we'd appreciate that, but we don't
+require it.  But you must keep the original Diku authors in the login sequence.
+
+If you do not follow these license terms, we will ask you to comply.  If that
+doesn't work, then we will talk to your system administrators (not about your
+running a mud, but on the grounds that you're using our copyrighted software
+without permission).
+
+These are very generous terms for any software.  If you don't want to accept
+them, feel free to run some other software, or write your own.

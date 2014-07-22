@@ -1,0 +1,118 @@
+[Note from Furey: the following ideas were e-mailed to us by the Drool
+Company.  We don't have time to do anything with them ... but if you do,
+feel free!  Just please acknowledge the source.  Thanks Droolers!]
+
+Merc 2.0 ideas- from Onethumb(Sith), Baka, and Penn
+	the original DROOL CO!
+
+Thief ideas:
+
+-* small chance to critical hit when backstabbing...(insta-kill)
+    restrict crit hit to monsters equal or lower level than thief
+
+Warrior ides:
+
+-* ability to wield two weapons at a time...
+
+-* make bash better...
+
+-* anti-magic zones...
+
+-* warcry: self-bless effect...
+
+-* specialize in certain weapons...(this might be hard to code)
+
+Cleric ideas:
+
+-* more spells-
+	true seeing- sees secret doors and hidden thieves
+	group heal- heals everyone in the room
+
+-* spend pracs on a multple attack (dual)...
+
+-* should NOT get more xp than other char classes..(even Penn agrees)
+
+Magic-User:
+
+-* more spells, more spells, more spells-
+	find familiar- extra mana, hp...if it stays alive..
+	fireball- make it into an area affect spell...
+	power word kill- VERY high level- insta-kill monsters
+		of levels below the caster-possibly 5 or more levels 
+		below
+	chain lightning- lightning hits more than one opponent (or
+		friend)...
+	wish- ... NOT!
+	conjuer elemental- make this this WORK!
+	prismatic sphere- high-level (28th, mabye)-- offers protection
+		from breath, ect..
+	polymorph- change shape into a lower level monster's...keep 
+		hp's and AC...could couse problems with other players
+	meteor swarm- area affect- high-level...
+	
+
+General ideas:
+
+	make all Drool Co. members GODS!--- NOT!
+
+-* Guilds would be cool- special abilities (Paladins, Necromancers)
+
+-* restrict groups to alignment(good cannot group with evil)...
+
+-* Martial Arts- cost more for Mages, Clerics than for Warriors and 
+	Thieves...
+
+-* MORE MOBS!, MORE AREAS!, MORE MAGIC ITEMS!
+	- better range of mobs for 13-18 level players...
+	- better range of mods for 27+ level players...
+	- a new city would be cool...
+	- better items to hold, intead of the diploma...
+		(+AC, +HP, +mana...)
+	- spiked shield- does extra dmg...
+	- more mana stuff...
+	- hirable mercanaries who will follow you and carry stuff...
+	- castles(room) for players at high levels- players can recall
+		to it and store items temporarily...
+			castles cause chars to heal and regain mana
+			at double the normal rate...	
+	- races....multi-class for non-humans...level restrict...
+	- random abitlies...cant see stats till 15th level
+	- verify feature for new players- auto e-mail and reply to 				prevent multi playing...
+	- AUTO-REBOOT! - seperate program for the mud..
+		so the mud is never down for more then a couple of
+		hours...
+	- Make money worth something!- make quality items for sale
+		at really high prices... possibly the char could 
+		buy a castle instead of leveling to get it...(50 mil?)
+	- IF there is the castle purchace option- chars must own a 				castle before they can become immort...
+	- gossip and auction chanels are good...
+	- get rid of recall...buy scrolls or recall items(more than
+		one recall)...
+	- WE NEED A BETTER BAR! 
+		screwdrivers, magaritas, vodka sours, lemonballs
+			AAAAAAAHHHH!
+	- no-trip...players can either prac a no-trip skill or get
+		a no-trip item(ring of free action)...
+	- class restricted eq....
+	- allow players to rename thier own eq...	
+			you could do a lot with this...
+			make the eq exclusive to the player
+			once he renames it--(this would cost
+			money-the armorer or weaponsmith could
+			do it)...
+	- setmin and setmout (for chars)- set what other players 
+		see when the char walks in or out...this 
+		could also be done for money(small amount)
+
+
+I think that's all.....we might come up with a few more later...
+
+	The WhooPIe Drool Co.! 
+		Onethumb-...Sith
+		Baka-...Orrik
+		Penn-...Ender
+
+				Merry X-mas!....well....
+					later
+					onethumb!
+

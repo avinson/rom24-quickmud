@@ -1,0 +1,254 @@
+Merc Release 2.1
+Sunday 01 August 1993
+
+Furey	mec@shell.portal.com
+Hatchet	hatchet@uclink.berkeley.edu
+Kahn	michael@uclink.berkeley.edu
+
+
+
+=== Skills and Spells
+
+The central organizing table for skills and spells is skill_table, an array
+of type 'struct skill_type' (merc.h), and is defined in const.c.  Skills
+include spells as a special case.  Indexes into this table are 'skill numbers'
+or 'spell numbers', abbreviated 'sn'.  An 'sn' is a purely internal value, and
+can vary over time as skills and spells are added.  This way, the skill table
+can be expanded conveniently.
+
+The 'practice' command and player saving/loading are completely table-driven
+from skill_table.  Skills and spells may be freely added or deleted without
+changing these functions.
+
+The fields of skill_table are:
+
+    char *	name;
+
+	The name is used for practising the skill or spell and by the 'cast'
+	command.  Mobiles which cast spells also often invoke the spell by
+	name.  Save files contain this name.
+
+    sh_int	skill_level[MAX_CLASS];
+
+	This array is indexed by character class, GET_CLASS(ch).  It contains
+	the minimum level which each class needs in order to practice the skill
+	or spell.  If a given class cannot use this skill or spell, the level
+	is set to 37, so that all immortals can use all skills and spells.
+	Mobiles ignore this table; generally their skill percentages are a
+	simple function of level.
+
+    SPELL_FUN *	spell_fun;
+
+	This is the function which implements the spell.  Spell functions
+	take four arguments: an 'sn', a level, a caster, and a pointer to a
+	target victim or object.  This field is unused for skills.
+
+    sh_int	target;
+
+	This identifies the targets of the spell.  The legal values are:
+
+	    TAR_IGNORE			Spell chooses its own targets.
+	    TAR_CHAR_OFFENSIVE		Spell is offensive (starts combat).
+	    TAR_CHAR_DEFENSIVE		Spell is defensive (any char is legal).
+	    TAR_CHAR_SELF		Spell is personal-effect only.
+	    TAR_OBJ_INV			Spell is used on an object.
+
+	PC's may not cast TAR_CHAR_OFFENSIVE spells on other PC's.  These
+	spells also cause the victim to attack the caster.
+
+	This field is unused for skills.
+
+    sh_int	minimum_position;
+
+	This is the minimum position needed to cast the spell.  It is always
+	either POSITION_FIGHTING or POSITION_STANDING.  This field is unused
+	for skills.
+
+    sh_int	slot;
+
+	This is the slot number, which indexes the spell from magical objects
+	in #OBJECTS sections of area files (but not save files, which use the
+	ascii name).  Once assigned, a slot number can never be changed.
+	Skills do not have slot numbers.
+
+    sh_int	min_mana;
+
+	This is the minimum mana required to cast this spell by a sufficiently
+	high level spell caster.  A lower level spell caster will need more
+	mana than the minimum; see 'do_cast' in 'magic.c' for the algorithm.
+	This field is unused for skills.
+
+    sh_int	beats;
+
+	This is the delay time, in pulses, imposed on the user of a spell or
+	caster of a spell.  One pulse is 0.25 second (this is derived from
+	PULSE_PER_SECOND in merc.h).
+
+    sh_int *	pgsn;
+
+	This is the address of a gsn (global skill/spell number) associated
+	with this skill or spell.  Almost all skills have gsn's; a few spells
+	do.
+
+    char *	noun_damage;
+
+	This is a noun or noun phrase containing the damage message for skills
+	or spells that perform damage.
+
+    char *	msg_off;
+
+	This is the message sent to the character when the skill or spell wears
+	off.
+
+
+
+=== Examples
+
+    {
+	"fireball",		{ 15, 37, 37, 37 },
+	spell_fireball,		TAR_CHAR_OFFENSIVE,	POS_FIGHTING,
+	NULL,			SLOT(26),	15,	12,
+	"fireball",		"!Fireball!"
+    },
+
+	This is a fifteenth level magic-user spell.  The slot number is 26.  It
+	costs 15 mana, and imposes 12 pulses (3 seconds) of delay time on the
+	caster.  It's an offensive spell, and can be used either fighting or
+	standing.  There is no gsn.  The damage message will say 'fireball',
+	and the wear-off message has a strange form to indicate errors because
+	this spell is instantaneous.
+
+    {
+	"armor",		{  5,  1, 37, 37 },
+	spell_armor,		TAR_CHAR_DEFENSIVE,	POS_STANDING,
+	NULL,			SLOT( 1),	 5,	12,
+	"",			"You feel less protected."
+    },
+
+	This is a fifth level magic-user or first level cleric spell.  It can
+	be cast on any char without starting a fight.  It has no damage message
+	but does have a wear-off message.
+
+    {
+	"gas breath",		{ 35, 37, 37, 37 },
+	spell_gas_breath,	TAR_IGNORE,		POS_FIGHTING,
+	NULL,			SLOT(203),	 0,	 4,
+	"blast of gas",		"!Gas Breath!"
+    },
+
+	This is one of the dragon-breath spells.  It is accessible only to
+	35th level magic users.  The spell selects its own targets (TAR_IGNORE)
+	rather than using the common spell-driver target selection code.
+
+    {
+	"pick lock",		{ 37, 37,  1, 37 },
+	spell_null,		TAR_IGNORE,		POS_STANDING,
+	&gsn_pick_lock,		SLOT( 0),	 0,	12,
+	"",			"!Pick!"
+    },
+
+	This is a first-level thief skill.  Many of the fields are unused.
+	This skill has a gsn, so that do_pick_lock does not have to call
+	'skill_lookup' to find the sn.
+
+
+
+=== Indexing skill_table
+
+'skill_table' is indexed by an 'sn' or 'gsn'.  The function 'skill_lookup'
+takes a string and returns the appropriate sn, or -1 if the name is not found.
+
+Some skills, such as 'second attack', are referenced very frequently.  For
+these skills, a global variable such as 'gsn_second_attack' is initialized to
+the sn of this skill.  Most of the fighter and thief skills have gsn's; only a
+few spells need gsn's.
+
+Gsn's are initialized at boot time in boot_db, which follows the 'pgsn' field
+in skill_table.   This takes slightly more time and space than using '#define'
+to define them as constants, but is much more error-proof.
+
+Magic items (potions, scrolls, pills, wands, and staves) have charges of
+magical spells.  These spells are referenced by 'slot number' in area files.
+(Slot numbers are also used in the save files).  The function 'slot_lookup'
+converts slot numbers to skill numbers.
+
+The range of slot numbers is 0 to 32767.  There is no need to assign them
+consecutively.  In the future, slot numbers may disappear completely, and
+area files may reference spells directly by name instead of by slot number.
+
+[For those familiar with original Diku code ... slot numbers are simply the
+original Diku spell numbers.]
+
+
+
+=== The spell driver
+
+The spell driver level is the first half of 'magic.c'.  It consists of
+'do_cast' for the 'cast' command and 'obj_cast_spell' which is called from
+'do_brandish', 'do_eat', 'do_quaff', 'do_recite', and 'do_zap'.
+
+The spell driver takes care of level checking, position checking, target
+selection, target validation (such as preventing PC's from casting offensive
+spells on other PC's), staff area effect (just multi-target selection), mana
+costs, wait states, and starting combat for offensive spells.  All of these
+things are table-driven by 'skill_table'.
+
+The spell function itself takes care of calling functions like 'damage' and
+'affect_to_char'.  Read the existing ones to see what is needed for a new one.
+
+Some spells, such as 'earthquake', 'locate object' or 'summon', perform their
+own target selection.  These spells are target type TAR_IGNORE.  Within the
+spell function, the variable 'target_name' is available (set by the spell
+driver).
+
+
+
+=== Adding a new spell
+
+(1) Find a free slot number.  Make sure it's not already used in 'const.c'.
+    Merc reserves slot numbers below 500 for future expansion.  We promise we
+    won't use numbers 500 or above in future Merc releases.  Thus if you number
+    your spells 500 or above, you will have an easier time upgrading to future
+    releases of the Merc base code.
+
+(2) Choose appropriate values for the other 'skill_table' fields, and write
+    your new paragraph into 'const.c'.  Order is immaterial.
+
+(3) Add the 'spell_*' function declaration to the 'DECLARE_SPELL_FUN' section
+    of 'merc.h'.
+
+(4) Drop the code for the spell function into 'magic.c'.
+
+(5) If your spell needs 'AFF_*' bits, create new 'AFF_* bits' in 'merc.h'.
+
+(6) You may need to increase 'MAX_SKILL' in 'merc.h'.
+
+
+
+=== Adding a new skill
+
+For skills, only some of the fields are relevant: 'name', 'skill_level',
+'beats', 'pgsn', 'noun_damage', and 'msg_off' are used; 'slot', 'min_mana',
+'spell_fun', 'target', and 'minimum_position' are not used.
+
+Skills are either automatic (such as 'parry') or manual (such as 'rescue').
+Many automatic skills are referenced in 'fight.c'; look at 'multi_hit' for
+examples of the use of 'gsn_second_attack' and 'gsn_third_attack'.
+
+An explicit skill such as 'rescue' has its associated command 'do_rescue'.
+This command is defined and called in the normal way in interp.c.  Within
+'do_rescue', 'gsn_rescue' is used to find fields such as 'beats'.
+
+To add a new skill:
+
+(1) Choose appropriate values for the 'skill_table' fields, and write your new
+    paragraph into 'const.c'.  Order is immaterial.
+
+(2) You'll probably need a 'gsn'.  Declare it in 'merc.h' and 'db.c'.  Drop its
+    address into the 'pgsn' field of the paragraph in 'const.c'.
+
+(3) If the skill is automatic, just use 'ch->pcdata->learned[gsn_new_skill]'
+    in your code.  If your skill is manual, you need to write an appropriate
+    command function for it.
+
+(4) You may need to increase 'MAX_SKILL' in 'merc.h'.

@@ -1,0 +1,81 @@
+Merc Release 2.1
+Sunday 01 August 1993
+
+Furey	mec@shell.portal.com
+Hatchet	hatchet@uclink.berkeley.edu
+Kahn	michael@uclink.berkeley.edu
+
+
+
+=== Compiling with traditional C
+
+Merc is written in Ansi Standard C and uses several features not found in
+traditional C compilers:
+
+    -- the 'const' attribute
+    -- function prototypes with argument types
+    -- new-style function definitions with argument types embedded
+
+These features are too useful to just discard out of hand.  On the other hand,
+with some clever hacking (which we have graciously done for you), it is
+possible to accommodate the deficiencies of some old non-ansi C compilers.
+
+
+
+=== How to tell if you have traditional C or Ansi C
+
+If your C Compiler is 'gcc', then it is Ansi C, and you don't need to know
+anything about traditional C.
+
+If you are on a Sun workstation and your compiler is Sun's 'cc', you have
+traditional C.
+
+If you get dozens of errors at compile time on 'merc.h' function declarations
+with 'DO_FUN' and 'SPELL_FUN', you probably have a traditional C compiler.
+
+Note that 'traditional C' refers to just about anything that's pre-Ansi C.
+We've tested Merc 2.0 with 'mktrad' on several machines, but that's no
+guarantee it will work on yours.  You can do everything in this document and
+STILL be unable to compile, link, or execute.  Well, you said you were getting
+a mud to 'learn about programming' ...
+
+
+
+=== How to compile with traditional C
+
+(1) Start with a clean copy of the release in an experimental directory.  Step
+    (3) of this procedure will *irreversibly* change the source.
+
+(2) Select the 'traditional C' makefile.
+
+	cp makefile.tra makefile
+
+    This makefile uses the command 'cc -c -O -DTRADITIONAL' to compile and the
+    command 'cc -O -o merc' to link.  If you need different command lines, edit
+    the file.  The file 'merc.h' checks the 'TRADITIONAL' symbol.
+
+(3) Run 'mktrad'.
+
+	csh mktrad >& mktrad.out
+
+    'Mktrad' will invoke the 'ed' editor on *.c and rewrite all of the function
+    definition lines from Ansi C style to Traditional C style.  After running
+    'mktrad', you cannot recover the original files.  Also, if you run 'mktrad'
+    a second time on the same files, you will probably ruin them.
+
+    The file 'mktrad.out' will be about 80k long.  You can ignore this
+    file if everything works.
+
+    If your system doesn't have 'ed', try changing mktrad to invoke 'ex'
+    instead.  If you have neither 'ed' nor 'ex', you're on your own.
+
+(4) Run 'make' as usual:
+
+	make -k >&! make.out
+
+(5) If all goes well, then the one-time conversion has succeeded.  You can now
+    develop the code as you like, and compile normally.  NEVER run mktrad again
+    or you'll hose your source!
+
+(6) If things go wrong and you need help, e-mail us.  We'll need 'mktrad.out'
+    and 'make.out' files, as well as the model of your computer.

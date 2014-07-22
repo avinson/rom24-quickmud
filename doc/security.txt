@@ -1,0 +1,106 @@
+Merc Release 2.1
+Sunday 01 August 1993
+
+Furey	mec@shell.portal.com
+Hatchet	hatchet@uclink.berkeley.edu
+Kahn	michael@uclink.berkeley.edu
+
+
+
+=== Security Features
+
+The 'log' command logs any character; it's meant for test characters as well as
+trouble-making players.  Many immortal commands are logged automatically; this
+is done by setting the LOG_ALWAYS attribute in interp.c.  LOG_NEVER is also
+available for commands which are never logged (specifically 'password').
+'Log all' logs ALL commands executed by the server.
+
+The 'deny' command can be used to set a character's PLR_DENY bit.  This bit
+cannot be reset from within the server (and the player can't log on anyways to
+get it reset).  In order to un-deny a player, edit their save file, and
+subtract the value of PLR_DENY (1048576) from their 'AffectedBy' bits.
+
+You can also 'deny' a player off-line by editing his or her player file and
+adding in the PLR_DENY bit (1048576) to their 'AffectedBy' bits.
+
+The 'ban' command can be used to ban sites or domains.
+
+The 'startup' script automatically saves log files in the the directory ../log
+(i.e. a 'log' directory which is a sibling of the current directory).  You
+should check your log files from time to time.
+
+The 'snoop' command can be used multiple times to snoop multiple characters at
+once.
+
+Immortals with 'invis' set can freely goto rooms, walk around, and follow
+characters without being noticed.
+
+The server is protected against input spamming.
+
+
+
+=== Game Balance Features
+
+There are level limits on grouping.
+
+Objects have level restrictions on their use.
+
+There are limits on saved items.  Keys and potions do not save.  Items which
+are higher level than the character are not saved.  This protects against
+storage characters.
+
+If you do need to confiscate equipment, just fire up your favorite editor and
+edit the player files.
+
+Many commands, such as 'backstab', 'pick lock', and 'steal', have wait states
+and level limits on them.  This protects against low-level thieves plundering
+the game.
+
+There are very few ways to leave combat.  Breaking link will invoke attempts
+to auto-recall, but with a low chance of success.  'Summon' may not be used
+on a character in combat.  'Recall' has less chance of succeeding than fleeing.
+In summary, the best way out of combat is fleeing.
+
+Offensive spells start combat -- no free attempts at 'sleep', 'dispel magic',
+or other such spells.  Offensive spells may not be cast on other players.
+
+Players no longer gain experience from pkilling.
+
+The 'summon' spell will not summon a character into a different area.
+
+The 'tell' command will not 'tell' to mobiles which are not in the room.
+
+The 'tick' interval, as well as other game intervals such as the zone reset
+interval, have random variation.
+
+Aggressive mobiles check for aggression on every game pulse.  Thus it is not
+possible to 'run past' aggressive mobiles.
+
+It is not possible to leave the game without an auto-save being done (e.g.
+by breaking link).  The game auto-saves players on death, and it auto-saves
+players periodically (one player each tick).
+
+The 'R' reset command may be used to scramble room exits on area reset, so that
+players have to map a maze each time they enter.
+
+Players may loot only their own corpses or their own groups' corpses.  Other
+corpse looting is punished with a PLR_THIEF flag.
+
+
+
+=== Integrity Features
+
+Merc compiles with no errors and no warnings, with 'gcc -Wall', on a large
+number of platforms.  If the server crashes, and you've changed the code at
+all, it's likely to be YOUR code that's the problem.
+
+The server detects and reports most area-file errors that crash other muds,
+often including the area file name and line number.  The server refuses to run
+with bad files.  Thus if you import areas, and they're dirty, you'll have to
+clean them before you can use them.
+
+If you are running on a computer that supports the 'malloc_debug' library
+function, such as a Sun 4, you can turn on malloc debugging in comm.c.  Merc
+is parsimonious of dynamically allocated memory, so that after area loading,
+very little memory allocation is done.  Thus you can 'malloc_debug' without
+noticeable effect on performance.

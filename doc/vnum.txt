@@ -1,0 +1,34 @@
+Merc Release 2.1
+Sunday 01 August 1993
+
+Furey	mec@shell.portal.com
+Hatchet	hatchet@uclink.berkeley.edu
+Kahn	michael@uclink.berkeley.edu
+
+[This file was originally written by Neal Haggard for Merc 2.0 Beta.
+ But we reformatted it to fit on one screen.  -- Furey]
+
+
+
+=== Vnum Assignments
+
+00 limbo.are    20 catacomb.are 40 moria.are    60 haon.are     80 mega1.are   
+01 smurf.are    21 hood.are     41 moria.are    61 haon.are     81 -           
+02 -            22 draconia.are 42 -            62 -            82 -           
+03 plains.are   23 mahntor.are  43 -            63 arachnos.are 83 marsh.are   
+04 -            24 -            44 -            64 -            84 -           
+05 -            25 -            45 -            65 dwarven.are  85 -           
+06 ofcol2.are   26 -            46 -            66 daycare.are  86 dream.are   
+07 -            27 -            47 -            67 -            87 -           
+08 -            28 trollden.are 48 -            68 -            88 -           
+09 olympus.are  29 -            49 -            69 -            89 grove.are   
+10 air.are      30 midgaard.are 50 eastern.are  70 sewer.are    90 -           
+11 shire.are    31 midgaard.are 51 drow.are     71 sewer.are    91 dylan.are   
+12 hitower.are  32 midgaard.are 52 thalos.are   72 sewer.are    92 canyon.are  
+13 hitower.are  33 midgaard.are 53 mirror.are   73 sewer.are    93 galaxy.are  
+14 hitower.are  34 chapel.are   54 -            74 sewer.are    94 mobfact.are 
+15 gnome.are    35 midennir.are 55 ofcol.are    75 -            95 newthalos.are
+16 wyvern.are   36 grave.are    56 -            76 -            96 newthalos.are
+17 wyvern.are   37 school.are   57 -            77 -            97 newthalos.are
+18 -            38 -            58 -            78 valley.are   98 -           
+19 -            39 moria.are    59 -            79 redferne.are 99 -           

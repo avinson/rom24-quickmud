@@ -1,0 +1,183 @@
+Merc Release 2.1
+Sunday 01 August 1993
+
+Furey	mec@shell.portal.com
+Hatchet	hatchet@uclink.berkeley.edu
+Kahn	michael@uclink.berkeley.edu
+
+
+
+=== Disclaimer
+
+If your name isn't in here, and you think it should be; or if your name IS
+in here and you prefer a different name or anonymity; then just e-mail us
+and we'll fix it in the next release.
+
+
+
+=== Contribution Policy
+
+We welcome contributions to Merc.
+
+You can send us areas, spells, skills, bug reports, bug fixes, code, ideas,
+comments on our documentation, interesting stories, or anything else, to any of
+our addresses above.
+
+We particularly would like to get copies of 'bugs.txt', 'ideas.txt', and
+'typos.txt' from any site running a Merc mud.
+
+If we use your contribution, we will credit you for it in this file and in the
+source files.  The 'areas' command lists authors within the game, and 'help
+merc' credits major contributions as well.
+
+Merc is devoted to open release.  Once we accept a contribution, it will
+become available to the entire mud community.  Also, once we accept a
+contribution and integrate it into Merc, we will not remove it later if you
+change your mind.
+
+We usually rework code contributions into our own style, just as we've reworked
+100% of our released code into a consistent style.
+
+You are welcome to use any element of Merc in your own mud, as long as you
+follow the terms in 'license.doc' and 'license.txt'.  If you take things from
+Merc we'd appreciate e-mail from you.
+
+
+
+=== Mailing List
+
+Thanks to Zrin for administering the Merc mailing list.  You can join the list
+by sending e-mail to merc-request@kpc.com.
+
+
+
+=== The First Contributions
+
+Merc Mud is based on Diku Mud, with Copper and Alfa enhancements.
+
+When we first started, Impy of Fajita Mud answered a lot of our newbie-coder
+questions.
+
+Frag, Tin, Razor, Jordan, Tre, and Matrix play-tested early Merc code.
+
+The Free Software Foundation and DJ Delorie wrote our development tools, and
+distribute them for free, with source.  You can ftp them from prep.ai.mit.edu
+and grape.ecs.clarkson.edu.
+
+
+
+=== New Area Contributions
+
+Vamplestat reworked and extended Miden'nir.
+
+Nirrad contributed the Fire Newt area.
+
+Tyrst contributed Wyvern Tower.
+
+Doctor contributed Galaxy.
+
+Raff contributed Dwarven Catacombs, Dangerous Neighborhood, and Elemental
+Canyon.
+
+PinkF contributed the Mob Factory.
+
+Chris Boggs made the Keep of Mahn-Tor available for public distribution,
+and gave us permission to use it in Merc.
+
+Aod and Cauchy of Generic Mud gave us permission to use Smurf Village, Gnome
+Village, Dwarven Day Care Center, Old Marsh, Draconia, and Olympus.
+
+John Brothers of Silly Mud gave us permission to use Silly areas.  Although we
+haven't taken any yet, we appreciate having 2 megabytes of areas to draw on!
+
+Glop contributed Mega-City One (from the Judge Dredd comic books).
+
+
+
+=== Code and Idea Contributions
+
+Zrin contributed an 'auto-exit' function.
+
+Alander contributed the 'stats over 18 from magic items', as well as the
+new 'who', 'visible', 'commands' commands and some shop code.  We first
+saw a donation pit on Alander's 'Rivers of Mud'.
+
+Grodyn contributed the 'configure' command.
+
+Diavolo contributed the gruesome 'death_cry' function.
+
+Many other imps and players gave us hundreds of suggestions, some of which are
+now realized.  Thanks to you all!
+
+Aod and Cauchy of Generic gave us permission to use Generic code.
+
+John Brothers of Silly gave us permission to use Silly code.  Although we
+haven't used any Silly code yet, we appreciate having it available.
+
+Onethumb, Baka, and Penn of the Drool Co. sent us a long list of ideas,
+which we've included here as 'drool.txt'.
+
+
+
+=== Porting Contributions
+
+Hind and Quin (not the original Quinn of Diku, another Quin) helped on the
+Ultrix port.
+
+Vic contributed the Linux port and 386/BSD ports.
+
+Diavolo contributed the RS/6000 port, including helping to track down a code
+generation bug in the AIX compiler.
+
+Alander helped on the NeXT port.
+
+Shephane Haechler and Frederic Benedetto contributed the Hp/UX port, which is
+one of the more painful machines we've encounterd.
+
+Alan Drew contributed the Mips Risc/OS port.
+
+Trienne contributed the makefile changes for Solaris 2.1.
+
+Oleg contributed the Macintosh port.
+
+Jdpierce contributed the Interactive Systems changes.
+
+
+
+=== Bug Reports and Bug Fixes
+
+Mud Lite, Vego Mud, Final Mud, Rivers of Mud, Ruhr Mud, Chase Mud, and
+Mystic Realms sent us their 'bugs.txt', 'ideas.txt', and 'typos.txt' files.
+These were VERY helpful and we ask that all Merc-based muds e-mail us these
+files from time to time.
+
+While porting Merc to Linux, Vic isolated some mystifying memory management
+problems in the base code.
+
+Abaddon proofread our comm.c and reported several bugs and weak spots.
+Of course, any remaining problems are ours, not his.
+
+Kalgen reported bugs in the 2.0 Alpha release.
+
+Lincoln Myers found an array-read overrun in 'do_pose' in 2.0 Beta.
+
+Grodyn of Mystic Realms sent us several high-quality logs, core dump stack
+traces, and bug reports for 2.0 Beta.  Many other people, including Loki,
+also sent us good beta bug reports.
+
+Morgenes found and fixed the nasty 'aligned object drop corruption'
+in equip_char.
+
+Rivit play-tested the post-2.0-Beta version.
+
+Alander of Rivers of Mud has published *many* bug fixes and changes for
+2.0 on the Merc list, which we've picked up.
+
+Tony Chamberlain published a correct, recursive implementation of
+get_obj_number.
+
+Tuan Doan pointed out a bug in 'check_parry' and 'check_dodge',
+as well as some other rough edges.
+
+Alex found the right fix for the act() problems with channels,
+the 'rstat' problem with room exits, and some other bugs.

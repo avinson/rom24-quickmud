@@ -1,0 +1,75 @@
+Head: The stuff you want above the list of players when they are parsed.
+Charline: What one line for a character should look like when parsed.
+Immline: What one line for an immortal should look like when parsed.
+Tail: The stuff you want below the list of players when they are parsed.
+Master: The global template, where you should stick everything in the order you want.
+
+Head, Charline, and Tail should all be terminated with a ¢ at the point where the
+section should end.
+
+Head and Tail can contain any of the following:
+
+<%mudfullname%> = Where to put the MUD's full name - parsed at boot/refresh
+<%mudtelnet%> = The line containing the MUD's telnet address - parsed at boot/refresh
+<%mudport%> = Where to put the MUD's telnet port - parsed at boot/refresh
+<%mudurl%> = Format for the section containing the MUD's URL - parsed at boot/refresh
+<%plrcount%> = Where to put the player count
+
+Charline and Immline can contain any of the following:
+
+<%charrank%> = Location on a line for a person's rank
+<%charflags%> = Location on a line for a person's statflags
+<%charname%> = Location on a line for a person's name
+<%chartitle%> = Location on a line for a person's title
+
+Master should contain a marker to designate the head, charline, and tail sections:
+
+<%head%> = Where to put everything in your Head: section.
+<%plrline%> = Where to put character lines.
+<%immline%> = Where to put immortal lines.
+<%tail%> = Where to put everything in your Tail: section.
+
+<%plrheader%> = The line it displays for the "players" header
+<%immheader%> = The line it displays for the "immortals" header
+
+plrline and immline will contain multiple entries based on how many of each are on.
+
+Other stuff:
+
+<center> = Directive to cause a line to be centered for 80 column display. Only works on whole lines.
+
+Color is done using the native IMC2 color system which uses tildes (~) before a color tag.
+If your template calls for displaying an actual tilde, it needs to be escaped, like so: ~~
+
+When terminating a section, the ¢ symbol is required. Leaving it out or chaging it will cause you much headache.
+If you can't generate this symbol from your keyboard, cut and paste it into place.
+If you need multiple lines in a section, just press enter when editing. The code will load them up as is.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+An example template:
+
+Head: <center>~R-=[ ~WPlayers on <%mudfullname%> ~R]=-
+<center>~Y-=[ ~Wtelnet://<%mudtelnet%>:<%mudport%> ~Y]=-¢
+
+Tail: ~Y[~WPlayers online: <%plrcount%>~Y] ~Y[~WHomepage: <%mudurl%>~Y]¢
+
+Plrline: <%charrank%>~z[<%charflags%>]~G <%charname%><%chartitle%>¢
+
+Immline: <%charrank%>~z[<%charflags%>]~G <%charname%><%chartitle%>¢
+
+Plrheader: ~B-------------------------------=[ ~WPlayers ~B]=--------------------------------¢
+
+Immheader: ~R-------------------------------=[ ~WImmortals ~R]=--------------------------------¢
+
+Master:
+<%head%>
+
+<%plrheader%>
+
+<%plrline%>
+<%immheader%>
+
+<%immline%>
+<%tail%>
+¢

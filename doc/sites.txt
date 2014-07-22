@@ -1,0 +1,36 @@
+Merc Release 2.1
+Sunday 01 August 1993
+
+Furey	mec@shell.portal.com
+Hatchet	hatchet@uclink.berkeley.edu
+Kahn	michael@uclink.berkeley.edu
+
+
+
+=== Merc-Based Sites
+
+The following muds are based on Merc code.  The implementors of these muds
+add their own changes and features, so don't expect all these muds to look
+alike.  Most of them look VERY different!
+
+To the imps who run these muds ... thanks for sharing your computers with
+us all!
+
+If you would like to be added to (or removed from) to this list, just e-mail
+Furey, Hatchet, or Kahn.
+
+Merc 1:
+	Hidden Worlds	    cns.cscns.com		4000
+	The Land	    nora.gih.no			4000
+	Medievia	    bigboy.cis.temple.edu	4000
+	Mud Lite	    haas.berkeley.edu		4000
+	Mystic Realms	    dikumud.sju.edu		4000
+	Realms of Wind	    ccsun44.csie.nctu.edu.tw	4000
+	Rivers of Mud 	    cie-2.uoregon.edu		9000
+
+Merc 2:
+	Cataclysm	    wagner.musicnet.ua.edu.     4000
+	Fourth Realm	    marble.bu.edu		4000
+	Legend of Winds	    ccsun44.csie.nctu.edu.tw	4040
+	Rivers of Mud 2	    cie-2.uoregon.edu		4000
+	Wisney World	    levant.cs.ohiou.edu		5000

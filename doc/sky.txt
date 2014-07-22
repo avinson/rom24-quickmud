@@ -1,0 +1,95 @@
+Merc Release 2.1
+Sunday 01 August 1993
+
+Furey	mec@shell.portal.com
+Hatchet	hatchet@uclink.berkeley.edu
+Kahn	michael@uclink.berkeley.edu
+
+
+
+=== Blue Sky
+
+It's blue sky time!  These are features we'd like to have in Merc.  We haven't
+designed them, haven't coded them, haven't scheduled them.  They won't be in
+Merc 2.0 and may never be in Merc.
+
+If you code any of these features please send us a copy.
+
+
+
+=== Symbolic Names in Numeric Fields.
+
+We'd like 'fread_number' to understand words such as AFF_SANCTUARY and
+translate them into the appropriate numbers.
+
+
+
+=== New Comm Drivers
+
+Right now comm.c understands only Berkeley Unix networking.  We'd like comm
+drivers for the following operating systems:
+
+	System V Unix
+	VMS
+	OS/2   (single user)
+	FOSSIL (for dialup Merc on bbs's)
+
+
+
+=== Randomization on Area Loading
+
+We'd like to see items loaded with random spells, placed on random mobs, so
+that players have to explore more instead of just having a '#blue' macro that
+goes to the queen spider and kills her for a blue potion.
+
+
+
+=== Mobs Using Magical Items
+
+'Watch, out Jim!  That orc has a wand of fireballs!'
+
+'The queen spider quaffs the blue potion.'
+'The queen spider looks healthier.'
+
+
+
+=== An Arena
+
+A room flag where players can attack players without getting a killer flag, can
+cast offensive spells at players, and death carries no xp or eq loss.  Wanna
+try out a beholder without getting killed?  Just pay enough money and you can
+have one loaded in the arena!
+
+
+
+=== Area Logging
+
+So you can tell if everyone's going to the same area over and over and make the
+area harder.
+
+
+
+=== Merc-to-Merc Portals
+
+The save files are Ascii -- just shoot it over a server-to-server connection.
+
+
+
+=== Protection Against Multi-Playing
+
+RFC 1413 is a good protocol but no one implements it.  :(
+
+
+
+=== Built-in Client
+
+We'd like to incorporate EVERYTHING in Tintin 3 into the server (except for
+multiple sessions -- but even multiple sessions would be good for the MS-DOS
+single-player version).  People use clients anyways.  Why not make it easy on
+them, and give everyone the same advantage.
+
+
+
+=== 'Retire' Command
+
+For those 36th level players who keep hanging around!

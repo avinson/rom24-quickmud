@@ -1,0 +1,115 @@
+Merc Release 2.1
+Sunday 01 August 1993
+
+Furey	mec@shell.portal.com
+Hatchet	hatchet@uclink.berkeley.edu
+Kahn	michael@uclink.berkeley.edu
+
+
+
+=== Commands
+
+The central organizing table for skills and spells is cmd_table, an array
+of type 'struct cmd_type', and is defined in 'interp.c'.
+
+The fields of cmd_table are:
+
+    char *	name;
+
+	The name of the command.  Command lookup is by partial matching on the
+	name; the first match (which also meets level restrictions) is used.
+
+    DO_FUN *	do_fun;
+
+	The function for this command.  A 'do_fun' takes two arguments: the
+	character who is issuing the command and the rest of the argument
+	string after the command name.
+
+    sh_int	position;
+
+	The minimum position for using this command.
+
+    sh_int	level;
+
+	The minimum level for using this command.  This is usually used for
+	restricting certain commands to immortals.
+
+    sh_int	log;
+
+	The type of logging to perform.  LOG_NORMAL commands are logged just
+	when the player is logged.  LOG_ALWAYS commands are always logged.
+	LOG_NEVER commands are never logged, even if the player is logged.
+
+
+
+=== How to Add a Command
+
+(1) Add a line for the command in 'cmd_table' in 'interp.c'.
+
+(2) Add a 'DECLARE_DO_FUN' line for the command function to 'merc.h'.
+
+(3) Write the function and put it into an appropriate 'act_*.c' file.
+
+(4) Write a help section for the function.  See 'help.are' for the format of
+    help entries.  We suggest you start your own file of customized help rather
+    than adding into 'help.are'.  This will make it easier for you to upgrade
+    to future releases of Merc (which will have upgraded 'help.are' files).
+    Merc supports as many help files as you want.
+
+That's ALL there is to it!
+
+
+
+=== Social Commands
+
+Social commands add to the atmosphere of the game.  The social commands are
+contained in 'social_table' in 'interp.c'.  The fields of this table are:
+
+    char *	name;
+
+	The name of the social command.
+
+    char *	char_no_arg;
+
+	The message sent to the character when no argument is given.
+
+    char *	others_no_arg;
+
+	The message sent to others when no argument is given.
+
+    char *	char_found;
+
+	The message sent to the character when a victim is found.
+
+    char *	others_found;
+
+	The message sent to others when a victim is found.
+
+    char *	vict_found;
+
+	The message sent to the victim when a victim is found.
+
+    char *	char_auto;
+
+	The message sent to the character when the victim IS the character.
+
+    char *	others_auto;
+
+	The message sent to others when the victim IS the character.
+
+All of these messages are 'act' messages and may use any '$' sequences (the
+'act' function is documented in 'act.txt').  If the command is not found in the
+regular command table, the function 'check_social' looks in 'social_table' for
+a match.  This is the last stop before rejecting the command.
+
+Socials without arguments, such as 'hop', may have NULL for the strings sent
+when arguments are present.
+
+
+
+=== How to Add a Social Command
+
+(1) Write a new section into 'social_table' in 'interp.c' with the eight
+    messages in it.  The sections need not be alphabetized.
+
+That's ALL there is to it.

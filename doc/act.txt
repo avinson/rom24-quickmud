@@ -1,0 +1,133 @@
+Merc Release 2.1
+Sunday 01 August 1993
+
+Furey	mec@shell.portal.com
+Hatchet	hatchet@uclink.berkeley.edu
+Kahn	michael@uclink.berkeley.edu
+
+
+
+=== The function 'send_to_char'
+
+The central output functions are 'send_to_char' and 'act'.  Of the two,
+'send_to_char' is much simpler, faster, and less powerful.
+
+The interface for send_to_char is:
+
+    void send_to_char( const char *txt, CHAR_DATA *ch )
+
+The string 'txt' is sent to the character 'ch'.  That's all there is to it.
+
+
+
+=== The function 'act'
+
+The function 'act' is much hairier.  The following section is a precise
+reference guide.  If you don't already have some notion of what 'act' format
+strings look like, then you should read some code which uses 'act' (such as
+some of the spell functions in magic.c) to get a concrete introduction to this
+function.
+
+    void act( const char *str, CHAR_DATA *ch,
+	const void *arg1, const void *arg2, int type )
+
+    const char *str;
+
+	This is a format string, with formatting specifications introduced
+	by '$' (just as 'printf' introduces its formatting sequences with '%').
+	Typically this is a complete sentence with a subject and an object.
+
+    CHAR_DATA *ch;
+
+	This is the subject of the sentence.
+
+    const void *arg1;
+
+	This is the object of the sentence.  This may be either an object or
+	possibly a text string.
+
+    const void *arg2;
+
+	This is the target of the sentence, as well as possibly the object of
+	the sentence.  This may be either a victim, an object, or possibly a
+	text string.
+
+    int type;
+
+	This is the 'to' type of the sentence.  Values are:
+
+	    TO_CHAR	Send only to 'ch'.
+	    TO_VICT	Send only to 'arg2' (and then only if arg2 != ch).
+	    TO_ROOM	Send to all chars in room except 'ch'.
+	    TO_NOTVICT	Send to all chars in room except 'ch' and 'vict'.
+
+	In every case, only characters in the same room as 'ch' are considered.
+
+Each awake character in the same room as 'ch' is considered for output.  (Thus
+'ch' must always be a legitimate character whose location is not NOWHERE).  If
+the target character meets the 'type' requirements, then the formatting string
+'str' is used to construct an output string, with '$' sequences substituted
+using values from 'ch', 'arg1', and 'arg2'.
+
+In the substitution of '$' sequences, attention is paid to visibility by
+calling 'can_see' and 'can_see_obj' as needed.
+
+The first character of the output string is always capitalized.
+
+
+
+
+=== The '$' sequences
+
+Here are all the '$' sequences supported by 'act':
+
+    $t
+	Result is the 'arg1' argument interpreted as a string.
+
+    $T
+	Result is the 'arg2' argument interpreted as a string.
+
+    $n
+	Result is the name of 'ch'.  If 'ch' is not visible to the target
+	character, result is the string 'someone'.
+
+    $N
+	Result is the name of 'arg2' (considered as a victim).  If 'arg2' is
+	not visible to the target character, result is the string 'someone'.
+
+    $e
+	Result is 'he', 'she', or 'it', depending on the sex of 'ch'.
+
+    $E
+	Result is 'he', 'she', or 'it', depending on the sex of 'arg2'
+	(considered as a victim).
+
+    $m
+	Result is 'him', 'her', or 'it', depending on the sex of 'ch'.
+
+    $M
+	Result is 'him', 'her', or 'it', depending on the sex of 'arg2'
+	(considered as a victim).
+
+    $s
+	Result is 'his', 'her', or 'its', depending on the sex of 'ch'.
+
+    $S
+	Result is 'his', 'her', or 'its', depending on the sex of 'arg2'
+	(considered as a victim).
+
+    $p
+	Result is the short description of 'arg1' (considered as an object).
+	If 'arg1' is invisible to the target character, result is the string
+	'something'.
+
+    $P
+	Result is the short description of 'arg2' (considered as an object).
+	If 'arg2' is invisible to the target character, result is the string
+	'something'.
+
+    $d
+	Result is the first word in 'arg2', considered as a string.  If 'arg2'
+	is NULL, result is the string 'door'.  This is meant for extracting the
+	name from a door's keyword list, but may be used in general for other
+	keyword lists.

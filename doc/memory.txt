@@ -1,0 +1,137 @@
+Merc Release 2.1
+Sunday 01 August 1993
+
+Furey	mec@shell.portal.com
+Hatchet	hatchet@uclink.berkeley.edu
+Kahn	michael@uclink.berkeley.edu
+
+
+
+=== Memory Management Overview
+
+Merc contains the following memory regions: run file memory; stack; string
+space; and permanent space.  The approximate sizes of these regions are:
+
+    Run file memory	 300 k
+    Stack		  20 k
+    String space	1020 k
+    Permanent space	1020 k
+    TOTAL		2360 k
+
+
+
+=== Run File Memory
+
+The merc executable file has about 256k of code, 8k of initialized data, and
+32k of uninitialized data.  This was measured on a Sun 4 running SunOS 4.1.3
+with gcc version 2.3.3.
+
+This size is small compared to the total size, and there is little you can do
+to change it.
+
+
+
+=== Stack
+
+We have never measured stack usage, but estimate it's somewhere between 10k and
+30k.  Merc has a wide, shallow calling tree.  The largest consumers of stack
+memory are local buffers of size MAX_STRING_LENGTH.
+
+If you port Merc to a machine with 64k or less of stack, you should instrument
+your object code with stack-usage measurements.  Most compilers for machines in
+this range have an option to do this.
+
+
+
+=== String Space and fread_string()
+
+At boot time, the function fread_string() is used to read in ~-delimited
+strings from area files.  These strings are stored into string space.  After
+all of the area files are read in, string space is read-only for the duration
+of the program.
+
+String space is allocated once on bootup and is not expandable.  As
+distributed, Merc 2.1 uses 1024k of string space.  You can lower or raise
+this number by editing the value of 'MAX_STRING' in 'db.c'.
+
+Duplicate strings are stored only once into string space; hashing is used to
+achieve this.  The hash code for a string is simply its length.  Each string in
+string space is prefaced with a backpointer to the previous string with the
+same hash code.  (Aliasing through a union is needed to read and write these
+pointers, because they can start at any byte boundary, and thus are
+misaligned).
+
+When fread_string() reads a new string, it creates the string at the end of
+string space.  It then finds the first hash pointer for that length and follows
+the thread of hash pointers, looking for an already existing string with the
+same contents.  Strings in the hash chain are checked newest-first, which
+benefits from the usual construction of area files, where duplicates are
+usually duplicates of something seen recently.
+
+If fread_string() finds that the new string is a duplicate, it simply discards
+the new string and returns a pointer to the existing string.  If the string is
+new, it leaves it at the end of string space, fills in the new hash pointers,
+and returns the new string.
+
+After area-file loading is over, fread_string is also used to read player
+files.  In this case, new strings are not appended to string space, but instead
+are simply handed to str_dup().  Thus the amount of string space used is fixed
+at area-file loading time.
+
+The functions str_dup() and free_string() take advantage of string space.  If a
+string being duplicated is in string space, str_dup() simply returns the same
+pointer.  If a string being freed is in string space, free_string() simply does
+nothing.  This strategy not only saves megabytes of memory through string
+re-use, but also saves processor time as well.
+
+Thus a cheap method is needed for deciding whether a given string is in string
+space.  This is one reason why strings are stored in one contiguous region of
+size MAX_STRING.  (The hash chains, however, would still work with
+noncontiguous allocation).
+
+Collecting all strings into one region has another advantage: locality of
+reference.  Most strings are unused most of the time.  Because they are not
+interspersed with other dynamically allocated memory, a virtual memory
+operating system can page out almost all of the string space without affecting
+performance.
+
+After boot time the unused end of string space is wasted.  This amounts to
+about 160k in Merc 2.1.  On a VM system this space is unused space is paged
+out quickly, so it doesn't hurt to leave it alone.  However, you can recover
+this space easily by lowering MAX_STRING.  If perchance you set MAX_STRING too
+low you will get a boot-time error, but never any operational errors.
+
+If you add a lot of areas you may need to increase MAX_STRING.  Again, Merc
+will tell you when you've run out.
+
+
+
+=== Permanent space
+
+This space holds everything else: all of the area file non-string data; all of
+the created mobiles and objects; descriptor and player character structures;
+you name it.
+
+This space is dynamically allocated from calloc() in large blocks, which are
+carved up and handed out as needed by alloc_perm().  As distributed, Merc 2.1
+uses about 1024k of permanent space.
+
+Unlike string space, permanent space grows on demand; alloc_perm() calloc's and
+carves up as many blocks as needed as the game runs.
+
+You can adjust the block size by changing MAX_PERM_BLOCK in 'db.c'.  Adjustment
+will have only a minor effect on space and time usage.  If you port Merc to a 
+new system with a 64k or 32k limit on calloc() size, you could simply change
+MAX_PERM_BLOCK to the largest calloc'able block on your system.
+
+Merc never calls free() to return memory.  Instead, memory is recycled for
+future use.  This has two advantages: it's faster to recycle a block than to
+call free(), and it's faster to allocate a block from a free list than to
+allocate one from calloc() or alloc_perm().  Most of the structure types have
+their own free lists: char_free, obj_free, affect_free, et cetera.
+
+Variable-sized blocks don't fit the per-structure-type free-list model.  The
+functions alloc_mem() and free_mem() manage blocks of arbitrary size.  They
+actually work by maintaining fixed-size lists for just a few supported sizes
+and rounding requests up to a supported size.  This is extremely fast; because
+there are so few variable-sized blocks, the space penalty is inconsequential.

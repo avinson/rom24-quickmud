@@ -1,0 +1,299 @@
+EXAMPLES
+--------
+
+Here are some MOBprograms I have been using to test this release. The
+mobiles are from midgaard.are in the stock ROM 2.4b2.
+
+---------------------------------------------------------------------------
+#MOBILES
+
+---------------------------------------------------------------------------
+1. The baker has two triggers, the other is to greet all characters who
+   enter the shop and the other to react to phrase "fine day" when
+   spoken aloud in the shop. See programs #3001 and #3002 in the #MOBPROGS
+   section.
+
+---------------------------------------------------------------------------
+#3001
+baker~
+the baker~
+The baker looks at you calmly, wiping flour from his face with one hand.
+~
+A fat, nice looking baker. But you can see that he has many scars on his
+body.
+~
+human~
+ABV 0 900 0
+23 0 1d1+999 1d1+99 1d8+20 beating
+-15 -15 -15 -15
+CDF ABCD 0 0
+stand stand male 500
+0 0 medium 0
+M grall  3001 100~
+M speech 3002 fine day~
+---------------------------------------------------------------------------
+
+2. The fido has several triggers related to fighting. When attacked, the fido
+   will activate program #3062. Every combat round there's a 75% chance that
+   the fido will call program #3063. The fido is cowardly, so when its hit
+   point percentage falls below 70% it will try to surrender to the attacker.
+   When the fido dies, it will call program #3064. However, if the attacker
+   surrenders to the fido, the beast will call program #3071
+
+---------------------------------------------------------------------------
+#3062
+fido dog~
+the beastly fido~
+A beastly fido is here.
+~
+Fido is a small dog that has a foul smell and pieces of rotted meat hanging
+around its teeth.
+~
+fido~
+AFGHU 0 -200 0
+0 0 1d6+4 1d1+99 1d4+0 bite
+10 10 10 10
+0 0 0 0
+stand stand either 0
+0 0 small 0
+M kill  3062 100~
+M fight 3063 75~
+M hpcnt 3072 70~
+M death 3064 100~
+M surr  3071 100~
+---------------------------------------------------------------------------
+
+3. This vagabond reacts to being given a "ring" (for no particular reason)
+   and to receiving some money (more than 10 silver). Keyword "ring" could
+   be replaced with an object vnum.
+
+---------------------------------------------------------------------------
+#3063
+vagabond~
+the vagabond~
+A vagabond is here, looking for victims.
+~
+He looks pretty mean.
+~
+human~
+ACS 0 -200 0
+5 1 2d6+60 1d1+99 1d6+1 punch
+7 5 5 10
+BJNQ 0 0 C
+stand stand male 18
+0 0 medium 0
+M give  3003 ring~
+M bribe 3004 10~
+---------------------------------------------------------------------------
+
+4. This drunk demonstrates REMEMBER and DELAY actions. When someone enters
+   the bar, the drunk will activate program #3066. When the delay timer
+   of the drunk expires, it will execute program #3067.
+
+---------------------------------------------------------------------------
+#3064
+drunk~
+the drunk~
+A singing, happy drunk wanders around, singing about Moria.
+~
+A drunk who seems to be too happy, and to carry too much money.
+~
+human~
+AG 0 400 0
+2 -1 2d6+22 1d1+99 1d6+0 beating
+8 8 8 10
+U 0 0 C
+stand stand male 65
+0 0 medium 0
+M greet 3067 100~
+M delay 3068 100~
+---------------------------------------------------------------------------
+
+5. The shopkeeper is greets customers as they leave his shop (south, exit
+   number 2).
+
+---------------------------------------------------------------------------
+#3070
+shopkeeper old man~
+the ancient potion-brewer~
+An old man eyes you greedily.
+The old man says, 'Would you like to buy a nice love potion?'
+~
+He looks very dangerous.  I wouldn't try to rob him.
+~
+human~
+ABQRV DEF 1000 0
+32 0 1d1+999 1d1+999 10d10+10 magic
+-15 -15 -15 -15
+FGH ABCD 0 0
+stand stand male 5000
+0 0 medium 0
+M exit 3070 2~
+---------------------------------------------------------------------------
+
+#MOBPROGS
+
+---------------------------------------------------------------------------
+1. The baker will greet people arriving to his shop. This particular baker
+   is a real casanova and will pay special attention to ladies.
+
+---------------------------------------------------------------------------
+#3001
+if isimmort $n
+  say Greetings, master $N!
+  bow
+else
+  if sex $n < 2
+    say Hello! How may I serve you?
+    chuckle
+  else
+    say Good day, milady! How may I be of help today?
+    wink
+  endif
+endif
+~
+---------------------------------------------------------------------------
+
+1. This program demonstrates 'affected' if_check.
+
+---------------------------------------------------------------------------
+#3002
+if affected $n flying
+or affected $n haste
+  say My, aren't you in a hurry!
+endif
+say Yes, it's a splendid day, isn't it?
+smile
+~
+---------------------------------------------------------------------------
+
+2. When given a ring, the vagabond will return it to the giver.
+
+---------------------------------------------------------------------------
+#3003
+say What do you want me to do with this?
+give $o $n
+~
+---------------------------------------------------------------------------
+
+2. When the vagabond is given more than 10 silver, it checks if the
+   giver is below lvl 5. If so, the vagabond will try to rob the
+   kind soul!
+
+---------------------------------------------------------------------------
+#3004
+if sex $n < 2
+  say Thank ye, kind sir!
+else
+  say Thank ye, milady!
+endif
+if level $n < 5
+  say Since you have money in abundance, let me share your wealth!
+  mob kill $n
+endif
+~
+---------------------------------------------------------------------------
+
+3. When the fido is attacked, it will simply emote something:
+
+---------------------------------------------------------------------------
+#3062
+emote yelps in anger!
+~
+---------------------------------------------------------------------------
+
+3. Every round of combat the fido will make noise. Note the separate
+   commands for echoing to the opponent and to the room.
+
+---------------------------------------------------------------------------
+#3063
+mob echoat $n $I barks and snarls at you!
+mob echoaround $n $I barks and snarls at $n!
+~
+---------------------------------------------------------------------------
+
+3. A nasty surprise! When the fido is killed, it will explode, causing
+   minor and non-lethal damage to everyone in the room. The emote is
+   necessary since mob damage will not echo anything.
+
+---------------------------------------------------------------------------
+#3064
+emote explodes!
+mob damage all 5 10 nokill
+~
+---------------------------------------------------------------------------
+
+3. When someone surrenders to the fido, it is amused:
+
+---------------------------------------------------------------------------
+#3065
+laugh
+growl
+~
+---------------------------------------------------------------------------
+
+3. This is what happens when the fido's hit points fall below 75% of the
+   maximum:
+
+---------------------------------------------------------------------------
+#3066
+whimper
+surrender
+~
+---------------------------------------------------------------------------
+
+4. Ok, this is the most complex of all the examples here.
+   When the drunk sees someone enter, it will check if it already has
+   a target (someone else has activated the delay timer). If it doesn't
+   have a target, it will choose the person who activated the trigger
+   (mob remember) and set the delay (mob delay 5).
+
+---------------------------------------------------------------------------
+#3067
+if isdelay $i
+  break
+else
+  mob echoat $n $I rises and begins to wobble towards you...
+  mob echoaround$n $I rises and begins to wobble towards $N...
+  mob remember $n
+  mob delay 5
+endif
+~
+---------------------------------------------------------------------------
+
+4. This program activates 5*PULSE_MOBILE after the previous program.
+   The drunk will check if the target is still present (hastarget).
+   If the target ($q) is in the room, the drunk will be sick all over the
+   poor sod. Finally, the drunk will forget the target and begin to wait
+   for another victim.
+
+---------------------------------------------------------------------------
+#3068
+if hastarget $i
+  puke $q
+  say S-sorry, matey...
+  hiccup
+else
+mob forget
+endif
+~
+---------------------------------------------------------------------------
+
+5. This demonstrates exit trigger. As exit trigger blocks the exit, the
+   mobile has to transfer the character outside the shop (location 3046).
+
+---------------------------------------------------------------------------
+#3070
+if money $n > 10000
+  say Do come again anytime, $N!
+else
+  say Come back when you've got more money!
+endif
+mob transfer $n 3046
+~
+---------------------------------------------------------------------------
+
+   MOBROGS section is terminated with:
+
+---------------------------------------------------------------------------
+#0

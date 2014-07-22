@@ -1,0 +1,101 @@
+Merc Release 2.1
+Sunday 01 August 1993
+
+Furey	mec@shell.portal.com
+Hatchet	hatchet@uclink.berkeley.edu
+Kahn	michael@uclink.berkeley.edu
+
+
+
+=== Player File Format
+
+Player files are ascii files.
+
+A player file contains a player section followed by one or more object
+sections.  Each section contains several lines.  Each line contains a
+keyword followed by a value.
+
+An old Internet dictum says 'be conservative in what you send and liberal
+in what you accept'.  Thus Merc writes player files in a fixed order, but
+accepts flexible ordering, partial files, et cetera.
+
+There are two section types: #PLAYER and #OBJECT.  The #PLAYER section
+defines player values.  Each #OBJECT section defines one object.  A third
+section type, #MOB, is partially implemented and may be implemented in a
+future release.
+
+Merc writes one #PLAYER section per file, but will read multiple sections.
+If the same value is specified twice the later value generally overrides
+earlier values; some lines, such as the 'Affect line', just append more
+affects.  If a value is not specified, some default value is used.
+
+Players are saved with their equipment on.  Thus, the values in the #PLAYER
+section reflect current equipment applies, including 'Hitroll', 'Damroll',
+'Armor', and 'AttrMod', as well as hit points, mana, move, and others.
+Thus, great care is needed when adding or deleting objects which a player
+is currently wearing.
+
+A #OBJECT section contains all the object values, including the object's
+current wear location.  Objects which have been 'oset' retain all of their
+values.  Again, editing an object which is currently being worn requires
+care; the corresponding #PLAYER state must also be changed to match.
+
+Each #OBJECT has a nesting level.  Objects in inventory or equipment list have
+nesting level 0.  Objects inside a container in inventory or equipment list
+have nesting level 1.  Objects inside a level-1 object are level 2, et cetera.
+Objects deeper than nesting level 100 are quietly discarded.  This nesting
+level is used to reconstruct container contents when loading objects.  Thus,
+if you delete a container from a file, its objects are likely to be loaded
+inside the previous object; and if that's not a container, the player will be
+unable to get them out of the object.  To avoid this problem, reset the
+nesting level of each contained object to 0.
+
+Objects are stored in the file in reverse inventory-order list.  This is not
+pretty, but it allows the use of standard 'obj_to_obj' and 'obj_to_char' calls
+to construct the object lists.
+
+You may add new fields to players and objects.  Because of the line-oriented
+ascii format, changing a structure size in 'merc.h' will never invalidate a
+player file.   Naturally, you must ensure that when an old file which does
+not contain a line for a new field is read in, the new field is set to some
+reasonable default value.  E.g., if you add a 'home town' name for players,
+then initialize it to 'Midgaard' before reading in the player file, so that
+old players get the 'Midgaard' value, and new players get whatever value is
+on that line of their file.
+
+Similarly if you delete a field from the player or object structure, you
+must leave the parsing line for it in 'fread_char' or 'fread_obj'; simply
+assign it into a dummy variable.  This allows your old player files to
+continue loading.
+
+
+
+=== How to Add a New Char Field
+
+(1) Add the field to the appropriate structure in 'merc.h'.
+
+(2) Initialize the field in 'create_char' or 'clear_char' in 'db.c'.
+
+(3) Initialize the field in 'load_char_obj' in 'save.c' if needed.
+    Make sure that old players which do not have the field are
+    initialized to a reasonable value.
+
+(4) Add lines to write out the field in 'fwrite_char' in 'save.c'.
+
+(5) Add lines to read in the field in 'fread_char' in 'save.c'.
+
+
+
+=== How to Add a New Object Field
+
+(1) Add the field to the appropriate structure in 'merc.h'.
+
+(2) Initialize the field in 'create_object' in 'db.c'.
+
+(3) Initialize the field in 'fread_obj' in 'save.c' if needed.
+    Make sure that objects which do not have the field are
+    initialized to a reasonable value.
+
+(4) Add lines to write out the field in 'fwrite_obj' in 'save.c'.
+
+(5) Add lines to read in the field in 'fread_obj' in 'save.c'.

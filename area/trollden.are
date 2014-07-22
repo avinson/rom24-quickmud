@@ -1,0 +1,373 @@
+#AREA
+trollden.are~
+Troll Den~
+{10 15} Merc    Troll Den~
+2800 2899
+
+#MOBILES
+#2800
+oldstyle guardian beast~
+the guardian beast~
+A guardian beast stares at you and snarls in rage.
+~
+Jet black fur covers this beast.  You stare at his two huge red eyes.  You can
+count at least 50 teeth on this monster.  You can't tell whether it is blood or
+saliva dripping from the beast's jaw.  The guardian beast snarls again.
+~
+human~
+ABCFG DPQ -200 0
+7 0 2d6+85 3d9+100 1d8+1 none
+4 4 4 9
+EFNU 0 0 0
+stand stand male 0
+0 0 medium 0
+#2801
+oldstyle young troll~
+the young troll~
+A young troll is sitting down, chewing on a bone.
+~
+He is a tall, wiry, furry humanoid.
+Your eyes lock with his.  He smiles, puts down his bone, and reaches for one
+of yours!!
+~
+human~
+ACFG P -500 0
+6 0 2d7+71 3d9+100 1d7+1 none
+4 4 4 9
+EFNU 0 0 0
+sit stand male 25
+0 0 medium 0
+#2802
+oldstyle medium troll~
+the medium troll~
+A troll is grooming his pet, a guardian beast.
+~
+He is a tall, lean, furry humanoid.
+He is busy licking the ticks off of his beast.
+His eyes dart toward you, as he realizes you are one third his size.
+~
+human~
+ABCFG P -500 0
+8 0 2d7+96 4d9+100 1d7+2 none
+3 3 3 9
+EFNU 0 0 0
+stand stand male 75
+0 0 medium 0
+#2803
+oldstyle baby troll~
+a baby troll~
+A baby troll is playing Doctor with a cadaver.
+~
+He is a large, chubby, furry humanoid.
+He is trying to stuff an arm in a hole in the wall.
+He notices you and gargles "WANNA JOIN?".
+~
+human~
+ABCF P -100 0
+5 0 2d6+60 2d9+100 1d6+1 none
+5 5 5 9
+EFNU 0 0 0
+sit stand male 12
+0 0 medium 0
+#2804
+oldstyle giant troll~
+the giant troll~
+A giant troll is lying on a pile of carnage, pleasing his mistress.
+~
+He is a gigantic, muscular, furry humanoid.
+He gasps as he notices your intrusion.
+You gasp as you realize you have intruded upon his acts of passion!
+~
+giant~
+ABCFG P -1000 0
+13 0 2d10+170 6d9+100 2d5+3 none
+-1 -1 -1 8
+EFNR 0 0 0
+rest stand male 150
+0 0 medium 0
+#2805
+oldstyle large troll female~
+the large female troll~
+A large female troll is lying on the pile of carnage, blissfully writhing.
+~
+She is a huge, grotesque, furry humanoid.
+She moans in passion but gasps as she notices you.
+Her smiles turn into snarls as she screams at you!
+~
+human~
+ABCFG P -800 0
+11 0 2d8+134 5d9+100 1d10+2 none
+1 1 1 8
+EFNU 0 0 0
+rest stand female 125
+0 0 medium 0
+#2806
+oldstyle fat worm~
+a fat worm~
+A fat worm scurries around, looking for food.
+~
+It is thick and long.  You can't find a head on this thing.
+It moves quickly, from corpse to corpse.
+~
+human~
+ACFH PQ 0 0
+3 0 2d6+35 1d9+100 1d6+0 none
+7 7 7 10
+EFNU 0 0 0
+stand stand none 0
+0 0 medium 0
+#2807
+oldstyle roving beast~
+the roving beast~
+A roving beast is searching for prey.
+~
+Jet black fur covers this beast.
+You stare at his two huge red eyes.  You can count at least 50 teeth on this
+beast.  You can't tell whether it is blood or saliva dripping from the beast's
+jaw.  The roving beast snarls at you.
+~
+human~
+ABCFG DP -200 0
+7 0 2d6+85 3d9+100 1d8+1 none
+4 4 4 9
+EFNU 0 0 0
+stand stand male 0
+0 0 medium 0
+#2808
+oldstyle medium troll~
+the medium troll~
+A troll is wandering around, attending to his duties.
+~
+He is a tall, lean, furry humanoid.
+He notices you, and is satisfied to find what he is looking for.
+He advances toward you.
+~
+human~
+ACFG P -500 0
+8 0 2d7+96 4d9+100 1d7+2 none
+3 3 3 9
+EFNU 0 0 0
+stand stand male 75
+0 0 medium 0
+#0
+
+#OBJECTS
+#2800
+corpse cadaver~
+the cadaver-toy~
+A half eaten corpse is laying here~
+oldstyle~
+container 0 A
+30 0 0 30 100
+0 500 1 P
+#2801
+pile rotting heap bed~
+the heap of carnage~
+There is a bed made of carnage here.~
+oldstyle~
+container 0 0
+30 0 0 30 100
+0 0 0 P
+#2802
+trollskin troll skin~
+the troll skin~
+The filthy hide of a beast is laying here.~
+oldstyle~
+armor 0 AK
+5 5 5 0 0
+12 200 1380 P
+A
+1 1
+E
+troll skin~
+This is the skin from a huge (and dead) beast.  It looks bad, smells bad,
+and feels bad.
+~
+#2803
+ring opal~
+an opal ring~
+A ring of black opal lies here gathering dust.~
+oldstyle~
+jewelry G AB
+0 0 0 0 0
+20 10 1150 P
+A
+19 2
+E
+ring opal~
+It is a full circle of opal, smooth and simple.
+~
+#2804
+leather belt~
+a leather belt~
+An old leather belt is left on the floor.~
+oldstyle~
+armor G AL
+6 6 6 0 0
+15 50 1050 P
+E
+leather belt~
+This old, smelly belt looks like it is barely better than rotting cloth.
+~
+#2805
+bone cracked~
+a cracked bone~
+A cracked piece of bone lies here.~
+oldstyle~
+weapon 0 AN
+mace 3 3 pound 0
+6 30 350 P
+A
+18 -1
+A
+19 -1
+E
+bone~
+This piece of bone looks sturdy enough to be used as a weapon, but you
+wouldn't want to entrust your life to it.
+~
+#0
+
+#ROOMS
+#2801
+Wastedump~
+This room is filled with bone shards and fragments.  Something (or things)
+very big lives here.  A small plaque is on the wall.
+~
+0 AD 0
+D0
+You reach civilization again.
+~
+~
+0 0 6124
+D2
+You find the stench is stronger inside.
+~
+~
+0 0 2803
+E
+plaque~
+This zone (trollden) is created by MERC for any MERC Mud.
+copyright 1992
+~
+S
+#2802
+Troll's Larder~
+This room has blood and grime all over the walls.  You see maggots and other
+insects crawling up them.  The resident is definitely uncivilized.  Half-eaten
+and rotting body parts scatter the floor, each having its own colony of flies,
+worms, and maggots.
+~
+0 AD 0
+D1
+You welcome the fresh breeze coming from the east, but wrinkle your nose when
+the stench bears down on you once more.
+~
+~
+0 0 2803
+E
+Half-eaten body rotting corpse~
+YUCK!  You find worms crawling in and out this poor unfortunate former human.
+~
+S
+#2803
+Troll's Living Room~
+This small cave opens to the north, south, east, and west.  You are
+overcome by the stench and consider turning around.
+~
+0 AD 0
+D0
+There is a trail of bone shards and fragments leading north.
+~
+~
+0 0 2801
+D1
+Good God!  You spy corpses all over the floor in there.  It looks like a
+virtual graveyard in there.
+~
+~
+0 0 2804
+D2
+Whoa!  You reel back from the stench.  You believe you have found the source
+of this bad smell.
+~
+~
+0 0 2805
+D3
+You puke as you watch worms crawl between this room and the room west of here
+as they bore new holes into a corpse laying on the far wall of the west room.
+~
+~
+0 0 2802
+S
+#2804
+The Playpen~
+The walls are covered with blood (and body parts!?!?).  Plastered on the far
+wall you see what looks like a human arm.  A half-eaten body lies here with
+its chest ripped out.  The predator seems disinterested in it.
+~
+0 AD 0
+D3
+You welcome the fresh breeze coming from the west, but wrinkle your nose when
+the stench bears down on you once more.
+~
+~
+0 0 2803
+E
+arm rotting~
+This reminds you of what a baby would do to its formula during dinnertime,
+plastering it on the wall.
+~
+S
+#2805
+Troll's Bedroom~
+Obviously something REALLY big lives here.  The stench is quite unbearable.
+There are piles and piles of rotten and half-eaten body parts of animals,
+orcs, (and humans?) strewn across the floor.  There is a larger, more
+prominent pile of rotten parts over in a corner.  It seems to have been
+flattened by something.
+~
+0 ACD 5
+D0
+You welcome the fresh breeze coming from the north, but wrinkle your nose when
+the stench bears down on you once more.
+~
+~
+0 0 2803
+S
+#0
+
+#RESETS
+M 0 2800   2 2801  1	* the guardian beast
+O 0 2805  10 2801	* a cracked bone
+M 0 2801   2 2802  2	* the young troll
+M 0 2801   2 2802  2	* the young troll
+M 0 2802   1 2803  1	* the medium troll
+O 0 2800  10 2804	* the cadaver-toy
+P 1 2804  -1 2800  1	*   a leather belt
+M 0 2800   2 2803  1	* the guardian beast
+M 0 2803   4 2804  4	* a baby troll
+M 0 2803   4 2804  4	* a baby troll
+M 0 2803   4 2804  4	* a baby troll
+M 0 2803   4 2804  4	* a baby troll
+M 0 2804   1 2805  1	* the giant troll
+E 1 2802   5   12	*   the troll skin
+M 0 2805   1 2805  1	* the large female troll
+O 0 2801  10 2805	* the heap of carnage
+P 1 2803   5 2801  1	*   an opal ring
+M 0 2806  10 2803  4	* a fat worm
+M 0 2806  10 2803  4	* a fat worm
+M 0 2806  10 2802  4	* a fat worm
+M 0 2806  10 2802  4	* a fat worm
+M 0 2806  10 2804  2	* a fat worm
+M 0 2807   1 2802  1	* the roving beast
+M 0 2808   1 2803  1	* the medium troll
+S
+
+#SHOPS
+0
+
+#SPECIALS
+S
+
+#$

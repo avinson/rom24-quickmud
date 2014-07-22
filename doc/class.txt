@@ -1,0 +1,122 @@
+Merc Release 2.1
+Sunday 01 August 1993
+
+Furey	mec@shell.portal.com
+Hatchet	hatchet@uclink.berkeley.edu
+Kahn	michael@uclink.berkeley.edu
+
+
+
+=== Classes
+
+The central organizing table for classes is class_table, which is an array of
+type 'struct class_type' (defined in 'merc.h') and is defined in 'const.c'.
+Mobs have class 0, and players have classes 0 through MAX_CLASS-1.
+
+The fields of class_table are:
+
+    char *	who_name;
+
+	This three-letter name is used for the 'who' listing.  It's also used
+	for the list of classes shown to new characters for selecting a class,
+	and for matching the player's input in selecting a class.
+
+    sh_int	attr_prime;
+
+	This attribute is initialized to 16 for new chars of this class.  It
+	costs only three practices to train one's prime attribute, versus five
+	practices for any other attribute.  In addition, characters may
+	increase their prime attribute (only) over 18 by using magic items.
+
+    sh_int	weapon;
+
+	This object (vnum) is given to new characters of this class for their
+	first weapon.
+
+    sh_int	guild;
+
+	This room (vnum) is off limits to characters of other classes.
+
+    sh_int	skill_adept;
+
+	This is the maximum level to which a character of this class may train
+	a skill or spell.
+
+    sh_int	thac0_00;		/* Thac0 for level  0		*/
+    sh_int	thac0_32;		/* Thac0 for level 32		*/
+
+	These are thac0's (To Hit Armor Class 0) for a level 0 character and a
+	level 32 character of this class.  Thac0 for any particular level is
+	computed by linear interpolation.
+
+    sh_int	hp_min;			/* Min hp gained on leveling	*/
+    sh_int	hp_max;			/* Max hp gained on leveling	*/
+    bool	fMana;			/* Class gains mana on level	*/
+
+	The fields hp_min and hp_max are the minimum and maximum hit points
+	gained on advancing a level (in addition to the constitution bonus).
+	If fMana is true, than the class gains mana when leveling.
+
+
+
+=== Other class-specific tables
+
+(1) In const.c, skill_table contains the level needed for each class to use a
+    particular skill or spell.  If the class cannot use that skill or spell,
+    the level needed is set to 37, so that immortals (angels and above) can use
+    it.  This table is indexed first by sn (skill/spell number) and then by
+    class.
+
+(2) In const.c, title_table contains the titles, indexed by class, then by
+    level, then by sex.  There are two titles for each class at each level.
+
+(3) In act_comm.c, pose_table contains the pose messages, indexed first by
+    level, and then by class.  There are two messages for each class at each
+    level, up to a certain maximum (where we got tired of writing messages).
+
+
+
+
+=== Adding a new class
+
+Here's how to add a new class:
+
+(1) Increment 'MAX_CLASS' in 'merc.h'
+
+(2) Add a new entry to 'class_table' in 'const.c'.
+
+(3) Add sn level numbers to 'skill_table' in 'const.c' for the new class.  Set
+    the level to 37 for all skills or spells which the class is unable to use.
+
+(4) Add an entire new block of titles to 'title_table' in 'const.c'.
+
+(5) Add new lines to 'pose_table' in act_comm.c.  You need two lines at each
+    level for that class.  To keep the 'pose' messages from looking like
+    'emote' messages, avoid putting the name of the character (the '$n'
+    construct) at the beginning of the line.
+
+
+
+
+=== Immortal Levels
+
+Here are the immortal levels:
+
+36	Hero	This is the highest level ordinary players can reach by
+		accumulating experience points.  Heros and heroines can
+		participate in 'immtalk' and read notes addressed to
+		'immortal'.  They no longer receive experience points.
+
+37	Angel	Immortals at this level can observe most aspects of the game,
+		but have very few active commands.  One command they do have
+		is 'switch' so that they can help run quests.
+
+38	Deity	Immortals at this level have all the commands needed to affect
+		game elements within the game, such as 'mload', 'mset',
+		'oload', and 'oset'.
+
+39	Supreme	Immortals at this level have site and connection level
+		commands, such as 'reboot' and 'shutdown'.  In fact, this level
+		has access to all immortal commands except 'advance'.
+
+40	God	Immortals at this level have 'advance'.

@@ -1,0 +1,130 @@
+Merc Release 2.1
+Sunday 01 August 1993
+
+Furey	mec@shell.portal.com
+Hatchet	hatchet@uclink.berkeley.edu
+Kahn	michael@uclink.berkeley.edu
+
+
+
+=== Platforms
+
+We have ported Merc directly to these platforms:
+
+	Apollo	???	Domain/OS
+	Dec	5000	Ultrix
+	Dec	5900	Ultrix
+	Intel	386	MsDos
+	Sequent	386	Dynix
+	Sun	Sun-3	SunOS 4.1.2
+	Sun	Sun-4	SunOS 4.1.2
+
+Users have contributed ports to the following platforms, and we have folded
+their changes into the base code.  See 'contrib.txt' for acknowledgments.
+
+	Apple	68030	Macintosh
+	Dec	uVax	Ultrix
+	HP	9000	Hp/UX
+	Intel	386	386 BSD
+	Intel	486	Linux
+	Intel	486	Interactive Systems Unix
+	IBM	RS/6000	Aix
+	Mips	R4000	Risc/OS 5.XX
+	NeXT	68030	Mach
+	Sun	Sun-4	Solaris 2.1
+
+We are simply unable to test Merc on every platform.  Typically a user tries
+a new platform, gets a file full of warnings, and mails us the warnings.
+We fix the base code; on the next release we ask that users mail us the
+new warnings (usually we never hear from the user again).
+
+
+
+=== Requirements
+
+The hardware requirements are essentially: two megabytes of memory; five
+megabytes of disk space; any 32-bit processor; 50 kilobits per second network
+bandwidth.  Processor speed is not important.
+
+The software requirements are essentially: a C compiler (Ansi C preferred,
+but Merc can be made to work with a K&R compiler via 'mktrad'); a Unix or
+Unix-like operating system; BSD-compatible TCP/IP networking.
+
+For machines which don't have Ansi C compilers, we supply the 'mktrad' script
+to convert Merc source into traditional C.  See 'trad.txt' for details.
+
+Merc uses 32-bit integers and is casual about the distinction between 'int' and
+'long'.  (It is possible to clean up the code to run with 16-bit integers, but
+the demand is nonexistent, and we don't have any 16-bit C compilers with which
+to test.)  If you are running on a personal computer, make sure your C compiler
+is giving you 32-bit integers and not running in 16-bit mode.
+
+Area files, player files, the note file, and the bugs/ideas/typo files are all
+in Ascii format, so that they may be freely moved from one machine type to
+another.
+
+
+
+=== MsDos Single-User Version
+
+Merc runs in single-user mode (console only) on MsDos and Macintosh computers.
+The MsDos version is built with DJ Delorie's 'djgpp' port of the Gnu C Compiler
+and requires a 386 with 4 megabytes of memory.  You can ftp 'djgpp' from
+grape.ecs.clarkson.edu.
+
+A prebuilt executable, 'Merc.exe', is distributed with the release.
+
+As the 'djgpp' documentation states: if you aren't already comfortable
+programming in C, this isn't the compiler with which to learn.  Caveat Hacker.
+
+The commands to build and run Merc on MsDos are:
+
+	gcc -O -Wall -c *.c
+	gcc -O -o merc *.o
+	go32 merc
+
+
+
+=== Macintosh Single-User Version
+
+The Macintosh changes were contributed by Oleg.  It is built with Think-C
+5.0.4 and requires 4 megabytes of system memory.  You have to define the
+symbol 'macintosh' (if not already defined).
+
+Following is an edited version from Oleg's notes for porting 2.0c, after
+taking out everything that we folded into 2.1.  BTW Oleg, you did a
+thorough and meticulous job on this port, and we hope we didn't make
+any mistakes in deriving this section from your notes.
+
+    **** My notes are preceeded by 4 asteristics
+    **** Hardware - Macintosh Powerbook 180, 120 Meg Hard Drive, 8 Meg Ram
+    **** Software - Symantec C++ version 6.0, System Software 7.1
+
+    **** Added "#define macintosh" to project header (Da !!!!)
+    **** Changed Project Type memory partition to 2,500 K
+    **** Changed Project Type to include Far Code and Far Data
+    **** Change compiler to 4 byte integers
+    **** created application instead of running from development environment
+
+    **** Redistributed all files in project to produce 32K segments
+    **** Add unix library for write and close to project
+    **** moved unixio.c and unixmisc.c for the unix library to the project file
+    **** Add MacTraps to project file
+    **** Add ANSI library to project file
+    **** Recompile ANSI library.
+    **** Recompile all *.c files.
+
+    **** moved application to area folder
+
+
+
+
+=== Performance
+
+All this measured on a Sun 4 with SunOS 4.1.2.
+
+Boot time:    4.3 CPU seconds.
+Memory:       2.2 megabytes SZ size.
+CPU usage:    30  CPU seconds per hour + 1-2 CPU seconds per player.
+Disk space:   2.6 megabytes plus 8K per player file.
+IP packets:   about 10 per second with 20 people logged in.

@@ -1,0 +1,16 @@
+HOW TO APPLY THIS PATCH
+-----------------------
+1. Make sure you have a plain vanilla ROM 2.4b2 straight out of box!
+   Copy the files in /src directory to a temporary working directory.
+
+2. Extract the archive to the working directory
+	gunzip rom24mp.tar.gz
+	tar xvf rom24mp.tar
+
+3. Execute patch < mobprog.patch which will patch the original source files.
+
+4. Copy all new and changed files back to ROM 2.4b2 /src directory and
+   re-make the source.
+
+5. Insert SURRENDER.HLP to help.are file in /area directory.
+

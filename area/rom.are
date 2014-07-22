@@ -1,0 +1,514 @@
+#HELPS
+-1 NEWBIE INFO~
+Ah! Another mortal, seeking adventure.  You should go through mudschool first,
+to gain experience to face the trials outside.  Be sure to practice a weapon
+in the guild room, or your stay with us shall be very short indeed.  Type
+'equipment' to see what your are wielding, 'spells' to see your spells,
+'skills' to see your skills, and 'commands' for a list of commands. Help is
+available on most commands and abilities.
+
+Please type 'help rules' to see the Rules of ROM.
+~
+
+-1 LAG~
+Twas dial-up, and the failing mudders did toil and struggle in the fray
+All checksummed were the compressed files
+And the man pages, outdate
+Beware the Internet my son,
+The noise that hangs, the lag that kills
+Beware the Usenet news, and shun the frivolous mud with frills
+So took his his mudding client in hand
+Longtime the virtual foe he sought
+So rested he by the T1s three and paused a while in swap
+And as in disk-drive swap he stayed,
+The Internet, with lags of fame
+Came packetwise through the T1 line
+And error-checked as it came
+One two one two and through and through, the mudding client went kill -9
+He left it dead and with it's core he went a tracing back
+And hath thou slain the Internet?
+Come to my arms my disk-based bot!
+Oh lag-free day, callooh callay, he chortled in his joy
+Twas dial-up, and the failing mudders did toil and struggle in the fray
+All checksummed were the compressed files
+And the man pages, outdate.
+~
+-1 WIZLIST~
+.
+        ________            *********************           ________
+      /+_+_+_+_+_\          ** The Gods of ROM **         /+_+_+_+_+_\
+      \__________/          *********************         \__________/
+        |::XXXX|                                            |::XXXX|
+        |X::XXX|              Implementors [60]             |X::XXX|
+        |XX::XX|              *****************             |XX::XX|
+        |XXX::X|     				            |XXX::X|
+        |XXXX::|                                            |XXXX::|
+        |::XXXX|                                            |::XXXX|
+        |X::XXX|                Creators [59]               |X::XXX|
+        |XX::XX|                *************               |XX::XX|
+        |XXXX::|         			            |XXXX::|
+        |::XXXX|                                            |::XXXX|
+/<<>>\/<<>>\/<<>>\/<<>>\                            /<<>>\/<<>>\/<<>>\/<<>>\
+\<<>>/\<<>>/\<<>>/\<<>>/      Supremacies [58]      \<<>>/\<<>>/\<<>>/\<<>>/
+       |.  /  . |             ****************             |.  /  . |
+       | .//\.  |            		                   | .//\.  |
+       |.  /  . |            		                   |.  /  . |
+       | .//\.  |                                          | .//\.  |
+       |.  /  . |               Deities [57]               |.  /  . |
+       | .//\.  |               ************               | .//\.  |
+       |.  /  . |           		      	           |.  /  . |
+       | .//\.  |                                          | .//\.  |
+       | .//\.  |                Gods [56]                 | .//\.  |
+       |.  /  . |                *********                 |.  /  . |
+       | .//\.  |              	                           | .//\.  |
+       | .//\.  |                                          | .//\.  |
+       |.  /\ . |              Immortals [55]              |.  /  . |
+       | .//\.  |              **************              | .//\.  |
+       |.  /  . |              		                   |.  /  . |
+       | .//\.  |                                          | .//\.  |
+       |.  /  . |               DemiGods [54]              |.  /  . |
+       | .//\.  |               *************              | .//\.  |
+       |.  /\ . |                  	  	           |.  /  . |
+       |.  /  . |                                          |.  /  . |
+       | .//\.  |               Angels [53]                | .//\.  |
+       |.  /  . |               ***********                |.  /  . |
+       |.  /  . |             	   	                   |.  /  . |
+       | .//\.  |             		                   | .//\.  |
+       | .//\.  |                                          | .//\.  |
+       |.  /  . |               Avatars [52]               |.  /  . |
+       | .//\.  |               ************               | .//\.  |
+       |.  /  . |                 	                   |.  /  . |
+       |.  /  . |                  	                   |.  /  . |
+        \ //\. /                                            \ //\. /
+         \ /. /                                              \ /. /
+          \ //                                                \ //
+           \/                                                  \/
+-By Liralen
+~
+-1 ROM~
+ROM started in early February 1993, using Merc 1.0 code. In July of 1993,  
+ROM II was started, eventually replacing the original ROM.  ROM was up for
+a little over a year, after which the code (version 2.3) was released,
+and various other ROM muds were started, including Rivers of Mud under
+a new management (Zump's ROM), at rom.org 9000.
+
+Alander's current project is Athen, the sequel to the ROM code. It can
+be found on Rehobaom's Legacy, at hypercube.org 9000.
+
+The following people contributed to the ROM flavor of the merc base code:
+
+Socials --
+    Kelsey and Liralen
+
+New, Improved Valhalla --
+    Liralen
+
+Puff's new special proc and improved poofin/poofout code --
+    Seth
+
+Maps and map shop --
+    Ezra, Regnan (Olympus)
+
+Nirvana zone --
+    Forstall (mobiles rewritten by Alander)
+
+Mob Factory --
+    Pinkfloyd (originally written for ROM, mobiles rewritten by Alander)
+
+Geographically correct Midgaard (tm) --
+    Alander
+
+Ideas and playtesting --
+    Thousands of dedicated mudders around the world
+
+The New Thalos area was donated by Onivel of Jedi, who was also the originator
+of the ASCII flags used in the zone files
+
+Beta testing --
+    Ken Blosser, Doug Araya, and Sherene Neil all helped with bugs reports
+    and suggestions, saving a lot of headaches
+
+Bug reports --
+    Thanks to Shad Muegge, Jerome Despret, Phoenix, Will Hongach,
+    Erwin S. Andreasen, Adam Debus and especially Gary Turkington
+    (author of the ROM FAQ) for help spotting bugs
+
+ROM 2.4 was developed during my time with Moosehead mud, and the release
+shares many of the features I wrote while I was there.  Additional code
+was written by Seth Scott (the new poofin/poofout), and many contributions
+and ideas from the Merc list were used.  Portions of Rusty's work on
+Moosehead also remain.
+
+The new features of 2.4 were largely produced in bull sessions with
+Gabrielle Taylor and Brian Moore, without whom this release wouldn't
+have happened.  In particular, the new privacy code, furniture, and
+wiznet are the results of Gabrielle's ideas.
+
+Changes to the standard diku mob and object format, as well as the changes
+to Merc 2.1 source code, were done by Alander over many a late night of
+hair-pulling. Hope you enjoy it.
+
+(my apologies if anyone was forgotten in this list)
+~
+-1 IMMORTAL IMMORT GOD WIZARD WIZ~
+'Immortal' (often, simply, 'immort') refers to players who have reached
+the highest attainable levels in the game.  Here, anyone of level 52
+or higher is an 'immortal.'  Immortals are capable of exceeding the
+usual game rules, in more drastic and pervasive ways as levels increase;
+examples range from teleportation and invisibility to mortal sight to
+creation of objects, removal of a player's privileges (channels,
+ability to move, or even ability to log in), and ability to promote
+players to immortality.
+
+Since immortals can wreak havoc with game balance, they are (ideally)
+a carefully-chosen and policed group.  An absolute rule of immortal
+behavior is that no immortal can aid or assist any player without
+explicit permission from the higher ranks; in other words, please
+don't ask an immortal to help you kill a mob, gather EQ, etc, or
+you'll likely be either politely or rudely refused, or referred to
+this file.
+
+The duties of immortals, and even the very reasons for their existence,
+are topics of continual and heated debate in various MUD forums, and are
+fraught with misconceptions, poor examples, and outrageous hypocrisies. :)
+~
+
+-1 SOCIALS~
+ 
+This is a complete list of socials for this MUD:
+Compiled originally by: Sara
+accuse       adjust      air          apologize     applaud     babble
+bark         bcatch      beckon       beer          bearhug     beg
+bird         bkiss       bleed        blink         blush       boast
+boggle       bonk        bounce       bow           brb         burp
+cackle       caress      charge       cheer         chuckle     clap
+claw         collapse    comfort      comb          cough       cover
+cower        cringe      criticize    cry           cuddle      curse
+curtsey      dance       daydream     drool         duck        embrace
+explode      eyebrow     faint        fart          flare       flash
+flex         flinch      flip         flirt         flutter     fondle
+french       frown       fume         gasp          giggle      glare
+goose        grimace     grin         groan         grope       grovel
+growl        grumble     hand         head          hiccup      highfive
+hop          howl        hug          hush          ignore      innocent
+insane       judge       kiss         knee          laugh       lick
+love         lust        massage      meditate      moan        moon
+mosh         mutter      nibble       nod           nudge       nuzzle
+pant         passout     pat          peck          pie         pinch
+pissed       plead       point        poke          ponder      pout
+pray         propose     puke         punch         purr        ramble
+raspberry    rofl        roll         rub           ruffle      run
+scratch      scream      serenade     shake         shiver      shrug
+sigh         sing        slap         slobber       smile       smirk
+snap         snarl       sneeze       snicker       sniff       snore
+snort        snowball    snuggle      sob           spam        spank
+spit         squeal      squeeze      squirm        stare       stretch
+strip        stroke      strut        sulk          swoon       tackle
+tease        thank       threaten     tickle        tip         tongue
+twiddle      type        undress      view          wave        whine
+whistle      wiggle      wince        wink          wonder      worry
+worship      yawn        yeehaw       yodel         rose	laces
+tank	     starve	 aargh	      homework	    puff	differ
+yae	     lightbulb   voodoo       ogg	    confused	beam
+bite	     discodance  scuff        whap	    lag		chortle
+zerbert      twitch
+ 
+~
+
+-1 MERC~
+This mud is based on Merc 2.1, created by Furey, Hatchet, and Kahn.  
+Merc 2.1 is available as Merc_21.tar.gz from ftp.tcp.com and 
+ftp.math.okstate.edu.
+E-mail to 'majordomo@webnexus.com' to join the merc mailing list.
+
+Thanks to ...
+  ... Diku Mud for starting it all.
+  ... The Free Software Foundation and DJ Delorie for kick-ass tools.
+  ... Copper Mud and Alfa Mud for releasing their code and worlds.
+  ... Aod of Generic for ... well, everything.  You're a hoopy frood, Aod.
+  ... Alander for many ideas and contributions.
+  ... John Brothers of Silly for permission to use Silly code and worlds.
+  ... Zrin for administering the mailing list.
+  ... Abaddon for proofreading our comm.c.
+  ... Hind, Quin, Vic, Diavolo, Oleg, Trienne, and others for porting help.
+  ... Diavolo, Grodyn, Morgenes, and others for code and bug fixes.
+  ... Raff, Doctor, VampLestat, Nirrad, Tyrst, PinkF, Chris, Glop for worlds.
+  ... the players and imps of Mud Dome, Final Mud, Mud Lite, Vego Mud, Rivers
+      of Mud, Ruhr Mud, and Mystic Realms for bug reports, ideas, new code,
+      and hours of enjoyment.
+
+Also see "help ROM" for information about the Rivers of Mud code base.
+~
+-1 MAP MAPS~
+Thanks to Ezra for drawing the originals of several maps on ROM.
+~
+
+-1 GREETING~
+.
+THIS IS A MUD BASED ON.....
+
+                                ROM Version 2.4 beta
+
+               Original DikuMUD by Hans Staerfeldt, Katja Nyboe,
+               Tom Madsen, Michael Seifert, and Sebastian Hammer
+               Based on MERC 2.1 code by Hatchet, Furey, and Kahn
+               ROM 2.4 copyright (c) 1993-1998 Russ Taylor
+
+By what name do you wish to be known? ~
+ 
+-1 MOTD~ 
+* You are responsible for knowing the rules (type 'rules').  Ignorance of 
+  the rules is no excuse.
+* Important commands: help, commands, news, notes
+* Use the delete command to erase unwanted characters
+  
+[Hit Return to continue]
+~ 
+ 
+52 IMOTD~
+Welcome Immortal!
+
+You are responsible for following the laws of immortal behavior. These can
+be found by typing 'help laws' or 'help commandments'.
+
+* Excessive loading is not allowed, and is grounds for deletion.
+
+* Asking for promotion is grounds for instant deletion.
+
+* Type 'help jobs' to get some idea of what you should be doing.
+
+ [Hit Return to continue]
+~
+
+52 JOBS~
+This is a partial list of what a god of any given level should be doing. It is
+not complete yet.
+
+Angels:(52-54)
+Angels and higher level gods may not assist mortals directly in any way.  
+An Angel's main job is to help with quests (via switch), or possibly run
+small quest of their own -- but the rewards should be minimal.
+
+Deities:(55-56)
+Deities have two main roles: reimbursement and quest running.  Be skeptical
+on reimburses, don't just hand out every piece of gear.  I suggest limiting
+reimbursements to 10 items at a time, and make sure that you do not load things
+at too high a level (new format items have hard-coded levels, so are not a
+problem).  vnum and stat are useful for this.  You can draft Angels to help you
+run a quest, and please note that quests should NOT have huge rewards -- the
+main point should be to have fun.  Deities have no business trying to enforce
+rules -- the most you should do to a player is a NOCHANNEL or similar light
+punishment.
+
+Gods:(57-59)
+Gods can run quests just like Deities, and it's nice to do reimbursements too.
+However, the main role of a God is keeping the peace.  Gods can enforce (but
+not create rules), using the various NOTELL-class commands, as well as deny,
+purge, freeze, and ban (but be careful with these commands!)  Gods are expected
+to help make the mud run more smoothly, power trips are strictly verbotten.
+
+Not fufilling the roles of your office can result in demotion or deletion.
+~
+
+-1 PKILL PKILLING PKILLER 'PLAYER KILLING' PSTEAL PSTEALING 'PLAYER STEALING'~
+Player killing and player stealing are allowed to all clan members 
+(including loners), provided the victim is is within 8 levels of the
+character and is also in a clan.  This will flag you as a "killer" or
+"thief", allowing any character to attack, and also provoking action
+from the city guard.
+~
+
+52 COMMANDMENTS LAWS 'GOD RULES' GODS~
+.
+                         **********************
+                         ** The Rules of ROM **
+                         **********************
+ 
+1)  Do not kill mortals, do not kill mortals, do not kill mortals.
+    This includes transferring/summoning them to aggressive mobs.
+ 
+2)  Do not cheat for ANY mortal in ANY way, especially your own. 
+    Unless of course you LIKE deletion. Yes this includes tanking,
+    healing/restoring, casting protection spells <armor, sanct>,    
+    and softening up or altering mobs.
+ 
+3)  Do not transfer or summon mobs to mortals or mortals to mobs.
+    They have legs, if they want to kill a mob, they can easilly
+    go there themselves.
+ 
+4)  DO NOT kill the shopkeepers for any reason at ALL.
+ 
+5)  DO NOT use reboot.  <--- Note, simple English.
+ 
+6)  Do not give out free equipment.  You don't need to win brownie
+    points with the mortals.  Quest are fine but handing out items
+    isn't.
+ 
+7)  A note on quests: Quests are a good thing, more or less, BUT 
+    do not give out overly extravagant prizes.  Exercise some 
+    common sense here folks.  Do not load items more than 4 levels
+    below their normal level (i.e. no level 5 ogre gauntlets).
+ 
+8)  Do not undermine the authority of a higher level god.  If you 
+    see that someone has been frozen or nochannelled do not restore
+    their priveleges.  They are being punished for a reason.
+ 
+9)  Do not try to overrule each other.  
+ 
+10) Trusted mortals:  Do not use your god powers to help your mortal
+    character.  If you do, your trust will be taken away.
+
+~
+
+-1 RULES~
+These are the rules of ROM.  For other matters, use common sense.
+
+* Limited player stealing or player killing.
+
+* Your presence here is a privilege not a right. Obey any orders from gods, and
+  you will be fine.  Deletion does not require a reason, appeals are to be sent
+  to the implementors.
+ 
+* Sitting around idle with a client is hazardous to your health. If we catch
+  you doing it, you will lose half your playing time.
+
+* No multiple logins, multiple playing, or helping your own characters with 
+  other characters you own -- by any arrangment.
+ 
+* No kill stealing.  This means you cannot attack a mob someone else is 
+  fighting, unless they ask you to. Also avoid attacking fleeing mobs.
+
+* Cheating will not be tolerated.  This includes accepting favors from gods
+  and exploiting bugs. If you find a bug, report it, then do not use it.
+
+* Changes to these rules are at the discretion of the immortals, and may be
+done without warning, notice, or even evidence of sanity. Walk softly,
+and carry a black stick.
+~
+
+0 SUICIDE DELETE~
+Use the delete command to erase unwanted characters, so the name will be
+available for use.  This command must be typed twice to delete a character,
+and you cannot be forced to delete.  Typing delete with an argument will
+return your character to 'safe' status if you change your mind after the
+first delete.
+~
+ 
+0 HEALER~
+The healer decided to grab a quick buck, and now charges for his heals.  Some
+services are still free to players of level 10 or below, however.  To see
+a full listing of the healer's services, type 'heal' at his residence. To
+receive healing, bring plenty of money, and type 'heal <spell>'.
+~ 
+
+
+-1 GAIN~
+The gain command is used to learn new skills, once the proper trainer has 
+been found. (Check New Thalos) The following options can be used with gain:
+
+gain list:    list all groups and skills that can be learned
+gain points:  lower your creation points by 1 (costs two sessions)
+gain <name>:  add a skill or skill group, at the listed cost
+gain convert: turns 10 practices into one training session
+
+Gain uses training sessions, not practices. (see 'help train')
+Gained skills and groups do NOT increase your experience per level or total
+number of creation points. 
+~
+
+52 CLONE~
+Syntax:
+  clone obj <object>
+  clone mob <mobile>
+  clone <name>
+
+The clone command duplicates an object or mobile.  The level of item or mobile
+that may be cloned depends on your level.  The target object or mob must be in
+the same room as you, or in your posession.  Strung and set information is
+preserved by clone, as well as any spell effects and container contents or
+mobile inventory, except for items which are too high for you to clone.  
+Strung extended descriptions on objects are not kept, however.
+~
+
+
+0 SKILLS SPELLS~
+The skills and spells commands are used to display your character's list
+of available skills (or spells, as the case may be).  They are listed in
+order of level, with mana cost (for spells) or percentage (for skills)
+listed where applicable.
+~
+
+
+0 OUTFIT~
+The outfit command, usable by levels 5 and below, equips your character with
+a new set of sub issue gear (banner, weapon, helmet, shield, and vest), 
+courtesy of the Mayor's warehouses.  Only empty equipment slots are affected.
+~
+
+0 AUTO AUTOLIST AUTOLOOT AUTOGOLD AUTOSAC AUTOEXIT AUTOASSIST AUTOSPLIT AUTOALL~
+ROM uses various automatic actions to ease the boredom of always splitting
+gold and sacrificing corpses.  The commands are as follows:
+
+autolist  : list all automatic actions
+autoloot  : take all equipment from dead mobiles
+autogold  : take all gold from dead mobiles
+autosac	  : sacrifice dead monsters (if autoloot is on, only empty corpes)
+autoexit  : display room exits upon entering a room
+autosplit : split up spoils from combat among your group members
+autoassit : makes you help group members in combat
+autoall   : turns all autos on or off at once
+
+Typing a command sets the action , typing it again removes it. Use
+autoall on|off to save yourself some keystrokes.
+~ 
+-1 CLAN~
+   A Clan is a collection of players, united to  follow and further
+a common cause.   Each clan has rules and  regulations, to find out
+more about clans and their 'beliefs' type "help <clan name>".  Only
+Clan  members can kill or steal from other players.  To join a Clan
+you  must be level 5 or above and level 25 or below.   Speak to the
+Clan Leader about joining.  If you go Loner before level 25 you may 
+join a Clan later.
+   Joining  a  Clan is a dangerous step.   Many adventurers live to 
+kill and torture others and chances are that your paths will cross.
+Remember, attacking or killing fellow clan members *IS* illegal except to 
+mutiny your Clan leader.
+   Existing  Clans may buy  special rooms and  mobiles by acquiring 
+diamonds as payment.   To see room prices, type "help prices".  New
+Clans  may be formed by  petitioning the immortals.   Please  remember that 
+their word is final on all matters not covered by this help.
+~
+-1 PRICES PRICE~
+New Clan Hall Rooms cost 50 diamonds.
+Boosting the mana or healing gains for a room costs 250 diamonds.
+Both in the same room costs double.
+Making the Healer or Store prices lower costs 1,000 diamonds.
+~
+
+-1 COUNT~
+The count command displays the number of people (that you can see) logged
+into the mud.  It also displays the highest number observed that day, if
+it is higher.
+~ 
+ 
+-1 GATE~
+The gate spell is a powerful transportation magic that opens up a portal 
+between your character and another person or creature somewhere else in the
+world.  This portal will transport you and any pet you might have, but not
+other members of your group.  Monsters recieve a save against gate, and
+monster or players more than 3 levels higher than you can not be gated to at 
+all.  God rooms, private rooms, and no recall rooms cannot be gated to, and
+no recall rooms cannot be gated out of.  Finally, any god or hero is also 
+immune to gate, as well as in player who has no summon set.  Clan members 
+may not be gated to except by their fellow Clan members.
+~
+
+-1 AFFECTS AFFECT~
+This command is used to show all the spells affecting your character. At
+low levels, only the spell name will be displayed, at higher levels the
+effects and duration of the spell will also be shown.  Spell effects
+are no longer shown on score (this can be changed by using 'show' command).
+~
+
+0 $~
+#$

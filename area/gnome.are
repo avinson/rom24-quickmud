@@ -1,0 +1,2260 @@
+#AREA
+gnome.are~
+Gnome Village~
+{ 5 15} Vougon  Gnome Village~
+1500 1599
+
+#MOBILES
+#1500
+oldstyle child gnome~
+a gnome child~
+A gnome child is playing around here.
+~
+The little tyke looks so innocent playing with his boomerang that you 
+just want to pick him up and hug him.
+~
+human~
+ACE 0 600 0
+3 0 2d6+35 1d9+100 1d6+0 none
+7 7 7 10
+EFNU 0 0 0
+stand stand male 2
+0 0 medium 0
+#1501
+oldstyle woman gnome~
+a gnome woman~
+A gnome woman is standing here, trying to look beautiful.
+~
+The woman is short and gnarled, but acts like a woman several times her beauty.
+She's starting to look pretty attractive to you ...
+~
+human~
+ACE 0 600 0
+5 0 2d6+60 2d9+100 1d6+1 none
+5 5 5 9
+EFNU 0 0 0
+stand stand female 25
+0 0 medium 0
+#1502
+oldstyle man gnome~
+a gnome man~
+A gnome man is walking here, on his way to work.
+~
+This is a prime example of a gnome.  He looks short and weak, but at the
+same time an intelligent creature who could outsmart you.
+~
+human~
+AC 0 500 0
+6 0 2d7+71 3d9+100 1d7+1 none
+4 4 4 9
+EFNU 0 0 0
+stand stand male 22
+0 0 medium 0
+#1503
+oldstyle scientist gnome~
+a gnome scientist~
+A scientist wanders around deep in thought.
+~
+You see a gnome who is lost deep into some invention that he is about
+to make.  His hair is white, but he looks fairly strong.
+~
+human~
+ABCR 0 500 0
+7 0 2d7+71 7d9+100 1d5+1 none
+4 4 4 7
+FU 0 0 0
+stand stand male 50
+0 0 medium 0
+#1504
+oldstyle guard gnome~
+a gnome guard~
+A gnome guard stands here guarding something.
+~
+This is a well trained gnome.  He might not have a lot of strength but
+he makes up for it with his weapons skill.
+~
+human~
+AB 0 400 0
+8 0 2d7+96 4d9+100 1d7+2 none
+3 3 3 9
+EFNU 0 0 0
+stand stand male 75
+0 0 medium 0
+#1505
+oldstyle chief gnome~
+the chief gnome~
+A powerful looking gnome stands here wearing ornate clothes.
+~
+The Chief looks like he could whap you hard.  He looks not only powerful
+but wise and resourceful.  You better not mess with him.
+~
+human~
+ABQ 0 550 0
+15 0 3d9+208 15d9+100 2d5+3 none
+-2 -2 -2 6
+EIKU 0 0 0
+stand stand male 400
+0 0 medium 0
+#1507
+oldstyle troll small~
+a small troll~
+A small troll grunts as he takes a swing at you.
+~
+The small troll is a short and stocky beast with a human-like face
+but with the eyes and fangs of a wild beast.
+~
+troll~
+ABCF 0 -900 0
+8 0 2d7+96 4d9+100 1d7+2 none
+3 3 3 9
+EFNR 0 0 0
+stand stand male 40
+0 0 medium 0
+#1508
+oldstyle mouse field~
+a field mouse~
+A small mouse runs across your foot.
+~
+The Mouse is a cute little creature.
+~
+human~
+ABCI 0 100 0
+1 0 2d6+10 0d9+100 1d4+0 none
+9 9 9 10
+EFNU 0 0 0
+stand stand male 0
+0 0 medium 0
+#1509
+oldstyle rat~
+a rat~
+A small rat shrieks and runs around.
+~
+The rat is a little evil creature that deserves death.
+~
+human~
+AC 0 -200 0
+2 0 2d7+21 1d9+100 1d5+0 none
+8 8 8 10
+EFNU 0 0 0
+stand stand male 0
+0 0 medium 0
+#1510
+oldstyle rat large~
+a large rat~
+A large rat runs up to you and nibbles on your boots.
+~
+You have the urge to kill this vile creature.
+~
+human~
+AC 0 -200 0
+4 0 2d7+46 2d9+100 1d5+1 none
+6 6 6 9
+EFNU 0 0 0
+stand stand male 0
+0 0 medium 0
+#1511
+oldstyle rat giant~
+a giant rat~
+A giant rat growls at you and prepares to attack.
+~
+This rat has grown up to be the size of an average dog.
+~
+human~
+AC 0 -200 0
+6 0 2d7+71 3d9+100 1d7+1 none
+4 4 4 9
+EFNU 0 0 0
+stand stand male 1
+0 0 medium 0
+#1512
+oldstyle troll~
+the troll~
+A giant troll lumbers around.
+~
+You see before you a huge mass of living flesh.  You cringe in fear as
+he lifts his powerful arm to bludgeon you.
+~
+troll~
+ABF 0 -800 0
+14 0 2d10+190 7d9+100 1d12+3 none
+-1 -1 -1 8
+EFNR 0 0 0
+stand stand male 450
+0 0 medium 0
+#1513
+oldstyle bat black~
+a black bat~
+A black bat hangs from the ceiling.
+~
+The bat is a grotesque little creature with large wings and fangs.
+~
+bat~
+A 0 -500 0
+5 0 2d6+60 2d9+100 1d6+1 none
+5 5 5 9
+ENR 0 0 0
+stand stand none 0
+0 0 medium 0
+#1514
+oldstyle zombie gnome~
+the zombie gnome~
+A zombie gnome shuffles his way towards you.
+~
+This is a creature which has passed away long ago.  His body has been
+pulled out of its resting place by some evil force.
+~
+human~
+A 0 -700 0
+7 0 2d6+85 3d9+100 1d8+1 none
+4 4 4 9
+EFNU 0 0 0
+stand stand none 34
+0 0 medium 0
+#1515
+oldstyle bat fire~
+the fire bat~
+The fire bat flames brightly and prepares to attack.
+~
+You see a huge flame which resembles the shape of a bat.  The creature
+hangs from the ceiling and bites at you.
+~
+bat~
+ABCF D -900 0
+12 0 2d10+150 6d9+100 1d10+3 none
+0 0 0 8
+ENR 0 0 0
+stand stand male 300
+0 0 medium 0
+#1516
+oldstyle guard hobgoblin~
+the hobgoblin guard~
+The hobgoblin guard attacks first, thinks later.
+~
+This is an extra large, extra ugly goblin like creature.  He grins evilly
+as he attempts to brain you.
+~
+human~
+ABF 0 -700 0
+6 0 2d7+71 3d9+100 1d7+1 none
+4 4 4 9
+EFNU 0 0 0
+stand stand male 37
+0 0 medium 0
+#1517
+oldstyle soldier hobgoblin~
+the hobgoblin soldier~
+A hobgoblin soldier stands here.
+~
+This is just a low life hobgoblin, who couldn't make it to the ranks
+of the elite guards.  He looks pissed.
+~
+human~
+ABF 0 -600 0
+3 0 2d6+35 1d9+100 1d6+0 none
+7 7 7 10
+EFNU 0 0 0
+stand stand male 10
+0 0 medium 0
+#1518
+oldstyle bodyguard hobgoblin~
+the hobgoblin bodyguard~
+A hobgoblin bodyguard guards the king with his life.
+~
+This is one of the elite hobgoblin guards.  He stands tall for his short
+stature.  He grins a toothy grin as he prepares to attack.
+~
+human~
+AB 0 -500 0
+7 0 2d6+85 3d9+100 1d8+1 none
+4 4 4 9
+EFNU 0 0 0
+stand stand male 30
+0 0 medium 0
+#1519
+oldstyle king hobgoblin~
+the king of the hobgoblins~
+There is a great king here, sitting in his throne.
+~
+The king is a silly looking hobgoblin whose muscles bulge out of his robes,
+destroying the sophisticated effect he was trying to create.
+~
+human~
+ABR 0 -500 0
+12 0 2d8+134 12d9+100 1d8+2 none
+1 1 1 6
+FU 0 0 0
+sit stand male 300
+0 0 medium 0
+#1520
+oldstyle miner hobgoblin~
+a hobgoblin miner~
+A hobgoblin miner stands here looking for gold.
+~
+The miner is totally covered in dust.
+~
+human~
+ABC 0 -400 0
+5 0 2d6+60 2d9+100 1d6+1 none
+5 5 5 9
+EFNU 0 0 0
+stand stand male 35
+0 0 medium 0
+#1521
+oldstyle treasurer hobgoblin~
+the treasurer~
+A treasurer is here counting out money.
+~
+The hobgoblin treasurer is an old goblin with glasses.  It appears that he
+can only see a couple feet in front of him.
+~
+human~
+ABC 0 -200 0
+10 0 2d7+121 5d9+100 2d4+2 none
+1 1 1 8
+EFNU 0 0 0
+stand stand male 250
+0 0 medium 0
+#1522
+oldstyle prisoner gnome~
+a gnome prisoner~
+A gnome prisoner is here resting in the straw.
+~
+The prisoner is just barely alive.
+~
+human~
+ABC 0 100 0
+3 0 2d6+35 1d9+100 1d6+0 none
+7 7 7 10
+EFNU 0 0 0
+rest stand male 0
+0 0 medium 0
+#1523
+oldstyle prisoner human~
+a human prisoner~
+A human prisoner is here resting in the straw.
+~
+The prisoner is just barely alive.
+~
+human~
+ABC 0 100 0
+3 0 2d6+35 1d9+100 1d6+0 none
+7 7 7 10
+EFNU 0 0 0
+rest stand female 0
+0 0 medium 0
+#1524
+oldstyle hermit crab~
+a hermit~
+A hermit crab crawls towards you.
+~
+The hermit crab is about 5 feet high and looks mad that you had the nerve
+to wake it up.
+~
+human~
+ABCF 0 -10 0
+5 0 2d6+60 2d9+100 1d6+1 none
+5 5 5 9
+EFNU 0 0 0
+stand stand male 10
+0 0 medium 0
+#1526
+oldstyle cook hobgoblin~
+the cook~
+A hobgoblin cook stands here cooking something.
+~
+The cook is a dirty and fat hobgoblin.  He burps as he stirs up something
+in a pot.
+~
+human~
+ABC 0 -300 0
+7 0 2d6+85 3d9+100 1d8+1 none
+4 4 4 9
+EFNU 0 0 0
+stand stand male 130
+0 0 medium 0
+#0
+
+#OBJECTS
+#1500
+key bloody~
+a bloody key~
+A bloody key is stuck to the floor.~
+oldstyle~
+key 0 A
+2 0 0 0 0
+0 10 0 P
+#1501
+key dirty~
+a dirty key~
+A dirty key lies here.~
+oldstyle~
+key 0 A
+2 0 0 0 0
+0 10 0 P
+#1502
+toy boomerang~
+a toy boomerang~
+A toy boomerang wants to be picked up.~
+oldstyle~
+weapon 0 AN
+exotic 2 4 pound 0
+5 50 730 P
+#1503
+staff gnarled~
+a gnarled staff~
+A gnarled staff is here.~
+oldstyle~
+weapon 0 AN
+exotic 1 9 pound 0
+5 150 730 P
+#1504
+sword gnome~
+a gnome sword~
+A gnome sword catches your eye.~
+oldstyle~
+weapon 0 AN
+sword 3 3 slash 0
+7 150 610 P
+#1505
+shield studded~
+a studded shield~
+A studded wooden shield lies here.~
+oldstyle~
+armor 0 AJ
+4 4 4 1 0
+5 160 750 P
+#1506
+potion bloody~
+a bloody potion~
+A bloody potion lies here.~
+oldstyle~
+potion 0 A
+15 'cure blindness' 'cure critical' 'giant strength' ''
+7 220 480 P
+#1507
+cloak bloody~
+a bloody cloak~
+A bloody cloak lies in a corner.~
+oldstyle~
+armor G AC
+4 4 4 0 0
+5 150 480 P
+#1508
+ring bat~
+a bat ring~
+A ring in the shape of a bat lies here.~
+oldstyle~
+jewelry G AB
+0 0 0 0 0
+10 20 270 P
+A
+14 15
+#1509
+necklace bead~
+a bead necklace~
+A string of beads is here.~
+oldstyle~
+jewelry 0 AC
+0 0 0 0 0
+5 80 220 P
+A
+18 1
+#1510
+sword electrum~
+an electrum sword~
+An electrum sword lies here.~
+oldstyle~
+weapon AG AN
+sword 4 3 slash 0
+12 200 930 P
+#1511
+basket wicker~
+a wicker basket~
+A wicker basket sits here.~
+oldstyle~
+container 0 A
+90 0 0 20 100
+0 50 0 P
+#1512
+peanuts~
+some peanuts~
+Peanuts lie here.~
+oldstyle~
+food 0 A
+16 16 0 0 0
+0 90 0 P
+#1513
+grain~
+some grain~
+There is some grain here.~
+oldstyle~
+food 0 A
+15 15 0 0 0
+0 80 0 P
+#1514
+skiff~
+a skiff~
+A small skiff is here.~
+oldstyle~
+boat 0 A
+0 0 0 0 0
+0 240 0 P
+#1515
+boots gnome~
+a pair of gnome boots~
+You notice a pair of Gnome Boots.~
+oldstyle~
+armor 0 AG
+4 4 4 0 0
+7 120 610 P
+A
+14 10
+#1516
+coins~
+a pile of coins~
+A pile of coins.~
+oldstyle~
+money 0 A
+100 0 0 0 0
+0 10 0 P
+#1517
+coins~
+a pile of coins~
+A pile of coins.~
+oldstyle~
+money 0 A
+500 0 0 0 0
+0 10 0 P
+#1519
+shield stone~
+a stone shield~
+A stone slab lies here.~
+oldstyle~
+armor 0 AJ
+4 4 4 2 0
+16 350 3700 P
+A
+1 2
+#1520
+mail heavy banded~
+heavy banded mail~
+A large suit of heavy banded mail is here~
+oldstyle~
+armor 0 AD
+6 6 6 0 0
+15 300 2100 P
+#1521
+club large two-handed~
+a large club~
+A large club sits here.~
+oldstyle~
+weapon 0 AN
+mace 1 12 pound F
+6 220 460 P
+A
+18 -1
+#1522
+banana~
+a banana~
+There is a banana here.~
+oldstyle~
+food 0 A
+6 6 0 0 0
+0 50 0 P
+#1523
+life potion~
+a potion of life healing~
+A potion of life healing has left here.~
+oldstyle~
+potion H A
+32 'cure poison' 'bless' '' ''
+6 10 630 P
+#1524
+club wooden~
+a wooden club~
+A wooden club sits here.~
+oldstyle~
+weapon 0 AN
+mace 2 3 pound 0
+3 100 220 P
+A
+18 -1
+#0
+
+#ROOMS
+#1501
+Entrance to Gnome Village~
+You stand on a dusty path that leads north and east.  To the east you hear
+the sounds of a small village.
+~
+0 C 2
+D0
+A dusty path heads towards the eastern road.
+~
+~
+0 -1 3526
+D1
+You see a dusty path.
+~
+~
+0 -1 1502
+S
+#1502
+A Dusty Path~
+This is a path leading into the village.  It continues east and west and
+there is a small house to the north.
+~
+0 0 1
+D0
+You see a small house.
+~
+~
+0 -1 1509
+D1
+You see a road.
+~
+~
+0 -1 1503
+D3
+You see a path.
+~
+~
+0 -1 1501
+S
+#1503
+A Road in the Village~
+This road runs north and south through the center of the village.  There
+are a few people moving around, but not many.
+~
+0 0 1
+D0
+You see a road.
+~
+~
+0 -1 1505
+D1
+You see a path.
+~
+~
+0 -1 1504
+D2
+You see a road.
+~
+~
+0 -1 1507
+D3
+You see a road.
+~
+~
+0 -1 1502
+S
+#1504
+A Dusty Path~
+You are on a dusty path on the far side of the village.  Houses are to the
+north and south, while the path continues east.  There is a sign here.
+~
+0 0 1
+D0
+You see a house.
+~
+~
+0 -1 1512
+D1
+You see a path.
+~
+~
+0 -1 1559
+D2
+You see a house.
+~
+~
+0 -1 1513
+D3
+You see a road.
+~
+~
+0 -1 1503
+E
+sign~
+Warning:  The area to the east was written mostly by Vougon
+                    (giggle)    - Sandman
+~
+S
+#1505
+A Road in the Village~
+This road runs north and south through the center of the village.  There
+are a few people moving around, but not many.
+~
+0 0 1
+D0
+You see a road.
+~
+~
+0 -1 1506
+D1
+You see a house.
+~
+~
+0 -1 1511
+D2
+You see a road.
+~
+~
+0 -1 1503
+D3
+You see a house.
+~
+~
+0 -1 1510
+S
+#1506
+A Road in the Village~
+This road runs north and south through the center of the village.  There
+are a few people moving around, but not many.
+~
+0 0 1
+D0
+You see a road.
+~
+~
+0 -1 1526
+D2
+You see a road.
+~
+~
+0 -1 1505
+S
+#1507
+A Road in the Village~
+This road runs north and south through the center of the village.  There
+are a few people moving around, but not many.
+~
+0 0 1
+D0
+You see a road.
+~
+~
+0 -1 1503
+D2
+You see a road.
+~
+~
+0 -1 1508
+D3
+You see a shop.
+~
+~
+0 -1 1514
+S
+#1508
+A Road in the Village~
+This road runs north and south through the center of the village.  There
+are a few people moving around, but not many.
+~
+0 0 1
+D0
+You see a road.
+~
+~
+0 -1 1507
+D1
+You see a shop.
+~
+~
+0 -1 1516
+D2
+You see a small path.
+~
+~
+0 -1 1517
+D3
+You see a shop.
+~
+~
+0 -1 1515
+S
+#1509
+A Small Gnome House~
+This is a small suburban house made from quality wood.  You can see the
+expert workmanship that went into making it, but it lacks creativity.
+~
+0 D 0
+D2
+You see a path.
+~
+~
+0 -1 1502
+S
+#1510
+A Small Gnome House~
+This is a small suburban house made from quality wood.  You can see the
+expert workmanship that went into making it, but it lacks creativity.
+~
+0 D 0
+D1
+You see a path.
+~
+~
+0 -1 1505
+S
+#1511
+A Small Gnome House~
+This is a small suburban house made from quality wood.  You can see the
+expert workmanship that went into making it, but it lacks creativity.
+~
+0 D 0
+D3
+You see a path.
+~
+~
+0 -1 1505
+S
+#1512
+A Small Gnome House~
+This is a small suburban house made from quality wood.  You can see the
+expert workmanship that went into making it, but it lacks creativity.
+~
+0 D 0
+D2
+You see a path.
+~
+~
+0 -1 1504
+S
+#1513
+A Small Gnome House~
+This is a small suburban house made from quality wood.  You can see the
+expert workmanship that went into making it, but it lacks creativity.
+~
+0 D 0
+D0
+You see a path.
+~
+~
+0 -1 1504
+S
+#1514
+A Gnome Shop~
+You are in one of the several shops of this fine town.  The wares look fine,
+but unfortunately the gnomes don't do business with outsiders.
+~
+0 D 0
+D1
+You see a road.
+~
+~
+0 -1 1507
+S
+#1515
+A Gnome Shop~
+You are in one of the several shops of this fine town.  The wares look fine,
+but unfortunately the gnomes don't do business with outsiders.
+~
+0 D 0
+D1
+You see a road.
+~
+~
+0 -1 1508
+S
+#1516
+A Gnome Shop~
+You are in one of the several shops of this fine town.  The wares look fine,
+but unfortunately the gnomes don't do business with outsiders.
+~
+0 D 0
+D3
+You see a road.
+~
+~
+0 -1 1508
+S
+#1517
+Path by a Stream~
+You are on a small path leading north and west, that is surrounded on the
+other two sides by a small stream.  The water looks mighty cold.
+~
+0 C 2
+D0
+You see a road.
+~
+~
+0 -1 1508
+D2
+You see the stream.
+~
+~
+0 -1 1520
+D3
+You see a small path.
+~
+~
+0 -1 1518
+E
+stream~
+The stream is pretty small, but it looks too cold to swim.
+~
+S
+#1518
+Path by a Stream~
+You are on a small east-west path.  The path shows new grass, as if it
+has stopped being used sometime in the recent past.  A river is to the south,
+and a small hut is to the west.
+~
+0 0 2
+D1
+You see a small path.
+~
+~
+0 -1 1517
+D2
+You see the stream.
+~
+~
+0 -1 1521
+D3
+You see a small hut that is starting to fall apart.
+~
+~
+0 -1 1519
+E
+hut~
+The hut looks well built, but it seems to have taken some damage.
+~
+E
+stream~
+The stream is pretty small, but it looks too cold to swim.
+~
+S
+#1519
+A Small Hut~
+The hut is a mess!  Blood has stained the grass walls into a dark rich
+crimson color.  Torn clothes and trash lie all around, and you think you
+see a skeleton in the corner.
+~
+0 D 0
+D1
+You see a small path.
+~
+~
+0 -1 1518
+E
+skeleton~
+The skeleton still has a little flesh clinging to it and it is definitely
+humanoid.  The skull has been cracked open, but it is otherwise undamaged,
+except by time.
+~
+S
+#1520
+On the Stream~
+The stream is cold and frigid, yet it supports plenty of life beneath its
+surface.  The current trickles west and there is a field to the south.
+~
+0 0 7
+D0
+You see a small path.
+~
+~
+0 -1 1517
+D2
+You see a grassy field.
+~
+~
+0 -1 1522
+D3
+You see a small stream.
+~
+~
+0 -1 1521
+S
+#1521
+On the Stream~
+The current here flows from the east, but a logjam blocks you from 
+continuing onward.
+~
+0 0 7
+D0
+You see a small path.
+~
+~
+0 -1 1518
+D1
+You see a small stream.
+~
+~
+0 -1 1520
+S
+#1522
+The Field of Mice's Dreams~
+This is a large green field of waist high grass.  You feel something
+scurry over your feet.  There is a cave to the east.
+~
+0 0 2
+D0
+You see a small stream.
+~
+~
+0 -1 1520
+D1
+You see a dark mysterious cave.
+~
+~
+0 -1 1523
+S
+#1523
+The Dark Cave~
+The cave gleams as your light reflects off of it.  As you squint your eyes
+and try to look ahead, you think you see something move.
+~
+0 A 3
+D0
+~
+~
+0 -1 1524
+D3
+You see a grassy field.
+~
+~
+0 -1 1522
+S
+#1524
+Darker Cave~
+The cave gets even darker as your terror grows stronger.  You fear for your
+life as something emerges out of the shadows.
+~
+0 A 3
+D2
+~
+~
+0 -1 1523
+S
+#1526
+A Dusty Path~
+You are on a well traveled path that leads in many directions.  To the north
+is a large house, and to the west is a fortress.
+~
+0 C 1
+D0
+You see a large white house.
+~
+~
+0 -1 1558
+D2
+You see a road.
+~
+~
+0 -1 1506
+D3
+You see the gateway to a large fortress.
+~
+~
+0 -1 1527
+E
+fortress~
+The fortress is a large gnome stronghold to defend the city.
+~
+S
+#1527
+The Iron Gateway~
+You stand at the entrance to the gnome fortress.  The place seems to be
+well fortified.
+~
+0 0 1
+D1
+You see a small path.
+~
+~
+0 -1 1526
+D3
+You see a long hallway.
+~
+~
+0 -1 1528
+S
+#1528
+A Long Hallway~
+You are now inside of the fortress; you must be lucky that the guards 
+haven't killed you.  As you glance around, you notice that the walls and
+floors are spotlessly cleaned.  The barracks are to the north and a
+storage room is to the south.
+~
+0 D 0
+D0
+You see the barracks.
+~
+~
+0 -1 1530
+D1
+You see the gateway.
+~
+~
+0 -1 1527
+D2
+You see a storage room.
+~
+~
+0 -1 1532
+D3
+You see a long hallway.
+~
+~
+0 -1 1529
+S
+#1529
+A Long Hallway~
+You are now inside of the fortress; you must be lucky that the guards 
+haven't killed you.  As you glance around, you notice that the walls and
+floors are spotlessly cleaned.  A mess hall is to the south.
+~
+0 D 0
+D1
+You see a long hallway.
+~
+~
+0 -1 1528
+D2
+You see the mess hall.
+~
+~
+0 -1 1534
+D3
+You see a small room.
+~
+~
+0 -1 1535
+S
+#1530
+The Barracks~
+You now stand in the sleeping quarters of the gnome guards.  Every bed is
+made perfectly, and not single article of clothing is on the floor.  There
+is a small storage room to the east.
+~
+0 D 0
+D1
+You see a small storage room.
+~
+~
+0 -1 1531
+D2
+You see a long hallway.
+~
+~
+0 -1 1528
+S
+#1531
+A Small Storage Room~
+This is where the gnomes store all their spare clothing and armor.
+There is not much here, but you might come up with something.
+~
+0 D 0
+D3
+You see the barracks.
+~
+~
+0 -1 1530
+S
+#1532
+A Small Storage Room~
+This is where the gnomes store all their spare weapons.  A door leads off
+to the east.
+~
+0 D 0
+D0
+You see a long hallway.
+~
+~
+0 -1 1528
+D1
+You see a small room.
+~
+~
+0 -1 1533
+S
+#1533
+A Small Storage Room~
+This is yet another room for storing gnome stuff.  Maps and battle plans
+are stored in neat stacks on the shelves.
+~
+0 D 0
+D3
+You see a small room.
+~
+~
+0 -1 1532
+S
+#1534
+The Mess Hall~
+You are in the room where the guards come to get their grub.  The benches 
+and tables are neatly cleaned and straightened, while shiny plates line
+the walls.
+~
+0 D 0
+D0
+You see a long hallway.
+~
+~
+0 -1 1529
+S
+#1535
+A Small Room~
+This is a small plain room.  Its only interesting feature is a ladder down.
+~
+0 D 0
+D1
+You see a long hallway.
+~
+~
+0 -1 1529
+D5
+You see darkness.
+~
+~
+0 -1 1536
+S
+#1536
+A Small Unused Room~
+You stand in a small room in an unused section of the fortress.  The whole
+room is coated with dust and cobwebs.  The ladder leads back up, and
+a rusty door is to the east.
+~
+0 AD 1
+D1
+You see a rusty door.
+~
+rusty door~
+2 1500 1537
+D4
+You see a small room.
+~
+~
+0 -1 1535
+S
+#1537
+Dark Hallway~
+You find yourself in a very old section of the fortress.  You must be the
+first person to pass through here in years.  The hallway continues south
+and a door leads off to the east.
+~
+0 AD 2
+D1
+~
+~
+0 -1 1538
+D2
+~
+~
+0 -1 1539
+D3
+You see a rusty door.
+~
+door~
+2 1500 1536
+S
+#1538
+Torture Chamber~
+This is a room that was once used to extract lies out of helpless victims.
+The machines look unused, but could still work.
+~
+0 AD 2
+D3
+~
+~
+0 -1 1537
+E
+machine~
+The machine consists of a large rack with winches on each end.  You can 
+almost feel them pulling your arms out of their sockets.
+~
+S
+#1539
+Dark Hallway~
+The hall continues in a north-south direction.  The floor is coated with
+some kind of molded slime.  Doors lead east and west.
+~
+0 AD 2
+D0
+~
+~
+0 -1 1537
+D1
+~
+~
+0 -1 1542
+D2
+~
+~
+0 -1 1540
+D3
+~
+~
+0 -1 1541
+S
+#1540
+Dark Hallway~
+The hall continues in a north-south direction.  The floor is coated with
+some kind of molded slime.  Doors lead east and west.
+~
+0 AD 2
+D0
+~
+~
+0 -1 1539
+D1
+~
+~
+0 -1 1544
+D2
+~
+~
+0 -1 1543
+D3
+~
+~
+0 -1 1545
+S
+#1541
+Prison Cell~
+You are in a dark and nasty prison cell.  Bodies lying on the floor give off
+an unbearable stench.
+~
+0 AD 2
+D1
+~
+~
+0 -1 1539
+S
+#1542
+Prison Cell~
+You are in a dark and nasty prison cell.  Bodies lying on the floor give off
+an unbearable stench.
+~
+0 AD 2
+D3
+~
+~
+0 -1 1539
+S
+#1543
+Prison Cell~
+You are in a dark and nasty prison cell.  Bodies lying on the floor give off
+an unbearable stench.
+~
+0 AD 2
+D0
+~
+~
+0 -1 1540
+S
+#1544
+Prison Cell~
+You are in a dark and nasty prison cell.  Bodies lying on the floor give off
+an unbearable stench.
+~
+0 AD 2
+D3
+~
+~
+0 -1 1540
+S
+#1545
+End of the Dark Hallway~
+You have reached the end of the dark hallway and maybe the end of your puny
+life.  Something lumbers its way out of the shadows.
+~
+0 AD 2
+D1
+~
+~
+0 -1 1540
+D3
+You see a decaying door.
+~
+door~
+2 1501 1546
+S
+#1546
+A Ladder~
+You have come into a vertical tunnel with a ladder.
+~
+0 AD 3
+D1
+You see a decaying door.
+~
+door~
+2 1501 1545
+D5
+~
+~
+0 -1 1547
+S
+#1547
+Lair~
+You have entered a new lair in the fortress.  Anything could be lurking
+around the corner.
+~
+0 AD 2
+D2
+~
+~
+0 -1 1548
+D4
+~
+~
+0 -1 1546
+S
+#1548
+A Damp Hallway~
+You are wandering in a dark, damp, twisting hallway.  The temperature
+seems to be greater here, as well as your fear.
+~
+0 ADN 2
+D0
+~
+~
+0 -1 1547
+D1
+~
+~
+0 -1 1549
+D3
+~
+~
+0 -1 1551
+S
+#1549
+A Damp Hallway~
+You are wandering in a dark, damp, twisting hallway.  The temperature
+seems to be greater here, as well as your fear.
+~
+0 ADN 2
+D2
+~
+~
+0 -1 1550
+D3
+~
+~
+0 -1 1548
+S
+#1550
+A Damp Hallway~
+You are wandering in a dark, damp, twisting hallway.  The temperature
+seems to be greater here, as well as your fear.
+~
+0 ADN 2
+D0
+~
+~
+0 -1 1549
+D2
+~
+~
+0 -1 1555
+S
+#1551
+A Damp Hallway~
+You are wandering in a dark, damp, twisting hallway.  The temperature
+seems to be greater here, as well as your fear.
+~
+0 ADN 2
+D1
+~
+~
+0 -1 1548
+D2
+~
+~
+0 -1 1552
+S
+#1552
+A Damp Hallway~
+You are wandering in a dark, damp, twisting hallway.  The temperature
+seems to be greater here, as well as your fear.
+~
+0 ADN 2
+D0
+~
+~
+0 -1 1551
+D2
+~
+~
+0 -1 1553
+S
+#1553
+A Damp Hallway~
+You are wandering in a dark, damp, twisting hallway.  The temperature
+seems to be greater here, as well as your fear.
+~
+0 ADN 2
+D0
+~
+~
+0 -1 1552
+D1
+~
+~
+0 -1 1554
+S
+#1554
+A Damp Hallway~
+You are wandering in a dark, damp, twisting hallway.  The temperature
+seems to be greater here, as well as your fear.
+~
+0 ADN 2
+D0
+~
+~
+0 -1 1556
+D1
+~
+~
+0 -1 1555
+D3
+~
+~
+0 -1 1553
+S
+#1555
+A Damp Hallway~
+You are wandering in a dark, damp, twisting hallway.  The temperature
+seems to be greater here, as well as your fear.
+~
+0 ADN 2
+D0
+~
+~
+0 -1 1550
+D3
+~
+~
+0 -1 1554
+S
+#1556
+The End of the Hallway~
+You make your way out of the hallway, just to find yourself in greater
+danger.  Before you looms the source of the great heat.
+~
+0 ADN 2
+D1
+~
+~
+0 -1 1557
+D2
+~
+~
+0 -1 1554
+S
+#1557
+The Altar~
+You finally reach the end of the maze.  There is a great altar here in the
+shape of a bat.  A passageway leads off to the west.
+~
+0 ADN 2
+D3
+~
+~
+0 -1 1556
+S
+#1558
+The Chief's House~
+You enter into a large and luxurious house.  The floor is coated with carpets
+and the walls are covered in paintings.  You feel privileged just for stepping
+inside.
+~
+0 D 0
+D2
+You see a path.
+~
+~
+0 -1 1526
+S
+#1559
+The Unused Path~
+You are now on a fairly unused path that leads east out of the village.  
+You wonder what could be out this way.
+~
+0 C 1
+D1
+You see a path.
+~
+~
+0 -1 1560
+D3
+You see a path.
+~
+~
+0 -1 1504
+S
+#1560
+The Overgrown Path~
+As the path continues on, the grass grows higher.  You can't imagine
+what could possibly be out this way.
+~
+0 0 2
+D1
+You see a clearing.
+~
+~
+0 -1 1561
+D3
+You see a path.
+~
+~
+0 -1 1559
+S
+#1561
+The Clearing~
+Your progress is suddenly stopped by mountains on all sides.  The path leads
+back to the west, and there appears to be an old mine shaft to the north.
+~
+0 0 2
+D0
+You see a mine shaft.
+~
+~
+0 -1 1562
+D3
+You see a path.
+~
+~
+0 -1 1560
+S
+#1562
+Entrance to the Mine Shaft~
+As you enter the mine shaft, you get a sudden fear of the walls closing
+in on you.  You are surprised to notice that you don't need a light.
+~
+0 D 2
+D1
+You see the shaft.
+~
+~
+0 -1 1563
+D2
+You see the clearing.
+~
+~
+0 -1 1561
+S
+#1563
+Mine Shaft~
+This mine shaft looks stable, at least in this area.  The wooden supports are
+thick and strong.  Torches line the walls.  Exits lead in all directions.
+~
+0 D 2
+D0
+You see a small mine shaft.
+~
+~
+0 -1 1582
+D1
+You see the shaft.
+~
+~
+0 -1 1564
+D2
+You see the shaft.
+~
+~
+0 -1 1574
+D3
+You see the entrance.
+~
+~
+0 -1 1562
+S
+#1564
+Mine Shaft~
+This mine shaft looks stable, at least in this area.  The wooden supports are
+thick and strong.  Torches line the walls.  Exits lead in all directions.
+~
+0 D 2
+D0
+You see a large room.
+~
+~
+0 -1 1583
+D1
+You see the shaft.
+~
+~
+0 -1 1565
+D2
+You see a large room.
+~
+~
+0 -1 1573
+D3
+You see the shaft.
+~
+~
+0 -1 1563
+S
+#1565
+Mine Shaft~
+This mine shaft looks stable, at least in this area.  The wooden supports are
+thick and strong.  Torches line the walls.  Exits lead in all directions
+except north.
+~
+0 D 2
+D1
+You see the walkway.
+~
+~
+0 -1 1566
+D2
+You see a large room.
+~
+~
+0 -1 1572
+D3
+You see the shaft.
+~
+~
+0 -1 1564
+S
+#1566
+Walkway~
+You are on a well built path in the middle of a mountain.  You sense something
+great up ahead, considering the hard work that must have gone into creating
+this passage.
+~
+0 D 1
+D2
+You see the walkway.
+~
+~
+0 -1 1567
+D3
+You see the shaft.
+~
+~
+0 -1 1565
+S
+#1567
+Walkway~
+You are on a well built path in the middle of a mountain.  You sense something
+great up ahead, considering the hard work that must have gone into creating
+this passage.
+~
+0 D 1
+D0
+You see the walkway.
+~
+~
+0 -1 1566
+D2
+You see a large hall.
+~
+~
+0 -1 1568
+S
+#1568
+The Grand Hall~
+You have stepped into the Grand Hall of the hobgoblin kingdom; your luck
+must be running low by now.  Golden pillars span the hallway, and you
+notice a red carpet beneath your feet.
+~
+0 D 0
+D0
+You see the walkway.
+~
+~
+0 -1 1567
+D2
+You see a large room.
+~
+~
+0 -1 1569
+S
+#1569
+The Throne Room~
+This is large bright room filled with Hobgoblins.  To the south there is
+a large golden throne against the wall.
+~
+0 D 0
+D0
+You see a large hall.
+~
+~
+0 -1 1568
+S
+#1570
+The Treasury~
+You are inside the hobgoblin's treasury.  Your eyes are almost blinded by the
+gold, silver and copper coins.
+~
+0 D 0
+D0
+You see a large room.
+~
+~
+0 -1 1571
+S
+#1571
+Guarded Room~
+You are inside a well guarded room.  The place is slightly better built than
+the mine shafts, and is lit by lanterns.
+~
+0 D 1
+D0
+You see a large room.
+~
+~
+0 -1 1572
+D2
+You see a large room.
+~
+~
+0 -1 1570
+S
+#1572
+Guarded Room~
+You are inside a well guarded room.  The place is slightly better built than
+the mine shafts, and is lit by lanterns.
+~
+0 D 1
+D0
+You see a large room.
+~
+~
+0 -1 1565
+D2
+You see a large room.
+~
+~
+0 -1 1571
+S
+#1573
+Hobgoblin Armory~
+The guards store their spare weapons and armor here.  There are rusty swords
+on rotting shelves, and armor hanging from hooks or laying on the floor.
+~
+0 D 1
+D0
+You see the shaft.
+~
+~
+0 -1 1564
+S
+#1574
+Mine Shaft~
+You enter a part of the mine shaft where the torches have grown dim
+and are almost ready to go out.  From what you can see, there are plenty
+of cobwebs on the walls and rats at your feet.
+~
+0 D 2
+D0
+You see the shaft.
+~
+~
+0 -1 1563
+D2
+You see a dark and nasty room.
+~
+~
+0 -1 1575
+S
+#1575
+Entrance to a Dungeon~
+The floor dips slightly as you walk into this dark and nasty place.  Your
+skin crawls as you look at the filth on the walls and see it move.  Most
+of the exits lead into jail cells.
+~
+0 D 2
+D0
+You see the shaft.
+~
+~
+0 -1 1574
+D1
+You see a cell.
+~
+~
+0 -1 1577
+D2
+You see a dark and nasty room.
+~
+~
+0 -1 1576
+D3
+You see a cell.
+~
+~
+0 -1 1581
+S
+#1576
+A Dungeon~
+You are in the deepest and darkest part of the mine shafts.  The light from
+the torches barely reaches to where you are.  Most directions from here
+lead to jail cells.
+~
+0 D 2
+D0
+You see a dark and nasty room.
+~
+~
+0 -1 1575
+D1
+You see a cell.
+~
+~
+0 -1 1578
+D2
+You see a cell.
+~
+~
+0 -1 1579
+D3
+You see a cell.
+~
+~
+0 -1 1580
+S
+#1577
+A Jail Cell~
+You are in a musty, dark jail cell.  Wet and dirty straw covers the floor.
+The walls glisten with slime.  You see something stir in the straw.
+~
+0 D 2
+D3
+You see a dark and nasty room.
+~
+~
+0 -1 1575
+S
+#1578
+The Jail Cell~
+You are in a musty, dark jail cell.  Wet and dirty straw covers the floor.
+The walls glisten with slime.  You see something stir in the straw.
+~
+0 D 2
+D3
+You see a dark and nasty room.
+~
+~
+0 -1 1576
+S
+#1579
+The Jail Cell~
+You are in a musty, dark jail cell.  Wet and dirty straw covers the floor.
+The walls glisten with slime.  You see something stir in the straw.
+~
+0 D 2
+D0
+You see a dark and nasty room.
+~
+~
+0 -1 1576
+S
+#1580
+The Jail Cell~
+You are in a musty, dark jail cell.  Wet and dirty straw covers the floor.
+The walls glisten with slime.  You see something stir in the straw.
+~
+0 D 2
+D1
+You see a dark and nasty room.
+~
+~
+0 -1 1576
+S
+#1581
+The Jail Cell~
+You are in a musty, dark jail cell.  Wet and dirty straw covers the floor.
+The walls glisten with slime.  You see something stir in the straw.
+~
+0 D 2
+D1
+You see a dark and nasty room.
+~
+~
+0 -1 1575
+S
+#1582
+Small Mine Shaft~
+You are in a small extension of the mine shaft.  The dust on the floor is
+undisturbed by footprints.
+~
+0 D 2
+D0
+You see a small mine shaft.
+~
+~
+0 -1 1588
+D2
+You see the shaft.
+~
+~
+0 -1 1563
+S
+#1583
+Hobgoblin Barracks~
+You are suddenly surrounded by a small army of hobgoblin guards.  The room
+itself is a mess with clothes and armor everywhere.  The beds are unmade and
+stained.
+~
+0 D 2
+D0
+You see a large room.
+~
+~
+0 -1 1584
+D1
+You see the mess hall.
+~
+~
+0 -1 1585
+D2
+You see the mine shaft.
+~
+~
+0 -1 1564
+S
+#1584
+Hobgoblin Barracks~
+Yech!  As you continue forward, the smell just keeps getting worse.
+What are you DOING here?
+~
+0 D 2
+D2
+You see a large room~
+~
+0 -1 1583
+S
+#1585
+Mess Hall~
+You stand in the hobgoblin eating area.  There are a few rotting tables
+and many broken dishes scattered around the room.  You almost slip on a
+rotten piece of meat, but catch yourself just in time.
+~
+0 D 2
+D0
+You see a small room.
+~
+~
+0 -1 1586
+D1
+You see a kitchen.
+~
+~
+0 -1 1587
+D3
+You see a large room.
+~
+~
+0 -1 1583
+S
+#1586
+A Store Room~
+You stand in a small room filled with flour, grain, fruit, and bat droppings.
+~
+0 D 1
+D2
+You see the mess hall.
+~
+~
+0 -1 1585
+S
+#1587
+The Kitchen~
+This kitchen hasn't been cleaned since the creation of humans.  The trash and
+spoiled food laying on the floor reach up to your knees.  Off to the side a
+pot is boiling over.  A human hand floats in it.
+~
+0 D 2
+D3
+You see the mess hall.
+~
+~
+0 -1 1585
+S
+#1588
+A Small Mine Shaft~
+You come to a place in the mine shaft where a tunnel leads down.  The
+small passage continues north and south.
+~
+0 D 2
+D0
+You see an almost caved in area.
+~
+~
+0 -1 1589
+D2
+You see a small mine shaft.
+~
+~
+0 -1 1582
+D5
+You see a hole.
+~
+~
+0 -1 1590
+S
+#1589
+Hermit's Lair~
+You are in a small section where the mine wall has collapsed to reveal a
+tiny one-room cave.  The area is barely lit, but you can make out something
+moving towards you.
+~
+0 D 2
+D2
+You see a small mine shaft.
+~
+~
+0 -1 1588
+S
+#1590
+A Hole~
+You are in a hole.
+~
+0 D 3
+D4
+You see a small mine shaft.
+~
+~
+0 -1 1588
+S
+#0
+
+#RESETS
+M 0 1502   3 1503  1	* a gnome man
+E 1 1503  20   16	*   a gnarled staff
+M 0 1502   3 1505  1	* a gnome man
+E 1 1503  20   16	*   a gnarled staff
+M 0 1502   3 1506  1	* a gnome man
+E 1 1503  20   16	*   a gnarled staff
+M 0 1500   3 1509  1	* a gnome child
+G 1 1502  20     	*   a toy boomerang
+M 0 1501   3 1509  1	* a gnome woman
+M 0 1500   3 1510  1	* a gnome child
+G 1 1502  20     	*   a toy boomerang
+M 0 1501   3 1510  1	* a gnome woman
+M 0 1500   3 1511  1	* a gnome child
+G 1 1502  20     	*   a toy boomerang
+M 0 1501   3 1511  1	* a gnome woman
+M 0 1503   3 1513  1	* a gnome scientist
+G 1 1511  12     	*   a wicker basket
+P 1 1513  12 1511  1	*   some grain
+M 0 1503   3 1514  1	* a gnome scientist
+G 1 1511  12     	*   a wicker basket
+P 1 1512  12 1511  1	*   some peanuts
+M 0 1503   3 1515  1	* a gnome scientist
+E 1 1514  12   16	*   a skiff
+M 0 1504   6 1519  1	* a gnome guard
+G 1 1500   3     	*   a bloody key
+G 1 1506  -1     	*   a bloody potion
+E 1 1507  10    3	*   a bloody cloak
+M 0 1508   2 1522  2	* a field mouse
+M 0 1508   2 1522  2	* a field mouse
+M 0 1507   1 1524  1	* a small troll
+M 0 1504   6 1527  2	* a gnome guard
+E 1 1504  20   16	*   a gnome sword
+M 0 1504   6 1530  2	* a gnome guard
+E 1 1504  20   16	*   a gnome sword
+M 0 1504   6 1530  2	* a gnome guard
+E 1 1504  20   16	*   a gnome sword
+M 0 1504   6 1534  1	* a gnome guard
+E 1 1504  12   16	*   a gnome sword
+D 0 1536   1    2	* A Small Unused Room east
+M 0 1509   3 1541  3	* a rat
+E 1 1505  10   11	*   a studded shield
+M 0 1510   3 1542  3	* a large rat
+E 1 1503  12   16	*   a gnarled staff
+M 0 1511   3 1543  3	* a giant rat
+R 0 1548   4     	* A Damp Hallway
+R 0 1549   4     	* A Damp Hallway
+R 0 1550   4     	* A Damp Hallway
+R 0 1551   4     	* A Damp Hallway
+R 0 1552   4     	* A Damp Hallway
+R 0 1553   4     	* A Damp Hallway
+R 0 1554   4     	* A Damp Hallway
+R 0 1555   4     	* A Damp Hallway
+M 0 1512   1 1545  1	* the troll
+G 1 1501   4     	*   a dirty key
+D 0 1545   3    2	* End of the Dark Hallway west
+D 0 1546   1    2	* A Ladder east
+M 0 1513  10 1548  2	* a black bat
+M 0 1514  10 1548  2	* the zombie gnome
+M 0 1513  10 1550  2	* a black bat
+M 0 1514  10 1550  2	* the zombie gnome
+M 0 1513  10 1551  2	* a black bat
+M 0 1514  10 1551  2	* the zombie gnome
+M 0 1513  10 1553  2	* a black bat
+M 0 1514  10 1553  2	* the zombie gnome
+M 0 1513  10 1555  2	* a black bat
+M 0 1514  10 1555  2	* the zombie gnome
+M 0 1515   1 1556  1	* the fire bat
+G 1 1505  18     	*   a studded shield
+G 1 1512  20     	*   some peanuts
+G 1 1516   3     	*   a pile of coins
+O 0 1517   3 1557	* a pile of coins
+M 0 1505   1 1558  1	* the chief gnome
+E 1 1508   5    1	*   a bat ring
+E 1 1509  12    3	*   a bead necklace
+E 1 1510   5   16	*   an electrum sword
+M 0 1520   6 1563  2	* a hobgoblin miner
+M 0 1520   6 1565  2	* a hobgoblin miner
+M 0 1518   5 1569  5	* the hobgoblin bodyguard
+E 1 1521  30   16	*   a large club
+M 0 1518   5 1569  5	* the hobgoblin bodyguard
+E 1 1521  30   16	*   a large club
+M 0 1518   5 1569  5	* the hobgoblin bodyguard
+E 1 1521  30   16	*   a large club
+M 0 1518   5 1569  5	* the hobgoblin bodyguard
+E 1 1521  30   16	*   a large club
+M 0 1518   5 1569  5	* the hobgoblin bodyguard
+E 1 1521  30   16	*   a large club
+M 0 1519   1 1569  1	* the king of the hobgoblins
+E 1 1520   5    5	*   heavy banded mail
+M 0 1521   1 1570  1	* the treasurer
+O 0 1516  10 1570	* a pile of coins
+O 0 1517  10 1570	* a pile of coins
+M 0 1517  30 1571 10	* the hobgoblin soldier
+E 1 1524  40   16	*   a wooden club
+M 0 1517  30 1571 10	* the hobgoblin soldier
+E 1 1524  40   16	*   a wooden club
+M 0 1517  30 1571 10	* the hobgoblin soldier
+E 1 1524  40   16	*   a wooden club
+M 0 1517  30 1571 10	* the hobgoblin soldier
+E 1 1524  40   16	*   a wooden club
+M 0 1517  30 1572 10	* the hobgoblin soldier
+E 1 1524  40   16	*   a wooden club
+M 0 1517  30 1572 10	* the hobgoblin soldier
+E 1 1524  40   16	*   a wooden club
+M 0 1517  30 1572 10	* the hobgoblin soldier
+E 1 1524  40   16	*   a wooden club
+M 0 1517  30 1572 10	* the hobgoblin soldier
+E 1 1524  40   16	*   a wooden club
+O 0 1521  40 1573	* a large club
+M 0 1522   5 1577  1	* a gnome prisoner
+M 0 1522   5 1578  1	* a gnome prisoner
+M 0 1522   5 1579  1	* a gnome prisoner
+M 0 1523   5 1580  1	* a human prisoner
+M 0 1523   5 1581  1	* a human prisoner
+M 0 1517  30 1583  5	* the hobgoblin soldier
+M 0 1517  30 1583  5	* the hobgoblin soldier
+M 0 1517  30 1584  5	* the hobgoblin soldier
+M 0 1517  30 1584  5	* the hobgoblin soldier
+M 0 1526   1 1587  1	* the cook
+M 0 1524   1 1589  1	* a hermit
+M 0 1520   6 1590  2	* a hobgoblin miner
+S
+
+#SHOPS
+0
+
+#SPECIALS
+M 1503 spec_cast_mage      	* a gnome scientist
+M 1505 spec_cast_cleric    	* the chief gnome
+M 1509 spec_poison         	* a rat
+M 1510 spec_poison         	* a large rat
+M 1511 spec_poison         	* a giant rat
+M 1513 spec_breath_acid    	* a black bat
+M 1514 spec_cast_undead    	* the zombie gnome
+M 1515 spec_breath_fire    	* the fire bat
+M 1519 spec_cast_mage      	* the king of the hobgoblins
+S
+
+#$
