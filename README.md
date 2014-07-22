@@ -6,11 +6,12 @@ ROM 2.4b6 with a few additional features (a.k.a. QuickMUD). Compiles succesfully
 
 -----
 QuickMUD is a Rom24b6 codebase with the following major features added:
-  ** OLC 1.81
-  ** Lope's Color 2.0
-  ** Erwin's Copyover
-  ** Erwin's Noteboard
-  ** Color Login
+
+* OLC 1.81
+* Lope's Color 2.0
+* Erwin's Copyover
+* Erwin's Noteboard
+* Color Login
 
 It is still basically a "stock" ROM server.  The  functionality  of the
 code hasn't been modified much except for the addition of  OLC. Changes
