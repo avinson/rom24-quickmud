@@ -25,6 +25,9 @@ SRC_FILES := $(wildcard *.c)
 OBJ_DIR = obj
 OBJ_FILES := $(patsubst %.c,$(OBJ_DIR)/%.o,$(SRC_FILES))
 
+# Make the Object directory if it doesn't exist
+$(shell   mkdir -p $(OBJ_DIR))
+
 rom: $(OBJ_FILES)
 	$(RM) -f $(EXE)
 	$(CC) -o $(EXE) $(OBJ_FILES) $(L_FLAGS)
