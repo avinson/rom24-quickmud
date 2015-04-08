@@ -4488,8 +4488,7 @@ void do_prefix (CHAR_DATA * ch, char *argument)
 #define COPYOVER_FILE "copyover.data"
 
 /* This is the executable file */
-#define EXE_FILE      "../src/rom"
-
+#define EXE_FILE      "../area/rom"
 
 /*  Copyover - Original idea: Fusion of MUD++
  *  Adapted to Diku by Erwin S. Andreasen, <erwin@pip.dknet.dk>
