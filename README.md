@@ -3,9 +3,7 @@ rom24-quickmud
 
 ## How to use this image
 
-$ docker run -d \
-  -p 4000:4000
-  avinson/rom
+$ docker run -d -p 4000:4000 avinson/rom
 
 telnet localhost 4000
 
