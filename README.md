@@ -1,8 +1,18 @@
 rom24-quickmud
 ==============
 
-ROM 2.4b6 with a few additional features (a.k.a. QuickMUD). Compiles succesfully on Ubuntu 14.04.
+## How to use this image
 
+$ docker run -d \
+  -p 4000:4000
+  avinson/rom
+
+telnet localhost 4000
+
+To make your first immortal character, just start as a mortal
+character, play at least as far as level 2, and then edit the
+player file and change your level.  (After the first immortal,
+you can advance the rest)
 
 -----
 QuickMUD is a Rom24b6 codebase with the following major features added:
