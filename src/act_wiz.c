@@ -4526,7 +4526,7 @@ void do_copyover (CHAR_DATA * ch, char *argument)
         CHAR_DATA *och = CH (d);
         d_next = d->next;        /* We delete from the list , so need to save this */
 
-        if (!d->character || d->connected > CON_PLAYING)
+        if (!d->character || d->connected < CON_PLAYING)
         {                        /* drop those logging on */
             write_to_descriptor (d->descriptor,
                                  "\n\rSorry, we are rebooting. Come back in a few minutes.\n\r",
