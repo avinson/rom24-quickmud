@@ -3,7 +3,7 @@ QuickMUD is derived from ROM 2.4b6, Merc 2.1 and DikuMUD
 
 ## Introduction
 
-QuickMUD / ROM is a "multi-user dungeon", a text-based MMORPG. ROM is well-known for its fast-paced and exciting combat system. It also happens to be the initial codebase for [Carrion Fields](http://www.carrionfields.net/), the greatest MUD of all time.
+QuickMUD / ROM is a "[multi-user dungeon](https://en.wikipedia.org/wiki/MUD)", a text-based MMORPG. ROM is well-known for its fast-paced and exciting combat system. It also happens to be the initial codebase for [Carrion Fields](http://www.carrionfields.net/), the greatest MUD of all time.
 
 ## Docker Image
 
