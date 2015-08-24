@@ -1,4 +1,4 @@
-rom24-quickmud
+QuickMUD is derived from ROM 2.4b6, Merc 2.1 and DikuMUD
 ==============
 
 ## How to use this image
@@ -31,18 +31,22 @@ this code, compile it, and advertise it on MUD websites  as  "a  highly
 modified  ROM  codebase".  Spend  some  time  developing  it. The world
 doesn't need another cookie-cutter MUD.
 
-Need help? Your best bet is to check out the ROM mailing list archives.
-It can currently be found at http://www.the-infinite.org/lists/romlist.
-Information  on the ROM mailing list itself can be requested by running
-"echo help | mail rom-request@rom.org" (without the quotes). Aside from
-that,  grab a  good  book on C and  visit your favorite search engine a
-lot :)
+-----
 
-Also,  for real-time  help,  try irc.acestar.org:6667  #rom.  There are
-a lot of very good people hanging out in there willing to help  you out
-with your mud-related cunundrums.
+This is the ROM 2.4 beta version of Merc 2.1 base code.
+Please read the file in /Rom24/doc called rom.license before using
+this program.
 
-Any  existing bugs  in the  code can be reported to flugh@flugh.org.
-I'll do my best to repair them ASAP.
+-----
 
-Enjoy!
+Merc Diku Mud is a Diku Mud with many enhancements and contributions.  See our
+'contrib.txt' and 'help merc' for acknowledgements.  Send us your contribution,
+and you'll be in there too!
+
+Enjoy our mud.  May your visit here be ... Mercenary.
+
+This is the 2.1 production release of Merc.
+
+-----
+
+See other READMEs in the repo for full info and licenses.
