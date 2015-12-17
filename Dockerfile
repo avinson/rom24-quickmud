@@ -6,6 +6,7 @@ ADD . /opt/rom
 
 RUN cd /opt/rom/src && make -k
 RUN mkdir -p /opt/rom/log
+RUN mkdir -p /opt/rom/player
 
 WORKDIR /opt/rom/area
 
