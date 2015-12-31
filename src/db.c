@@ -1281,38 +1281,54 @@ void load_rooms (FILE * fp)
     return;
 }
 
-
-
 /*
  * Snarf a shop section.
  */
 void load_shops (FILE * fp)
 {
     SHOP_DATA *pShop;
+    int keeper = 0;
 
     for (;;)
     {
         MOB_INDEX_DATA *pMobIndex;
         int iTrade;
 
-        pShop = alloc_perm (sizeof (*pShop));
-        pShop->keeper = fread_number (fp);
-        if (pShop->keeper == 0)
+        // ROM mem leak fix, check the keeper before allocating the memory
+        // to the SHOP_DATA variable.  -Rhien
+        keeper = fread_number(fp);
+
+        if (keeper == 0)
+        {
             break;
+        }
+
+        // Now that we have a non zero keeper number we can allocate
+        pShop = alloc_perm(sizeof(*pShop));
+        pShop->keeper = keeper;
+
         for (iTrade = 0; iTrade < MAX_TRADE; iTrade++)
-            pShop->buy_type[iTrade] = fread_number (fp);
-        pShop->profit_buy = fread_number (fp);
-        pShop->profit_sell = fread_number (fp);
-        pShop->open_hour = fread_number (fp);
-        pShop->close_hour = fread_number (fp);
-        fread_to_eol (fp);
-        pMobIndex = get_mob_index (pShop->keeper);
+        {
+            pShop->buy_type[iTrade] = fread_number(fp);
+        }
+
+        pShop->profit_buy = fread_number(fp);
+        pShop->profit_sell = fread_number(fp);
+        pShop->open_hour = fread_number(fp);
+        pShop->close_hour = fread_number(fp);
+        fread_to_eol(fp);
+        pMobIndex = get_mob_index(pShop->keeper);
         pMobIndex->pShop = pShop;
 
         if (shop_first == NULL)
+        {
             shop_first = pShop;
+        }
+
         if (shop_last != NULL)
+        {
             shop_last->next = pShop;
+        }
 
         shop_last = pShop;
         pShop->next = NULL;
@@ -1321,7 +1337,6 @@ void load_shops (FILE * fp)
 
     return;
 }
-
 
 /*
  * Snarf spec proc declarations.
