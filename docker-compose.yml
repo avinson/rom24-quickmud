@@ -1,0 +1,9 @@
+version: "3"
+services:
+  app:
+    image: avinson/rom
+    volumes:
+      - ./log:/opt/rom/log:rw
+      - ./player:/opt/rom/player:rw
+    ports:
+      - 4000:4000

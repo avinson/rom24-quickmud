@@ -1,0 +1,114 @@
+#PLAYER
+Name Shemp~
+Id   1526675897
+LogO 1526676423
+Vers 5
+Prom <%hhp %mm %vmv> ~
+Race human~
+Sex  1
+Cla  3
+Levl 2
+Sec  0
+Plyd 264
+Scro 22
+Room 3714
+HMV  15 29 100 102 96 106
+Gold 0
+Silv 0
+Exp  2088
+Act  QT
+Comm NOP
+Pos  8
+Prac 1
+Trai 1
+Save  -1
+Alig  750
+Hit   1
+ACs 95 95 95 99
+Attr 19 13 13 13 13
+AMod 0 0 0 0 0
+Pass ShdJkE29AGHGg~
+Titl  the Recruit~
+Pnts 40
+TSex 1
+LLev 0
+HMVP 29 102 106
+Cnd  0 42 45 45
+Coloura     007 013 005 001 013
+Colourb     013 003 002 006 003
+Colourc     113 002 002 002 001
+Colourd     006 007 002 006 006
+Coloure     011 002 003 001 017
+Colourf     002 002 012 012 012
+Colourg     017 015 011 017 017
+Boards       5 General 0 Ideas 0 Announce 0 Bugs 0 Personal 0 
+Sk 1 'axe'
+Sk 1 'dagger'
+Sk 1 'flail'
+Sk 1 'mace'
+Sk 1 'polearm'
+Sk 1 'shield block'
+Sk 1 'spear'
+Sk 75 'sword'
+Sk 1 'whip'
+Sk 1 'bash'
+Sk 1 'disarm'
+Sk 17 'enhanced damage'
+Sk 1 'parry'
+Sk 1 'rescue'
+Sk 1 'second attack'
+Sk 1 'third attack'
+Sk 1 'scrolls'
+Sk 1 'staves'
+Sk 1 'wands'
+Sk 50 'recall'
+Gr 'rom basics'
+Gr 'warrior basics'
+Gr 'warrior default'
+Gr 'weaponsmaster'
+IMCPerm      1
+IMCFlags     256
+End
+
+#O
+Vnum 3716
+Nest 0
+Cond 0
+Wear 0
+Cost 0
+Val  0 0 197 0 0
+End
+
+#O
+Vnum 3703
+Nest 0
+Cond 0
+Wear 5
+Cost 0
+End
+
+#O
+Vnum 3702
+Nest 0
+Cond 0
+Wear 16
+Cost 360
+End
+
+#O
+Vnum 3704
+Nest 0
+Cond 0
+Wear 11
+Cost 0
+End
+
+#O
+Vnum 3162
+Nest 0
+Cond 0
+Wear -1
+Cost 500
+End
+
+#END
